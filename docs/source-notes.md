@@ -13,3 +13,11 @@ The directory inventory and public definition-service slug sets were reconciled.
 No authenticated Data or Creative execution was performed for this publication. Documentation fixtures do not prove live success, price, availability, freshness, or complete backend behavior. No pricing or service-level guarantee is inferred from sample values.
 
 Most Data definitions use field descriptors with `jsonSchema: null`. They are retained as that format rather than converted into an invented schema. Strict schema/example compatibility is not claimed across the catalog; consult the current API definition before sending a request. The offline validator checks preservation and coverage, not every server-side business rule.
+
+## Amazon Product Detail correction (2026-10-08)
+
+The response instructions, field descriptors, and response fixture for `amazon-product-detail` were reconciled with the [current official API page](https://www.nexscope.ai/api-docs/amazon-product-detail?co-from=github-ecommerce-api). This endpoint uses a platform envelope: check `code` for business success, then read the result from `data`. Its fixture now matches the response example displayed on that page. This targeted correction supersedes the original direct-payload description for this endpoint; other API definitions retain their original snapshot. No authenticated execution was performed.
+
+## Cross-document response wording review (2026-10-08)
+
+The other 224 API pages repeated an unverified claim that the run response has no `data` wrapper. That shared wording has been removed, and their response examples are now explicitly labeled as historical definition-service fixtures awaiting reconciliation with the current HTTP envelope. The [current Amazon Search reference](https://www.nexscope.ai/api-docs/amazon-search?co-from=github-ecommerce-api) also documents a `code`/`data` envelope. Only Amazon Product Detail has had its local response definition and fixture reconciled in this change; no full current-contract audit of the other 224 APIs is claimed.

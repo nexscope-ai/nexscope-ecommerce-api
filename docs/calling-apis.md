@@ -8,7 +8,7 @@ Get your user key from [API Access](https://www.nexscope.ai/seller/api-access?co
 
 ## Synchronous Data APIs
 
-All 172 Data entries in the retrieved catalog are marked synchronous. Send `POST` to the exact endpoint in the API's reference, with its own request body. Read the direct API response. A successful HTTP response does not imply that the result set is nonempty or that every optional field exists.
+All 172 Data entries in the retrieved catalog are marked synchronous. Send `POST` to the exact endpoint in the API's reference, with its own request body. Follow the response structure in the current API reference. For [Amazon Product Detail](data/amazon-product-detail.md#response), check the platform envelope `code === 0`, then read `data.products` and `data.total`; `data` may be null. A successful HTTP response does not imply that the result set is nonempty or that every optional field exists.
 
 ## Asynchronous Creative APIs
 

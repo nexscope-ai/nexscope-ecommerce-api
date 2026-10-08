@@ -1,9 +1,65 @@
 {
   "type": "object",
-  "description": "Returns the documented upstream API response directly without an additional wrapper.",
+  "description": "Platform response envelope. code 0 indicates success or acceptance; data contains the business result. The current official API documentation is authoritative.",
   "fields": [
     {
-      "name": "total",
+      "name": "data",
+      "type": "object | null",
+      "required": true,
+      "description": "Business result; may be null. Read only after checking code.",
+      "example": null,
+      "constraints": {}
+    },
+    {
+      "name": "code",
+      "type": "integer",
+      "required": true,
+      "description": "0 means accepted or successful; nonzero is a platform error.",
+      "example": 0,
+      "constraints": {}
+    },
+    {
+      "name": "msg",
+      "type": "string | null",
+      "required": true,
+      "description": "Platform message.",
+      "example": null,
+      "constraints": {}
+    },
+    {
+      "name": "ts",
+      "type": "string",
+      "required": true,
+      "description": "Epoch milliseconds.",
+      "example": "0",
+      "constraints": {}
+    },
+    {
+      "name": "time",
+      "type": "string",
+      "required": true,
+      "description": "Server local time: yyyy-MM-dd HH:mm:ss.",
+      "example": "2026-01-01 00:00:00",
+      "constraints": {}
+    },
+    {
+      "name": "cost",
+      "type": "string",
+      "required": true,
+      "description": "Elapsed milliseconds, never credits; -1 outside web requests.",
+      "example": "-1",
+      "constraints": {}
+    },
+    {
+      "name": "traceId",
+      "type": "string | null",
+      "required": true,
+      "description": "Trace identifier.",
+      "example": null,
+      "constraints": {}
+    },
+    {
+      "name": "data.total",
       "type": "integer",
       "required": false,
       "description": "Total rows",
@@ -11,7 +67,7 @@
       "constraints": {}
     },
     {
-      "name": "columns",
+      "name": "data.columns",
       "type": "array",
       "required": false,
       "description": "Rendered columns",
@@ -19,7 +75,7 @@
       "constraints": {}
     },
     {
-      "name": "type",
+      "name": "data.type",
       "type": "string",
       "required": false,
       "description": "Render style",
@@ -27,7 +83,7 @@
       "constraints": {}
     },
     {
-      "name": "costToken",
+      "name": "data.costToken",
       "type": "integer",
       "required": false,
       "description": "Token consumption",
@@ -35,7 +91,7 @@
       "constraints": {}
     },
     {
-      "name": "products",
+      "name": "data.products",
       "type": "array",
       "required": false,
       "description": "Product list (see below)",
@@ -43,7 +99,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].asin",
+      "name": "data.products[].asin",
       "type": "string",
       "required": false,
       "description": "ASIN code",
@@ -51,7 +107,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].title",
+      "name": "data.products[].title",
       "type": "string",
       "required": false,
       "description": "Product title",
@@ -59,7 +115,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].brand",
+      "name": "data.products[].brand",
       "type": "string",
       "required": false,
       "description": "Brand",
@@ -67,7 +123,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].price",
+      "name": "data.products[].price",
       "type": "number",
       "required": false,
       "description": "Price",
@@ -75,7 +131,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].extractedPrice",
+      "name": "data.products[].extractedPrice",
       "type": "number",
       "required": false,
       "description": "Extracted price",
@@ -83,7 +139,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].oldPrice",
+      "name": "data.products[].oldPrice",
       "type": "number",
       "required": false,
       "description": "Original price",
@@ -91,7 +147,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].extractedOldPrice",
+      "name": "data.products[].extractedOldPrice",
       "type": "number",
       "required": false,
       "description": "Extracted original price",
@@ -99,7 +155,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].currency",
+      "name": "data.products[].currency",
       "type": "string",
       "required": false,
       "description": "Currency",
@@ -107,7 +163,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].discount",
+      "name": "data.products[].discount",
       "type": "string",
       "required": false,
       "description": "Discount",
@@ -115,7 +171,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].saveWithCoupon",
+      "name": "data.products[].saveWithCoupon",
       "type": "string",
       "required": false,
       "description": "Amount saved with coupon",
@@ -123,7 +179,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].rating",
+      "name": "data.products[].rating",
       "type": "number",
       "required": false,
       "description": "Rating",
@@ -131,7 +187,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].ratings",
+      "name": "data.products[].ratings",
       "type": "integer",
       "required": false,
       "description": "Number of reviews",
@@ -139,7 +195,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].prime",
+      "name": "data.products[].prime",
       "type": "boolean",
       "required": false,
       "description": "Whether it is a Prime item",
@@ -147,7 +203,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].stock",
+      "name": "data.products[].stock",
       "type": "string",
       "required": false,
       "description": "Stock status",
@@ -155,7 +211,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].delivery",
+      "name": "data.products[].delivery",
       "type": "string",
       "required": false,
       "description": "Delivery information",
@@ -163,7 +219,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].link",
+      "name": "data.products[].link",
       "type": "string",
       "required": false,
       "description": "Product link",
@@ -171,7 +227,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].linkClean",
+      "name": "data.products[].linkClean",
       "type": "string",
       "required": false,
       "description": "Clean link",
@@ -179,15 +235,15 @@
       "constraints": {}
     },
     {
-      "name": "products[].asinUrl",
+      "name": "data.products[].asinUrl",
       "type": "string",
       "required": false,
       "description": "Link",
-      "example": "B072MQ5BRX",
+      "example": "https://www.amazon.com/dp/B072MQ5BRX",
       "constraints": {}
     },
     {
-      "name": "products[].imageUrl",
+      "name": "data.products[].imageUrl",
       "type": "string",
       "required": false,
       "description": "Thumbnail",
@@ -195,7 +251,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].thumbnail",
+      "name": "data.products[].thumbnail",
       "type": "string",
       "required": false,
       "description": "Thumbnail",
@@ -203,7 +259,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].productImageUrls",
+      "name": "data.products[].productImageUrls",
       "type": "array",
       "required": false,
       "description": "Product image URL list",
@@ -211,7 +267,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].aboutItem",
+      "name": "data.products[].aboutItem",
       "type": "array",
       "required": false,
       "description": "Bullet points",
@@ -219,7 +275,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].productDescription",
+      "name": "data.products[].productDescription",
       "type": "string",
       "required": false,
       "description": "Product description; when A+ content exists, this is a JSON string (see A+ structure below)",
@@ -227,7 +283,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].description",
+      "name": "data.products[].description",
       "type": "string",
       "required": false,
       "description": "Product description",
@@ -235,7 +291,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].dimension",
+      "name": "data.products[].dimension",
       "type": "string",
       "required": false,
       "description": "Product dimensions",
@@ -243,7 +299,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].weight",
+      "name": "data.products[].weight",
       "type": "string",
       "required": false,
       "description": "Weight",
@@ -251,7 +307,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].tags",
+      "name": "data.products[].tags",
       "type": "string",
       "required": false,
       "description": "Tag list",
@@ -259,7 +315,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].badges",
+      "name": "data.products[].badges",
       "type": "string",
       "required": false,
       "description": "Badge list",
@@ -267,7 +323,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].climatePledgeFriendly",
+      "name": "data.products[].climatePledgeFriendly",
       "type": "boolean",
       "required": false,
       "description": "Whether it is Climate Pledge Friendly",
@@ -275,7 +331,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].snapEbtEligible",
+      "name": "data.products[].snapEbtEligible",
       "type": "boolean",
       "required": false,
       "description": "Whether SNAP EBT eligible",
@@ -283,7 +339,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].boughtLastMonth",
+      "name": "data.products[].boughtLastMonth",
       "type": "string",
       "required": false,
       "description": "Units bought last month (string)",
@@ -291,7 +347,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].boughtLastMonthCount",
+      "name": "data.products[].boughtLastMonthCount",
       "type": "integer",
       "required": false,
       "description": "Units bought last month (number)",
@@ -299,7 +355,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].reviewsSummary",
+      "name": "data.products[].reviewsSummary",
       "type": "string",
       "required": false,
       "description": "Review summary",
@@ -307,7 +363,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].reviewsImages",
+      "name": "data.products[].reviewsImages",
       "type": "array",
       "required": false,
       "description": "Review image list",
@@ -315,7 +371,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].sourceTool",
+      "name": "data.products[].sourceTool",
       "type": "string",
       "required": false,
       "description": "Source tool",
@@ -323,7 +379,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].sourceType",
+      "name": "data.products[].sourceType",
       "type": "string",
       "required": false,
       "description": "Source type: amazon",
@@ -331,15 +387,15 @@
       "constraints": {}
     },
     {
-      "name": "products[].pageFileUrl",
+      "name": "data.products[].pageFileUrl",
       "type": "string",
       "required": false,
-      "description": "Full page file URL",
-      "example": "https://example.com/image.jpg",
+      "description": "Processed product JSON file URL; not raw HTML.",
+      "example": "https://example.com/product.json",
       "constraints": {}
     },
     {
-      "name": "products[].manufacturer",
+      "name": "data.products[].manufacturer",
       "type": "string",
       "required": false,
       "description": "Manufacturer",
@@ -347,7 +403,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].productDimensions",
+      "name": "data.products[].productDimensions",
       "type": "string",
       "required": false,
       "description": "Product dimensions",
@@ -355,7 +411,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].upc",
+      "name": "data.products[].upc",
       "type": "string",
       "required": false,
       "description": "UPC code",
@@ -363,7 +419,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].units",
+      "name": "data.products[].units",
       "type": "string",
       "required": false,
       "description": "Units",
@@ -371,7 +427,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].review",
+      "name": "data.products[].review",
       "type": "integer",
       "required": false,
       "description": "Number of reviews",
@@ -379,7 +435,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].fiveStar",
+      "name": "data.products[].fiveStar",
       "type": "integer",
       "required": false,
       "description": "Five-star review count",
@@ -387,7 +443,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].fourStar",
+      "name": "data.products[].fourStar",
       "type": "integer",
       "required": false,
       "description": "Four-star review count",
@@ -395,7 +451,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].threeStar",
+      "name": "data.products[].threeStar",
       "type": "integer",
       "required": false,
       "description": "Three-star review count",
@@ -403,7 +459,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].twoStar",
+      "name": "data.products[].twoStar",
       "type": "integer",
       "required": false,
       "description": "Two-star review count",
@@ -411,7 +467,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].oneStar",
+      "name": "data.products[].oneStar",
       "type": "integer",
       "required": false,
       "description": "One-star review count",
@@ -419,7 +475,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].items",
+      "name": "data.products[].items",
       "type": "array",
       "required": false,
       "description": "Variant item list, each item contains name (name), asin (ASIN code), position (position), selected (whether selected)",
@@ -427,7 +483,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].position",
+      "name": "data.products[].position",
       "type": "integer",
       "required": false,
       "description": "Module order",
@@ -435,7 +491,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].image",
+      "name": "data.products[].image",
       "type": "string",
       "required": false,
       "description": "A+ module main image URL (often contains aplus-media-library-service-media)",
@@ -443,7 +499,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].carouselImages",
+      "name": "data.products[].carouselImages",
       "type": "array",
       "required": false,
       "description": "Optional; carousel sub-items, each containing position / title / image",
@@ -451,7 +507,7 @@
       "constraints": {}
     },
     {
-      "name": "asin",
+      "name": "data.asin",
       "type": "string",
       "required": false,
       "description": "ASIN code",
@@ -459,7 +515,7 @@
       "constraints": {}
     },
     {
-      "name": "title",
+      "name": "data.title",
       "type": "string",
       "required": false,
       "description": "Title",
@@ -467,7 +523,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].price",
+      "name": "data.products[].price",
       "type": "string",
       "required": false,
       "description": "Price",
@@ -475,7 +531,7 @@
       "constraints": {}
     },
     {
-      "name": "extractedPrice",
+      "name": "data.extractedPrice",
       "type": "number",
       "required": false,
       "description": "Extracted price",
@@ -483,7 +539,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].priceUnit",
+      "name": "data.products[].priceUnit",
       "type": "string",
       "required": false,
       "description": "Unit price",
@@ -491,7 +547,7 @@
       "constraints": {}
     },
     {
-      "name": "extractedPriceUnit",
+      "name": "data.extractedPriceUnit",
       "type": "number",
       "required": false,
       "description": "Extracted unit price",
@@ -499,7 +555,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].thumbnail",
+      "name": "data.products[].thumbnail",
       "type": "string",
       "required": false,
       "description": "Thumbnail",
@@ -507,7 +563,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].link",
+      "name": "data.products[].link",
       "type": "string",
       "required": false,
       "description": "Link",
@@ -515,7 +571,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].linkClean",
+      "name": "data.products[].linkClean",
       "type": "string",
       "required": false,
       "description": "Clean link",
@@ -523,7 +579,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].stock",
+      "name": "data.products[].stock",
       "type": "string",
       "required": false,
       "description": "Stock status",
@@ -531,7 +587,7 @@
       "constraints": {}
     },
     {
-      "name": "delivery",
+      "name": "data.delivery",
       "type": "array",
       "required": false,
       "description": "Delivery information",
@@ -539,7 +595,7 @@
       "constraints": {}
     },
     {
-      "name": "position",
+      "name": "data.position",
       "type": "integer",
       "required": false,
       "description": "Position",
@@ -547,7 +603,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].oldPrice",
+      "name": "data.products[].oldPrice",
       "type": "string",
       "required": false,
       "description": "Original price",
@@ -555,7 +611,7 @@
       "constraints": {}
     },
     {
-      "name": "extractedOldPrice",
+      "name": "data.extractedOldPrice",
       "type": "number",
       "required": false,
       "description": "Extracted original price",
@@ -563,7 +619,7 @@
       "constraints": {}
     },
     {
-      "name": "rating",
+      "name": "data.rating",
       "type": "number",
       "required": false,
       "description": "Rating",
@@ -571,7 +627,7 @@
       "constraints": {}
     },
     {
-      "name": "reviews",
+      "name": "data.reviews",
       "type": "integer",
       "required": false,
       "description": "Number of reviews",
@@ -579,7 +635,7 @@
       "constraints": {}
     },
     {
-      "name": "prime",
+      "name": "data.prime",
       "type": "boolean",
       "required": false,
       "description": "Whether it is a Prime item",
@@ -587,7 +643,7 @@
       "constraints": {}
     },
     {
-      "name": "sponsored",
+      "name": "data.sponsored",
       "type": "boolean",
       "required": false,
       "description": "Whether it is a sponsored item",
@@ -595,7 +651,7 @@
       "constraints": {}
     },
     {
-      "name": "climatePledgeFriendly",
+      "name": "data.climatePledgeFriendly",
       "type": "boolean",
       "required": false,
       "description": "Whether Climate Pledge Friendly",
@@ -603,7 +659,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].discount",
+      "name": "data.products[].discount",
       "type": "string",
       "required": false,
       "description": "Discount",
@@ -611,7 +667,7 @@
       "constraints": {}
     },
     {
-      "name": "badges",
+      "name": "data.badges",
       "type": "array",
       "required": false,
       "description": "Badge list",
@@ -619,7 +675,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].text",
+      "name": "data.products[].text",
       "type": "string",
       "required": false,
       "description": "Review content",
@@ -627,7 +683,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].author",
+      "name": "data.products[].author",
       "type": "string",
       "required": false,
       "description": "Author",
@@ -635,7 +691,7 @@
       "constraints": {}
     },
     {
-      "name": "authorImage",
+      "name": "data.authorImage",
       "type": "string",
       "required": false,
       "description": "Author avatar",
@@ -643,7 +699,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].authorLink",
+      "name": "data.products[].authorLink",
       "type": "string",
       "required": false,
       "description": "Author link",
@@ -651,7 +707,7 @@
       "constraints": {}
     },
     {
-      "name": "date",
+      "name": "data.date",
       "type": "string",
       "required": false,
       "description": "Date",
@@ -659,7 +715,7 @@
       "constraints": {}
     },
     {
-      "name": "verifiedPurchase",
+      "name": "data.verifiedPurchase",
       "type": "boolean",
       "required": false,
       "description": "Whether verified purchase",
@@ -667,7 +723,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].helpfulVotes",
+      "name": "data.products[].helpfulVotes",
       "type": "string",
       "required": false,
       "description": "Helpful vote count",
@@ -675,7 +731,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].productSize",
+      "name": "data.products[].productSize",
       "type": "string",
       "required": false,
       "description": "Product size",
@@ -683,7 +739,7 @@
       "constraints": {}
     },
     {
-      "name": "products[].productFlavorName",
+      "name": "data.products[].productFlavorName",
       "type": "string",
       "required": false,
       "description": "Product flavor name",
@@ -691,7 +747,7 @@
       "constraints": {}
     },
     {
-      "name": "errcode",
+      "name": "data.errcode",
       "type": "integer",
       "required": false,
       "description": "Upstream status code returned by the provider.",
@@ -699,7 +755,7 @@
       "constraints": {}
     },
     {
-      "name": "errmsg",
+      "name": "data.errmsg",
       "type": "string",
       "required": false,
       "description": "Upstream status message returned by the provider.",
@@ -707,7 +763,7 @@
       "constraints": {}
     },
     {
-      "name": "code",
+      "name": "data.code",
       "type": "string",
       "required": false,
       "description": "Provider-specific status code.",
@@ -715,7 +771,7 @@
       "constraints": {}
     },
     {
-      "name": "msg",
+      "name": "data.msg",
       "type": "string",
       "required": false,
       "description": "Provider-specific status message.",
@@ -723,7 +779,7 @@
       "constraints": {}
     },
     {
-      "name": "message",
+      "name": "data.message",
       "type": "string",
       "required": false,
       "description": "Provider-specific message.",
@@ -731,7 +787,7 @@
       "constraints": {}
     },
     {
-      "name": "sourceType",
+      "name": "data.sourceType",
       "type": "string",
       "required": false,
       "description": "Provider-specific source platform type.",
@@ -739,7 +795,7 @@
       "constraints": {}
     },
     {
-      "name": "sourceTool",
+      "name": "data.sourceTool",
       "type": "string",
       "required": false,
       "description": "Provider-specific source tool name.",
@@ -747,7 +803,7 @@
       "constraints": {}
     },
     {
-      "name": "costTime",
+      "name": "data.costTime",
       "type": "integer",
       "required": false,
       "description": "Execution time reported by the upstream provider.",
@@ -755,7 +811,7 @@
       "constraints": {}
     },
     {
-      "name": "page",
+      "name": "data.page",
       "type": "integer",
       "required": false,
       "description": "Current page returned by the upstream provider.",
@@ -763,7 +819,7 @@
       "constraints": {}
     },
     {
-      "name": "pageSize",
+      "name": "data.pageSize",
       "type": "integer",
       "required": false,
       "description": "Page size returned by the upstream provider.",
@@ -771,7 +827,7 @@
       "constraints": {}
     },
     {
-      "name": "pageItemCount",
+      "name": "data.pageItemCount",
       "type": "integer",
       "required": false,
       "description": "Item count on the current page returned by the upstream provider.",
@@ -779,7 +835,7 @@
       "constraints": {}
     },
     {
-      "name": "totalPage",
+      "name": "data.totalPage",
       "type": "integer",
       "required": false,
       "description": "Total page count returned by the upstream provider.",
@@ -787,64 +843,56 @@
       "constraints": {}
     },
     {
-      "name": "dataSnapshotMonth",
+      "name": "data.dataSnapshotMonth",
       "type": "string",
       "required": false,
       "description": "Data snapshot month returned by the upstream provider.",
       "example": null,
       "constraints": {}
+    },
+    {
+      "name": "data.products[].rawHtmlFile",
+      "type": "string",
+      "required": false,
+      "description": "Raw Amazon product-page HTML URL; optional and matched to the containing product ASIN.",
+      "example": "https://example.com/product.html",
+      "constraints": {}
     }
   ],
   "example": {
-    "total": 1,
-    "columns": [],
-    "costToken": 1,
-    "products": [
-      {
-        "asin": "B072MQ5BRX",
-        "price": 1,
-        "extractedPrice": 1,
-        "oldPrice": 1,
-        "extractedOldPrice": 1,
-        "rating": 1,
-        "ratings": 1,
-        "prime": false,
-        "asinUrl": "B072MQ5BRX",
-        "imageUrl": "https://example.com/image.jpg",
-        "productImageUrls": [],
-        "aboutItem": [],
-        "climatePledgeFriendly": false,
-        "snapEbtEligible": false,
-        "boughtLastMonthCount": 1,
-        "reviewsImages": [],
-        "pageFileUrl": "https://example.com/image.jpg",
-        "review": 1,
-        "fiveStar": 1,
-        "fourStar": 1,
-        "threeStar": 1,
-        "twoStar": 1,
-        "oneStar": 1,
-        "items": [],
-        "position": 1,
-        "image": "https://example.com/image.jpg",
-        "carouselImages": []
-      }
-    ],
-    "asin": "B072MQ5BRX",
-    "extractedPrice": 1,
-    "extractedPriceUnit": 1,
-    "delivery": [],
-    "position": 1,
-    "extractedOldPrice": 1,
-    "rating": 1,
-    "reviews": 1,
-    "prime": false,
-    "sponsored": false,
-    "climatePledgeFriendly": false,
-    "badges": [],
-    "authorImage": "https://example.com/image.jpg",
-    "date": "2026-01-01",
-    "verifiedPurchase": false
+    "data": {
+      "total": 1,
+      "columns": [],
+      "costToken": 1,
+      "products": [
+        {
+          "asin": "B072MQ5BRX",
+          "price": 1,
+          "extractedPrice": 1,
+          "oldPrice": 1,
+          "extractedOldPrice": 1,
+          "rating": 1,
+          "ratings": 1,
+          "prime": false,
+          "asinUrl": "https://www.amazon.com/dp/B072MQ5BRX",
+          "imageUrl": "https://example.com/image.jpg",
+          "productImageUrls": [],
+          "aboutItem": [],
+          "climatePledgeFriendly": false,
+          "snapEbtEligible": false,
+          "boughtLastMonthCount": 1,
+          "reviewsImages": [],
+          "pageFileUrl": "https://example.com/product.json",
+          "rawHtmlFile": "https://example.com/product.html"
+        }
+      ]
+    },
+    "code": 0,
+    "msg": null,
+    "ts": "0",
+    "time": "2026-01-01 00:00:00",
+    "cost": "-1",
+    "traceId": null
   },
   "jsonSchema": null
 }

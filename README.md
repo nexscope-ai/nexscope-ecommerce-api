@@ -44,7 +44,7 @@ curl --silent --show-error --fail-with-body --max-time 120 \
   -d '{"keyword":"phone case","page":1}'
 ```
 
-A successful HTTP response contains the API-specific payload directly. For Amazon Search, inspect fields such as `products` and `total`; do not assume an extra `data` or `result` wrapper. [Documented response fixture](examples/responses/amazon-search.json).
+Response shapes vary by API; follow its current official reference. For [Amazon Product Detail](docs/data/amazon-product-detail.md#response), check `code === 0` and read business fields from `data` (for example, `data.products` and `data.total`); `data` may be null. The Amazon Search fixture below retains the original snapshot shape and should be verified against its current reference before integration. [Documented response fixture](examples/responses/amazon-search.json).
 
 ### 3. Use JavaScript, Python, or reusable cURL commands
 
@@ -134,14 +134,14 @@ Parameter names, media requirements, conditional fields, and response shapes var
 
 | HTTP status | What to do |
 |---|---|
-| 200 | Parse the API-specific response; for asynchronous work, also inspect task status. |
+| 200 | Follow the current response contract; when `code` is present, only `0` indicates business success or acceptance. For asynchronous work, also inspect the documented task status. |
 | 400 | Check required fields, types, allowed values, conditional inputs, and media constraints. |
 | 401 | Check the bearer header and API key. |
 | 403 | Check account permissions, API access, and subscription requirements. |
 | 429 | Respect `Retry-After` when present and back off. |
 | 5xx | Inspect the service error. Before resubmitting a generation request, check whether a task was created. |
 
-The helpers surface non-2xx responses. The Python and JavaScript helpers also exit with an error for `FAILED` or `TIMEOUT` task states; cURL reports HTTP status only. Do not blindly retry POST requests: the documentation does not establish an idempotency guarantee.
+The helpers surface non-2xx responses and print the returned JSON. They do not currently reject nonzero platform `code` values; application code must perform that check when the endpoint uses the platform envelope. The Python and JavaScript helpers also exit with an error for `FAILED` or `TIMEOUT` task states; cURL reports HTTP status only. Do not blindly retry POST requests: the documentation does not establish an idempotency guarantee.
 
 ## Repository contents
 

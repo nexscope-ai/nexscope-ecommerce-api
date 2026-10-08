@@ -14,7 +14,7 @@ Retrieve detailed Amazon product information by ASIN, including title, images, b
 
 Headers: `Authorization: Bearer YOUR_API_KEY` and `Content-Type: application/json`.
 
-Execution: synchronous; inspect the direct API-specific response body.
+Execution: synchronous; check the platform response `code`, then read the business result from `data`.
 
 ## Request parameters
 
@@ -56,61 +56,70 @@ bash examples/curl/run.sh amazon-product-detail request.json
 
 ## Response
 
-The run endpoint returns its API-specific payload directly. Do not assume a `data` or `result` wrapper. For asynchronous APIs, the run response is a task receipt, not the final generated asset.
+The run endpoint returns a platform response envelope, as documented in the [official API reference](https://www.nexscope.ai/api-docs/amazon-product-detail?co-from=github-ecommerce-api). HTTP 200 alone does not indicate business success: check `code === 0` before reading `data`. A nonzero `code` is a platform error; inspect `msg` and `traceId` for diagnostics. `data` may be null, so check it before accessing `data.products` or `data.total`.
+
+| Field | Type | Meaning |
+|---|---|---|
+| `data` | object or null | Business result, including `products` and `total` when present. |
+| `code` | integer | `0` indicates success or acceptance; nonzero indicates a platform error. |
+| `msg` | string or null | Platform message. |
+| `ts` | string | Epoch milliseconds. |
+| `time` | string | Server local time in `yyyy-MM-dd HH:mm:ss` format. |
+| `cost` | string | Elapsed milliseconds, never credits; `-1` outside web requests. |
+| `traceId` | string or null | Trace identifier. |
+
+### Parse the response (JavaScript)
+
+```javascript
+const response = await fetch(endpoint, options);
+if (!response.ok) throw new Error(`HTTP ${response.status}`);
+const result = await response.json();
+if (result.code !== 0) {
+  throw new Error(`Nexscope error ${result.code}: ${result.msg ?? 'Unknown error'}`);
+}
+const products = result.data?.products ?? [];
+const total = result.data?.total ?? 0;
+```
+
+Here, `endpoint` is the URL above and `options` contains the POST method, authentication headers, and JSON request body. The repository CLI helpers print the full response envelope; application code should apply the checks above.
 
 ### Published response example
 
 ```json
 {
-  "total": 1,
-  "columns": [],
-  "costToken": 1,
-  "products": [
-    {
-      "asin": "B072MQ5BRX",
-      "price": 1,
-      "extractedPrice": 1,
-      "oldPrice": 1,
-      "extractedOldPrice": 1,
-      "rating": 1,
-      "ratings": 1,
-      "prime": false,
-      "asinUrl": "B072MQ5BRX",
-      "imageUrl": "https://example.com/image.jpg",
-      "productImageUrls": [],
-      "aboutItem": [],
-      "climatePledgeFriendly": false,
-      "snapEbtEligible": false,
-      "boughtLastMonthCount": 1,
-      "reviewsImages": [],
-      "pageFileUrl": "https://example.com/image.jpg",
-      "review": 1,
-      "fiveStar": 1,
-      "fourStar": 1,
-      "threeStar": 1,
-      "twoStar": 1,
-      "oneStar": 1,
-      "items": [],
-      "position": 1,
-      "image": "https://example.com/image.jpg",
-      "carouselImages": []
-    }
-  ],
-  "asin": "B072MQ5BRX",
-  "extractedPrice": 1,
-  "extractedPriceUnit": 1,
-  "delivery": [],
-  "position": 1,
-  "extractedOldPrice": 1,
-  "rating": 1,
-  "reviews": 1,
-  "prime": false,
-  "sponsored": false,
-  "climatePledgeFriendly": false,
-  "badges": [],
-  "authorImage": "https://example.com/image.jpg",
-  "date": "2026-01-01",
-  "verifiedPurchase": false
+  "data": {
+    "total": 1,
+    "columns": [],
+    "costToken": 1,
+    "products": [
+      {
+        "asin": "B072MQ5BRX",
+        "price": 1,
+        "extractedPrice": 1,
+        "oldPrice": 1,
+        "extractedOldPrice": 1,
+        "rating": 1,
+        "ratings": 1,
+        "prime": false,
+        "asinUrl": "https://www.amazon.com/dp/B072MQ5BRX",
+        "imageUrl": "https://example.com/image.jpg",
+        "productImageUrls": [],
+        "aboutItem": [],
+        "climatePledgeFriendly": false,
+        "snapEbtEligible": false,
+        "boughtLastMonthCount": 1,
+        "reviewsImages": [],
+        "pageFileUrl": "https://example.com/product.json",
+        "rawHtmlFile": "https://example.com/product.html"
+      }
+    ]
+  },
+  "code": 0,
+  "msg": null,
+  "ts": "0",
+  "time": "2026-01-01 00:00:00",
+  "cost": "-1",
+  "traceId": null
 }
 ```
 
@@ -127,4 +136,4 @@ Some source definitions use field descriptors rather than JSON Schema; these are
 
 Tool name: `nexscope_amazon_product_detail`. See [MCP integration](../calling-apis.md#mcp).
 
-Source retrieved: 2026-09-10. See [source and validation notes](../source-notes.md).
+Source retrieved: 2026-09-10. Response envelope and example reconciled with the official API page: 2026-10-08. See [source and validation notes](../source-notes.md).

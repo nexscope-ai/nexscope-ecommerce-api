@@ -14,7 +14,7 @@ Search TikTok e-commerce store leaderboards via Kalodata and query detailed info
 
 Headers: `Authorization: Bearer YOUR_API_KEY` and `Content-Type: application/json`.
 
-Execution: synchronous; inspect the direct API-specific response body.
+Execution: synchronous; inspect the response envelope and business fields documented in the current official API reference.
 
 ## Request parameters
 
@@ -58,7 +58,7 @@ bash examples/curl/run.sh tiktok-shop-analytics request.json
 
 ## Response
 
-The run endpoint returns its API-specific payload directly. Do not assume a `data` or `result` wrapper. For asynchronous APIs, the run response is a task receipt, not the final generated asset.
+Follow the response envelope and field paths in the current official API reference linked above. HTTP 200 alone does not establish business success; when the response includes `code`, check that it is `0` before reading `data`. For asynchronous APIs, distinguish the submission receipt from the final task result and follow the documented task polling contract. The response example below is a historical definition-service fixture; it has not been reconciled with the current HTTP response envelope and must not be used to infer top-level field paths.
 
 ### Published response example
 
