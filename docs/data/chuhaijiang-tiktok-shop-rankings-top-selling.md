@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Shop Top Selling API
+# Nexscope TikTok Shop Top Selling API
 
-Chuhaijiang TikTok Shop Top Selling with public market data.
+Nexscope TikTok Shop Top Selling with public market data.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-shop-rankings-top-selling?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Provider business records for Chuhaijiang TikTok Shop Top Selling. Known row fields: id, seller_id, shop_name, region, shop_rating, interval_sold_count, interval_gmv, interval_total_gmv. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
+Provider business records for Nexscope TikTok Shop Top Selling. Known row fields: id, seller_id, shop_name, region, shop_rating, interval_sold_count, interval_gmv, interval_total_gmv. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
 
 ## Endpoint
 

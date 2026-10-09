@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Product Most Promoted API
+# Nexscope TikTok Product Most Promoted API
 
-Chuhaijiang TikTok Product Most Promoted with public market data.
+Nexscope TikTok Product Most Promoted with public market data.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-product-rankings-most-promoted?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Provider business records for Chuhaijiang TikTok Product Most Promoted. Known row fields: id, product_id, product_name, shop_name, interval_gmv, interval_sold_count. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
+Provider business records for Nexscope TikTok Product Most Promoted. Known row fields: id, product_id, product_name, shop_name, interval_gmv, interval_sold_count. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
 
 ## Endpoint
 

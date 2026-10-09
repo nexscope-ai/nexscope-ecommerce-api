@@ -1,12 +1,12 @@
 # Amazon ASIN Traffic Summary API
 
-Use SIF (Search Intelligence Framework) data to analyze ASIN traffic source composition and exposure distribution, covering current period/previous period/newly entered/exited period comparisons.
+Use Nexscope (Search Intelligence Framework) data to analyze ASIN traffic source composition and exposure distribution, covering current period/previous period/newly entered/exited period comparisons.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/amazon-asin-traffic-summary?view=api&co-from=github-ecommerce-api)
 
 Category: Amazon Marketplace Intelligence · Data API
 
-Use SIF (Search Intelligence Framework) data to analyze ASIN traffic source composition and exposure distribution, covering current period/previous period/newly entered/exited period comparisons.
+Use Nexscope (Search Intelligence Framework) data to analyze ASIN traffic source composition and exposure distribution, covering current period/previous period/newly entered/exited period comparisons.
 
 ## Endpoint
 

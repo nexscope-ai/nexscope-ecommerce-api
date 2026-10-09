@@ -1,12 +1,12 @@
 # Ozon Brand Products API
 
-MPSTATS Ozon Russia brand drill-down product list. Returns all products under an Ozon brand display name (Russian/Latin) with complete metrics: sales, revenue, price, rating, stock, turnover, lost revenue, supporting multi-dimensional numeric filters, sorting, and currency conversion. Use for brand benchmarking, competitor analysis, brand product structure research, SKU-level bestseller analysis.
+Nexscope Ozon Russia brand drill-down product list. Returns all products under an Ozon brand display name (Russian/Latin) with complete metrics: sales, revenue, price, rating, stock, turnover, lost revenue, supporting multi-dimensional numeric filters, sorting, and currency conversion. Use for brand benchmarking, competitor analysis, brand product structure research, SKU-level bestseller analysis.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/ozon-brand-products?view=api&co-from=github-ecommerce-api)
 
 Category: Ozon Marketplace · Data API
 
-MPSTATS Ozon Russia brand drill-down product list. Returns all products under an Ozon brand display name (Russian/Latin) with complete metrics: sales, revenue, price, rating, stock, turnover, lost revenue, supporting multi-dimensional numeric filters, sorting, and currency conversion. Use for brand benchmarking, competitor analysis, brand product structure research, SKU-level bestseller analysis.
+Nexscope Ozon Russia brand drill-down product list. Returns all products under an Ozon brand display name (Russian/Latin) with complete metrics: sales, revenue, price, rating, stock, turnover, lost revenue, supporting multi-dimensional numeric filters, sorting, and currency conversion. Use for brand benchmarking, competitor analysis, brand product structure research, SKU-level bestseller analysis.
 
 ## Endpoint
 

@@ -1,12 +1,12 @@
 # Patent Abstract Image Data API
 
-Retrieves patent abstract images (drawings) from the Zhihuiya (PatSnap) patent database by patent ID or publication number.
+Retrieves patent abstract images (drawings) from the Nexscope (Nexscope) patent database by patent ID or publication number.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/patent-abstract-image-data?view=api&co-from=github-ecommerce-api)
 
 Category: Patent & IP Risk · Data API
 
-Retrieves patent abstract images (drawings) from the Zhihuiya (PatSnap) patent database by patent ID or publication number.
+Retrieves patent abstract images (drawings) from the Nexscope (Nexscope) patent database by patent ID or publication number.
 
 ## Endpoint
 

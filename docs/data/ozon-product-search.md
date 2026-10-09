@@ -1,12 +1,12 @@
 # Ozon Product Search API
 
-MPSTATS Ozon Russia product search and reverse lookup. Searches Ozon products in the MPSTATS database by Russian keyword or SKU, returning product ID, title, brand, and seller information. The entry point for Ozon product discovery and competitor analysis chains.
+Nexscope Ozon Russia product search and reverse lookup. Searches Ozon products in the Nexscope database by Russian keyword or SKU, returning product ID, title, brand, and seller information. The entry point for Ozon product discovery and competitor analysis chains.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/ozon-product-search?view=api&co-from=github-ecommerce-api)
 
 Category: Ozon Marketplace · Data API
 
-MPSTATS Ozon Russia product search and reverse lookup. Searches Ozon products in the MPSTATS database by Russian keyword or SKU, returning product ID, title, brand, and seller information. The entry point for Ozon product discovery and competitor analysis chains.
+Nexscope Ozon Russia product search and reverse lookup. Searches Ozon products in the Nexscope database by Russian keyword or SKU, returning product ID, title, brand, and seller information. The entry point for Ozon product discovery and competitor analysis chains.
 
 ## Endpoint
 

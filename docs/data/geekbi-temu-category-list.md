@@ -1,4 +1,4 @@
-# GeekBI Temu Category List API
+# Nexscope Temu Category List API
 
 List Temu category records.
 

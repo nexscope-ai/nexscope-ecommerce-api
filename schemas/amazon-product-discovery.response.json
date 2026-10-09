@@ -14,7 +14,7 @@
       "name": "sourceTool",
       "type": "string",
       "required": false,
-      "description": "Tool type: jiimore",
+      "description": "Tool type: Nexscope",
       "example": null,
       "constraints": {}
     },
@@ -238,7 +238,7 @@
       "name": "products[].sourceTool",
       "type": "string",
       "required": false,
-      "description": "Tool type: jiimore",
+      "description": "Tool type: Nexscope",
       "example": null,
       "constraints": {}
     },

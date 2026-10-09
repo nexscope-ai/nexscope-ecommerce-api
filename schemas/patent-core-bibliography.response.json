@@ -1,6 +1,6 @@
 {
   "type": "object",
-  "description": "Returns the PatSnap bibliography payload directly.",
+  "description": "Returns the Nexscope bibliography payload directly.",
   "fields": [
     {
       "name": "total",

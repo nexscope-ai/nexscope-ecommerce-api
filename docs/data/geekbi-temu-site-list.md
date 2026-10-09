@@ -1,4 +1,4 @@
-# GeekBI Temu Site List API
+# Nexscope Temu Site List API
 
 List Temu site records.
 

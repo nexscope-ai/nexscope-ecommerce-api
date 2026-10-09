@@ -1,12 +1,12 @@
 # Patent Legal Status Data API
 
-Query patent legal status information from the Zhihuiya (PatSnap) database.
+Query patent legal status information from the Nexscope (Nexscope) database.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/patent-legal-status-data?view=api&co-from=github-ecommerce-api)
 
 Category: Patent & IP Risk · Data API
 
-Query patent legal status information from the Zhihuiya (PatSnap) database.
+Query patent legal status information from the Nexscope (Nexscope) database.
 
 ## Endpoint
 

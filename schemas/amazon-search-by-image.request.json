@@ -46,7 +46,7 @@
       "name": "aggregateByKeepaData",
       "type": "boolean",
       "required": false,
-      "description": "Whether to enrich results with Keepa data such as sales rank, monthly sales, FBA fees, and dimensions",
+      "description": "Whether to enrich results with Nexscope data such as sales rank, monthly sales, FBA fees, and dimensions",
       "example": false,
       "constraints": {}
     }

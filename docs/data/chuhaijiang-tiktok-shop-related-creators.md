@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Shop Related Creators API
+# Nexscope TikTok Shop Related Creators API
 
-Chuhaijiang TikTok Shop Related Creators with public market data.
+Nexscope TikTok Shop Related Creators with public market data.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-shop-related-creators?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Provider business records for Chuhaijiang TikTok Shop Related Creators. Known row fields: id, tiktok_seller_detail_creator_user_id, tiktok_seller_detail_creator_unique_id, tiktok_seller_detail_creator_nickname, tiktok_seller_detail_creator_follower_count. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
+Provider business records for Nexscope TikTok Shop Related Creators. Known row fields: id, tiktok_seller_detail_creator_user_id, tiktok_seller_detail_creator_unique_id, tiktok_seller_detail_creator_nickname, tiktok_seller_detail_creator_follower_count. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
 
 ## Endpoint
 

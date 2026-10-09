@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Live Detail API
+# Nexscope TikTok Live Detail API
 
-Chuhaijiang TikTok Live Detail
+Nexscope TikTok Live Detail
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-live-detail?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Chuhaijiang TikTok Live Detail. Execute only this operation; no automatic retries or pagination. Preserve provider fields and metric units.
+Nexscope TikTok Live Detail. Execute only this operation; no automatic retries or pagination. Preserve provider fields and metric units.
 
 ## Endpoint
 

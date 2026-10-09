@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Creative Search API
+# Nexscope TikTok Creative Search API
 
-Chuhaijiang TikTok Creative Search
+Nexscope TikTok Creative Search
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-creative-search?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Chuhaijiang TikTok Creative Search. Execute only this operation; no automatic retries or pagination. Preserve provider fields and metric units.
+Nexscope TikTok Creative Search. Execute only this operation; no automatic retries or pagination. Preserve provider fields and metric units.
 
 ## Endpoint
 

@@ -25,7 +25,7 @@
             "array",
             "null"
           ],
-          "description": "Provider business records for Chuhaijiang TikTok Creator Agencies. Known row fields: avg_commission_rate, follower_count, has_email_address, has_phone, has_whats_app, id, partner_icon, partner_id, partner_name, partner_top3_category, partner_top3_category_list, total_30d_video_live_gmv, total_30d_video_live_sold_count, total_related_creator_count, total_related_product_count, total_related_seller_count, video_count. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.",
+          "description": "Provider business records for Nexscope TikTok Creator Agencies. Known row fields: avg_commission_rate, follower_count, has_email_address, has_phone, has_whats_app, id, partner_icon, partner_id, partner_name, partner_top3_category, partner_top3_category_list, total_30d_video_live_gmv, total_30d_video_live_sold_count, total_related_creator_count, total_related_product_count, total_related_seller_count, video_count. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.",
           "items": {
             "properties": {
               "avg_commission_rate": {

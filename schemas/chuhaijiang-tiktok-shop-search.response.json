@@ -25,7 +25,7 @@
             "array",
             "null"
           ],
-          "description": "Provider business records for Chuhaijiang TikTok Shop Search. Known row fields: id, shop_name, region, shop_rating, shop_product_count, shop_total_sold_count, shop_total_gmv, shop_sold_count_for_last_7_days, shop_gmv_for_last_7_days. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.",
+          "description": "Provider business records for Nexscope TikTok Shop Search. Known row fields: id, shop_name, region, shop_rating, shop_product_count, shop_total_sold_count, shop_total_gmv, shop_sold_count_for_last_7_days, shop_gmv_for_last_7_days. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.",
           "items": {
             "properties": {
               "id": {

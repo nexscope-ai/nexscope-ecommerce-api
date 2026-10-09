@@ -382,7 +382,7 @@
       "name": "columns[].sourceTool",
       "type": "string",
       "required": false,
-      "description": "Source tool (e.g., EchoTik-Seller Detail)",
+      "description": "Source tool (e.g., Nexscope-Seller Detail)",
       "example": null,
       "constraints": {}
     },

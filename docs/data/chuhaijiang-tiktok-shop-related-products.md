@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Shop Related Products API
+# Nexscope TikTok Shop Related Products API
 
-Chuhaijiang TikTok Shop Related Products with public market data.
+Nexscope TikTok Shop Related Products with public market data.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-shop-related-products?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Provider business records for Chuhaijiang TikTok Shop Related Products. Known row fields: id, tiktok_seller_product_product_id, tiktok_seller_product_product_name, tiktok_seller_product_product_gmv. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
+Provider business records for Nexscope TikTok Shop Related Products. Known row fields: id, tiktok_seller_product_product_id, tiktok_seller_product_product_name, tiktok_seller_product_product_gmv. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
 
 ## Endpoint
 

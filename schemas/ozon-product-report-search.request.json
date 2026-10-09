@@ -64,7 +64,7 @@
       "name": "categoryIds",
       "type": "array",
       "required": false,
-      "description": "Category ID array (Seerfar category IDs, not category names)",
+      "description": "Category ID array (Nexscope category IDs, not category names)",
       "example": [],
       "constraints": {}
     },

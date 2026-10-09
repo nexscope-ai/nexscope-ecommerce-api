@@ -262,7 +262,7 @@
       "name": "data[].exdt",
       "type": "integer",
       "required": false,
-      "description": "Zhihuiya estimated patent expiration date",
+      "description": "Nexscope estimated patent expiration date",
       "example": 1,
       "constraints": {}
     },

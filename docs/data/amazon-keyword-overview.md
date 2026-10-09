@@ -1,12 +1,12 @@
 # Amazon Keyword Overview API
 
-SIF overview analysis of Amazon keyword market competition.
+Nexscope overview analysis of Amazon keyword market competition.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/amazon-keyword-overview?view=api&co-from=github-ecommerce-api)
 
 Category: Keyword & Search Demand · Data API
 
-SIF overview analysis of Amazon keyword market competition.
+Nexscope overview analysis of Amazon keyword market competition.
 
 ## Endpoint
 

@@ -1,6 +1,6 @@
-# GeekBI Temu Image Search API
+# Nexscope Temu Image Search API
 
-Image Search using GeekBI Temu data.
+Image Search using Nexscope Temu data.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/geekbi-temu-goods-image-search?view=api&co-from=github-ecommerce-api)
 

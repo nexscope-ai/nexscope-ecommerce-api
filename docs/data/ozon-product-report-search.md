@@ -1,12 +1,12 @@
 # Ozon Product Report Search API
 
-Seerfar Ozon product report search: filters Ozon products by multi-dimensional metrics including sales, revenue, sales/revenue growth rate, cart conversion rate, order conversion rate, price, rating, review count, QA count, variant count, page views, gross margin, return/cancellation rate, ad spend share, weight/volume, listing time, brand, seller, fulfillment method, and labels. Returns each product's SKU, title, price (RUB), sales, revenue, lost revenue, conversion rate, rating, reviews, brand, seller, fulfillment method, listing days/months, and complete product report fields. Use for Ozon product selection, competitor product analysis, best-seller mining, price/conversion band filtering.
+Nexscope Ozon product report search: filters Ozon products by multi-dimensional metrics including sales, revenue, sales/revenue growth rate, cart conversion rate, order conversion rate, price, rating, review count, QA count, variant count, page views, gross margin, return/cancellation rate, ad spend share, weight/volume, listing time, brand, seller, fulfillment method, and labels. Returns each product's SKU, title, price (RUB), sales, revenue, lost revenue, conversion rate, rating, reviews, brand, seller, fulfillment method, listing days/months, and complete product report fields. Use for Ozon product selection, competitor product analysis, best-seller mining, price/conversion band filtering.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/ozon-product-report-search?view=api&co-from=github-ecommerce-api)
 
 Category: Ozon Marketplace · Data API
 
-Seerfar Ozon product report search: filters Ozon products by multi-dimensional metrics including sales, revenue, sales/revenue growth rate, cart conversion rate, order conversion rate, price, rating, review count, QA count, variant count, page views, gross margin, return/cancellation rate, ad spend share, weight/volume, listing time, brand, seller, fulfillment method, and labels. Returns each product's SKU, title, price (RUB), sales, revenue, lost revenue, conversion rate, rating, reviews, brand, seller, fulfillment method, listing days/months, and complete product report fields. Use for Ozon product selection, competitor product analysis, best-seller mining, price/conversion band filtering.
+Nexscope Ozon product report search: filters Ozon products by multi-dimensional metrics including sales, revenue, sales/revenue growth rate, cart conversion rate, order conversion rate, price, rating, review count, QA count, variant count, page views, gross margin, return/cancellation rate, ad spend share, weight/volume, listing time, brand, seller, fulfillment method, and labels. Returns each product's SKU, title, price (RUB), sales, revenue, lost revenue, conversion rate, rating, reviews, brand, seller, fulfillment method, listing days/months, and complete product report fields. Use for Ozon product selection, competitor product analysis, best-seller mining, price/conversion band filtering.
 
 ## Endpoint
 
@@ -26,7 +26,7 @@ Execution: synchronous; inspect the response envelope and business fields docume
 | `page.orders` | array | No | Sort rules, elements {field, direction}; direction takes DESC (descending) / ASC (ascending). field is a metric field in the response (e.g., sales, revenue, price, reviewRating, reviewCount, salesRate) | {} |
 | `skus` | array | No | SKU array (max 10), for precise lookup of specified products | {} |
 | `keywords` | array | No | Keyword array, filters by product title | {} |
-| `categoryIds` | array | No | Category ID array (Seerfar category IDs, not category names) | {} |
+| `categoryIds` | array | No | Category ID array (Nexscope category IDs, not category names) | {} |
 | `sellerName` | array | No | Seller name array | {} |
 | `brand` | object | No | Brand filter: {brandName: array<string>, type: integer}; type takes 0 include brand, 1 exclude brand, 2 unbranded | {} |
 | `fulfillment` | array | No | Fulfillment method array, fixed options: OZON, FBO, FBS, RFBS, FBP | {} |

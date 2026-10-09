@@ -1,12 +1,12 @@
 # Patent Description Data API
 
-Retrieve patent description (specification) data from the Zhihuiya patent database by patent ID or publication number.
+Retrieve patent description (specification) data from the Nexscope patent database by patent ID or publication number.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/patent-description-data?view=api&co-from=github-ecommerce-api)
 
 Category: Patent & IP Risk · Data API
 
-Retrieve patent description (specification) data from the Zhihuiya patent database by patent ID or publication number.
+Retrieve patent description (specification) data from the Nexscope patent database by patent ID or publication number.
 
 ## Endpoint
 

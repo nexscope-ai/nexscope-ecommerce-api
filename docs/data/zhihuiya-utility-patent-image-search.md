@@ -1,4 +1,4 @@
-# Zhihuiya Utility Patent Image Search API
+# Nexscope Utility Patent Image Search API
 
 Perform visual similarity search for utility model patents using an image URL, with filtering by country, legal status, date ranges, and assignee. Supports utility model patents only (type U) with shape-only or shape+pattern+color matching models.
 

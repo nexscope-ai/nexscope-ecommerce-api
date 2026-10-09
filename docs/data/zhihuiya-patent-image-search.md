@@ -1,4 +1,4 @@
-# Zhihuiya Patent Image Search API
+# Nexscope Patent Image Search API
 
 Perform visual similarity search for design patents using an image URL, with filtering by country, legal status, date ranges, Locarno classification, and assignee. Supports design patent types only (type D).
 

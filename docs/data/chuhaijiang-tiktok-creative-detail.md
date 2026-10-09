@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Creative Detail API
+# Nexscope TikTok Creative Detail API
 
-Chuhaijiang TikTok Creative Detail
+Nexscope TikTok Creative Detail
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-creative-detail?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Chuhaijiang TikTok Creative Detail. Execute only this operation; no automatic retries or pagination. Preserve provider fields and metric units.
+Nexscope TikTok Creative Detail. Execute only this operation; no automatic retries or pagination. Preserve provider fields and metric units.
 
 ## Endpoint
 

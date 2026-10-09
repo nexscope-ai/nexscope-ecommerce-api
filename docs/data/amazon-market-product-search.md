@@ -1,12 +1,12 @@
 # Amazon Market Product Search API
 
-Multi-dimensional Amazon product search and filtering based on Sorftime data, covering 14 marketplaces, with support for historical monthly snapshot lookback.
+Multi-dimensional Amazon product search and filtering based on Nexscope data, covering 14 marketplaces, with support for historical monthly snapshot lookback.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/amazon-market-product-search?view=api&co-from=github-ecommerce-api)
 
 Category: Amazon Marketplace Intelligence · Data API
 
-Multi-dimensional Amazon product search and filtering based on Sorftime data, covering 14 marketplaces, with support for historical monthly snapshot lookback.
+Multi-dimensional Amazon product search and filtering based on Nexscope data, covering 14 marketplaces, with support for historical monthly snapshot lookback.
 
 ## Endpoint
 

@@ -1,12 +1,12 @@
 # Amazon Product Database Search API
 
-Advanced Amazon product search and filtering powered by Keepa data, supporting multi-dimensional criteria including category, price, monthly sales, keywords, BSR rank, review count, rating, package dimensions, weight, fulfillment type, and more.
+Advanced Amazon product search and filtering powered by Nexscope data, supporting multi-dimensional criteria including category, price, monthly sales, keywords, BSR rank, review count, rating, package dimensions, weight, fulfillment type, and more.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/amazon-product-database-search?view=api&co-from=github-ecommerce-api)
 
 Category: Amazon Marketplace Intelligence · Data API
 
-Advanced Amazon product search and filtering powered by Keepa data, supporting multi-dimensional criteria including category, price, monthly sales, keywords, BSR rank, review count, rating, package dimensions, weight, fulfillment type, and more.
+Advanced Amazon product search and filtering powered by Nexscope data, supporting multi-dimensional criteria including category, price, monthly sales, keywords, BSR rank, review count, rating, package dimensions, weight, fulfillment type, and more.
 
 ## Endpoint
 

@@ -1,12 +1,12 @@
 # Patent Claims Translation API
 
-Retrieves translated patent claims from the Zhihuiya (PatSnap) patent database.
+Retrieves translated patent claims from the Nexscope (Nexscope) patent database.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/patent-claims-translation?view=api&co-from=github-ecommerce-api)
 
 Category: Patent & IP Risk · Data API
 
-Retrieves translated patent claims from the Zhihuiya (PatSnap) patent database.
+Retrieves translated patent claims from the Nexscope (Nexscope) patent database.
 
 ## Endpoint
 

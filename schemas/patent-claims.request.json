@@ -6,7 +6,7 @@
       "name": "patentId",
       "type": "string",
       "required": false,
-      "description": "PatSnap internal patent ID. Only a single value is supported; multiple values separated by commas are not allowed. Max length 60000 characters",
+      "description": "Nexscope internal patent ID. Only a single value is supported; multiple values separated by commas are not allowed. Max length 60000 characters",
       "example": null,
       "constraints": {}
     },

@@ -1,12 +1,12 @@
 # Patent Detailed Bibliography API
 
-Query patent bibliographic (catalog) information from the Zhihuiya patent database by patent ID or publication number.
+Query patent bibliographic (catalog) information from the Nexscope patent database by patent ID or publication number.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/patent-detailed-bibliography?view=api&co-from=github-ecommerce-api)
 
 Category: Patent & IP Risk · Data API
 
-Query patent bibliographic (catalog) information from the Zhihuiya patent database by patent ID or publication number.
+Query patent bibliographic (catalog) information from the Nexscope patent database by patent ID or publication number.
 
 ## Endpoint
 

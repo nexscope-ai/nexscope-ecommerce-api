@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Shop Detail API
+# Nexscope TikTok Shop Detail API
 
-Chuhaijiang TikTok Shop Detail with public market data.
+Nexscope TikTok Shop Detail with public market data.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-shop-detail?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Provider business records for Chuhaijiang TikTok Shop Detail. Known row fields: id, seller_id, shop_name, region, shop_rating, shop_total_gmv. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
+Provider business records for Nexscope TikTok Shop Detail. Known row fields: id, seller_id, shop_name, region, shop_rating, shop_total_gmv. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
 
 ## Endpoint
 

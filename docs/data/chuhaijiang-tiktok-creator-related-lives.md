@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Creator Related Lives API
+# Nexscope TikTok Creator Related Lives API
 
-Chuhaijiang TikTok Creator Related Lives with public market data.
+Nexscope TikTok Creator Related Lives with public market data.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-creator-related-lives?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Provider business records for Chuhaijiang TikTok Creator Related Lives. Known row fields: id, tiktok_creator_detail_live_country_code, tiktok_creator_detail_live_cover, tiktok_creator_detail_live_end_time, tiktok_creator_detail_live_gmv, tiktok_creator_detail_live_gpm, tiktok_creator_detail_live_max_user_count, tiktok_creator_detail_live_most_product_category_label, tiktok_creator_detail_live_new_follow_count, tiktok_creator_detail_live_opm, tiktok_creator_detail_live_product_count, tiktok_creator_detail_live_room_id, tiktok_creator_detail_live_room_link, tiktok_creator_detail_live_start_time, tiktok_creator_detail_live_title, tiktok_creator_detail_live_total_sold_count, tiktok_creator_detail_live_total_user, tiktok_creator_detail_live_user_follower_count. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
+Provider business records for Nexscope TikTok Creator Related Lives. Known row fields: id, tiktok_creator_detail_live_country_code, tiktok_creator_detail_live_cover, tiktok_creator_detail_live_end_time, tiktok_creator_detail_live_gmv, tiktok_creator_detail_live_gpm, tiktok_creator_detail_live_max_user_count, tiktok_creator_detail_live_most_product_category_label, tiktok_creator_detail_live_new_follow_count, tiktok_creator_detail_live_opm, tiktok_creator_detail_live_product_count, tiktok_creator_detail_live_room_id, tiktok_creator_detail_live_room_link, tiktok_creator_detail_live_start_time, tiktok_creator_detail_live_title, tiktok_creator_detail_live_total_sold_count, tiktok_creator_detail_live_total_user, tiktok_creator_detail_live_user_follower_count. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
 
 ## Endpoint
 

@@ -1,6 +1,6 @@
-# GeekBI Temu Product Search API
+# Nexscope Temu Product Search API
 
-Product Search using GeekBI Temu data.
+Product Search using Nexscope Temu data.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/geekbi-temu-goods-search?view=api&co-from=github-ecommerce-api)
 

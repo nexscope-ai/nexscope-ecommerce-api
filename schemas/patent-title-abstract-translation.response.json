@@ -22,7 +22,7 @@
       "name": "data[].patentId",
       "type": "string",
       "required": false,
-      "description": "Zhihuiya internal patent ID",
+      "description": "Nexscope internal patent ID",
       "example": "example-id",
       "constraints": {}
     },

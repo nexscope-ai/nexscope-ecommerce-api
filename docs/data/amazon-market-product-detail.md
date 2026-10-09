@@ -1,12 +1,12 @@
 # Amazon Market Product Detail API
 
-Query Amazon product detail and historical trends by ASIN using Sorftime data, covering 14 marketplaces.
+Query Amazon product detail and historical trends by ASIN using Nexscope data, covering 14 marketplaces.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/amazon-market-product-detail?view=api&co-from=github-ecommerce-api)
 
 Category: Amazon Marketplace Intelligence · Data API
 
-Query Amazon product detail and historical trends by ASIN using Sorftime data, covering 14 marketplaces.
+Query Amazon product detail and historical trends by ASIN using Nexscope data, covering 14 marketplaces.
 
 ## Endpoint
 

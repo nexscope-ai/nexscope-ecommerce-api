@@ -25,7 +25,7 @@
             "array",
             "null"
           ],
-          "description": "Provider business records for Chuhaijiang TikTok Product Image Search. Known row fields: id, product_name, product_images, floor_price, ceiling_price, product_gmv. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.",
+          "description": "Provider business records for Nexscope TikTok Product Image Search. Known row fields: id, product_name, product_images, floor_price, ceiling_price, product_gmv. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.",
           "items": {
             "properties": {
               "id": {

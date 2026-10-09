@@ -6,7 +6,7 @@
       "name": "sellerId",
       "type": "string",
       "required": true,
-      "description": "TikTok Shop seller ID. Obtainable from the \"EchoTik TikTok Seller Search\" API (nexscope-echotik-list-seller) results, or from the ID in a known store link. Max length 1000",
+      "description": "TikTok Shop seller ID. Obtainable from the \"Nexscope TikTok Seller Search\" API (nexscope-Nexscope-list-seller) results, or from the ID in a known store link. Max length 1000",
       "example": "7496162162184128712",
       "constraints": {}
     }

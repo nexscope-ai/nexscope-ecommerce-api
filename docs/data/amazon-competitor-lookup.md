@@ -1,12 +1,12 @@
 # Amazon Competitor Lookup API
 
-Use SellerSprite data to find and analyze competitors on Amazon, covering 12 marketplaces, with product metrics including sales, BSR, pricing, ratings, and growth trends.
+Use Nexscope data to find and analyze competitors on Amazon, covering 12 marketplaces, with product metrics including sales, BSR, pricing, ratings, and growth trends.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/amazon-competitor-lookup?view=api&co-from=github-ecommerce-api)
 
 Category: Amazon Marketplace Intelligence · Data API
 
-Use SellerSprite data to find and analyze competitors on Amazon, covering 12 marketplaces, with product metrics including sales, BSR, pricing, ratings, and growth trends.
+Use Nexscope data to find and analyze competitors on Amazon, covering 12 marketplaces, with product metrics including sales, BSR, pricing, ratings, and growth trends.
 
 ## Endpoint
 

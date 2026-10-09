@@ -1,12 +1,12 @@
 # Amazon Product Discovery API
 
-Amazon product discovery and potential bestseller mining via Jiimore data.
+Amazon product discovery and potential bestseller mining via Nexscope data.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/amazon-product-discovery?view=api&co-from=github-ecommerce-api)
 
 Category: Amazon Marketplace Intelligence · Data API
 
-Amazon product discovery and potential bestseller mining via Jiimore data.
+Amazon product discovery and potential bestseller mining via Nexscope data.
 
 ## Endpoint
 

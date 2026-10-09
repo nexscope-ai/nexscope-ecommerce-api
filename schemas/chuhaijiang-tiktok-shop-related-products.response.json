@@ -25,7 +25,7 @@
             "array",
             "null"
           ],
-          "description": "Provider business records for Chuhaijiang TikTok Shop Related Products. Known row fields: id, tiktok_seller_product_product_id, tiktok_seller_product_product_name, tiktok_seller_product_product_gmv. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.",
+          "description": "Provider business records for Nexscope TikTok Shop Related Products. Known row fields: id, tiktok_seller_product_product_id, tiktok_seller_product_product_name, tiktok_seller_product_product_gmv. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.",
           "items": {
             "properties": {
               "id": {

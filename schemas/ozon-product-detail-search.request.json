@@ -6,7 +6,7 @@
       "name": "sku",
       "type": "string",
       "required": true,
-      "description": "Product SKU (Ozon SKU, e.g., 175924376). This is the sku returned by other Seerfar Ozon tools",
+      "description": "Product SKU (Ozon SKU, e.g., 175924376). This is the sku returned by other Nexscope Ozon tools",
       "example": "1664362124",
       "constraints": {}
     },

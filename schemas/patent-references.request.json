@@ -6,7 +6,7 @@
       "name": "patentId",
       "type": "string",
       "required": false,
-      "description": "One or up to 100 comma-separated PatSnap patent IDs. Takes precedence when both identifiers are provided.",
+      "description": "One or up to 100 comma-separated Nexscope patent IDs. Takes precedence when both identifiers are provided.",
       "example": "patent-id",
       "constraints": {}
     },

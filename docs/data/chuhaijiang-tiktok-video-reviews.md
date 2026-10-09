@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Video Reviews API
+# Nexscope TikTok Video Reviews API
 
-Chuhaijiang TikTok Video Reviews
+Nexscope TikTok Video Reviews
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-video-reviews?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Chuhaijiang TikTok Video Reviews. Execute only this operation; no automatic retries or pagination. Preserve provider fields and metric units.
+Nexscope TikTok Video Reviews. Execute only this operation; no automatic retries or pagination. Preserve provider fields and metric units.
 
 ## Endpoint
 

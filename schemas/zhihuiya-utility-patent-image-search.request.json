@@ -1,6 +1,6 @@
 {
   "type": "object",
-  "description": "Request parameters documented by ecommerce.zhihuiya-utility-patent-image-search.",
+  "description": "Request parameters documented by ecommerce.Nexscope-utility-patent-image-search.",
   "fields": [
     {
       "name": "url",

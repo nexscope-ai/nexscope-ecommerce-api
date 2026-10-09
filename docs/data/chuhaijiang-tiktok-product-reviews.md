@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Product Reviews API
+# Nexscope TikTok Product Reviews API
 
-Chuhaijiang TikTok Product Reviews with public market data.
+Nexscope TikTok Product Reviews with public market data.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-product-reviews?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Provider business records for Chuhaijiang TikTok Product Reviews. Known row fields: review_id. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
+Provider business records for Nexscope TikTok Product Reviews. Known row fields: review_id. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
 
 ## Endpoint
 

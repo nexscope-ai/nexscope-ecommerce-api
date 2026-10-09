@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Product Related Videos API
+# Nexscope TikTok Product Related Videos API
 
-Chuhaijiang TikTok Product Related Videos with public market data.
+Nexscope TikTok Product Related Videos with public market data.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-product-related-videos?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Provider business records for Chuhaijiang TikTok Product Related Videos. Known row fields: video_id. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
+Provider business records for Nexscope TikTok Product Related Videos. Known row fields: video_id. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
 
 ## Endpoint
 

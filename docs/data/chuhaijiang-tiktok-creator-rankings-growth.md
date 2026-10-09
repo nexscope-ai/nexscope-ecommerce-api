@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Creator Growth API
+# Nexscope TikTok Creator Growth API
 
-Chuhaijiang TikTok Creator Growth with public market data.
+Nexscope TikTok Creator Growth with public market data.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-creator-rankings-growth?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Provider business records for Chuhaijiang TikTok Creator Growth. Known row fields: bio_email, category_label, channel_id, creator_oecuid, follower_count, handle, id, interval_new_follower, nickname, tioktok_creator_growth_interval_new_follower_ratio, uid, unique_id, user_avatar, user_sell_product_l1_category, video_count. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
+Provider business records for Nexscope TikTok Creator Growth. Known row fields: bio_email, category_label, channel_id, creator_oecuid, follower_count, handle, id, interval_new_follower, nickname, tioktok_creator_growth_interval_new_follower_ratio, uid, unique_id, user_avatar, user_sell_product_l1_category, video_count. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
 
 ## Endpoint
 

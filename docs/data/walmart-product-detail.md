@@ -1,12 +1,12 @@
 # Walmart Product Detail API
 
-Query Walmart product details via WallySmarter, including pricing history and sales trends.
+Query Walmart product details via Nexscope, including pricing history and sales trends.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/walmart-product-detail?view=api&co-from=github-ecommerce-api)
 
 Category: Walmart Marketplace Intelligence · Data API
 
-Query Walmart product details via WallySmarter, including pricing history and sales trends.
+Query Walmart product details via Nexscope, including pricing history and sales trends.
 
 ## Endpoint
 

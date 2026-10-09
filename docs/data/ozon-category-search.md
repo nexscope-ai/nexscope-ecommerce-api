@@ -1,12 +1,12 @@
 # Ozon Category Search API
 
-Seerfar Ozon category product search: fetches the product list for a given Ozon category ID, returning category-level aggregates (total sales, total revenue, average price, average rating, seasonality) and per-product sales, price, rating, review count, brand, seller, and fulfillment method. Use for category selection analysis, category bestseller mining, category capacity and price band analysis, seasonality assessment.
+Nexscope Ozon category product search: fetches the product list for a given Ozon category ID, returning category-level aggregates (total sales, total revenue, average price, average rating, seasonality) and per-product sales, price, rating, review count, brand, seller, and fulfillment method. Use for category selection analysis, category bestseller mining, category capacity and price band analysis, seasonality assessment.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/ozon-category-search?view=api&co-from=github-ecommerce-api)
 
 Category: Ozon Marketplace · Data API
 
-Seerfar Ozon category product search: fetches the product list for a given Ozon category ID, returning category-level aggregates (total sales, total revenue, average price, average rating, seasonality) and per-product sales, price, rating, review count, brand, seller, and fulfillment method. Use for category selection analysis, category bestseller mining, category capacity and price band analysis, seasonality assessment.
+Nexscope Ozon category product search: fetches the product list for a given Ozon category ID, returning category-level aggregates (total sales, total revenue, average price, average rating, seasonality) and per-product sales, price, rating, review count, brand, seller, and fulfillment method. Use for category selection analysis, category bestseller mining, category capacity and price band analysis, seasonality assessment.
 
 ## Endpoint
 
@@ -20,7 +20,7 @@ Execution: synchronous; inspect the response envelope and business fields docume
 
 | Name | Type | Required | Description | Constraints |
 |---|---|---|---|---|
-| `categoryId` | string | Yes | Ozon category ID, obtained from Ozon category documentation or other Seerfar Ozon tools. Format like 15621032_15621049_115951147 (multi-level categories joined by _) | {} |
+| `categoryId` | string | Yes | Ozon category ID, obtained from Ozon category documentation or other Nexscope Ozon tools. Format like 15621032_15621049_115951147 (multi-level categories joined by _) | {} |
 | `page` | object | Yes | Pagination & sorting: {page, pageSize, orders[]} | {} |
 | `page.page` | integer | No | Page number, starting from 1, default 1 | {} |
 | `page.pageSize` | integer | No | Items per page, default 20, maximum 20 (exceeding returns errcode 1002) | {} |

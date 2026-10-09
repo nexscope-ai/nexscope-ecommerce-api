@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Live Related Products API
+# Nexscope TikTok Live Related Products API
 
-Chuhaijiang TikTok Live Related Products
+Nexscope TikTok Live Related Products
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-live-related-products?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Chuhaijiang TikTok Live Related Products. Execute only this operation; no automatic retries or pagination. Preserve provider fields and metric units.
+Nexscope TikTok Live Related Products. Execute only this operation; no automatic retries or pagination. Preserve provider fields and metric units.
 
 ## Endpoint
 

@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Creator Search API
+# Nexscope TikTok Creator Search API
 
-Chuhaijiang TikTok Creator Search with public market data.
+Nexscope TikTok Creator Search with public market data.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-creator-search?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Provider business records for Chuhaijiang TikTok Creator Search. Known row fields: account_type, author_avg_engagement_rate, bio_email, category_label, country_code, ecom_video_avg_play_count, facebook_url, follower_count, follower_count_growth_for_last_7_days, has_live_product, has_shop_product, has_video_product, id, ins_id, live_30d_gmv, live_30d_gpm, nickname, product_category_label_list, total_favorited, total_video_live_30d_gmv, unique_id, user_avatar, user_sell_product_l3_category, video_30d_gmv, video_30d_gpm, video_avg_like_count, video_avg_play_count, video_total_like_count_to_follower_count_ratio, youtube_channel_id. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
+Provider business records for Nexscope TikTok Creator Search. Known row fields: account_type, author_avg_engagement_rate, bio_email, category_label, country_code, ecom_video_avg_play_count, facebook_url, follower_count, follower_count_growth_for_last_7_days, has_live_product, has_shop_product, has_video_product, id, ins_id, live_30d_gmv, live_30d_gpm, nickname, product_category_label_list, total_favorited, total_video_live_30d_gmv, unique_id, user_avatar, user_sell_product_l3_category, video_30d_gmv, video_30d_gpm, video_avg_like_count, video_avg_play_count, video_total_like_count_to_follower_count_ratio, youtube_channel_id. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
 
 ## Endpoint
 

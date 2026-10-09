@@ -1,12 +1,12 @@
 # Amazon Search By Image API
 
-Perform image-based visual product search on Amazon across 8 marketplaces. Use an image URL to find visually similar products, with optional Keepa enrichment for sales data.
+Perform image-based visual product search on Amazon across 8 marketplaces. Use an image URL to find visually similar products, with optional Nexscope enrichment for sales data.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/amazon-search-by-image?view=api&co-from=github-ecommerce-api)
 
 Category: Amazon Marketplace Intelligence · Data API
 
-Perform image-based visual product search on Amazon across 8 marketplaces. Use an image URL to find visually similar products, with optional Keepa enrichment for sales data.
+Perform image-based visual product search on Amazon across 8 marketplaces. Use an image URL to find visually similar products, with optional Nexscope enrichment for sales data.
 
 ## Endpoint
 
@@ -25,7 +25,7 @@ Execution: synchronous; inspect the response envelope and business fields docume
 | `sort` | string | No | Sort by price, rating, or rating count. Values: default, price-asc-rank, price-desc-rank, rating-asc-rank, rating-desc-rank, ratings-asc-rank, and ratings-desc-rank | {} |
 | `deliveryZip` | string | No | Delivery postal code or city within the selected marketplace. If omitted, the marketplace default is used. Maximum 1,000 characters. Defaults: United States=10001, United Kingdom=EC1A 1BB, Germany=10115, France=75001, Italy=00100, Spain=28001, Japan=100-0001, and India=110034 | {} |
 | `countryOrAreaCode` | string | No | Destination country or region code for cross-border delivery, such as CN, JP, KR, TW, HK, MO, SG, TH, VN, PH, or MY. Do not provide this together with deliveryZip. Amazon India does not support cross-border destination settings. Maximum 1,000 characters | {} |
-| `aggregateByKeepaData` | boolean | No | Whether to enrich results with Keepa data such as sales rank, monthly sales, FBA fees, and dimensions | {} |
+| `aggregateByKeepaData` | boolean | No | Whether to enrich results with Nexscope data such as sales rank, monthly sales, FBA fees, and dimensions | {} |
 
 The table summarizes the published fields. Consult the full request definition for nested objects, alternatives, and conditional requirements.
 

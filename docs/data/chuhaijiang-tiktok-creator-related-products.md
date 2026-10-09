@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Creator Related Products API
+# Nexscope TikTok Creator Related Products API
 
-Chuhaijiang TikTok Creator Related Products with public market data.
+Nexscope TikTok Creator Related Products with public market data.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-creator-related-products?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Provider business records for Chuhaijiang TikTok Creator Related Products. Known row fields: id, tiktok_creator_detail_by_live, tiktok_creator_detail_by_shop, tiktok_creator_detail_by_video, tiktok_creator_detail_live_30d_gmv, tiktok_creator_detail_live_30d_sold_count, tiktok_creator_detail_product_country_code, tiktok_creator_detail_product_id, tiktok_creator_detail_product_launch_time, tiktok_creator_detail_total_video_live_30d_gmv, tiktok_creator_detail_total_video_live_30d_sold_count, tiktok_creator_detail_user_id, tiktok_creator_detail_video_30d_gmv, tiktok_creator_detail_video_30d_sold_count, tiktok_product_detail_ceiling_price, tiktok_product_detail_commission_rate, tiktok_product_detail_floor_price, tiktok_product_detail_l1_category, tiktok_product_detail_l2_category, tiktok_product_detail_l3_category, tiktok_product_detail_product_images, tiktok_product_detail_product_name, tiktok_product_detail_product_rating, tiktok_product_detail_product_sku_props, tiktok_product_detail_product_skus, tiktok_product_detail_product_status, tiktok_product_detail_region. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
+Provider business records for Nexscope TikTok Creator Related Products. Known row fields: id, tiktok_creator_detail_by_live, tiktok_creator_detail_by_shop, tiktok_creator_detail_by_video, tiktok_creator_detail_live_30d_gmv, tiktok_creator_detail_live_30d_sold_count, tiktok_creator_detail_product_country_code, tiktok_creator_detail_product_id, tiktok_creator_detail_product_launch_time, tiktok_creator_detail_total_video_live_30d_gmv, tiktok_creator_detail_total_video_live_30d_sold_count, tiktok_creator_detail_user_id, tiktok_creator_detail_video_30d_gmv, tiktok_creator_detail_video_30d_sold_count, tiktok_product_detail_ceiling_price, tiktok_product_detail_commission_rate, tiktok_product_detail_floor_price, tiktok_product_detail_l1_category, tiktok_product_detail_l2_category, tiktok_product_detail_l3_category, tiktok_product_detail_product_images, tiktok_product_detail_product_name, tiktok_product_detail_product_rating, tiktok_product_detail_product_sku_props, tiktok_product_detail_product_skus, tiktok_product_detail_product_status, tiktok_product_detail_region. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
 
 ## Endpoint
 

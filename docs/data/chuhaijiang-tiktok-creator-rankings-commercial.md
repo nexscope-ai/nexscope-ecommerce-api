@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Creator Commercial API
+# Nexscope TikTok Creator Commercial API
 
-Chuhaijiang TikTok Creator Commercial with public market data.
+Nexscope TikTok Creator Commercial with public market data.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-creator-rankings-commercial?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Provider business records for Chuhaijiang TikTok Creator Commercial. Known row fields: bio_email, category_label, country_code, creator_oecuid, follower_count, handle, id, interval_ecom_video_play_count_growth, interval_live_user, interval_new_follower, l1_category_aggregated_live_gmv, l1_category_aggregated_total_gmv, l1_category_aggregated_video_gmv, nickname, product_count, titkok_creator_commercial_interval_live_gmv, titkok_creator_commercial_interval_total_video_live_gmv, titkok_creator_commercial_interval_video_gmv, uid, unique_id, user_avatar, user_sell_product_l1_category. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
+Provider business records for Nexscope TikTok Creator Commercial. Known row fields: bio_email, category_label, country_code, creator_oecuid, follower_count, handle, id, interval_ecom_video_play_count_growth, interval_live_user, interval_new_follower, l1_category_aggregated_live_gmv, l1_category_aggregated_total_gmv, l1_category_aggregated_video_gmv, nickname, product_count, titkok_creator_commercial_interval_live_gmv, titkok_creator_commercial_interval_total_video_live_gmv, titkok_creator_commercial_interval_video_gmv, uid, unique_id, user_avatar, user_sell_product_l1_category. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
 
 ## Endpoint
 

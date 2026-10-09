@@ -1,6 +1,6 @@
-# GeekBI Temu Keyword Research API
+# Nexscope Temu Keyword Research API
 
-Keyword Research using GeekBI Temu data.
+Keyword Research using Nexscope Temu data.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/geekbi-temu-keyword-search?view=api&co-from=github-ecommerce-api)
 

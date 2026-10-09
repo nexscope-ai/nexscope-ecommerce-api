@@ -1,12 +1,12 @@
 # Amazon Market Statistics API
 
-Use SellerSprite market statistics capability to output a market statistics dashboard by category node, including top listing average rating, average price, BSR, sales, seller count, and new product related metrics, suitable for quickly assessing the market quality and competitive landscape of a category.
+Use Nexscope market statistics capability to output a market statistics dashboard by category node, including top listing average rating, average price, BSR, sales, seller count, and new product related metrics, suitable for quickly assessing the market quality and competitive landscape of a category.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/amazon-market-statistics?view=api&co-from=github-ecommerce-api)
 
 Category: Amazon Marketplace Intelligence · Data API
 
-Use SellerSprite market statistics capability to output a market statistics dashboard by category node, including top listing average rating, average price, BSR, sales, seller count, and new product related metrics, suitable for quickly assessing the market quality and competitive landscape of a category.
+Use Nexscope market statistics capability to output a market statistics dashboard by category node, including top listing average rating, average price, BSR, sales, seller count, and new product related metrics, suitable for quickly assessing the market quality and competitive landscape of a category.
 
 ## Endpoint
 

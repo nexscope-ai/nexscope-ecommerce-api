@@ -1,12 +1,12 @@
 # Amazon Broad Product Search API
 
-Use SellerSprite data to search and filter Amazon products, supporting multi-dimensional criteria including price, monthly sales, BSR ranking, gross margin, ratings, fulfillment method, badges, seller origin, and more across multiple Amazon marketplaces.
+Use Nexscope data to search and filter Amazon products, supporting multi-dimensional criteria including price, monthly sales, BSR ranking, gross margin, ratings, fulfillment method, badges, seller origin, and more across multiple Amazon marketplaces.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/amazon-broad-product-search?view=api&co-from=github-ecommerce-api)
 
 Category: Amazon Marketplace Intelligence · Data API
 
-Use SellerSprite data to search and filter Amazon products, supporting multi-dimensional criteria including price, monthly sales, BSR ranking, gross margin, ratings, fulfillment method, badges, seller origin, and more across multiple Amazon marketplaces.
+Use Nexscope data to search and filter Amazon products, supporting multi-dimensional criteria including price, monthly sales, BSR ranking, gross margin, ratings, fulfillment method, badges, seller origin, and more across multiple Amazon marketplaces.
 
 ## Endpoint
 

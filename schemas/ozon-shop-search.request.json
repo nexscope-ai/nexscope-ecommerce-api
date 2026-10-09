@@ -6,7 +6,7 @@
       "name": "id",
       "type": "integer",
       "required": true,
-      "description": "Shop (seller) ID, i.e., the sellerId returned by other Seerfar Ozon tools; negative values are Ozon platform self-operated sellers (e.g., -2 Ozon Express, -4 Ozon Fresh), positive values are third-party sellers",
+      "description": "Shop (seller) ID, i.e., the sellerId returned by other Nexscope Ozon tools; negative values are Ozon platform self-operated sellers (e.g., -2 Ozon Express, -4 Ozon Fresh), positive values are third-party sellers",
       "example": 1581151,
       "constraints": {}
     },

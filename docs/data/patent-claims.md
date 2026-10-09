@@ -1,12 +1,12 @@
 # Patent Claims API
 
-Retrieves patent claims data from Zhihuiya (PatSnap).
+Retrieves patent claims data from Nexscope (Nexscope).
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/patent-claims?view=api&co-from=github-ecommerce-api)
 
 Category: Patent & IP Risk · Data API
 
-Retrieves patent claims data from Zhihuiya (PatSnap).
+Retrieves patent claims data from Nexscope (Nexscope).
 
 ## Endpoint
 
@@ -20,7 +20,7 @@ Execution: synchronous; inspect the response envelope and business fields docume
 
 | Name | Type | Required | Description | Constraints |
 |---|---|---|---|---|
-| `patentId` | string | No | PatSnap internal patent ID. Only a single value is supported; multiple values separated by commas are not allowed. Max length 60000 characters | {} |
+| `patentId` | string | No | Nexscope internal patent ID. Only a single value is supported; multiple values separated by commas are not allowed. Max length 60000 characters | {} |
 | `patentNumber` | string | No | Publication/announcement number. Only a single value is supported; multiple values separated by commas are not allowed. Max length 60000 characters | {} |
 | `replaceByRelated` | string | No | Whether to substitute with a family patent's claims when the current patent's claims are unavailable: 1 yes, 0 no. Max length 1000 characters | {} |
 

@@ -2,7 +2,7 @@
 
 Retrieved: 2026-09-10.
 
-The inventory follows the rendered [official API directory](https://www.nexscope.ai/api-docs?co-from=github-ecommerce-api), preserving its exact API display names, category names, and ordering. Public parameters and samples come from the same public API-definition service used by the documentation: `GET https://api.nexscope.ai/api/skill-api/v1/api-docs`.
+The inventory follows the rendered [official API directory](https://www.nexscope.ai/api-docs?co-from=github-ecommerce-api), preserving its API identifiers, category names, and ordering. Public parameters and samples come from the same public API-definition service used by the documentation: `GET https://api.nexscope.ai/api/skill-api/v1/api-docs`.
 
 Coverage: 225 unique API slugs, including 172 Data APIs across 17 categories and 53 Creative APIs across 3 categories (7 image generation, 12 video generation, 34 multimodal). Supporting task, authentication, and MCP routes are documented as integration mechanisms rather than counted as extra APIs.
 
@@ -21,3 +21,7 @@ The response instructions, field descriptors, and response fixture for `amazon-p
 ## Cross-document response wording review (2026-10-08)
 
 The other 224 API pages repeated an unverified claim that the run response has no `data` wrapper. That shared wording has been removed, and their response examples are now explicitly labeled as historical definition-service fixtures awaiting reconciliation with the current HTTP envelope. The [current Amazon Search reference](https://www.nexscope.ai/api-docs/amazon-search?co-from=github-ecommerce-api) also documents a `code`/`data` envelope. Only Amazon Product Detail has had its local response definition and fixture reconciled in this change; no full current-contract audit of the other 224 APIs is claimed.
+
+## Public copy cleanup (2026-10-09)
+
+Supplier references in display names, descriptions and schema prose are presented as Nexscope. API slugs, tool names, endpoints, parameter names, enums, request samples and response fixtures retain their existing values for compatibility. This copy update does not change the snapshot coverage or verify live execution.

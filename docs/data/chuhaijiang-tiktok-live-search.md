@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Live Search API
+# Nexscope TikTok Live Search API
 
-Chuhaijiang TikTok Live Search
+Nexscope TikTok Live Search
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-live-search?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Chuhaijiang TikTok Live Search. Execute only this operation; no automatic retries or pagination. Preserve provider fields and metric units.
+Nexscope TikTok Live Search. Execute only this operation; no automatic retries or pagination. Preserve provider fields and metric units.
 
 ## Endpoint
 

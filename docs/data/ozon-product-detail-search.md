@@ -1,12 +1,12 @@
 # Ozon Product Detail Search API
 
-Seerfar Ozon product detail query: fetches the complete detail of a single Ozon product by SKU, returning title, price (RUB), rating, review count, QA count, total and daily average sales within the stats window, revenue, stock, category ranking, daily sales trend, brand, seller, fulfillment method (FBO/FBS/OZON), weight, and listing time/days/months. Use for single product deep analysis, competitor product teardown, Ozon product selection assessment, listing diagnosis, sales trend and category ranking tracking.
+Nexscope Ozon product detail query: fetches the complete detail of a single Ozon product by SKU, returning title, price (RUB), rating, review count, QA count, total and daily average sales within the stats window, revenue, stock, category ranking, daily sales trend, brand, seller, fulfillment method (FBO/FBS/OZON), weight, and listing time/days/months. Use for single product deep analysis, competitor product teardown, Ozon product selection assessment, listing diagnosis, sales trend and category ranking tracking.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/ozon-product-detail-search?view=api&co-from=github-ecommerce-api)
 
 Category: Ozon Marketplace · Data API
 
-Seerfar Ozon product detail query: fetches the complete detail of a single Ozon product by SKU, returning title, price (RUB), rating, review count, QA count, total and daily average sales within the stats window, revenue, stock, category ranking, daily sales trend, brand, seller, fulfillment method (FBO/FBS/OZON), weight, and listing time/days/months. Use for single product deep analysis, competitor product teardown, Ozon product selection assessment, listing diagnosis, sales trend and category ranking tracking.
+Nexscope Ozon product detail query: fetches the complete detail of a single Ozon product by SKU, returning title, price (RUB), rating, review count, QA count, total and daily average sales within the stats window, revenue, stock, category ranking, daily sales trend, brand, seller, fulfillment method (FBO/FBS/OZON), weight, and listing time/days/months. Use for single product deep analysis, competitor product teardown, Ozon product selection assessment, listing diagnosis, sales trend and category ranking tracking.
 
 ## Endpoint
 
@@ -20,7 +20,7 @@ Execution: synchronous; inspect the response envelope and business fields docume
 
 | Name | Type | Required | Description | Constraints |
 |---|---|---|---|---|
-| `sku` | string | Yes | Product SKU (Ozon SKU, e.g., 175924376). This is the sku returned by other Seerfar Ozon tools | {} |
+| `sku` | string | Yes | Product SKU (Ozon SKU, e.g., 175924376). This is the sku returned by other Nexscope Ozon tools | {} |
 | `dateRange` | string | No | Sales/metrics statistics window, default past_30_days. Options: past_7_days / past_30_days / past_60_days / past_90_days / past_180_days / past_365_days | {} |
 | `uId` | string | No | User ID (max 1000) | {} |
 | `memberId` | string | No | Member ID (a unique member identifier; a user can belong to multiple teams; data is attributed to memberId, max 1000) | {} |

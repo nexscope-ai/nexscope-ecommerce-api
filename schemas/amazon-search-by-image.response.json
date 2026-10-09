@@ -166,7 +166,7 @@
       "name": "salesRank",
       "type": "integer",
       "required": false,
-      "description": "Sales rank from Keepa",
+      "description": "Sales rank from Nexscope",
       "example": 1,
       "constraints": {}
     },
@@ -174,7 +174,7 @@
       "name": "salesRank30",
       "type": "integer",
       "required": false,
-      "description": "Average sales rank over the past 30 days from Keepa",
+      "description": "Average sales rank over the past 30 days from Nexscope",
       "example": 1,
       "constraints": {}
     },
@@ -182,7 +182,7 @@
       "name": "salesRank90",
       "type": "integer",
       "required": false,
-      "description": "Average sales rank over the past 90 days from Keepa",
+      "description": "Average sales rank over the past 90 days from Nexscope",
       "example": 1,
       "constraints": {}
     },
@@ -190,7 +190,7 @@
       "name": "salesRank180",
       "type": "integer",
       "required": false,
-      "description": "Average sales rank over the past 180 days from Keepa",
+      "description": "Average sales rank over the past 180 days from Nexscope",
       "example": 1,
       "constraints": {}
     },
@@ -198,7 +198,7 @@
       "name": "monthlySalesUnits",
       "type": "integer",
       "required": false,
-      "description": "Monthly units sold from Keepa",
+      "description": "Monthly units sold from Nexscope",
       "example": 1,
       "constraints": {}
     },
@@ -206,7 +206,7 @@
       "name": "monthlySalesRevenue",
       "type": "number",
       "required": false,
-      "description": "Monthly sales revenue from Keepa",
+      "description": "Monthly sales revenue from Nexscope",
       "example": 1,
       "constraints": {}
     },
@@ -214,7 +214,7 @@
       "name": "monthlySalesUnits1MonthAgo~monthlySalesUnits12MonthsAgo",
       "type": "integer",
       "required": false,
-      "description": "Monthly sales from 1 through 12 months ago, from Keepa",
+      "description": "Monthly sales from 1 through 12 months ago, from Nexscope",
       "example": 1,
       "constraints": {}
     },
@@ -222,7 +222,7 @@
       "name": "reviewCount",
       "type": "integer",
       "required": false,
-      "description": "Review count from Keepa",
+      "description": "Review count from Nexscope",
       "example": 1,
       "constraints": {}
     },
@@ -230,7 +230,7 @@
       "name": "fbaFees",
       "type": "number",
       "required": false,
-      "description": "FBA fulfillment fee in the marketplace currency from Keepa",
+      "description": "FBA fulfillment fee in the marketplace currency from Nexscope",
       "example": 1,
       "constraints": {}
     },
@@ -238,7 +238,7 @@
       "name": "profit",
       "type": "number",
       "required": false,
-      "description": "Profit margin percentage from Keepa; for example, 25.5 means 25.5%",
+      "description": "Profit margin percentage from Nexscope; for example, 25.5 means 25.5%",
       "example": 1,
       "constraints": {}
     },
@@ -246,7 +246,7 @@
       "name": "referralFeePercentage",
       "type": "number",
       "required": false,
-      "description": "Referral fee percentage from Keepa",
+      "description": "Referral fee percentage from Nexscope",
       "example": 1,
       "constraints": {}
     },
@@ -254,7 +254,7 @@
       "name": "products[].fulfillment",
       "type": "string",
       "required": false,
-      "description": "Fulfillment method from Keepa: AMZ, FBA, or FBM",
+      "description": "Fulfillment method from Nexscope: AMZ, FBA, or FBM",
       "example": null,
       "constraints": {}
     },
@@ -262,7 +262,7 @@
       "name": "primePrice",
       "type": "number",
       "required": false,
-      "description": "Prime price from Keepa",
+      "description": "Prime price from Nexscope",
       "example": 1,
       "constraints": {}
     },
@@ -270,7 +270,7 @@
       "name": "buyBoxSellerId",
       "type": "string",
       "required": false,
-      "description": "Buy Box seller ID from Keepa",
+      "description": "Buy Box seller ID from Nexscope",
       "example": "example-id",
       "constraints": {}
     },
@@ -278,7 +278,7 @@
       "name": "sellerNum",
       "type": "integer",
       "required": false,
-      "description": "Seller count from Keepa",
+      "description": "Seller count from Nexscope",
       "example": 1,
       "constraints": {}
     },
@@ -286,7 +286,7 @@
       "name": "variationNum",
       "type": "integer",
       "required": false,
-      "description": "Variation count from Keepa",
+      "description": "Variation count from Nexscope",
       "example": 1,
       "constraints": {}
     },
@@ -294,7 +294,7 @@
       "name": "parentAsin",
       "type": "string",
       "required": false,
-      "description": "Parent ASIN from Keepa",
+      "description": "Parent ASIN from Nexscope",
       "example": "B072MQ5BRX",
       "constraints": {}
     },
@@ -302,7 +302,7 @@
       "name": "availableDate",
       "type": "string",
       "required": false,
-      "description": "Listing date from Keepa in yyyy-MM-dd HH:mm:ss format",
+      "description": "Listing date from Nexscope in yyyy-MM-dd HH:mm:ss format",
       "example": "2026-01-01",
       "constraints": {}
     },
@@ -310,7 +310,7 @@
       "name": "lastUpdate",
       "type": "string",
       "required": false,
-      "description": "Last update time from Keepa in yyyy-MM-dd HH:mm:ss format",
+      "description": "Last update time from Nexscope in yyyy-MM-dd HH:mm:ss format",
       "example": "2026-01-01",
       "constraints": {}
     },
@@ -318,7 +318,7 @@
       "name": "products[].manufacturer",
       "type": "string",
       "required": false,
-      "description": "Manufacturer from Keepa",
+      "description": "Manufacturer from Nexscope",
       "example": null,
       "constraints": {}
     },
@@ -326,7 +326,7 @@
       "name": "products[].model",
       "type": "string",
       "required": false,
-      "description": "Model from Keepa",
+      "description": "Model from Nexscope",
       "example": null,
       "constraints": {}
     },
@@ -334,7 +334,7 @@
       "name": "products[].color",
       "type": "string",
       "required": false,
-      "description": "Color from Keepa",
+      "description": "Color from Nexscope",
       "example": null,
       "constraints": {}
     },
@@ -342,7 +342,7 @@
       "name": "products[].material",
       "type": "string",
       "required": false,
-      "description": "Primary materials used in the product construction, from Keepa",
+      "description": "Primary materials used in the product construction, from Nexscope",
       "example": null,
       "constraints": {}
     },
@@ -350,7 +350,7 @@
       "name": "products[].weight",
       "type": "string",
       "required": false,
-      "description": "Weight in grams from Keepa",
+      "description": "Weight in grams from Nexscope",
       "example": null,
       "constraints": {}
     },
@@ -358,7 +358,7 @@
       "name": "products[].dimension",
       "type": "string",
       "required": false,
-      "description": "Dimensions from Keepa",
+      "description": "Dimensions from Nexscope",
       "example": null,
       "constraints": {}
     },
@@ -366,7 +366,7 @@
       "name": "itemLength",
       "type": "integer",
       "required": false,
-      "description": "Product length in millimeters from Keepa; 0 or -1 when unavailable",
+      "description": "Product length in millimeters from Nexscope; 0 or -1 when unavailable",
       "example": 1,
       "constraints": {}
     },
@@ -374,7 +374,7 @@
       "name": "itemWidth",
       "type": "integer",
       "required": false,
-      "description": "Product width in millimeters from Keepa; 0 or -1 when unavailable",
+      "description": "Product width in millimeters from Nexscope; 0 or -1 when unavailable",
       "example": 1,
       "constraints": {}
     },
@@ -382,7 +382,7 @@
       "name": "itemHeight",
       "type": "integer",
       "required": false,
-      "description": "Product height in millimeters from Keepa; 0 or -1 when unavailable",
+      "description": "Product height in millimeters from Nexscope; 0 or -1 when unavailable",
       "example": 1,
       "constraints": {}
     },
@@ -390,7 +390,7 @@
       "name": "packageLength",
       "type": "integer",
       "required": false,
-      "description": "Package length in millimeters from Keepa",
+      "description": "Package length in millimeters from Nexscope",
       "example": 1,
       "constraints": {}
     },
@@ -398,7 +398,7 @@
       "name": "packageWidth",
       "type": "integer",
       "required": false,
-      "description": "Package width in millimeters from Keepa",
+      "description": "Package width in millimeters from Nexscope",
       "example": 1,
       "constraints": {}
     },
@@ -406,7 +406,7 @@
       "name": "packageHeight",
       "type": "integer",
       "required": false,
-      "description": "Package height in millimeters from Keepa",
+      "description": "Package height in millimeters from Nexscope",
       "example": 1,
       "constraints": {}
     },
@@ -414,7 +414,7 @@
       "name": "products[].packageWeight",
       "type": "string",
       "required": false,
-      "description": "Package weight in grams from Keepa",
+      "description": "Package weight in grams from Nexscope",
       "example": null,
       "constraints": {}
     },
@@ -422,7 +422,7 @@
       "name": "products[].packageDimensions",
       "type": "string",
       "required": false,
-      "description": "Package dimensions from Keepa",
+      "description": "Package dimensions from Nexscope",
       "example": null,
       "constraints": {}
     },
@@ -430,7 +430,7 @@
       "name": "packageQuantity",
       "type": "integer",
       "required": false,
-      "description": "Number of items in the package from Keepa; 0 or -1 when unavailable",
+      "description": "Number of items in the package from Nexscope; 0 or -1 when unavailable",
       "example": 1,
       "constraints": {}
     },
@@ -438,7 +438,7 @@
       "name": "products[].dimensionsType",
       "type": "string",
       "required": false,
-      "description": "Dimension type from Keepa",
+      "description": "Dimension type from Nexscope",
       "example": null,
       "constraints": {}
     },
@@ -446,7 +446,7 @@
       "name": "products[].categoryTree",
       "type": "string",
       "required": false,
-      "description": "Category tree from Keepa",
+      "description": "Category tree from Nexscope",
       "example": null,
       "constraints": {}
     },
@@ -454,7 +454,7 @@
       "name": "categoryTreeId",
       "type": "string",
       "required": false,
-      "description": "Category tree ID from Keepa",
+      "description": "Category tree ID from Nexscope",
       "example": "example-id",
       "constraints": {}
     },
@@ -462,7 +462,7 @@
       "name": "rootCategory",
       "type": "integer",
       "required": false,
-      "description": "Root category ID from Keepa",
+      "description": "Root category ID from Nexscope",
       "example": 1,
       "constraints": {}
     },
@@ -470,7 +470,7 @@
       "name": "isAdultProduct",
       "type": "boolean",
       "required": false,
-      "description": "Whether the product is classified as adult content by Keepa",
+      "description": "Whether the product is classified as adult content by Nexscope",
       "example": false,
       "constraints": {}
     },
@@ -478,7 +478,7 @@
       "name": "isHazmat",
       "type": "boolean",
       "required": false,
-      "description": "Whether the product is classified as hazardous by Keepa",
+      "description": "Whether the product is classified as hazardous by Nexscope",
       "example": false,
       "constraints": {}
     },
@@ -486,7 +486,7 @@
       "name": "urlSlug",
       "type": "string",
       "required": false,
-      "description": "URL slug from Keepa",
+      "description": "URL slug from Nexscope",
       "example": "https://example.com/image.jpg",
       "constraints": {}
     },
@@ -494,7 +494,7 @@
       "name": "productImageUrls",
       "type": "array",
       "required": false,
-      "description": "Product image URLs from Keepa",
+      "description": "Product image URLs from Nexscope",
       "example": [],
       "constraints": {}
     },

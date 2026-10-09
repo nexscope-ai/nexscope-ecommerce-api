@@ -6,7 +6,7 @@ Search patent publications with an Analytics query expression.
 
 Category: Patent Intelligence · Data API
 
-Searches the Zhihuiya patent database and returns matching patent identifiers and publication numbers.
+Searches the Nexscope patent database and returns matching patent identifiers and publication numbers.
 
 ## Endpoint
 

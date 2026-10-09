@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Ad Related Products API
+# Nexscope TikTok Ad Related Products API
 
-Chuhaijiang TikTok Ad Related Products
+Nexscope TikTok Ad Related Products
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-ad-related-products?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Chuhaijiang TikTok Ad Related Products. Execute only this operation; no automatic retries or pagination. Preserve provider fields and metric units.
+Nexscope TikTok Ad Related Products. Execute only this operation; no automatic retries or pagination. Preserve provider fields and metric units.
 
 ## Endpoint
 

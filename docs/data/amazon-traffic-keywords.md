@@ -1,12 +1,12 @@
 # Amazon Traffic Keywords API
 
-Query traffic keyword lists for an Amazon ASIN via SellerSprite, including traffic source type, conversion type, organic rank, and ad rank with historical month and multi-dimensional sorting.
+Query traffic keyword lists for an Amazon ASIN via Nexscope, including traffic source type, conversion type, organic rank, and ad rank with historical month and multi-dimensional sorting.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/amazon-traffic-keywords?view=api&co-from=github-ecommerce-api)
 
 Category: Keyword & Search Demand · Data API
 
-Query traffic keyword lists for an Amazon ASIN via SellerSprite, including traffic source type, conversion type, organic rank, and ad rank with historical month and multi-dimensional sorting.
+Query traffic keyword lists for an Amazon ASIN via Nexscope, including traffic source type, conversion type, organic rank, and ad rank with historical month and multi-dimensional sorting.
 
 ## Endpoint
 

@@ -1,12 +1,12 @@
 # Amazon Keyword Share Of Voice API
 
-Jungle Scout keyword Share of Voice analysis, returning brand visibility share across the first 3 pages of Amazon search results (organic/ad/combined), 30-day exact search volume, median PPC bid, and TOP3 ASIN click and conversion data, covering 10 marketplaces.
+Nexscope keyword Share of Voice analysis, returning brand visibility share across the first 3 pages of Amazon search results (organic/ad/combined), 30-day exact search volume, median PPC bid, and TOP3 ASIN click and conversion data, covering 10 marketplaces.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/amazon-keyword-share-of-voice?view=api&co-from=github-ecommerce-api)
 
 Category: Keyword & Search Demand · Data API
 
-Jungle Scout keyword Share of Voice analysis, returning brand visibility share across the first 3 pages of Amazon search results (organic/ad/combined), 30-day exact search volume, median PPC bid, and TOP3 ASIN click and conversion data, covering 10 marketplaces.
+Nexscope keyword Share of Voice analysis, returning brand visibility share across the first 3 pages of Amazon search results (organic/ad/combined), 30-day exact search volume, median PPC bid, and TOP3 ASIN click and conversion data, covering 10 marketplaces.
 
 ## Endpoint
 

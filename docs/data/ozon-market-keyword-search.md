@@ -1,12 +1,12 @@
 # Ozon Market Keyword Search API
 
-Seerfar Ozon market hot keyword search: filters Ozon (and Wildberries) market keywords by multi-dimensional metrics including search volume, growth, product count, seller count, competitor count, price, sales, conversion concentration, etc. Each keyword carries monthly search volume, growth, market space, competitor/seller counts, average price, cart-add conversion, top products, and market profile. Use for Ozon keyword selection, blue-ocean keyword mining, and market opportunity analysis.
+Nexscope Ozon market hot keyword search: filters Ozon (and Wildberries) market keywords by multi-dimensional metrics including search volume, growth, product count, seller count, competitor count, price, sales, conversion concentration, etc. Each keyword carries monthly search volume, growth, market space, competitor/seller counts, average price, cart-add conversion, top products, and market profile. Use for Ozon keyword selection, blue-ocean keyword mining, and market opportunity analysis.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/ozon-market-keyword-search?view=api&co-from=github-ecommerce-api)
 
 Category: Keyword & Search Demand · Data API
 
-Seerfar Ozon market hot keyword search: filters Ozon (and Wildberries) market keywords by multi-dimensional metrics including search volume, growth, product count, seller count, competitor count, price, sales, conversion concentration, etc. Each keyword carries monthly search volume, growth, market space, competitor/seller counts, average price, cart-add conversion, top products, and market profile. Use for Ozon keyword selection, blue-ocean keyword mining, and market opportunity analysis.
+Nexscope Ozon market hot keyword search: filters Ozon (and Wildberries) market keywords by multi-dimensional metrics including search volume, growth, product count, seller count, competitor count, price, sales, conversion concentration, etc. Each keyword carries monthly search volume, growth, market space, competitor/seller counts, average price, cart-add conversion, top products, and market profile. Use for Ozon keyword selection, blue-ocean keyword mining, and market opportunity analysis.
 
 ## Endpoint
 

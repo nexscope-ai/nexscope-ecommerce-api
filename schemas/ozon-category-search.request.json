@@ -6,7 +6,7 @@
       "name": "categoryId",
       "type": "string",
       "required": true,
-      "description": "Ozon category ID, obtained from Ozon category documentation or other Seerfar Ozon tools. Format like 15621032_15621049_115951147 (multi-level categories joined by _)",
+      "description": "Ozon category ID, obtained from Ozon category documentation or other Nexscope Ozon tools. Format like 15621032_15621049_115951147 (multi-level categories joined by _)",
       "example": "15621042_17028650_97011",
       "constraints": {}
     },

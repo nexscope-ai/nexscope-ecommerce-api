@@ -262,7 +262,7 @@
       "name": "products[].createdAt",
       "type": "string",
       "required": false,
-      "description": "First indexed time by WallySmarter (format: yyyy-MM-dd'T'HH:mm:ss.SSSSSS'Z')",
+      "description": "First indexed time by Nexscope (format: yyyy-MM-dd'T'HH:mm:ss.SSSSSS'Z')",
       "example": null,
       "constraints": {}
     },

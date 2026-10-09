@@ -20,7 +20,7 @@ Execution: synchronous; inspect the response envelope and business fields docume
 
 | Name | Type | Required | Description | Constraints |
 |---|---|---|---|---|
-| `sellerId` | string | Yes | TikTok Shop seller ID. Obtainable from the "EchoTik TikTok Seller Search" API (nexscope-echotik-list-seller) results, or from the ID in a known store link. Max length 1000 | {} |
+| `sellerId` | string | Yes | TikTok Shop seller ID. Obtainable from the "Nexscope TikTok Seller Search" API (nexscope-Nexscope-list-seller) results, or from the ID in a known store link. Max length 1000 | {} |
 
 The table summarizes the published fields. Consult the full request definition for nested objects, alternatives, and conditional requirements.
 

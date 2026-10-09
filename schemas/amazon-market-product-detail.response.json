@@ -54,7 +54,7 @@
       "name": "sourceType",
       "type": "string",
       "required": false,
-      "description": "Source type: sorftime",
+      "description": "Source type: Nexscope",
       "example": null,
       "constraints": {}
     },

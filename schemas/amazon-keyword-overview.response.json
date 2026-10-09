@@ -206,7 +206,7 @@
       "name": "data[].trackedAsinTotalCount",
       "type": "integer",
       "required": false,
-      "description": "SIF tracked ASIN deduplicated total count. Deduplicated count of ASINs that SIF has tracked with exposure scores across all positions (natural/ad/recommendation) for this keyword (upstream field: totalAsinNum)",
+      "description": "Nexscope tracked ASIN deduplicated total count. Deduplicated count of ASINs that Nexscope has tracked with exposure scores across all positions (natural/ad/recommendation) for this keyword (upstream field: totalAsinNum)",
       "example": 1,
       "constraints": {}
     },

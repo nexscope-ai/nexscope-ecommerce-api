@@ -1,12 +1,12 @@
 # Patent Description Data Translation API
 
-Retrieve translated patent description (specification) text from Zhihuiya.
+Retrieve translated patent description (specification) text from Nexscope.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/patent-description-data-translation?view=api&co-from=github-ecommerce-api)
 
 Category: Patent & IP Risk · Data API
 
-Retrieve translated patent description (specification) text from Zhihuiya.
+Retrieve translated patent description (specification) text from Nexscope.
 
 ## Endpoint
 

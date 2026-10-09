@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Creator Detail API
+# Nexscope TikTok Creator Detail API
 
-Chuhaijiang TikTok Creator Detail with public market data.
+Nexscope TikTok Creator Detail with public market data.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-creator-detail?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Provider business records for Chuhaijiang TikTok Creator Detail. Known row fields: id, nickname, unique_id, user_avatar, category_label. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
+Provider business records for Nexscope TikTok Creator Detail. Known row fields: id, nickname, unique_id, user_avatar, category_label. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
 
 ## Endpoint
 

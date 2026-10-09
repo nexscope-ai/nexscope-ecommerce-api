@@ -1,12 +1,12 @@
 # Amazon Niche Info API
 
-Query and analyze Jiimore data for Amazon niche market insights, including market metrics, buyer reviews, competitive landscape, price trends, and growth trends.
+Query and analyze Nexscope data for Amazon niche market insights, including market metrics, buyer reviews, competitive landscape, price trends, and growth trends.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/amazon-niche-info?view=api&co-from=github-ecommerce-api)
 
 Category: Amazon Marketplace Intelligence · Data API
 
-Query and analyze Jiimore data for Amazon niche market insights, including market metrics, buyer reviews, competitive landscape, price trends, and growth trends.
+Query and analyze Nexscope data for Amazon niche market insights, including market metrics, buyer reviews, competitive landscape, price trends, and growth trends.
 
 ## Endpoint
 

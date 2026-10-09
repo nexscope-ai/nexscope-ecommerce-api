@@ -1,12 +1,12 @@
 # Ozon Shop Search API
 
-Seerfar Ozon shop product search: fetches the product list of an Ozon shop (seller) by shop ID, returning each product's 30-day sales, price, rating, weight, fulfillment method (FBO/FBS), seller type (local/cross-border), return/cancellation rate, and the shop's total 30-day sales. Use for competitor shop product analysis, shop bestseller mining, seller product structure analysis.
+Nexscope Ozon shop product search: fetches the product list of an Ozon shop (seller) by shop ID, returning each product's 30-day sales, price, rating, weight, fulfillment method (FBO/FBS), seller type (local/cross-border), return/cancellation rate, and the shop's total 30-day sales. Use for competitor shop product analysis, shop bestseller mining, seller product structure analysis.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/ozon-shop-search?view=api&co-from=github-ecommerce-api)
 
 Category: Ozon Marketplace · Data API
 
-Seerfar Ozon shop product search: fetches the product list of an Ozon shop (seller) by shop ID, returning each product's 30-day sales, price, rating, weight, fulfillment method (FBO/FBS), seller type (local/cross-border), return/cancellation rate, and the shop's total 30-day sales. Use for competitor shop product analysis, shop bestseller mining, seller product structure analysis.
+Nexscope Ozon shop product search: fetches the product list of an Ozon shop (seller) by shop ID, returning each product's 30-day sales, price, rating, weight, fulfillment method (FBO/FBS), seller type (local/cross-border), return/cancellation rate, and the shop's total 30-day sales. Use for competitor shop product analysis, shop bestseller mining, seller product structure analysis.
 
 ## Endpoint
 
@@ -20,7 +20,7 @@ Execution: synchronous; inspect the response envelope and business fields docume
 
 | Name | Type | Required | Description | Constraints |
 |---|---|---|---|---|
-| `id` | integer | Yes | Shop (seller) ID, i.e., the sellerId returned by other Seerfar Ozon tools; negative values are Ozon platform self-operated sellers (e.g., -2 Ozon Express, -4 Ozon Fresh), positive values are third-party sellers | {} |
+| `id` | integer | Yes | Shop (seller) ID, i.e., the sellerId returned by other Nexscope Ozon tools; negative values are Ozon platform self-operated sellers (e.g., -2 Ozon Express, -4 Ozon Fresh), positive values are third-party sellers | {} |
 | `page` | object | Yes | Pagination & sorting: {page, pageSize, orders[]} | {} |
 | `page.page` | integer | No | Page number, starting from 1, default 1 | {} |
 | `page.pageSize` | integer | No | Items per page, default 20, maximum 20 (exceeding returns errcode 1002) | {} |

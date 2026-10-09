@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Video Detail API
+# Nexscope TikTok Video Detail API
 
-Chuhaijiang TikTok Video Detail
+Nexscope TikTok Video Detail
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-video-detail?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Chuhaijiang TikTok Video Detail. Execute only this operation; no automatic retries or pagination. Preserve provider fields and metric units.
+Nexscope TikTok Video Detail. Execute only this operation; no automatic retries or pagination. Preserve provider fields and metric units.
 
 ## Endpoint
 

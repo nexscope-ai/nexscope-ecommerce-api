@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Creator Agencies API
+# Nexscope TikTok Creator Agencies API
 
-Chuhaijiang TikTok Creator Agencies with public market data.
+Nexscope TikTok Creator Agencies with public market data.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-creator-rankings-agencies?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Provider business records for Chuhaijiang TikTok Creator Agencies. Known row fields: avg_commission_rate, follower_count, has_email_address, has_phone, has_whats_app, id, partner_icon, partner_id, partner_name, partner_top3_category, partner_top3_category_list, total_30d_video_live_gmv, total_30d_video_live_sold_count, total_related_creator_count, total_related_product_count, total_related_seller_count, video_count. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
+Provider business records for Nexscope TikTok Creator Agencies. Known row fields: avg_commission_rate, follower_count, has_email_address, has_phone, has_whats_app, id, partner_icon, partner_id, partner_name, partner_top3_category, partner_top3_category_list, total_30d_video_live_gmv, total_30d_video_live_sold_count, total_related_creator_count, total_related_product_count, total_related_seller_count, video_count. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
 
 ## Endpoint
 

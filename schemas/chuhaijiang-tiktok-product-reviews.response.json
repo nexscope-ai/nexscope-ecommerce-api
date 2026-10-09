@@ -25,7 +25,7 @@
             "array",
             "null"
           ],
-          "description": "Provider business records for Chuhaijiang TikTok Product Reviews. Known row fields: review_id. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.",
+          "description": "Provider business records for Nexscope TikTok Product Reviews. Known row fields: review_id. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.",
           "items": {
             "properties": {
               "review_id": {

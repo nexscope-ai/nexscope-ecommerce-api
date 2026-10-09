@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Ad Search API
+# Nexscope TikTok Ad Search API
 
-Chuhaijiang TikTok Ad Search
+Nexscope TikTok Ad Search
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-ad-search?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Chuhaijiang TikTok Ad Search. Execute only this operation; no automatic retries or pagination. Preserve provider fields and metric units.
+Nexscope TikTok Ad Search. Execute only this operation; no automatic retries or pagination. Preserve provider fields and metric units.
 
 ## Endpoint
 

@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Product Image Search API
+# Nexscope TikTok Product Image Search API
 
-Chuhaijiang TikTok Product Image Search with public market data.
+Nexscope TikTok Product Image Search with public market data.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-product-image-search?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Provider business records for Chuhaijiang TikTok Product Image Search. Known row fields: id, product_name, product_images, floor_price, ceiling_price, product_gmv. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
+Provider business records for Nexscope TikTok Product Image Search. Known row fields: id, product_name, product_images, floor_price, ceiling_price, product_gmv. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
 
 ## Endpoint
 

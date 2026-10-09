@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Product New Arrivals API
+# Nexscope TikTok Product New Arrivals API
 
-Chuhaijiang TikTok Product New Arrivals with public market data.
+Nexscope TikTok Product New Arrivals with public market data.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-product-rankings-new-arrivals?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Provider business records for Chuhaijiang TikTok Product New Arrivals. Known row fields: id, product_id, product_name, shop_name, total_gmv, total_sold_count. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
+Provider business records for Nexscope TikTok Product New Arrivals. Known row fields: id, product_id, product_name, shop_name, total_gmv, total_sold_count. Missing and null fields remain unchanged; monetary values retain their original unit and runtime type.
 
 ## Endpoint
 

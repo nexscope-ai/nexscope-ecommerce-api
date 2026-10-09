@@ -1,6 +1,6 @@
-# GeekBI Temu Product Detail API
+# Nexscope Temu Product Detail API
 
-Product Detail using GeekBI Temu data.
+Product Detail using Nexscope Temu data.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/geekbi-temu-goods-detail?view=api&co-from=github-ecommerce-api)
 

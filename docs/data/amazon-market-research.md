@@ -1,12 +1,12 @@
 # Amazon Market Research API
 
-Use SellerSprite market list capability to filter Amazon niche markets by category dimensions, supporting market size, competition, top concentration, seller structure, new product share, price/rating/margin ranges, and many other criteria for discovering viable markets and evaluating product selection directions.
+Use Nexscope market list capability to filter Amazon niche markets by category dimensions, supporting market size, competition, top concentration, seller structure, new product share, price/rating/margin ranges, and many other criteria for discovering viable markets and evaluating product selection directions.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/amazon-market-research?view=api&co-from=github-ecommerce-api)
 
 Category: Amazon Marketplace Intelligence · Data API
 
-Use SellerSprite market list capability to filter Amazon niche markets by category dimensions, supporting market size, competition, top concentration, seller structure, new product share, price/rating/margin ranges, and many other criteria for discovering viable markets and evaluating product selection directions.
+Use Nexscope market list capability to filter Amazon niche markets by category dimensions, supporting market size, competition, top concentration, seller structure, new product share, price/rating/margin ranges, and many other criteria for discovering viable markets and evaluating product selection directions.
 
 ## Endpoint
 
@@ -23,7 +23,7 @@ Execution: synchronous; inspect the response envelope and business fields docume
 | `marketplace` | string | Yes | Site code, see [marketplace](#marketplace-options) | {} |
 | `nodeIdPath` | string | No | Category node ID path, e.g. 172282:281407 | {} |
 | `departmentKeyword` | string | No | Category keyword path, e.g. Electronics:Accessories & Supplies | {} |
-| `sellerLocation` | string | No | Seller location, multiple values comma-separated; see Seller Sprite table 1.3 for values | {} |
+| `sellerLocation` | string | No | Seller location, multiple values comma-separated; see Nexscope table 1.3 for values | {} |
 | `newProduct` | integer | No | New product definition (months) | {} |
 | `topNum` | integer | No | Top Listing count | {} |
 | `month` | string | No | Filter date: nearly or yyyyMM | {} |

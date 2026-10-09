@@ -1,12 +1,12 @@
 # Amazon ASIN Keywords API
 
-Use SIF data to reverse-lookup traffic keywords for any Amazon ASIN, including organic ranking, ad ranking, search volume, traffic share, organic/paid scores, ABA TOP3 click concentration, click conversion rate, year-over-year search volume changes, and weekly/monthly time windows.
+Use Nexscope data to reverse-lookup traffic keywords for any Amazon ASIN, including organic ranking, ad ranking, search volume, traffic share, organic/paid scores, ABA TOP3 click concentration, click conversion rate, year-over-year search volume changes, and weekly/monthly time windows.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/amazon-asin-keywords?view=api&co-from=github-ecommerce-api)
 
 Category: Keyword & Search Demand · Data API
 
-Use SIF data to reverse-lookup traffic keywords for any Amazon ASIN, including organic ranking, ad ranking, search volume, traffic share, organic/paid scores, ABA TOP3 click concentration, click conversion rate, year-over-year search volume changes, and weekly/monthly time windows.
+Use Nexscope data to reverse-lookup traffic keywords for any Amazon ASIN, including organic ranking, ad ranking, search volume, traffic share, organic/paid scores, ABA TOP3 click concentration, click conversion rate, year-over-year search volume changes, and weekly/monthly time windows.
 
 ## Endpoint
 

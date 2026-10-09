@@ -1,12 +1,12 @@
 # TikTok New Product Rank API
 
-Discover trending new products across 16 TikTok Shop regional markets via EchoTik new product ranking data.
+Discover trending new products across 16 TikTok Shop regional markets via Nexscope new product ranking data.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/tiktok-new-product-rank?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Discover trending new products across 16 TikTok Shop regional markets via EchoTik new product ranking data.
+Discover trending new products across 16 TikTok Shop regional markets via Nexscope new product ranking data.
 
 ## Endpoint
 

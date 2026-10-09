@@ -22,7 +22,7 @@
       "name": "sourceType",
       "type": "string",
       "required": false,
-      "description": "Source type: keepa",
+      "description": "Source type: Nexscope",
       "example": null,
       "constraints": {}
     },
@@ -582,7 +582,7 @@
       "name": "products[].sourceType",
       "type": "string",
       "required": false,
-      "description": "Source type: keepa",
+      "description": "Source type: Nexscope",
       "example": null,
       "constraints": {}
     },

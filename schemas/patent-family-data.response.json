@@ -1,6 +1,6 @@
 {
   "type": "object",
-  "description": "Returns the PatSnap patent-family payload directly.",
+  "description": "Returns the Nexscope patent-family payload directly.",
   "fields": [
     {
       "name": "total",
@@ -70,7 +70,7 @@
       "name": "data[].patsnapFamilyId",
       "type": "integer",
       "required": false,
-      "description": "PatSnap family identifier.",
+      "description": "Nexscope family identifier.",
       "example": 1,
       "constraints": {}
     },
@@ -78,7 +78,7 @@
       "name": "data[].patsnapFamily",
       "type": "array",
       "required": false,
-      "description": "PatSnap family members.",
+      "description": "Nexscope family members.",
       "example": [],
       "constraints": {}
     },

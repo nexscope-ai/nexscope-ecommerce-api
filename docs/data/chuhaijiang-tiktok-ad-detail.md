@@ -1,12 +1,12 @@
-# Chuhaijiang TikTok Ad Detail API
+# Nexscope TikTok Ad Detail API
 
-Chuhaijiang TikTok Ad Detail
+Nexscope TikTok Ad Detail
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-ad-detail?view=api&co-from=github-ecommerce-api)
 
 Category: TikTok / Social Commerce · Data API
 
-Chuhaijiang TikTok Ad Detail. Execute only this operation; no automatic retries or pagination. Preserve provider fields and metric units.
+Nexscope TikTok Ad Detail. Execute only this operation; no automatic retries or pagination. Preserve provider fields and metric units.
 
 ## Endpoint
 

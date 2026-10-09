@@ -1,6 +1,6 @@
 # Patent Cited By API
 
-Retrieve patents that cite one or more PatSnap patents.
+Retrieve patents that cite one or more Nexscope patents.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/patent-cited-by?view=api&co-from=github-ecommerce-api)
 
@@ -20,7 +20,7 @@ Execution: synchronous; inspect the response envelope and business fields docume
 
 | Name | Type | Required | Description | Constraints |
 |---|---|---|---|---|
-| `patentId` | string | No | One or up to 100 comma-separated PatSnap patent IDs. Takes precedence when both identifiers are provided. | {} |
+| `patentId` | string | No | One or up to 100 comma-separated Nexscope patent IDs. Takes precedence when both identifiers are provided. | {} |
 | `patentNumber` | string | No | One or up to 100 comma-separated publication or grant numbers. | {} |
 
 The table summarizes the published fields. Consult the full request definition for nested objects, alternatives, and conditional requirements.

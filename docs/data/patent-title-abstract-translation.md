@@ -1,12 +1,12 @@
 # Patent Title Abstract Translation API
 
-Retrieve translated patent titles and abstracts from the Zhihuiya (PatSnap) patent database.
+Retrieve translated patent titles and abstracts from the Nexscope (Nexscope) patent database.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/patent-title-abstract-translation?view=api&co-from=github-ecommerce-api)
 
 Category: Patent & IP Risk · Data API
 
-Retrieve translated patent titles and abstracts from the Zhihuiya (PatSnap) patent database.
+Retrieve translated patent titles and abstracts from the Nexscope (Nexscope) patent database.
 
 ## Endpoint
 
@@ -20,7 +20,7 @@ Execution: synchronous; inspect the response envelope and business fields docume
 
 | Name | Type | Required | Description | Constraints |
 |---|---|---|---|---|
-| `patentId` | string | No | Zhihuiya internal patent ID. Only a single value is supported; multiple values separated by commas are not allowed. Max length: 60,000 characters | {} |
+| `patentId` | string | No | Nexscope internal patent ID. Only a single value is supported; multiple values separated by commas are not allowed. Max length: 60,000 characters | {} |
 | `patentNumber` | string | No | Publication (grant) number. Only a single value is supported; multiple values separated by commas are not allowed. Max length: 60,000 characters | {} |
 | `replaceByRelated` | integer | No | Whether to substitute with a family patent's abstract when the abstract is unavailable: 1 Yes, 0 No. Default 0 | {} |
 | `lang` | string | No | Target translation language. Options: en (English, default), cn (Chinese), jp (Japanese). Max length: 1,000 characters | {} |

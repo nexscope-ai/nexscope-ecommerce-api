@@ -1,6 +1,6 @@
-# GeekBI Temu Category Research API
+# Nexscope Temu Category Research API
 
-Category Research using GeekBI Temu data.
+Category Research using Nexscope Temu data.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/geekbi-temu-category-search?view=api&co-from=github-ecommerce-api)
 
