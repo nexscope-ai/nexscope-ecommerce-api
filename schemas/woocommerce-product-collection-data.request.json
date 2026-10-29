@@ -1,0 +1,58 @@
+{
+  "type": "object",
+  "required": [
+    "storeUrl"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "storeUrl": {
+      "type": "string",
+      "description": "Public HTTPS store root or WordPress installation path.",
+      "maxLength": 2048
+    },
+    "keyword": {
+      "type": "string",
+      "description": "Search within this store; at most 200 characters.",
+      "maxLength": 200
+    },
+    "categoryId": {
+      "type": "string",
+      "description": "Restrict to a public product category.",
+      "pattern": "^[1-9][0-9]{0,18}$"
+    },
+    "calculatePriceRange": {
+      "type": "boolean",
+      "description": "Calculate this aggregate; default true. Unsupported store fields may be null."
+    },
+    "calculateRatingCounts": {
+      "type": "boolean",
+      "description": "Calculate this aggregate; default true. Unsupported store fields may be null."
+    },
+    "calculateStockStatusCounts": {
+      "type": "boolean",
+      "description": "Calculate this aggregate; default true. Unsupported store fields may be null."
+    },
+    "attributeTaxonomies": {
+      "type": "array",
+      "description": "Attribute taxonomies to count, using OR semantics, for example pa_color. Default empty.",
+      "maxItems": 20,
+      "items": {
+        "pattern": "^pa_[a-z0-9_-]{1,28}$",
+        "type": "string"
+      }
+    },
+    "taxonomies": {
+      "type": "array",
+      "description": "Public taxonomies to count; default empty. Store support varies.",
+      "maxItems": 20,
+      "items": {
+        "type": "string",
+        "enum": [
+          "product_cat",
+          "product_tag",
+          "product_brand"
+        ]
+      }
+    }
+  }
+}

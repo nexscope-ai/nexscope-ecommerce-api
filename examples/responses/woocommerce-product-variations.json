@@ -1,0 +1,44 @@
+{
+  "data": {
+    "storeUrl": "https://example.com",
+    "fetchedAt": "1792972800000",
+    "cacheHit": false,
+    "products": [
+      {
+        "id": "34",
+        "type": "simple",
+        "name": "Cotton Shirt",
+        "sku": "SHIRT-34",
+        "url": "https://example.com/product/shirt",
+        "description": "Cotton shirt.",
+        "shortDescription": "Cotton shirt.",
+        "variation": "",
+        "isInStock": true,
+        "isPasswordProtected": false,
+        "prices": {
+          "currency": "USD",
+          "minorUnit": 2,
+          "price": "11.05"
+        },
+        "images": [
+          {
+            "url": "https://example.com/image.jpg",
+            "alt": "Shirt"
+          }
+        ]
+      }
+    ],
+    "pageNum": 1,
+    "pageSize": 20,
+    "total": 1,
+    "totalPages": 1,
+    "hasMore": false,
+    "parentId": "34"
+  },
+  "code": 0,
+  "msg": null,
+  "ts": "0",
+  "time": "2026-01-01 00:00:00",
+  "cost": "-1",
+  "traceId": null
+}

@@ -1,0 +1,25 @@
+{
+  "data": {
+    "storeUrl": "https://example.com",
+    "fetchedAt": "1792972800000",
+    "cacheHit": false,
+    "terms": [
+      {
+        "id": "1",
+        "name": "Color",
+        "slug": "blue",
+        "description": "",
+        "imageUrl": "",
+        "url": "",
+        "parentId": "0",
+        "count": 1
+      }
+    ]
+  },
+  "code": 0,
+  "msg": null,
+  "ts": "0",
+  "time": "2026-01-01 00:00:00",
+  "cost": "-1",
+  "traceId": null
+}

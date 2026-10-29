@@ -25,3 +25,11 @@ The other 224 API pages repeated an unverified claim that the run response has n
 ## Public copy cleanup (2026-10-09)
 
 Supplier references in display names, descriptions and schema prose are presented as Nexscope. API slugs, tool names, endpoints, parameter names, enums, request samples and response fixtures retain their existing values for compatibility. This copy update does not change the snapshot coverage or verify live execution.
+
+## WooCommerce production synchronization (2026-10-29)
+
+Added only 11 production WooCommerce APIs: the repository now documents 236 entries (183 Data, 53 Creative) in 21 categories. The original 225 entries and their verification limits remain unchanged; this is not a full refresh of every current API.
+
+WooCommerce request/response JSON Schemas, POST short paths and canonical HTTP response fixtures were read from the production public API-definition service. Editable payloads follow the reviewed public Data Example inputs. The full HTTP fixtures and paired Data Example content are separate sources; neither is a new live execution by this repository. No merchant secret is required; Nexscope API key authentication and the documented 10-credit/failure-refund policy apply.
+
+Validation covers all 236 catalog artifacts and links, plus offline cURL-helper/JavaScript/Python request preparation for all 11 short paths. No authenticated or billable business API calls were made for this synchronization. Existing historical fixtures for other APIs were not rewritten.

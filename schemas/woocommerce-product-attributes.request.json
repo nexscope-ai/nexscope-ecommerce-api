@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "required": [
+    "storeUrl"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "storeUrl": {
+      "type": "string",
+      "description": "Public HTTPS store root or WordPress installation path.",
+      "maxLength": 2048
+    }
+  }
+}

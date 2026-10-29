@@ -1,0 +1,202 @@
+{
+  "required": [
+    "code",
+    "msg",
+    "data",
+    "ts",
+    "time",
+    "cost",
+    "traceId"
+  ],
+  "type": "object",
+  "properties": {
+    "data": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "storeUrl": {
+              "type": "string",
+              "description": "Normalized store identity.",
+              "example": "https://example.com"
+            },
+            "fetchedAt": {
+              "type": "string",
+              "description": "Fetch time in epoch milliseconds; preserved on cache hits.",
+              "example": "1792972800000"
+            },
+            "cacheHit": {
+              "type": "boolean",
+              "description": "Whether the response was served from the anonymous 60-second cache.",
+              "example": false
+            },
+            "reviews": {
+              "type": "array",
+              "description": "Normalized public data. Missing optional values are null or empty strings.",
+              "example": [],
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": "Public review identifier or plain text; no reviewer email or private fields are exposed.",
+                    "example": "83"
+                  },
+                  "productId": {
+                    "type": "string",
+                    "description": "Public review identifier or plain text; no reviewer email or private fields are exposed.",
+                    "example": "34"
+                  },
+                  "productName": {
+                    "type": "string",
+                    "description": "Public review identifier or plain text; no reviewer email or private fields are exposed.",
+                    "example": "Public review"
+                  },
+                  "productUrl": {
+                    "type": "string",
+                    "description": "Public review identifier or plain text; no reviewer email or private fields are exposed.",
+                    "example": "https://example.com/product/shirt"
+                  },
+                  "reviewer": {
+                    "type": "string",
+                    "description": "Public review identifier or plain text; no reviewer email or private fields are exposed.",
+                    "example": "Public review"
+                  },
+                  "review": {
+                    "type": "string",
+                    "description": "Public review identifier or plain text; no reviewer email or private fields are exposed.",
+                    "example": "Public review"
+                  },
+                  "rating": {
+                    "type": "integer",
+                    "description": "Rating from 0 (unrated) to 5.",
+                    "example": 5
+                  },
+                  "verified": {
+                    "anyOf": [
+                      {
+                        "type": "boolean",
+                        "description": "Verified purchase status, null when unavailable.",
+                        "example": true
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "createdAt": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "description": "UTC creation time in epoch milliseconds, null when unavailable.",
+                        "example": "1792972800000"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "id",
+                  "productId",
+                  "productName",
+                  "productUrl",
+                  "reviewer",
+                  "review",
+                  "rating"
+                ]
+              }
+            },
+            "pageNum": {
+              "type": "integer",
+              "description": "Pagination metadata; omitted upstream totals become null.",
+              "example": 1
+            },
+            "pageSize": {
+              "type": "integer",
+              "description": "Pagination metadata; omitted upstream totals become null.",
+              "example": 20
+            },
+            "total": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Pagination metadata; omitted upstream totals become null.",
+                  "example": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "totalPages": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Pagination metadata; omitted upstream totals become null.",
+                  "example": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "hasMore": {
+              "anyOf": [
+                {
+                  "type": "boolean",
+                  "description": "Null when upstream total pages are unavailable.",
+                  "example": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "storeUrl",
+            "fetchedAt",
+            "cacheHit",
+            "reviews",
+            "pageNum",
+            "pageSize"
+          ],
+          "additionalProperties": true
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "code": {
+      "description": "0 means accepted or successful; nonzero is a platform error.",
+      "type": "integer"
+    },
+    "msg": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ts": {
+      "description": "Epoch milliseconds.",
+      "type": "string"
+    },
+    "time": {
+      "description": "Server local time: yyyy-MM-dd HH:mm:ss.",
+      "type": "string"
+    },
+    "cost": {
+      "description": "Elapsed milliseconds, never credits; -1 outside web requests.",
+      "type": "string"
+    },
+    "traceId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

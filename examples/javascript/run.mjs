@@ -44,7 +44,7 @@ try {
     if (!response.ok) throw new Error(`HTTP ${response.status}: ${text}`);
     const result = JSON.parse(text);
     console.log(JSON.stringify(result, null, 2));
-    if (['FAILED', 'TIMEOUT'].includes(result?.status)) process.exitCode = 1;
+    if ((result && Object.hasOwn(result, 'code') && ![0, '0'].includes(result.code)) || ['FAILED', 'TIMEOUT'].includes(result?.status)) process.exitCode = 1;
   }
 } catch (error) {
   console.error(error.message); process.exitCode = 1;

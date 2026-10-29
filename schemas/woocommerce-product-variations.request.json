@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "required": [
+    "storeUrl",
+    "productId"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "storeUrl": {
+      "type": "string",
+      "description": "Public HTTPS store root or WordPress installation path, without query or fragment.",
+      "maxLength": 2048
+    },
+    "productId": {
+      "type": "string",
+      "description": "Store-scoped positive product ID, at most 19 decimal digits.",
+      "pattern": "^[1-9][0-9]{0,18}$"
+    },
+    "pageNum": {
+      "type": "integer",
+      "description": "Page number, default 1.",
+      "maximum": 10000,
+      "minimum": 1
+    },
+    "pageSize": {
+      "type": "integer",
+      "description": "Page size, default 20, maximum 100.",
+      "maximum": 100,
+      "minimum": 1
+    }
+  }
+}

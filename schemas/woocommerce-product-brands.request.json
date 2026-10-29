@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "required": [
+    "storeUrl"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "storeUrl": {
+      "type": "string",
+      "description": "Public HTTPS store root or WordPress installation path.",
+      "maxLength": 2048
+    },
+    "pageNum": {
+      "type": "integer",
+      "description": "Page number, default 1.",
+      "maximum": 10000,
+      "minimum": 1
+    },
+    "pageSize": {
+      "type": "integer",
+      "description": "Page size, default 20, maximum 100.",
+      "maximum": 100,
+      "minimum": 1
+    },
+    "keyword": {
+      "type": "string",
+      "description": "Search within this store; at most 200 characters.",
+      "maxLength": 200
+    },
+    "hideEmpty": {
+      "type": "boolean",
+      "description": "Hide terms without products; defaults to the store's true setting."
+    }
+  }
+}

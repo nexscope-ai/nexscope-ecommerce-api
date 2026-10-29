@@ -74,4 +74,43 @@ class Clients(unittest.TestCase):
         self.assertEqual(result.returncode,0,result.stderr)
         self.assertEqual(json.loads(result.stdout)['method'],'GET')
 
+
+    def test_woocommerce_short_routes_prepare_without_network(self):
+        apis = json.loads((ROOT / 'catalog/apis.json').read_text())['apis']
+        woo = [api for api in apis if api['slug'].startswith('woocommerce-')]
+        self.assertEqual(len(woo), 11)
+        with patch.object(client, 'urlopen') as network:
+            for api in woo:
+                with self.subTest(slug=api['slug']):
+                    method, endpoint, body = client.prepare(api['slug'], ROOT / api['payload'])
+                    self.assertEqual(method, 'POST')
+                    self.assertEqual(endpoint, api['endpoint'])
+                    self.assertTrue(endpoint.startswith('https://api.nexscope.ai/woocommerce/'))
+                    self.assertIn('storeUrl', body)
+                    result = subprocess.run(['node', str(ROOT / 'examples/javascript/run.mjs'),
+                                             api['slug'], str(ROOT / api['payload']), '--dry-run'],
+                                            capture_output=True, text=True)
+                    self.assertEqual(result.returncode, 0, result.stderr)
+                    self.assertEqual(json.loads(result.stdout)['endpoint'], endpoint)
+            network.assert_not_called()
+
+    def test_woocommerce_business_failure_is_not_reported_as_success(self):
+        with patch.object(client, 'urlopen') as network:
+            network.return_value.__enter__.return_value.read.return_value = b'{"code":99000,"msg":"fixture failure","data":null}'
+            code, _, _ = self.invoke(['woocommerce-products', str(ROOT/'payloads/woocommerce-products.json')],
+                                     {'NEXSCOPE_API_KEY':'fixture-only'})
+            self.assertEqual(code, 1)
+            self.assertEqual(network.call_count, 1)
+
+
+    def test_js_woocommerce_business_envelope_and_single_request(self):
+        with tempfile.TemporaryDirectory() as directory:
+            preload = Path(directory) / 'peer.mjs'
+            for code in (0, 99000):
+                preload.write_text("let calls=0;globalThis.fetch=async(url)=>{if(url!=='https://api.nexscope.ai/woocommerce/products')throw Error('wrong route');calls++;return new Response(JSON.stringify({code:" + str(code) + ",msg:null,data:null}),{status:200})};process.on('exit',()=>{if(calls!==1)process.exitCode=7});", encoding='utf-8')
+                result = subprocess.run(['node','--import',preload.as_uri(),str(ROOT/'examples/javascript/run.mjs'),
+                                         'woocommerce-products',str(ROOT/'payloads/woocommerce-products.json')],
+                                        env={**os.environ,'NEXSCOPE_API_KEY':'fixture-only'},capture_output=True,text=True)
+                self.assertEqual(result.returncode, 0 if code == 0 else 1, result.stderr)
+
 if __name__ == '__main__': unittest.main()

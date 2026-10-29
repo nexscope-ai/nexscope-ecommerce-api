@@ -1,0 +1,259 @@
+{
+  "required": [
+    "code",
+    "msg",
+    "data",
+    "ts",
+    "time",
+    "cost",
+    "traceId"
+  ],
+  "type": "object",
+  "properties": {
+    "data": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "storeUrl": {
+              "type": "string",
+              "description": "Normalized store identity.",
+              "example": "https://example.com"
+            },
+            "fetchedAt": {
+              "type": "string",
+              "description": "Fetch time in epoch milliseconds; preserved on cache hits.",
+              "example": "1792972800000"
+            },
+            "cacheHit": {
+              "type": "boolean",
+              "description": "Whether the response was served from the anonymous 60-second cache.",
+              "example": false
+            },
+            "collection": {
+              "type": "object",
+              "description": "Normalized public data. Missing optional values are null or empty strings.",
+              "example": {},
+              "properties": {
+                "priceRange": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "description": "Null when disabled or unavailable; exact decimal strings.",
+                      "example": {},
+                      "properties": {
+                        "currency": {
+                          "type": "string",
+                          "description": "Currency code.",
+                          "example": "USD"
+                        },
+                        "minorUnit": {
+                          "type": "integer",
+                          "description": "Currency decimal precision.",
+                          "example": 2
+                        },
+                        "minPrice": {
+                          "type": "string",
+                          "description": "Exact amount; Minor suffix denotes original smallest-unit value.",
+                          "example": "10.00"
+                        },
+                        "maxPrice": {
+                          "type": "string",
+                          "description": "Exact amount; Minor suffix denotes original smallest-unit value.",
+                          "example": "10.00"
+                        },
+                        "minPriceMinor": {
+                          "type": "string",
+                          "description": "Exact amount; Minor suffix denotes original smallest-unit value.",
+                          "example": "1000"
+                        },
+                        "maxPriceMinor": {
+                          "type": "string",
+                          "description": "Exact amount; Minor suffix denotes original smallest-unit value.",
+                          "example": "1000"
+                        }
+                      },
+                      "required": [
+                        "currency",
+                        "minorUnit",
+                        "minPrice",
+                        "maxPrice",
+                        "minPriceMinor",
+                        "maxPriceMinor"
+                      ]
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "attributeCounts": {
+                  "anyOf": [
+                    {
+                      "type": "array",
+                      "description": "Null when disabled or unsupported by the store; empty array means no matches.",
+                      "example": [],
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "termId": {
+                            "type": "string",
+                            "description": "Public aggregate bucket.",
+                            "example": "16"
+                          },
+                          "count": {
+                            "type": "integer",
+                            "description": "Product count in this bucket.",
+                            "example": 1
+                          }
+                        },
+                        "required": [
+                          "termId",
+                          "count"
+                        ]
+                      }
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "ratingCounts": {
+                  "anyOf": [
+                    {
+                      "type": "array",
+                      "description": "Null when disabled or unsupported by the store; empty array means no matches.",
+                      "example": [],
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "rating": {
+                            "type": "integer",
+                            "description": "Public aggregate bucket.",
+                            "example": 5
+                          },
+                          "count": {
+                            "type": "integer",
+                            "description": "Product count in this bucket.",
+                            "example": 1
+                          }
+                        },
+                        "required": [
+                          "rating",
+                          "count"
+                        ]
+                      }
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "stockStatusCounts": {
+                  "anyOf": [
+                    {
+                      "type": "array",
+                      "description": "Null when disabled or unsupported by the store; empty array means no matches.",
+                      "example": [],
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "status": {
+                            "type": "string",
+                            "description": "Public aggregate bucket.",
+                            "example": "instock"
+                          },
+                          "count": {
+                            "type": "integer",
+                            "description": "Product count in this bucket.",
+                            "example": 1
+                          }
+                        },
+                        "required": [
+                          "status",
+                          "count"
+                        ]
+                      }
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "taxonomyCounts": {
+                  "anyOf": [
+                    {
+                      "type": "array",
+                      "description": "Null when disabled or unsupported by the store; empty array means no matches.",
+                      "example": [],
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "termId": {
+                            "type": "string",
+                            "description": "Public aggregate bucket.",
+                            "example": "16"
+                          },
+                          "count": {
+                            "type": "integer",
+                            "description": "Product count in this bucket.",
+                            "example": 1
+                          }
+                        },
+                        "required": [
+                          "termId",
+                          "count"
+                        ]
+                      }
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "storeUrl",
+            "fetchedAt",
+            "cacheHit",
+            "collection"
+          ],
+          "additionalProperties": true
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "code": {
+      "description": "0 means accepted or successful; nonzero is a platform error.",
+      "type": "integer"
+    },
+    "msg": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ts": {
+      "description": "Epoch milliseconds.",
+      "type": "string"
+    },
+    "time": {
+      "description": "Server local time: yyyy-MM-dd HH:mm:ss.",
+      "type": "string"
+    },
+    "cost": {
+      "description": "Elapsed milliseconds, never credits; -1 outside web requests.",
+      "type": "string"
+    },
+    "traceId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

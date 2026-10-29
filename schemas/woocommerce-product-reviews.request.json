@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "required": [
+    "storeUrl"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "storeUrl": {
+      "type": "string",
+      "description": "Public HTTPS store root or WordPress installation path.",
+      "maxLength": 2048
+    },
+    "pageNum": {
+      "type": "integer",
+      "description": "Page number, default 1.",
+      "maximum": 10000,
+      "minimum": 1
+    },
+    "pageSize": {
+      "type": "integer",
+      "description": "Page size, default 20, maximum 100.",
+      "maximum": 100,
+      "minimum": 1
+    },
+    "productId": {
+      "type": "string",
+      "description": "Only reviews for this product. Locked products return no public reviews.",
+      "pattern": "^[1-9][0-9]{0,18}$"
+    },
+    "categoryId": {
+      "type": "string",
+      "description": "Restrict to a public product category.",
+      "pattern": "^[1-9][0-9]{0,18}$"
+    }
+  }
+}

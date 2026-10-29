@@ -2,7 +2,7 @@
 
 Connect ecommerce workflows to marketplace data, product research, and AI image and video creation through Nexscope APIs.
 
-**225 APIs · 172 Data APIs · 53 Creative APIs · 20 categories**
+**236 APIs · 183 Data APIs · 53 Creative APIs · 21 categories**
 
 [Get an API key](https://www.nexscope.ai/seller/api-access?co-from=github-ecommerce-api) · [Official API docs](https://www.nexscope.ai/api-docs?co-from=github-ecommerce-api) · [Complete catalog](#complete-api-catalog) · [Integration guide](docs/calling-apis.md)
 
@@ -158,9 +158,9 @@ The helpers surface non-2xx responses and print the returned JSON. They do not c
 
 ## Complete API catalog
 
-All 225 APIs listed in the official directory are included. Each entry links to its parameters, request/response definitions, sample payload, and official documentation.
+This catalog retains the original 225 entries and adds 11 WooCommerce production APIs (2026-10-29). Other entries keep their documented snapshot dates. Each entry links to its definitions, sample payload and official reference.
 
-### Data APIs — 172
+### Data APIs — 183
 
 #### Amazon Marketplace Intelligence (26)
 
@@ -313,6 +313,22 @@ All 225 APIs listed in the official directory are included. Each entry links to 
 |---|---|
 | [Shopify Product Query API](docs/data/shopify-product-query.md) | Filter Shopify standalone store products by multiple dimensions (keyword/URL, price, weekly sales, listing date, Facebook ads, competitiveness, supplier availability, shipping country, etc.). |
 | [Shopify Store Query API](docs/data/shopify-store-query.md) | Filter Shopify standalone stores by multiple dimensions (store name/domain, country, years since creation, product count, ad count, monthly visits, monthly orders, social media followers, etc.). |
+
+#### WooCommerce Public Store Data (11)
+
+| API | Purpose |
+|---|---|
+| [WooCommerce Products API](docs/data/woocommerce-products.md) | Read public products from a specified WooCommerce store. |
+| [WooCommerce Product Detail API](docs/data/woocommerce-product-detail.md) | Read public products from a specified WooCommerce store. |
+| [WooCommerce Product Variations API](docs/data/woocommerce-product-variations.md) | Read public products from a specified WooCommerce store. |
+| [WooCommerce Product Categories API](docs/data/woocommerce-product-categories.md) | Read public categories from a specified WooCommerce store. |
+| [WooCommerce Product Tags API](docs/data/woocommerce-product-tags.md) | Read public tags from a specified WooCommerce store. |
+| [WooCommerce Product Brands API](docs/data/woocommerce-product-brands.md) | Read public brands from a specified WooCommerce store. |
+| [WooCommerce Product Attributes API](docs/data/woocommerce-product-attributes.md) | Read public attributes from a specified WooCommerce store. |
+| [WooCommerce Product Attribute Detail API](docs/data/woocommerce-product-attribute-detail.md) | Read public attribute from a specified WooCommerce store. |
+| [WooCommerce Product Attribute Terms API](docs/data/woocommerce-product-attribute-terms.md) | Read public terms from a specified WooCommerce store. |
+| [WooCommerce Product Reviews API](docs/data/woocommerce-product-reviews.md) | Read public reviews from a specified WooCommerce store. |
+| [WooCommerce Product Collection Data API](docs/data/woocommerce-product-collection-data.md) | Read public collection from a specified WooCommerce store. |
 
 #### Etsy Marketplace (4)
 

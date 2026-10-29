@@ -1,0 +1,447 @@
+{
+  "required": [
+    "code",
+    "msg",
+    "data",
+    "ts",
+    "time",
+    "cost",
+    "traceId"
+  ],
+  "type": "object",
+  "properties": {
+    "data": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "storeUrl": {
+              "type": "string",
+              "description": "Normalized store identity.",
+              "example": "https://example.com"
+            },
+            "fetchedAt": {
+              "type": "string",
+              "description": "Fetch time in epoch milliseconds, not the product modification time.",
+              "example": "1792972800000"
+            },
+            "cacheHit": {
+              "type": "boolean",
+              "description": "Whether the response was served from the anonymous 60-second cache.",
+              "example": false
+            },
+            "products": {
+              "type": "array",
+              "description": "Normalized public products.",
+              "example": [],
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "description": "Plain text or public product identifier.",
+                        "example": "34"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "parentId": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "description": "Store value; null when unavailable.",
+                        "example": null
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "type": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "description": "Store value; null when unavailable.",
+                        "example": "simple"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "name": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "description": "Plain text or public product identifier.",
+                        "example": "Cotton Shirt"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "sku": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "description": "Plain text or public product identifier.",
+                        "example": "SHIRT-34"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "url": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "description": "Plain text or public product identifier.",
+                        "example": "https://example.com/product/shirt"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "description": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "description": "Plain text or public product identifier.",
+                        "example": "Cotton shirt."
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "shortDescription": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "description": "Plain text or public product identifier.",
+                        "example": "Cotton shirt."
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "variation": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "description": "Plain text or public product identifier.",
+                        "example": ""
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "isInStock": {
+                    "anyOf": [
+                      {
+                        "type": "boolean",
+                        "description": "Store value, null when unavailable.",
+                        "example": true
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "isPasswordProtected": {
+                    "anyOf": [
+                      {
+                        "type": "boolean",
+                        "description": "Store value, null when unavailable.",
+                        "example": false
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "stockQuantity": {
+                    "anyOf": [
+                      {
+                        "type": "integer",
+                        "description": "Always null: public Store API does not expose exact inventory.",
+                        "example": null
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "prices": {
+                    "type": "object",
+                    "description": "Anonymous store pricing; decimal values are strings for exact precision.",
+                    "example": {},
+                    "properties": {
+                      "currency": {
+                        "type": "string",
+                        "description": "Currency code.",
+                        "example": "USD"
+                      },
+                      "minorUnit": {
+                        "type": "integer",
+                        "description": "Currency decimal precision.",
+                        "example": 2
+                      },
+                      "price": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "description": "Exact amount string; null when unavailable. Minor suffix denotes original smallest-unit amount.",
+                            "example": "11.05"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "regularPrice": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "description": "Exact amount string; null when unavailable. Minor suffix denotes original smallest-unit amount.",
+                            "example": null
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "salePrice": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "description": "Exact amount string; null when unavailable. Minor suffix denotes original smallest-unit amount.",
+                            "example": null
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "priceMinor": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "description": "Exact amount string; null when unavailable. Minor suffix denotes original smallest-unit amount.",
+                            "example": null
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "regularPriceMinor": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "description": "Exact amount string; null when unavailable. Minor suffix denotes original smallest-unit amount.",
+                            "example": null
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "salePriceMinor": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "description": "Exact amount string; null when unavailable. Minor suffix denotes original smallest-unit amount.",
+                            "example": null
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "minPriceMinor": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "description": "Exact amount string; null when unavailable. Minor suffix denotes original smallest-unit amount.",
+                            "example": null
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "maxPriceMinor": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "description": "Exact amount string; null when unavailable. Minor suffix denotes original smallest-unit amount.",
+                            "example": null
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "minPrice": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "description": "Exact amount string; null when unavailable. Minor suffix denotes original smallest-unit amount.",
+                            "example": null
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "maxPrice": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "description": "Exact amount string; null when unavailable. Minor suffix denotes original smallest-unit amount.",
+                            "example": null
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      }
+                    },
+                    "required": [
+                      "currency",
+                      "minorUnit"
+                    ]
+                  },
+                  "images": {
+                    "type": "array",
+                    "description": "Public image URLs; images are not fetched by this API.",
+                    "example": [],
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "url": {
+                          "type": "string",
+                          "description": "Image URL.",
+                          "example": "https://example.com/image.jpg"
+                        },
+                        "alt": {
+                          "type": "string",
+                          "description": "Plain text alternative label.",
+                          "example": "Shirt"
+                        }
+                      },
+                      "required": [
+                        "url",
+                        "alt"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "prices",
+                  "images"
+                ]
+              }
+            },
+            "pageNum": {
+              "type": "integer",
+              "description": "Pagination metadata; totals are null when the store omits headers.",
+              "example": 1
+            },
+            "pageSize": {
+              "type": "integer",
+              "description": "Pagination metadata; totals are null when the store omits headers.",
+              "example": 20
+            },
+            "total": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Pagination metadata; totals are null when the store omits headers.",
+                  "example": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "totalPages": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Pagination metadata; totals are null when the store omits headers.",
+                  "example": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "hasMore": {
+              "anyOf": [
+                {
+                  "type": "boolean",
+                  "description": "Null when total pages are unavailable.",
+                  "example": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "storeUrl",
+            "fetchedAt",
+            "cacheHit",
+            "products",
+            "pageNum",
+            "pageSize"
+          ],
+          "additionalProperties": true
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "code": {
+      "description": "0 means accepted or successful; nonzero is a platform error.",
+      "type": "integer"
+    },
+    "msg": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ts": {
+      "description": "Epoch milliseconds.",
+      "type": "string"
+    },
+    "time": {
+      "description": "Server local time: yyyy-MM-dd HH:mm:ss.",
+      "type": "string"
+    },
+    "cost": {
+      "description": "Elapsed milliseconds, never credits; -1 outside web requests.",
+      "type": "string"
+    },
+    "traceId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

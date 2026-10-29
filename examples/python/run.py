@@ -13,7 +13,7 @@ from urllib.request import Request, urlopen
 ROOT = Path(__file__).resolve().parents[2]
 
 def prepare(slug, payload_path=None, task=None):
-    catalog = json.loads((ROOT / 'catalog/apis.json').read_text())
+    catalog = json.loads((ROOT / 'catalog/apis.json').read_text(encoding='utf-8'))
     api = next((a for a in catalog['apis'] if a['slug'] == slug), None)
     if api is None:
         raise ValueError('Unknown API slug. See catalog/apis.json.')
@@ -23,7 +23,7 @@ def prepare(slug, payload_path=None, task=None):
         return 'GET', api['taskResultEndpoint'].replace('{taskId}', quote(task, safe='')), None
     if not payload_path:
         raise ValueError('Provide a JSON payload file, or --task TASK_ID.')
-    body = json.loads(Path(payload_path).read_text())
+    body = json.loads(Path(payload_path).read_text(encoding='utf-8'))
     if not isinstance(body, dict):
         raise ValueError('The request body must be a JSON object.')
     def placeholder(value):
@@ -60,7 +60,7 @@ def main():
         try: result = json.loads(text)
         except json.JSONDecodeError: raise ValueError('The API returned a non-JSON response.')
         print(json.dumps(result, indent=2))
-        if isinstance(result, dict) and result.get('status') in ('FAILED', 'TIMEOUT'): return 1
+        if isinstance(result, dict) and ('code' in result and result['code'] not in (0, '0') or result.get('status') in ('FAILED', 'TIMEOUT')): return 1
         return 0
     except HTTPError as error:
         print(f'HTTP {error.code}: {error.read().decode(errors="replace")}', file=sys.stderr); return 1

@@ -1,0 +1,127 @@
+{
+  "required": [
+    "code",
+    "msg",
+    "data",
+    "ts",
+    "time",
+    "cost",
+    "traceId"
+  ],
+  "type": "object",
+  "properties": {
+    "data": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "storeUrl": {
+              "type": "string",
+              "description": "Normalized store identity.",
+              "example": "https://example.com"
+            },
+            "fetchedAt": {
+              "type": "string",
+              "description": "Fetch time in epoch milliseconds; preserved on cache hits.",
+              "example": "1792972800000"
+            },
+            "cacheHit": {
+              "type": "boolean",
+              "description": "Whether the response was served from the anonymous 60-second cache.",
+              "example": false
+            },
+            "attribute": {
+              "type": "object",
+              "description": "Normalized public data. Missing optional values are null or empty strings.",
+              "example": {},
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Store-scoped ID string.",
+                  "example": "1"
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Plain text name.",
+                  "example": "Color"
+                },
+                "taxonomy": {
+                  "type": "string",
+                  "description": "Public attribute metadata.",
+                  "example": "pa_color"
+                },
+                "type": {
+                  "type": "string",
+                  "description": "Public attribute metadata.",
+                  "example": "select"
+                },
+                "order": {
+                  "type": "string",
+                  "description": "Public attribute metadata.",
+                  "example": "menu_order"
+                },
+                "hasArchives": {
+                  "anyOf": [
+                    {
+                      "type": "boolean",
+                      "description": "Whether public archives are enabled; null when unavailable.",
+                      "example": false
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "taxonomy",
+                "type",
+                "order"
+              ]
+            }
+          },
+          "required": [
+            "storeUrl",
+            "fetchedAt",
+            "cacheHit",
+            "attribute"
+          ],
+          "additionalProperties": true
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "code": {
+      "description": "0 means accepted or successful; nonzero is a platform error.",
+      "type": "integer"
+    },
+    "msg": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ts": {
+      "description": "Epoch milliseconds.",
+      "type": "string"
+    },
+    "time": {
+      "description": "Server local time: yyyy-MM-dd HH:mm:ss.",
+      "type": "string"
+    },
+    "cost": {
+      "description": "Elapsed milliseconds, never credits; -1 outside web requests.",
+      "type": "string"
+    },
+    "traceId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

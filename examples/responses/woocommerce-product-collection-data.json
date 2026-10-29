@@ -1,0 +1,47 @@
+{
+  "data": {
+    "storeUrl": "https://example.com",
+    "fetchedAt": "1792972800000",
+    "cacheHit": false,
+    "collection": {
+      "priceRange": {
+        "currency": "USD",
+        "minorUnit": 2,
+        "minPrice": "10.00",
+        "maxPrice": "10.00",
+        "minPriceMinor": "1000",
+        "maxPriceMinor": "1000"
+      },
+      "attributeCounts": [
+        {
+          "termId": "16",
+          "count": 1
+        }
+      ],
+      "ratingCounts": [
+        {
+          "rating": 5,
+          "count": 1
+        }
+      ],
+      "stockStatusCounts": [
+        {
+          "status": "instock",
+          "count": 1
+        }
+      ],
+      "taxonomyCounts": [
+        {
+          "termId": "16",
+          "count": 1
+        }
+      ]
+    }
+  },
+  "code": 0,
+  "msg": null,
+  "ts": "0",
+  "time": "2026-01-01 00:00:00",
+  "cost": "-1",
+  "traceId": null
+}
