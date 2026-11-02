@@ -1,0 +1,34 @@
+{
+  "data": {
+    "data": {
+      "code": "OK",
+      "data": {
+        "items": [
+          {
+            "simple_legal_status": "inactive",
+            "design_registration_id": "DSR:wipo_hague:EMID.001431738-0001",
+            "as_of_date": "2026-10-09",
+            "holder_names": [
+              "Example holder"
+            ],
+            "designer_names": [
+              "Example designer"
+            ],
+            "title_en": "Bottles",
+            "has_readable_image": 1,
+            "image_count": 5,
+            "primary_identifier": "001431738"
+          }
+        ],
+        "returned": 1
+      },
+      "request_id": "example-request"
+    }
+  },
+  "code": 0,
+  "msg": null,
+  "ts": "0",
+  "time": "2026-01-01 00:00:00",
+  "cost": "-1",
+  "traceId": null
+}

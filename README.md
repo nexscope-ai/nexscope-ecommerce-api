@@ -2,11 +2,11 @@
 
 Connect ecommerce workflows to marketplace data, product research, and AI image and video creation through Nexscope APIs.
 
-**236 APIs · 183 Data APIs · 53 Creative APIs · 21 categories**
+**238 APIs · 185 Data APIs · 53 Creative APIs · 21 categories**
 
 [Get an API key](https://www.nexscope.ai/seller/api-access?co-from=github-ecommerce-api) · [Official API docs](https://www.nexscope.ai/api-docs?co-from=github-ecommerce-api) · [Complete catalog](#complete-api-catalog) · [Integration guide](docs/calling-apis.md)
 
-This repository includes documentation for every API in the official directory, request/response definitions, editable request samples, and cURL, JavaScript, and Python clients. Use it to connect marketplace research, sourcing, keyword analysis, product imagery, and video creation to your application.
+This repository includes the documented API snapshots listed below, with request/response definitions, editable request samples, and cURL, JavaScript, and Python clients. Use it to connect marketplace research, sourcing, keyword analysis, product imagery, and video creation to your application.
 
 ## Quick start
 
@@ -147,20 +147,20 @@ The helpers surface non-2xx responses and print the returned JSON. They do not c
 
 | Path | Contents |
 |---|---|
-| [docs/data/](docs/data/) | 172 Data API references |
+| [docs/data/](docs/data/) | 185 Data API references |
 | [docs/creative/](docs/creative/) | 53 Creative API references |
 | [catalog/apis.json](catalog/apis.json) | Complete inventory, categories, links, endpoints, and definition formats |
-| [schemas/](schemas/) | 225 request and 225 response definitions |
-| [payloads/](payloads/) | 225 published request samples |
-| [examples/responses/](examples/responses/) | 225 published response fixtures |
+| [schemas/](schemas/) | 238 request and 238 response definitions |
+| [payloads/](payloads/) | 238 published request samples |
+| [examples/responses/](examples/responses/) | 238 published response fixtures |
 | [examples/](examples/) | cURL, JavaScript, and Python clients for every catalog entry |
 | [docs/calling-apis.md](docs/calling-apis.md) | Authentication, tasks, media, and MCP guidance |
 
 ## Complete API catalog
 
-This catalog retains the original 225 entries and adds 11 WooCommerce production APIs (2026-10-29). Other entries keep their documented snapshot dates. Each entry links to its definitions, sample payload and official reference.
+This catalog retains the original 225 entries and adds 11 WooCommerce production APIs (2026-10-29). It also adds two SIF production APIs (2026-11-02, reflecting the 2026-10-31 source contract). Other entries keep their documented snapshot dates. Each entry links to its definitions, sample payload and official reference.
 
-### Data APIs — 183
+### Data APIs — 185
 
 #### Amazon Marketplace Intelligence (26)
 
@@ -381,7 +381,7 @@ This catalog retains the original 225 entries and adds 11 WooCommerce production
 |---|---|
 | [Product Description Generator API](docs/data/product-description-generator.md) | Create or query asynchronous product-description generation tasks. |
 
-#### Patent & IP Risk (23)
+#### Patent & IP Risk (25)
 
 | API | Purpose |
 |---|---|
@@ -408,6 +408,8 @@ This catalog retains the original 225 entries and adds 11 WooCommerce production
 | [Utility Patent Detector API](docs/data/utility-patent-detector.md) | Detect and search for similar utility/invention patents based on product information. |
 | [Nexscope Patent Image Search API](docs/data/zhihuiya-patent-image-search.md) | Perform visual similarity search for design patents using an image URL, with filtering by country, legal status, date ranges, Locarno classification, and assignee. Supports design patent types only (type D). |
 | [Nexscope Utility Patent Image Search API](docs/data/zhihuiya-utility-patent-image-search.md) | Perform visual similarity search for utility model patents using an image URL, with filtering by country, legal status, date ranges, and assignee. Supports utility model patents only (type U) with shape-only or shape+pattern+color matching models. |
+| [Design Similarity Search API](docs/data/design-similarity-search.md) | Find similar design-registration candidates from a product image. |
+| [Design Registration Details API](docs/data/design-registration-details.md) | Look up design-registration details by ID or primary number. |
 
 #### Product & Market Research (2)
 
@@ -507,7 +509,7 @@ This catalog retains the original 225 entries and adds 11 WooCommerce production
 
 ## Source, coverage, and validation
 
-Snapshot: **2026-09-10**, from the [official API directory](https://www.nexscope.ai/api-docs?co-from=github-ecommerce-api) and its public definition service. Counts refer to documented API entries, not every supporting HTTP route. The complete 225-entry inventory is included; live documentation can change after this snapshot.
+Snapshot: **2026-09-10**, from the [official API directory](https://www.nexscope.ai/api-docs?co-from=github-ecommerce-api) and its public definition service. Counts refer to documented API entries, not every supporting HTTP route. The original 225-entry inventory plus the scoped WooCommerce and SIF additions is included; live documentation can change after each recorded snapshot.
 
 Some definitions use field descriptors rather than standard JSON Schema. Each format is labeled in the catalog. Published request and response samples are illustrative fixtures, not evidence of successful live calls. No authenticated or billable API requests were executed to prepare this repository. See [source notes](docs/source-notes.md) for the precise validation scope.
 

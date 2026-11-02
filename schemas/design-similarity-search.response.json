@@ -1,0 +1,794 @@
+{
+  "required": [
+    "code",
+    "msg",
+    "data",
+    "ts",
+    "time",
+    "cost",
+    "traceId"
+  ],
+  "type": "object",
+  "properties": {
+    "data": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "data": {
+              "type": "object",
+              "description": "Source envelope inside the gateway payload.",
+              "example": {},
+              "properties": {
+                "code": {
+                  "type": "string",
+                  "description": "Success is OK. Errors include 400 DATA_IMAGE_DOWNLOAD_FAILED (no image substitution), 413 SYSTEM_PAYLOAD_TOO_LARGE (no automatic compression), 502 SR_QUERY_ERROR and 503 CAPABILITY_BACKEND_UNAVAILABLE (backend failure, not zero hits or insufficient credits). Preserve actual code and request identifiers; no automatic retries.",
+                  "example": "OK"
+                },
+                "message": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "description": "Source status message.",
+                      "example": "success"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "request_id": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "description": "Upstream request identifier; keep separate from requestId.",
+                      "example": "req_example"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "data": {
+                  "type": "object",
+                  "description": "Search result; preserve optional coverage and warnings when returned.",
+                  "example": {},
+                  "properties": {
+                    "candidates": {
+                      "type": "array",
+                      "description": "Candidates in returned order; empty is not freedom to operate.",
+                      "example": [
+                        {
+                          "design_registration_id": "DSR:euipo_design:001694860-0001",
+                          "registration_jurisdiction_code": "EU",
+                          "jurisdiction_iso2": "EM",
+                          "primary_identifier": "001694860-0001",
+                          "application_number": "001694860",
+                          "registration_number": "E077151-PC",
+                          "publication_number": null,
+                          "title": "E077151-PC",
+                          "title_language": "unknown",
+                          "title_en": "Chairs [seats]",
+                          "designer_names": null,
+                          "locarno_classes": [
+                            "06.01"
+                          ],
+                          "holder_names": [
+                            "237302"
+                          ],
+                          "simple_legal_status": "inactive",
+                          "application_date": "2010-04-13",
+                          "registration_date": null,
+                          "publication_date": null,
+                          "similarity": 99.88,
+                          "risk_level": "medium",
+                          "image_url": "https://example.com/design-1.png?signature=example%2Bsignature&expires=2000000000",
+                          "images": [
+                            "https://example.com/design-1.png?signature=example%2Bsignature&expires=2000000000",
+                            "https://example.com/design-2.png?signature=second&expires=2000000000"
+                          ],
+                          "specification": null,
+                          "novelty_statement": null,
+                          "applicant_addresses": null,
+                          "locarno_details": [
+                            {
+                              "code": "06.01",
+                              "parent_code": "06",
+                              "label_zh": null,
+                              "label_en": null
+                            }
+                          ],
+                          "estimated_expiration_date": null,
+                          "expiration_date_basis": null,
+                          "tro_cases": [],
+                          "protected_jurisdictions": [
+                            "EM"
+                          ]
+                        }
+                      ],
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "design_registration_id": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Exact registration ID for details; preserve unchanged.",
+                                "example": "DSR:euipo_design:001694860-0001"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "registration_jurisdiction_code": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Source jurisdiction code such as EU, EMID or USID; do not rewrite as ISO-2.",
+                                "example": "EU"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "jurisdiction_iso2": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Registration jurisdiction, distinct from protected jurisdictions.",
+                                "example": "EM"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "primary_identifier": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Primary display number; retain leading zeros.",
+                                "example": "001694860-0001"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "application_number": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Source application number.",
+                                "example": "001694860"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "registration_number": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Source registration number.",
+                                "example": "E077151-PC"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "publication_number": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Source publication number; missing or null means unknown.",
+                                "example": null
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "title": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Source title, which may be a number.",
+                                "example": "E077151-PC"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "title_language": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Source title language; may be unknown.",
+                                "example": "unknown"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "title_en": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Source English title; do not translate missing values.",
+                                "example": "Chairs [seats]"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "designer_names": {
+                            "anyOf": [
+                              {
+                                "type": "array",
+                                "description": "Source designers; missing or null means unknown.",
+                                "example": null
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "locarno_classes": {
+                            "anyOf": [
+                              {
+                                "type": "array",
+                                "description": "Preserve output codes such as 06.01 or 09-01; requests still require NN-NN.",
+                                "example": [
+                                  "06.01"
+                                ]
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "holder_names": {
+                            "anyOf": [
+                              {
+                                "type": "array",
+                                "description": "Source holders; do not resolve numeric identifiers to invented names.",
+                                "example": [
+                                  "237302"
+                                ]
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "simple_legal_status": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Source legal status; do not infer it from similarity.",
+                                "example": "inactive"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "application_date": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Source application date, YYYY-MM-DD.",
+                                "example": "2010-04-13"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "registration_date": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Source registration date, YYYY-MM-DD.",
+                                "example": null
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "publication_date": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Source publication date, YYYY-MM-DD.",
+                                "example": null
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "similarity": {
+                            "anyOf": [
+                              {
+                                "type": "number",
+                                "description": "Final 0-100 score, not a probability. Preserve returned order; never multiply by 100 or sort again.",
+                                "example": 99.88,
+                                "minimum": 0,
+                                "maximum": 100
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "risk_level": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Source risk hint, separate from score and legal status; not an infringement verdict.",
+                                "example": "medium"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "image_url": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Complete signed first-image URL; when images exist this equals images[0]. Never strip query parameters.",
+                                "example": "https://example.com/design-1.png?signature=example%2Bsignature&expires=2000000000"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "images": {
+                            "anyOf": [
+                              {
+                                "type": "array",
+                                "description": "At most six complete signed image URLs in original order; empty means no available images.",
+                                "example": [
+                                  "https://example.com/design-1.png?signature=example%2Bsignature&expires=2000000000",
+                                  "https://example.com/design-2.png?signature=second&expires=2000000000"
+                                ],
+                                "maxItems": 6,
+                                "items": {
+                                  "type": "string"
+                                }
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "specification": {
+                            "anyOf": [
+                              {
+                                "type": [
+                                  "object",
+                                  "array",
+                                  "string",
+                                  "number",
+                                  "boolean",
+                                  "null"
+                                ],
+                                "description": "Source JSON of any shape, or null; preserve actual structure without filling gaps.",
+                                "example": null
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "novelty_statement": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Source novelty statement; retain original text, not a legal conclusion.",
+                                "example": null
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "applicant_addresses": {
+                            "anyOf": [
+                              {
+                                "type": "array",
+                                "description": "Source applicant objects with name and address; never infer protection jurisdictions.",
+                                "example": null,
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "name": {
+                                      "type": "string",
+                                      "description": "Source applicant name.",
+                                      "example": "Example applicant"
+                                    },
+                                    "address": {
+                                      "type": "string",
+                                      "description": "Source address; not evidence of protected jurisdiction.",
+                                      "example": "Example address"
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "locarno_details": {
+                            "anyOf": [
+                              {
+                                "type": "array",
+                                "description": "Source code, parent_code, label_zh and label_en; missing labels stay unknown.",
+                                "example": [
+                                  {
+                                    "code": "06.01",
+                                    "parent_code": "06",
+                                    "label_zh": null,
+                                    "label_en": null
+                                  }
+                                ],
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "code": {
+                                      "type": "string",
+                                      "description": "Unmodified source classification code.",
+                                      "example": "06.01"
+                                    },
+                                    "parent_code": {
+                                      "type": "string",
+                                      "description": "Source parent classification.",
+                                      "example": "06"
+                                    },
+                                    "label_zh": {
+                                      "type": "string",
+                                      "description": "Source Chinese label; missing/null stays unknown.",
+                                      "example": null
+                                    },
+                                    "label_en": {
+                                      "type": "string",
+                                      "description": "Source English label; missing/null stays unknown.",
+                                      "example": null
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "estimated_expiration_date": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Estimated date only, YYYY-MM-DD; not confirmed expiry or invalidity.",
+                                "example": null
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "expiration_date_basis": {
+                            "anyOf": [
+                              {
+                                "type": [
+                                  "object",
+                                  "array",
+                                  "string",
+                                  "number",
+                                  "boolean",
+                                  "null"
+                                ],
+                                "description": "Source JSON of any shape, or null; never invent an estimation basis.",
+                                "example": null
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "tro_cases": {
+                            "anyOf": [
+                              {
+                                "type": "array",
+                                "description": "Current TRO corpus associations; empty is not confirmation of no TRO.",
+                                "example": []
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "protected_jurisdictions": {
+                            "anyOf": [
+                              {
+                                "type": "array",
+                                "description": "HAGUE designated states or ordinary registration jurisdiction; null means unknown, never fill from regions.",
+                                "example": [
+                                  "EM"
+                                ]
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    "total": {
+                      "anyOf": [
+                        {
+                          "type": "integer",
+                          "description": "Returned candidate count, not corpus size or user billing units.",
+                          "example": 1
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "coverage": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "description": "Optional source coverage; do not infer completeness.",
+                          "example": {}
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "warnings": {
+                      "anyOf": [
+                        {
+                          "type": "array",
+                          "description": "Optional source limitations.",
+                          "example": []
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "candidates"
+                  ]
+                },
+                "usage": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "description": "Source-account usage; not user debit or balance.",
+                      "example": {}
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "code",
+                "data"
+              ]
+            },
+            "upstreamRequestId": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Extracted upstream request identifier.",
+                  "example": "req_example"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "requestId": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Gateway/service error request identifier; distinct from upstream request_id.",
+                  "example": "gateway_example"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "type": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Provider-specific render or payload type.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "title": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Provider-specific response title.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "sourceType": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Provider-specific source platform type.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "sourceTool": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Provider-specific source tool name.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "costToken": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Token cost reported by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "costTime": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Execution time reported by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "page": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Current page returned by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "pageSize": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Page size returned by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "pageItemCount": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Item count on the current page returned by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "totalPage": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Total page count returned by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "dataSnapshotMonth": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Data snapshot month returned by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "data"
+          ],
+          "additionalProperties": true
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "code": {
+      "type": "integer",
+      "description": "0 means accepted or successful; nonzero is a platform error."
+    },
+    "msg": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ts": {
+      "type": "string",
+      "description": "Epoch milliseconds."
+    },
+    "time": {
+      "type": "string",
+      "description": "Server local time: yyyy-MM-dd HH:mm:ss."
+    },
+    "cost": {
+      "type": "string",
+      "description": "Elapsed milliseconds, never credits; -1 outside web requests."
+    },
+    "traceId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

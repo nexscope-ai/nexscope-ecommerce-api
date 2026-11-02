@@ -2,9 +2,9 @@
   "title": "Nexscope Ecommerce API",
   "retrievedAt": "2026-09-10",
   "source": "https://www.nexscope.ai/api-docs?co-from=github-ecommerce-api",
-  "count": 236,
+  "count": 238,
   "counts": {
-    "data": 183,
+    "data": 185,
     "creative": 53
   },
   "categories": [
@@ -66,7 +66,7 @@
     },
     {
       "name": "Patent & IP Risk",
-      "count": 23
+      "count": 25
     },
     {
       "name": "Product & Market Research",
@@ -7322,6 +7322,50 @@
           "maxAspectRatio": null
         }
       ]
+    },
+    {
+      "slug": "design-similarity-search",
+      "name": "Design Similarity Search API",
+      "family": "data",
+      "category": "Patent & IP Risk",
+      "summary": "Find similar design-registration candidates from a product image.",
+      "documentation": "https://www.nexscope.ai/api-docs/design-similarity-search?view=api&co-from=github-ecommerce-api",
+      "localDoc": "docs/data/design-similarity-search.md",
+      "endpoint": "https://api.nexscope.ai/ai/designSimilaritySearch",
+      "method": "POST",
+      "asyncTask": false,
+      "taskResultEndpoint": null,
+      "mcpToolName": "nexscope_design_similarity_search",
+      "requestSchema": "schemas/design-similarity-search.request.json",
+      "responseSchema": "schemas/design-similarity-search.response.json",
+      "requestSchemaFormat": "json-schema",
+      "responseSchemaFormat": "json-schema",
+      "payload": "payloads/design-similarity-search.json",
+      "responseExample": "examples/responses/design-similarity-search.json",
+      "requiredAnyGroups": [],
+      "assetUploadConstraints": []
+    },
+    {
+      "slug": "design-registration-details",
+      "name": "Design Registration Details API",
+      "family": "data",
+      "category": "Patent & IP Risk",
+      "summary": "Look up design-registration details by ID or primary number.",
+      "documentation": "https://www.nexscope.ai/api-docs/design-registration-details?view=api&co-from=github-ecommerce-api",
+      "localDoc": "docs/data/design-registration-details.md",
+      "endpoint": "https://api.nexscope.ai/ai/designRegistrationDetails",
+      "method": "POST",
+      "asyncTask": false,
+      "taskResultEndpoint": null,
+      "mcpToolName": "nexscope_design_registration_details",
+      "requestSchema": "schemas/design-registration-details.request.json",
+      "responseSchema": "schemas/design-registration-details.response.json",
+      "requestSchemaFormat": "json-schema",
+      "responseSchemaFormat": "json-schema",
+      "payload": "payloads/design-registration-details.json",
+      "responseExample": "examples/responses/design-registration-details.json",
+      "requiredAnyGroups": [],
+      "assetUploadConstraints": []
     }
   ],
   "incrementalUpdates": [
@@ -7341,6 +7385,15 @@
         "woocommerce-product-attribute-terms",
         "woocommerce-product-reviews",
         "woocommerce-product-collection-data"
+      ]
+    },
+    {
+      "retrievedAt": "2026-11-02T08:08:29.935298+00:00",
+      "source": "https://api.nexscope.ai/api/skill-api/v1/api-docs",
+      "scope": "Two SIF production contracts reflecting 2026-10-31; original 236 entries unchanged; no paid calls",
+      "slugs": [
+        "design-similarity-search",
+        "design-registration-details"
       ]
     }
   ]

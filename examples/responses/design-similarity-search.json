@@ -1,0 +1,67 @@
+{
+  "data": {
+    "data": {
+      "code": "OK",
+      "request_id": "req_example",
+      "data": {
+        "total": 1,
+        "candidates": [
+          {
+            "design_registration_id": "DSR:euipo_design:001694860-0001",
+            "registration_jurisdiction_code": "EU",
+            "jurisdiction_iso2": "EM",
+            "primary_identifier": "001694860-0001",
+            "application_number": "001694860",
+            "registration_number": "E077151-PC",
+            "publication_number": null,
+            "title": "E077151-PC",
+            "title_language": "unknown",
+            "title_en": "Chairs [seats]",
+            "designer_names": null,
+            "locarno_classes": [
+              "06.01"
+            ],
+            "holder_names": [
+              "237302"
+            ],
+            "simple_legal_status": "inactive",
+            "application_date": "2010-04-13",
+            "registration_date": null,
+            "publication_date": null,
+            "similarity": 99.88,
+            "risk_level": "medium",
+            "image_url": "https://example.com/design-1.png?signature=example%2Bsignature&expires=2000000000",
+            "images": [
+              "https://example.com/design-1.png?signature=example%2Bsignature&expires=2000000000",
+              "https://example.com/design-2.png?signature=second&expires=2000000000"
+            ],
+            "specification": null,
+            "novelty_statement": null,
+            "applicant_addresses": null,
+            "locarno_details": [
+              {
+                "code": "06.01",
+                "parent_code": "06",
+                "label_zh": null,
+                "label_en": null
+              }
+            ],
+            "estimated_expiration_date": null,
+            "expiration_date_basis": null,
+            "tro_cases": [],
+            "protected_jurisdictions": [
+              "EM"
+            ]
+          }
+        ]
+      },
+      "message": "success"
+    }
+  },
+  "code": 0,
+  "msg": null,
+  "ts": "0",
+  "time": "2026-01-01 00:00:00",
+  "cost": "-1",
+  "traceId": null
+}

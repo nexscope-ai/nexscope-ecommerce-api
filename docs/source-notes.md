@@ -33,3 +33,11 @@ Added only 11 production WooCommerce APIs: the repository now documents 236 entr
 WooCommerce request/response JSON Schemas, POST short paths and canonical HTTP response fixtures were read from the production public API-definition service. Editable payloads follow the reviewed public Data Example inputs. The full HTTP fixtures and paired Data Example content are separate sources; neither is a new live execution by this repository. No merchant secret is required; Nexscope API key authentication and the documented 10-credit/failure-refund policy apply.
 
 Validation covers all 236 catalog artifacts and links, plus offline cURL-helper/JavaScript/Python request preparation for all 11 short paths. No authenticated or billable business API calls were made for this synchronization. Existing historical fixtures for other APIs were not rewritten.
+
+## SIF incremental synchronization — 2026-11-02
+
+Added only Design Similarity Search and Design Registration Details from the production public Catalog, reflecting the 2026-10-31 SIF source contract: 238 entries (185 Data, 53 Creative), still 21 categories. The original 236 catalog records and their schemas, payloads, response fixtures and API reference files remain unchanged. This is not a full directory refresh.
+
+Both JSON Schemas and illustrative HTTP response fixtures are copied from production. Preferred short paths are `/ai/designSimilaritySearch` and `/ai/designRegistrationDetails`; existing aliases, slugs and MCP tool names are retained. Search documents all 29 candidate fields, exact image-source XOR, Base64 limit 20971520, filter-array constraints, tracing and error semantics. Detail retains its items structure and unchanged identifier limits. Upstream usage is not user pricing.
+
+Offline checks cover catalog totals, local links, attribution, request preparation, image placeholder rejection, and HTTP fixture semantics for both SIF operations. No authenticated or billable business calls were made. Historical verification limits remain applicable to other APIs.

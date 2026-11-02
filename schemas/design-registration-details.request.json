@@ -1,0 +1,59 @@
+{
+  "oneOf": [
+    {
+      "not": {
+        "anyOf": [
+          {
+            "required": [
+              "primaryIdentifier"
+            ]
+          },
+          {
+            "required": [
+              "jurisdictionIso2"
+            ]
+          }
+        ]
+      },
+      "required": [
+        "designRegistrationIds"
+      ]
+    },
+    {
+      "not": {
+        "required": [
+          "designRegistrationIds"
+        ]
+      },
+      "required": [
+        "primaryIdentifier"
+      ]
+    }
+  ],
+  "properties": {
+    "jurisdictionIso2": {
+      "type": "string",
+      "pattern": "^[A-Za-z]{2}$"
+    },
+    "primaryIdentifier": {
+      "maxLength": 128,
+      "type": "string",
+      "pattern": "^\\S(?:[^\\r\\n]*\\S)?$",
+      "minLength": 1
+    },
+    "designRegistrationIds": {
+      "items": {
+        "maxLength": 128,
+        "type": "string",
+        "pattern": "^\\S(?:[^\\r\\n]*\\S)?$",
+        "minLength": 1
+      },
+      "maxItems": 200,
+      "minItems": 1,
+      "uniqueItems": true,
+      "type": "array"
+    }
+  },
+  "additionalProperties": false,
+  "type": "object"
+}

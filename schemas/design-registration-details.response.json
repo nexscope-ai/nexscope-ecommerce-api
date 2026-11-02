@@ -1,0 +1,716 @@
+{
+  "required": [
+    "code",
+    "msg",
+    "data",
+    "ts",
+    "time",
+    "cost",
+    "traceId"
+  ],
+  "type": "object",
+  "properties": {
+    "data": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "data": {
+              "type": "object",
+              "description": "Source envelope retained within the gateway payload.",
+              "example": {},
+              "properties": {
+                "code": {
+                  "type": "string",
+                  "description": "Success is OK. DATA_DESIGN_NOT_FOUND (404) means no source detail found, not absence of rights. Preserve actual source/configuration errors and request identifiers; do not retry, split or change lookup mode automatically. Authentication, credits and permission failures remain distinct.",
+                  "example": "OK"
+                },
+                "request_id": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "description": "Source request identifier.",
+                      "example": "example-request"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "data": {
+                  "type": "object",
+                  "description": "Registration details result.",
+                  "example": {},
+                  "properties": {
+                    "returned": {
+                      "anyOf": [
+                        {
+                          "type": "integer",
+                          "description": "Number of returned records, not dataset size.",
+                          "example": 1
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "items": {
+                      "type": "array",
+                      "description": "All returned registration records in source order; no infringement conclusion.",
+                      "example": [
+                        {
+                          "simple_legal_status": "inactive",
+                          "design_registration_id": "DSR:wipo_hague:EMID.001431738-0001",
+                          "as_of_date": "2026-10-09",
+                          "holder_names": [
+                            "Example holder"
+                          ],
+                          "designer_names": [
+                            "Example designer"
+                          ],
+                          "title_en": "Bottles",
+                          "has_readable_image": 1,
+                          "image_count": 5,
+                          "primary_identifier": "001431738"
+                        }
+                      ],
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "design_registration_id": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Exact registration ID.",
+                                "example": "DSR:wipo_hague:EMID.001431738-0001"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "primary_identifier": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Primary number; preserve leading zeros.",
+                                "example": "001431738"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "holder_names": {
+                            "anyOf": [
+                              {
+                                "type": "array",
+                                "description": "Source holders, when known.",
+                                "example": [
+                                  "Example holder"
+                                ]
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "designer_names": {
+                            "anyOf": [
+                              {
+                                "type": "array",
+                                "description": "Source designers, when known.",
+                                "example": [
+                                  "Example designer"
+                                ]
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "simple_legal_status": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Source legal status; do not infer missing values.",
+                                "example": "inactive"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "as_of_date": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Source confirmation date, not necessarily today.",
+                                "example": "2026-10-09"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "has_readable_image": {
+                            "anyOf": [
+                              {
+                                "type": "integer",
+                                "description": "Source media hint; not an image URL.",
+                                "example": 1
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "image_count": {
+                            "anyOf": [
+                              {
+                                "type": "integer",
+                                "description": "Source image count; do not construct download links.",
+                                "example": 5
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "application_number": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Source application number; preserve leading zeros.",
+                                "example": "example-application"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "registration_number": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Source registration number, not a constructed registration ID.",
+                                "example": "example-registration"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "publication_number": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Source publication number.",
+                                "example": "example-publication"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "data_version": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Source data version.",
+                                "example": "example-version"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "right_type": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Source right type.",
+                                "example": "registered_design"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "registration_jurisdiction": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Original source jurisdiction value.",
+                                "example": "EM"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "registration_jurisdiction_code": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Original source jurisdiction code.",
+                                "example": "EMID"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "jurisdiction_iso2": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Two-letter jurisdiction; EM represents the EU.",
+                                "example": "EM"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "title": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Original source title.",
+                                "example": "Bottles"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "title_language": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Source title language; may be unknown.",
+                                "example": "unknown"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "title_en": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Source English title; do not translate independently.",
+                                "example": "Bottles"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "title_en_source": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Provenance of the English title.",
+                                "example": "source"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "raw_status": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Unmapped original source status.",
+                                "example": "DEL"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "application_date": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Application date, YYYY-MM-DD.",
+                                "example": "2020-01-01"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "registration_date": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Registration date, YYYY-MM-DD.",
+                                "example": "2020-02-01"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "publication_date": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Publication date, YYYY-MM-DD.",
+                                "example": "2020-03-01"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "data_quality_level": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Source data quality level; absent means unknown.",
+                                "example": "usable"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "coverage_level": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "description": "Source coverage level; no completeness guarantee.",
+                                "example": "detail_ready"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "classification_count": {
+                            "anyOf": [
+                              {
+                                "type": "integer",
+                                "description": "Source fact count; missing values remain unknown.",
+                                "example": 1
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "party_count": {
+                            "anyOf": [
+                              {
+                                "type": "integer",
+                                "description": "Source fact count; missing values remain unknown.",
+                                "example": 1
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "text_count": {
+                            "anyOf": [
+                              {
+                                "type": "integer",
+                                "description": "Source fact count; missing values remain unknown.",
+                                "example": 1
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "locarno_classes": {
+                            "anyOf": [
+                              {
+                                "type": "array",
+                                "description": "Source Locarno classes; preserve leading zeros.",
+                                "example": [
+                                  "09-01"
+                                ]
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    "asset": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "description": "Source asset identifier.",
+                          "example": "asset.design_profile"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "asset_code": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "description": "Source asset code.",
+                          "example": "asset_ipr_design_profile"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "execution": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "description": "Optional source execution metadata.",
+                          "example": {}
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "items"
+                  ]
+                },
+                "message": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "description": "Source status message.",
+                      "example": "success"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "usage": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "description": "Raw source usage, not user billing or balance.",
+                      "example": {}
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "code",
+                "data"
+              ]
+            },
+            "requestId": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Gateway/service error request identifier, distinct from upstream request_id.",
+                  "example": "gateway_example"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "upstreamRequestId": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Extracted upstream request identifier.",
+                  "example": "req_example"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "type": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Provider-specific render or payload type.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "title": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Provider-specific response title.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "sourceType": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Provider-specific source platform type.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "sourceTool": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Provider-specific source tool name.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "costToken": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Token cost reported by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "costTime": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Execution time reported by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "page": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Current page returned by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "pageSize": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Page size returned by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "pageItemCount": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Item count on the current page returned by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "totalPage": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Total page count returned by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "dataSnapshotMonth": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Data snapshot month returned by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "data"
+          ],
+          "additionalProperties": true
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "code": {
+      "type": "integer",
+      "description": "0 means accepted or successful; nonzero is a platform error."
+    },
+    "msg": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ts": {
+      "type": "string",
+      "description": "Epoch milliseconds."
+    },
+    "time": {
+      "type": "string",
+      "description": "Server local time: yyyy-MM-dd HH:mm:ss."
+    },
+    "cost": {
+      "type": "string",
+      "description": "Elapsed milliseconds, never credits; -1 outside web requests."
+    },
+    "traceId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}
