@@ -1,0 +1,149 @@
+{
+  "type": "object",
+  "properties": {
+    "invoiceApplyModelList": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "orderId": {
+            "type": "string",
+            "description": "Exact positive integer identifier. Send as a JSON string.",
+            "pattern": "^[1-9][0-9]*$"
+          },
+          "amount": {
+            "type": "integer",
+            "description": "Positive integer cents copied unchanged from invoiceAmount (64-bit integer).",
+            "minimum": 1,
+            "maximum": "9223372036854775807"
+          },
+          "invoiceType": {
+            "type": "string",
+            "description": "",
+            "enum": [
+              "VATAX_COMM",
+              "VATAX_SPEC"
+            ]
+          },
+          "purchaserInvoiceTitleModel": {
+            "type": "object",
+            "properties": {
+              "titleType": {
+                "type": "string",
+                "description": "",
+                "enum": [
+                  "PERSONAL",
+                  "COMPANY"
+                ]
+              },
+              "title": {
+                "type": "string",
+                "description": ""
+              },
+              "taxpayerIdentify": {
+                "type": "string",
+                "description": "Required for all COMPANY titles."
+              },
+              "bankName": {
+                "type": "string",
+                "description": "Required for COMPANY titles with VATAX_SPEC."
+              },
+              "bankAccountId": {
+                "type": "string",
+                "description": "Required for COMPANY titles with VATAX_SPEC."
+              },
+              "registerAddress": {
+                "type": "string",
+                "description": "Required for COMPANY titles with VATAX_SPEC."
+              },
+              "registerPhone": {
+                "type": "string",
+                "description": "Required for COMPANY titles with VATAX_SPEC."
+              }
+            },
+            "required": [
+              "titleType",
+              "title"
+            ],
+            "additionalProperties": true,
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "titleType": {
+                      "const": "COMPANY"
+                    }
+                  },
+                  "required": [
+                    "titleType"
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "taxpayerIdentify"
+                  ]
+                }
+              }
+            ],
+            "description": "COMPANY requires taxpayerIdentify. COMPANY with VATAX_SPEC also requires bankName, bankAccountId, registerAddress and registerPhone."
+          }
+        },
+        "required": [
+          "orderId",
+          "amount",
+          "invoiceType",
+          "purchaserInvoiceTitleModel"
+        ],
+        "additionalProperties": true,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "invoiceType": {
+                  "const": "VATAX_SPEC"
+                },
+                "purchaserInvoiceTitleModel": {
+                  "properties": {
+                    "titleType": {
+                      "const": "COMPANY"
+                    }
+                  },
+                  "required": [
+                    "titleType"
+                  ]
+                }
+              },
+              "required": [
+                "invoiceType",
+                "purchaserInvoiceTitleModel"
+              ]
+            },
+            "then": {
+              "properties": {
+                "purchaserInvoiceTitleModel": {
+                  "required": [
+                    "bankName",
+                    "bankAccountId",
+                    "registerAddress",
+                    "registerPhone"
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      },
+      "minItems": 1
+    },
+    "confirmApplyInvoice": {
+      "type": "boolean",
+      "description": "Must be JSON true after separate explicit user confirmation. Examples default to false and do not authorize this action.",
+      "default": false
+    }
+  },
+  "required": [
+    "invoiceApplyModelList",
+    "confirmApplyInvoice"
+  ],
+  "additionalProperties": true
+}

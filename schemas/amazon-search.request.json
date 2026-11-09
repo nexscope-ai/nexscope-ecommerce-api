@@ -65,10 +65,19 @@
       "description": "Device type: desktop, mobile, tablet, default desktop (max length 1000)",
       "example": null,
       "constraints": {}
+    },
+    {
+      "name": "includeSellerSpriteData",
+      "type": "boolean",
+      "required": false,
+      "description": "Enable additional product-data enrichment, including availableDate when available. Default: false. Enabling enrichment incurs additional dynamic charges and does not guarantee a date for every ASIN.",
+      "example": false,
+      "constraints": {}
     }
   ],
   "example": {
     "keyword": "phone case",
+    "includeSellerSpriteData": false,
     "page": 1
   },
   "jsonSchema": null

@@ -9,6 +9,10 @@
       "type": "string",
       "pattern": "^[1-9]\\d{0,999}$"
     },
+    "country": {
+      "type": "string",
+      "default": "en"
+    },
     "currency": {
       "type": "string",
       "pattern": "^[A-Za-z]{3}$"

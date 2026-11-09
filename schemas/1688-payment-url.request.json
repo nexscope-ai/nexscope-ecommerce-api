@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "properties": {
+    "orderIdList": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "Exact positive integer identifier. Send as a JSON string.",
+        "pattern": "^[1-9][0-9]*$"
+      },
+      "minItems": 1
+    },
+    "confirmGetPaymentUrl": {
+      "type": "boolean",
+      "description": "Must be JSON true after separate explicit user confirmation. Examples default to false and do not authorize this action.",
+      "default": false
+    }
+  },
+  "required": [
+    "orderIdList",
+    "confirmGetPaymentUrl"
+  ],
+  "additionalProperties": true
+}

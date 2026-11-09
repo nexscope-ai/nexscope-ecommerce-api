@@ -1,0 +1,148 @@
+{
+  "required": [
+    "code",
+    "msg",
+    "data",
+    "ts",
+    "time",
+    "cost",
+    "traceId"
+  ],
+  "properties": {
+    "data": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "success": {
+              "anyOf": [
+                {
+                  "type": "boolean",
+                  "description": "Inspect this business outcome even when HTTP status is 200."
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "code": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Upstream business code."
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "message": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": ""
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "subCode": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": ""
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "subMessage": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": ""
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "retCodes": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {}
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "orderInvoiceAmountModelList": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "orderId": {
+                        "type": "string",
+                        "description": "Exact positive integer identifier. Send as a JSON string.",
+                        "pattern": "^[1-9][0-9]*$"
+                      },
+                      "amount": {
+                        "type": "number",
+                        "description": "Cents; copy unchanged into invoiceApply."
+                      }
+                    },
+                    "required": [],
+                    "additionalProperties": true
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [],
+          "additionalProperties": true
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "code": {
+      "type": "integer",
+      "description": "0 means accepted or successful; nonzero is a platform error."
+    },
+    "msg": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ts": {
+      "type": "string",
+      "description": "Epoch milliseconds."
+    },
+    "time": {
+      "type": "string",
+      "description": "Server local time: yyyy-MM-dd HH:mm:ss."
+    },
+    "cost": {
+      "type": "string",
+      "description": "Elapsed milliseconds, never credits; -1 outside web requests."
+    },
+    "traceId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,85 @@
+{
+  "required": [
+    "code",
+    "msg",
+    "data",
+    "ts",
+    "time",
+    "cost",
+    "traceId"
+  ],
+  "properties": {
+    "data": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "stores": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "accountName": {
+                        "type": "string",
+                        "description": ""
+                      },
+                      "status": {
+                        "type": "string",
+                        "description": "ACTIVE is required."
+                      },
+                      "expired": {
+                        "type": "boolean",
+                        "description": "Must be false to continue."
+                      }
+                    },
+                    "required": [],
+                    "additionalProperties": true
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [],
+          "additionalProperties": true
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "code": {
+      "type": "integer",
+      "description": "0 means accepted or successful; nonzero is a platform error."
+    },
+    "msg": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ts": {
+      "type": "string",
+      "description": "Epoch milliseconds."
+    },
+    "time": {
+      "type": "string",
+      "description": "Server local time: yyyy-MM-dd HH:mm:ss."
+    },
+    "cost": {
+      "type": "string",
+      "description": "Elapsed milliseconds, never credits; -1 outside web requests."
+    },
+    "traceId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "type": "object"
+}

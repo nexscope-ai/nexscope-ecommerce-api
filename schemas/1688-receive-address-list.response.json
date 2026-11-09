@@ -1,0 +1,106 @@
+{
+  "required": [
+    "code",
+    "msg",
+    "data",
+    "ts",
+    "time",
+    "cost",
+    "traceId"
+  ],
+  "properties": {
+    "data": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "addressId": {
+                        "type": "string",
+                        "description": "Exact positive integer identifier. Send as a JSON string.",
+                        "pattern": "^[1-9][0-9]*$"
+                      },
+                      "fullName": {
+                        "type": "string",
+                        "description": "Recipient name."
+                      },
+                      "mobile": {
+                        "type": "string",
+                        "description": "Recipient phone; avoid sharing outside the request."
+                      },
+                      "address": {
+                        "type": "string",
+                        "description": "Street address."
+                      },
+                      "provinceText": {
+                        "type": "string",
+                        "description": ""
+                      },
+                      "cityText": {
+                        "type": "string",
+                        "description": ""
+                      },
+                      "areaText": {
+                        "type": "string",
+                        "description": ""
+                      },
+                      "isDefault": {
+                        "type": "boolean",
+                        "description": ""
+                      }
+                    },
+                    "required": [],
+                    "additionalProperties": true
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [],
+          "additionalProperties": true
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "code": {
+      "type": "integer",
+      "description": "0 means accepted or successful; nonzero is a platform error."
+    },
+    "msg": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ts": {
+      "type": "string",
+      "description": "Epoch milliseconds."
+    },
+    "time": {
+      "type": "string",
+      "description": "Server local time: yyyy-MM-dd HH:mm:ss."
+    },
+    "cost": {
+      "type": "string",
+      "description": "Elapsed milliseconds, never credits; -1 outside web requests."
+    },
+    "traceId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "type": "object"
+}

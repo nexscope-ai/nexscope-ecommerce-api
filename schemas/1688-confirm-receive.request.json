@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "aliOrderId": {
+      "type": "string",
+      "description": "Exact positive integer identifier. Send as a JSON string.",
+      "pattern": "^[1-9][0-9]*$"
+    },
+    "confirmReceive": {
+      "type": "boolean",
+      "description": "Must be JSON true after separate explicit user confirmation. Examples default to false and do not authorize this action.",
+      "default": false
+    }
+  },
+  "required": [
+    "aliOrderId",
+    "confirmReceive"
+  ],
+  "additionalProperties": true
+}

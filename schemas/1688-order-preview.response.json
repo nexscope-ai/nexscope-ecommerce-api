@@ -1,0 +1,197 @@
+{
+  "required": [
+    "code",
+    "msg",
+    "data",
+    "ts",
+    "time",
+    "cost",
+    "traceId"
+  ],
+  "properties": {
+    "data": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "status": {
+              "anyOf": [
+                {
+                  "type": "boolean",
+                  "description": "false means do not create an order."
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "message": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": ""
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "sumPayment": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "description": "Cents."
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "sumCarriage": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "description": "Cents."
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "discountFee": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "description": "Cents."
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "cargoList": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "offerId": {
+                        "type": "string",
+                        "description": "Exact positive integer identifier. Send as a JSON string.",
+                        "pattern": "^[1-9][0-9]*$"
+                      },
+                      "specId": {
+                        "type": "string",
+                        "description": ""
+                      },
+                      "quantity": {
+                        "type": "integer",
+                        "description": ""
+                      },
+                      "finalUnitPrice": {
+                        "type": "number",
+                        "description": "CNY yuan."
+                      },
+                      "amount": {
+                        "type": "number",
+                        "description": "CNY yuan."
+                      }
+                    },
+                    "required": [],
+                    "additionalProperties": true
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "tradeModelList": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {},
+                    "required": [],
+                    "additionalProperties": true
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "payChannelInfos": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {},
+                    "required": [],
+                    "additionalProperties": true
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "shopPromotionList": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {},
+                    "required": [],
+                    "additionalProperties": true
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [],
+          "additionalProperties": true
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "code": {
+      "type": "integer",
+      "description": "0 means accepted or successful; nonzero is a platform error."
+    },
+    "msg": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ts": {
+      "type": "string",
+      "description": "Epoch milliseconds."
+    },
+    "time": {
+      "type": "string",
+      "description": "Server local time: yyyy-MM-dd HH:mm:ss."
+    },
+    "cost": {
+      "type": "string",
+      "description": "Elapsed milliseconds, never credits; -1 outside web requests."
+    },
+    "traceId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "type": "object"
+}

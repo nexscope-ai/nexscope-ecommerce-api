@@ -1,376 +1,376 @@
 {
-  "type": "object",
-  "description": "Returns the documented upstream API response directly without an additional wrapper.",
-  "fields": [
-    {
-      "name": "imageId",
-      "type": "string",
-      "required": false,
-      "description": "Uploaded image ID; send it with paginated requests to improve response time",
-      "example": "example-id",
-      "constraints": {}
-    },
-    {
-      "name": "total",
-      "type": "integer",
-      "required": false,
-      "description": "Number of products on this page",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "totalPage",
-      "type": "integer",
-      "required": false,
-      "description": "Total number of pages",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "sourceType",
-      "type": "string",
-      "required": false,
-      "description": "Source type; fixed value \"1688\"",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "type",
-      "type": "string",
-      "required": false,
-      "description": "Rendering style; fixed value \"productWorkbenches\"",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "columns",
-      "type": "array",
-      "required": false,
-      "description": "Column definitions used for rendering",
-      "example": [],
-      "constraints": {}
-    },
-    {
-      "name": "costToken",
-      "type": "integer",
-      "required": false,
-      "description": "Tokens consumed",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products",
-      "type": "array",
-      "required": false,
-      "description": "Product list; see the product fields below",
-      "example": [],
-      "constraints": {}
-    },
-    {
-      "name": "offerId",
-      "type": "string",
-      "required": false,
-      "description": "Product ID",
-      "example": "example-id",
-      "constraints": {}
-    },
-    {
-      "name": "asin",
-      "type": "string",
-      "required": false,
-      "description": "Product identifier, same as offerId",
-      "example": "B072MQ5BRX",
-      "constraints": {}
-    },
-    {
-      "name": "imageUrl",
-      "type": "string",
-      "required": false,
-      "description": "Product image URL",
-      "example": "https://example.com/image.jpg",
-      "constraints": {}
-    },
-    {
-      "name": "title",
-      "type": "string",
-      "required": false,
-      "description": "Product title",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "price",
-      "type": "number",
-      "required": false,
-      "description": "Wholesale price in CNY",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "consignPrice",
-      "type": "number",
-      "required": false,
-      "description": "Single-item dropshipping price in CNY",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "salesQuantity",
-      "type": "integer",
-      "required": false,
-      "description": "Monthly units sold",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "estimatedSalesAmount",
-      "type": "number",
-      "required": false,
-      "description": "Estimated sales revenue",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "asinUrl",
-      "type": "string",
-      "required": false,
-      "description": "Product URL",
-      "example": "B072MQ5BRX",
-      "constraints": {}
-    },
-    {
-      "name": "products[].isOnePsale",
-      "type": "string",
-      "required": false,
-      "description": "Whether single-item dropshipping is available",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].isJxhy",
-      "type": "string",
-      "required": false,
-      "description": "Whether the product is a selected supply source",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].sellerIdentities",
-      "type": "string",
-      "required": false,
-      "description": "Seller identities, such as Super Factory, Verified Supplier, or TrustPass member",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].offerIdentities",
-      "type": "string",
-      "required": false,
-      "description": "Product badge, such as Strict Selection",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].repurchaseRate",
-      "type": "string",
-      "required": false,
-      "description": "Repurchase rate",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].tradeScore",
-      "type": "string",
-      "required": false,
-      "description": "Product transaction score",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].compositeServiceScore",
-      "type": "string",
-      "required": false,
-      "description": "Composite service-experience score",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].sendGoodsAddressText",
-      "type": "string",
-      "required": false,
-      "description": "Dispatch location",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].deliveryTime",
-      "type": "string",
-      "required": false,
-      "description": "Dispatch time, such as 24 or 48 hours",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "quantityBegin",
-      "type": "integer",
-      "required": false,
-      "description": "Minimum order quantity",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].hasPromotion",
-      "type": "string",
-      "required": false,
-      "description": "Whether a promotion is active",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].promotionType",
-      "type": "string",
-      "required": false,
-      "description": "Promotion type",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].isPatentProduct",
-      "type": "string",
-      "required": false,
-      "description": "Whether the product is patented",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].isSelect",
-      "type": "string",
-      "required": false,
-      "description": "Cross-border Select collection indicator",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].currency",
-      "type": "string",
-      "required": false,
-      "description": "Currency; fixed value \"¥\"",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "sourceTool",
-      "type": "string",
-      "required": false,
-      "description": "Source tool; fixed value identifying 1688 image search",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].dataType",
-      "type": "string",
-      "required": false,
-      "description": "Data type; fixed value \"monthlyData\"",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "errcode",
-      "type": "integer",
-      "required": false,
-      "description": "Upstream status code returned by the provider.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "errmsg",
-      "type": "string",
-      "required": false,
-      "description": "Upstream status message returned by the provider.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "code",
-      "type": "string",
-      "required": false,
-      "description": "Provider-specific status code.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "msg",
-      "type": "string",
-      "required": false,
-      "description": "Provider-specific status message.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "message",
-      "type": "string",
-      "required": false,
-      "description": "Provider-specific message.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "costTime",
-      "type": "integer",
-      "required": false,
-      "description": "Execution time reported by the upstream provider.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "page",
-      "type": "integer",
-      "required": false,
-      "description": "Current page returned by the upstream provider.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "pageSize",
-      "type": "integer",
-      "required": false,
-      "description": "Page size returned by the upstream provider.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "pageItemCount",
-      "type": "integer",
-      "required": false,
-      "description": "Item count on the current page returned by the upstream provider.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "dataSnapshotMonth",
-      "type": "string",
-      "required": false,
-      "description": "Data snapshot month returned by the upstream provider.",
-      "example": null,
-      "constraints": {}
-    }
+  "required": [
+    "code",
+    "msg",
+    "data",
+    "ts",
+    "time",
+    "cost",
+    "traceId"
   ],
-  "example": {
-    "imageId": "example-id",
-    "total": 1,
-    "totalPage": 1,
-    "columns": [],
-    "costToken": 1,
-    "products": [],
-    "offerId": "example-id",
-    "asin": "B072MQ5BRX",
-    "imageUrl": "https://example.com/image.jpg",
-    "price": 1,
-    "consignPrice": 1,
-    "salesQuantity": 1,
-    "estimatedSalesAmount": 1,
-    "asinUrl": "B072MQ5BRX",
-    "quantityBegin": 1
+  "properties": {
+    "data": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "imageId": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Uploaded image ID; send it with paginated requests to improve response time",
+                  "example": "example-id"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "total": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Number of products on this page",
+                  "example": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "totalPage": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Total number of pages",
+                  "example": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "sourceType": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Source type; fixed value \"1688\"",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "type": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Rendering style; fixed value \"productWorkbenches\"",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "columns": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "description": "Column definitions used for rendering",
+                  "example": []
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "costToken": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Tokens consumed",
+                  "example": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "products": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "description": "Product list; see the product fields below",
+                  "example": [],
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "offerId": {
+                        "type": "string",
+                        "description": "Product ID",
+                        "example": "example-id"
+                      },
+                      "asin": {
+                        "type": "string",
+                        "description": "Product identifier, same as offerId",
+                        "example": "example-id"
+                      },
+                      "imageUrl": {
+                        "type": "string",
+                        "description": "Product image URL",
+                        "example": "https://example.com/image.jpg"
+                      },
+                      "title": {
+                        "type": "string",
+                        "description": "Product title",
+                        "example": null
+                      },
+                      "price": {
+                        "type": "number",
+                        "description": "Wholesale price in CNY",
+                        "example": 1
+                      },
+                      "consignPrice": {
+                        "type": "number",
+                        "description": "Single-item dropshipping price in CNY",
+                        "example": 1
+                      },
+                      "salesQuantity": {
+                        "type": "integer",
+                        "description": "Monthly units sold",
+                        "example": 1
+                      },
+                      "estimatedSalesAmount": {
+                        "type": "number",
+                        "description": "Estimated sales revenue",
+                        "example": 1
+                      },
+                      "asinUrl": {
+                        "type": "string",
+                        "description": "Product URL",
+                        "example": "https://detail.1688.com/offer/1040473674152.html"
+                      },
+                      "isOnePsale": {
+                        "type": "boolean",
+                        "description": "Whether single-item dropshipping is available",
+                        "example": null
+                      },
+                      "isJxhy": {
+                        "type": "boolean",
+                        "description": "Whether the product is a selected supply source",
+                        "example": null
+                      },
+                      "sellerIdentities": {
+                        "type": "string",
+                        "description": "Seller identities, such as Super Factory, Verified Supplier, or TrustPass member",
+                        "example": null
+                      },
+                      "offerIdentities": {
+                        "type": "string",
+                        "description": "Product badge, such as Strict Selection",
+                        "example": null
+                      },
+                      "repurchaseRate": {
+                        "type": "string",
+                        "description": "Repurchase rate",
+                        "example": null
+                      },
+                      "tradeScore": {
+                        "type": "string",
+                        "description": "Product transaction score",
+                        "example": null
+                      },
+                      "compositeServiceScore": {
+                        "type": "string",
+                        "description": "Composite service-experience score",
+                        "example": null
+                      },
+                      "sendGoodsAddressText": {
+                        "type": "string",
+                        "description": "Dispatch location",
+                        "example": null
+                      },
+                      "deliveryTime": {
+                        "type": "string",
+                        "description": "Dispatch time, such as 24 or 48 hours",
+                        "example": null
+                      },
+                      "quantityBegin": {
+                        "type": "integer",
+                        "description": "Minimum order quantity",
+                        "example": 1
+                      },
+                      "hasPromotion": {
+                        "type": "boolean",
+                        "description": "Whether a promotion is active",
+                        "example": null
+                      },
+                      "promotionType": {
+                        "type": "string",
+                        "description": "Promotion type",
+                        "example": null
+                      },
+                      "isPatentProduct": {
+                        "type": "boolean",
+                        "description": "Whether the product is patented",
+                        "example": null
+                      },
+                      "isSelect": {
+                        "type": "boolean",
+                        "description": "Cross-border Select collection indicator",
+                        "example": null
+                      },
+                      "currency": {
+                        "type": "string",
+                        "description": "Currency; fixed value \"\u00a5\"",
+                        "example": null
+                      },
+                      "sourceType": {
+                        "type": "string",
+                        "description": "Source type; fixed value \"1688\"",
+                        "example": null
+                      },
+                      "sourceTool": {
+                        "type": "string",
+                        "description": "Source tool; fixed value identifying 1688 image search",
+                        "example": null
+                      },
+                      "dataType": {
+                        "type": "string",
+                        "description": "Data type; fixed value \"monthlyData\"",
+                        "example": null
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "title": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Provider-specific response title.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "sourceTool": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Provider-specific source tool name.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "costTime": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Execution time reported by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "page": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Current page returned by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "pageSize": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Page size returned by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "pageItemCount": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Item count on the current page returned by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "dataSnapshotMonth": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Data snapshot month returned by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [],
+          "additionalProperties": true
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "code": {
+      "type": "integer",
+      "description": "0 means accepted or successful; nonzero is a platform error."
+    },
+    "msg": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ts": {
+      "type": "string",
+      "description": "Epoch milliseconds."
+    },
+    "time": {
+      "type": "string",
+      "description": "Server local time: yyyy-MM-dd HH:mm:ss."
+    },
+    "cost": {
+      "type": "string",
+      "description": "Elapsed milliseconds, never credits; -1 outside web requests."
+    },
+    "traceId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
   },
-  "jsonSchema": null
+  "type": "object"
 }

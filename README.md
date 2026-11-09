@@ -2,7 +2,7 @@
 
 Connect ecommerce workflows to marketplace data, product research, and AI image and video creation through Nexscope APIs.
 
-**238 APIs · 185 Data APIs · 53 Creative APIs · 21 categories**
+**252 APIs · 199 Data APIs · 53 Creative APIs · 22 categories**
 
 [Get an API key](https://www.nexscope.ai/seller/api-access?co-from=github-ecommerce-api) · [Official API docs](https://www.nexscope.ai/api-docs?co-from=github-ecommerce-api) · [Complete catalog](#complete-api-catalog) · [Integration guide](docs/calling-apis.md)
 
@@ -44,7 +44,7 @@ curl --silent --show-error --fail-with-body --max-time 120 \
   -d '{"keyword":"phone case","page":1}'
 ```
 
-Response shapes vary by API; follow its current official reference. For [Amazon Product Detail](docs/data/amazon-product-detail.md#response), check `code === 0` and read business fields from `data` (for example, `data.products` and `data.total`); `data` may be null. The Amazon Search fixture below retains the original snapshot shape and should be verified against its current reference before integration. [Documented response fixture](examples/responses/amazon-search.json).
+Response shapes vary by API; follow its current official reference. For [Amazon Product Detail](docs/data/amazon-product-detail.md#response), check `code === 0` and read business fields from `data` (for example, `data.products` and `data.total`); `data` may be null. The Amazon Search fixture below uses the current documented Nexscope response envelope. [Documented response fixture](examples/responses/amazon-search.json).
 
 ### 3. Use JavaScript, Python, or reusable cURL commands
 
@@ -147,12 +147,12 @@ The helpers surface non-2xx responses and print the returned JSON. They do not c
 
 | Path | Contents |
 |---|---|
-| [docs/data/](docs/data/) | 185 Data API references |
+| [docs/data/](docs/data/) | 199 Data API references |
 | [docs/creative/](docs/creative/) | 53 Creative API references |
 | [catalog/apis.json](catalog/apis.json) | Complete inventory, categories, links, endpoints, and definition formats |
-| [schemas/](schemas/) | 238 request and 238 response definitions |
-| [payloads/](payloads/) | 238 published request samples |
-| [examples/responses/](examples/responses/) | 238 published response fixtures |
+| [schemas/](schemas/) | 252 request and 252 response definitions |
+| [payloads/](payloads/) | 252 published request samples |
+| [examples/responses/](examples/responses/) | 252 published response fixtures |
 | [examples/](examples/) | cURL, JavaScript, and Python clients for every catalog entry |
 | [docs/calling-apis.md](docs/calling-apis.md) | Authentication, tasks, media, and MCP guidance |
 
@@ -160,7 +160,7 @@ The helpers surface non-2xx responses and print the returned JSON. They do not c
 
 This catalog retains the original 225 entries and adds 11 WooCommerce production APIs (2026-10-29). It also adds two SIF production APIs (2026-11-02, reflecting the 2026-10-31 source contract). Other entries keep their documented snapshot dates. Each entry links to its definitions, sample payload and official reference.
 
-### Data APIs — 185
+### Data APIs — 199
 
 #### Amazon Marketplace Intelligence (26)
 
@@ -306,6 +306,27 @@ This catalog retains the original 225 entries and adds 11 WooCommerce production
 | [1688 Product Billboard API](docs/data/1688-product-billboard.md) | Query 1688 product bestseller billboard data for sourcing discovery and wholesale product research. |
 | [1688 Product Search API](docs/data/1688-product-search.md) | Search and analyze products on the Chinese 1688 wholesale platform (Alibaba domestic B2B market) for sourcing, supplier discovery, and product selection. |
 | [1688 Search By Image API](docs/data/1688-search-by-image.md) | Perform image-based product search on the 1688 platform. Use an image URL to find visually similar supplier products, returning title, price, minimum order quantity, monthly sales, repurchase rate, trade score, and seller identity. |
+
+#### 1688 Procurement (14)
+
+[Authorization, English reference image, placeholder IDs and confirmation guide](docs/1688-procurement-guide.md).
+
+| API | Purpose |
+|---|---|
+| [1688 Authorize URL API](docs/data/1688-authorize-url.md) | Authorize URL for the currently authenticated Nexscope user. Use your Nexscope API key. Complete authorization manually, then verify ACTIVE and expired=false. Procurement responses are live; do not cache or automatically retry writes. |
+| [1688 Authorized Stores API](docs/data/1688-authorized-stores.md) | Authorized Stores for the currently authenticated Nexscope user. Use your Nexscope API key. Complete authorization manually, then verify ACTIVE and expired=false. Procurement responses are live; do not cache or automatically retry writes. |
+| [1688 Receive Address List API](docs/data/1688-receive-address-list.md) | Receive Address List for the currently authenticated Nexscope user. Use your Nexscope API key. Requires an ACTIVE, unexpired 1688 authorization owned by the current user. Procurement responses are live; do not cache or automatically retry writes. |
+| [1688 SKU API](docs/data/1688-sku.md) | SKU for the currently authenticated Nexscope user. Use your Nexscope API key. Requires an ACTIVE, unexpired 1688 authorization owned by the current user. Procurement responses are live; do not cache or automatically retry writes. |
+| [1688 Order Preview API](docs/data/1688-order-preview.md) | Order Preview for the currently authenticated Nexscope user. Use your Nexscope API key. Requires an ACTIVE, unexpired 1688 authorization owned by the current user. Procurement responses are live; do not cache or automatically retry writes. Stop on status=false even if the envelope succeeds. Totals are cents; cargo prices are CNY yuan. |
+| [1688 Create Order API](docs/data/1688-create-order.md) | Create Order for the currently authenticated Nexscope user. Use your Nexscope API key. Requires an ACTIVE, unexpired 1688 authorization owned by the current user. Procurement responses are live; do not cache or automatically retry writes. |
+| [1688 Payment URL API](docs/data/1688-payment-url.md) | Payment URL for the currently authenticated Nexscope user. Use your Nexscope API key. Requires an ACTIVE, unexpired 1688 authorization owned by the current user. Procurement responses are live; do not cache or automatically retry writes. Returns a payment link only; never opens it or pays automatically. |
+| [1688 Order Status API](docs/data/1688-order-status.md) | Order Status for the currently authenticated Nexscope user. Use your Nexscope API key. Requires an ACTIVE, unexpired 1688 authorization owned by the current user. Procurement responses are live; do not cache or automatically retry writes. |
+| [1688 Logistics API](docs/data/1688-logistics.md) | Logistics for the currently authenticated Nexscope user. Use your Nexscope API key. Requires an ACTIVE, unexpired 1688 authorization owned by the current user. Procurement responses are live; do not cache or automatically retry writes. |
+| [1688 Logistics Trace API](docs/data/1688-logistics-trace.md) | Logistics Trace for the currently authenticated Nexscope user. Use your Nexscope API key. Requires an ACTIVE, unexpired 1688 authorization owned by the current user. Procurement responses are live; do not cache or automatically retry writes. |
+| [1688 Confirm Receive API](docs/data/1688-confirm-receive.md) | Confirm Receive for the currently authenticated Nexscope user. Use your Nexscope API key. Requires an ACTIVE, unexpired 1688 authorization owned by the current user. Procurement responses are live; do not cache or automatically retry writes. |
+| [1688 Cancel Order API](docs/data/1688-cancel-order.md) | Cancel Order for the currently authenticated Nexscope user. Use your Nexscope API key. Requires an ACTIVE, unexpired 1688 authorization owned by the current user. Procurement responses are live; do not cache or automatically retry writes. Cancellation is not a refund. Eligibility depends on the current 1688 order state. |
+| [1688 Invoice Amount API](docs/data/1688-invoice-amount.md) | Invoice Amount for the currently authenticated Nexscope user. Use your Nexscope API key. Requires an ACTIVE, unexpired 1688 authorization owned by the current user. Procurement responses are live; do not cache or automatically retry writes. |
+| [1688 Invoice Apply API](docs/data/1688-invoice-apply.md) | Invoice Apply for the currently authenticated Nexscope user. Use your Nexscope API key. Requires an ACTIVE, unexpired 1688 authorization owned by the current user. Procurement responses are live; do not cache or automatically retry writes. Inspect every successList and failedList item. INVOICE_ALREADY_APPLIED means already invoiced. Issued invoices cannot be rolled back here. |
 
 #### Shopify Commerce (2)
 

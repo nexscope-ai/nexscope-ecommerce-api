@@ -1,20 +1,16 @@
 # 1688 Product Billboard API
 
-Query 1688 product bestseller billboard data for sourcing discovery and wholesale product research.
+Query 1688 product bestseller billboard data for sourcing discovery and wholesale product research. Trigger when the user mentions 1688 product rankings, 1688 bestseller lists, wholesale hot products, domestic sourcing rankings, dropshipping product selection, 1688 trending products, bulk purchase popular items, supplier product rankings, 1688 billboard, 1688 bestsellers, sourcing rankings, wholesale hot products, trending product rankings, supplier rankings, 1688 trends. Even if the user does not explicitly mention "1688 billboard", if their need involves discovering hot-selling wholesale products or sourcing opportunities on the 1688 platform, this skill should also be triggered.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/1688-product-billboard?view=api&co-from=github-ecommerce-api)
 
-Category: 1688 Sourcing · Data API
-
-Query 1688 product bestseller billboard data for sourcing discovery and wholesale product research.
+Category: 1688 Sourcing · Data API · Contract refreshed: 2026-11-09
 
 ## Endpoint
 
 `POST https://api.nexscope.ai/api/skill-api/v1/skills/1688-product-billboard/run`
 
-Headers: `Authorization: Bearer YOUR_API_KEY` and `Content-Type: application/json`.
-
-Execution: synchronous; inspect the response envelope and business fields documented in the current official API reference.
+Headers: `Authorization: Bearer YOUR_API_KEY` and `Content-Type: application/json`. Invoking the API consumes credits. This is a Nexscope endpoint; do not supply a supplier API key or OAuth access token.
 
 ## Request parameters
 
@@ -55,74 +51,66 @@ Execution: synchronous; inspect the response envelope and business fields docume
 | `productIds` | string | No | Product IDs, separated by Chinese comma for multiple, max 20 | {} |
 | `goodsUrl` | string | No | Product link URL | {} |
 
-The table summarizes the published fields. Consult the full request definition for nested objects, alternatives, and conditional requirements.
+The [complete request definition](../../schemas/1688-product-billboard.request.json) contains nested fields and conditional requirements. Required alternatives: `[]`. Preserve the documented names and types; examples are illustrative.
 
 ## Call this API
 
-Run these commands from the repository root after [setting your API key](../../README.md#1-get-and-configure-your-api-key). Copy the sample to a separate file and replace illustrative URLs, IDs, search terms, and required values before submitting. Sample responses are documentation fixtures, not live results.
+Copy the sample, replace illustrative values, and inspect it without sending a request:
 
 ```bash
 cp payloads/1688-product-billboard.json request.json
-# Edit request.json for your inputs.
-bash examples/curl/run.sh 1688-product-billboard request.json
-# Or: node examples/javascript/run.mjs 1688-product-billboard request.json
-# Or: python3 examples/python/run.py 1688-product-billboard request.json
+python3 examples/python/run.py 1688-product-billboard request.json --dry-run
+# Alternatively: node examples/javascript/run.mjs 1688-product-billboard request.json --dry-run
+# After reviewing parameters and authorizing the call, remove --dry-run to submit once.
 ```
 
 ### Published request example
 
 ```json
 {
-  "searchType": 1,
-  "pageIndex": 1,
-  "keyWord": "iPhone 15",
+  "keyWord": "\u624b\u673a\u58f3",
   "date": "2026-07-01",
-  "pageSize": 10,
-  "pageType": 3
+  "pageSize": 20,
+  "pageType": 3,
+  "searchType": 1,
+  "pageIndex": 1
 }
 ```
 
 ## Response
 
-Follow the response envelope and field paths in the current official API reference linked above. HTTP 200 alone does not establish business success; when the response includes `code`, check that it is `0` before reading `data`. For asynchronous APIs, distinguish the submission receipt from the final task result and follow the documented task polling contract. The response example below is a historical definition-service fixture; it has not been reconciled with the current HTTP response envelope and must not be used to infer top-level field paths.
-
-### Published response example
+Check Nexscope outer `code == 0` before reading `data`; HTTP 200 alone is not business success. `cost` is elapsed milliseconds, not credits. Inspect nested business results and partial failures before taking dependent actions. The [complete response definition](../../schemas/1688-product-billboard.response.json) and example below are current production documentation snapshots, not a live buyer/order test result.
 
 ```json
 {
-  "total": 1,
-  "columns": [],
-  "products": [
-    {
-      "offerId": "example-id",
-      "asin": "B072MQ5BRX",
-      "price": 1,
-      "consignPrice": 1,
-      "quantityBegin": 1,
-      "salesOrderCount": 1,
-      "salesQuantity": 1,
-      "estimatedSalesAmount": 1,
-      "availableDate": "2026-01-01",
-      "shopId": "example-id",
-      "shopUrl": "https://example.com/image.jpg",
-      "asinUrl": "B072MQ5BRX",
-      "imageUrl": "https://example.com/image.jpg"
-    }
-  ]
+  "data": {
+    "total": 1,
+    "columns": [],
+    "products": [
+      {
+        "offerId": "example-id",
+        "asin": "B072MQ5BRX",
+        "price": 1,
+        "consignPrice": 1,
+        "quantityBegin": 1,
+        "salesOrderCount": 1,
+        "salesQuantity": 1,
+        "estimatedSalesAmount": 1,
+        "availableDate": "2026-01-01",
+        "shopId": "example-id",
+        "shopUrl": "https://example.com/image.jpg",
+        "asinUrl": "https://detail.1688.com/offer/1040473674152.html",
+        "imageUrl": "https://example.com/image.jpg"
+      }
+    ]
+  },
+  "code": 0,
+  "msg": null,
+  "ts": "0",
+  "time": "2026-01-01 00:00:00",
+  "cost": "-1",
+  "traceId": null
 }
 ```
 
-## Full definitions
-
-- [Request definition](../../schemas/1688-product-billboard.request.json) — field-descriptors
-- [Response definition](../../schemas/1688-product-billboard.response.json) — field-descriptors
-- [Editable request sample](../../payloads/1688-product-billboard.json)
-- [Response fixture](../../examples/responses/1688-product-billboard.json)
-
-Some source definitions use field descriptors rather than JSON Schema; these are preserved and labeled rather than presented as strict validation schemas.
-
-## MCP
-
-Tool name: `nexscope_1688_product_billboard`. See [MCP integration](../calling-apis.md#mcp).
-
-Source retrieved: 2026-09-10. See [source and validation notes](../source-notes.md).
+Keep the request trace when reporting errors. Do not infer authorization, order creation or payment success from a redirect, process exit or missing identifier alone.

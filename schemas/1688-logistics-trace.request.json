@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "properties": {
+    "aliOrderId": {
+      "type": "string",
+      "description": "Exact positive integer identifier. Send as a JSON string.",
+      "pattern": "^[1-9][0-9]*$"
+    },
+    "logisticsId": {
+      "type": "string",
+      "description": "Select a logistics order when multiple shipments exist."
+    }
+  },
+  "required": [
+    "aliOrderId"
+  ],
+  "additionalProperties": true
+}

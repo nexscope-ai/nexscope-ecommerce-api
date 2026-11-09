@@ -1,744 +1,561 @@
 {
-  "type": "object",
-  "description": "Returns the documented upstream API response directly without an additional wrapper.",
-  "fields": [
-    {
-      "name": "code",
-      "type": "integer",
-      "required": false,
-      "description": "Response code (200 indicates success)",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "msg",
-      "type": "string",
-      "required": false,
-      "description": "Response message",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "total",
-      "type": "integer",
-      "required": false,
-      "description": "Total result count",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "costTime",
-      "type": "integer",
-      "required": false,
-      "description": "Latency (ms)",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "costToken",
-      "type": "integer",
-      "required": false,
-      "description": "Tokens consumed",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "requestConsumed",
-      "type": "integer",
-      "required": false,
-      "description": "Requests consumed",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "sourceType",
-      "type": "string",
-      "required": false,
-      "description": "Source type: Nexscope",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "type",
-      "type": "string",
-      "required": false,
-      "description": "Render style",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "columns",
-      "type": "array",
-      "required": false,
-      "description": "Render columns",
-      "example": [],
-      "constraints": {}
-    },
-    {
-      "name": "products",
-      "type": "array",
-      "required": false,
-      "description": "Product detail list (see below)",
-      "example": [],
-      "constraints": {}
-    },
-    {
-      "name": "products[].asin",
-      "type": "string",
-      "required": false,
-      "description": "ASIN",
-      "example": "B072MQ5BRX",
-      "constraints": {}
-    },
-    {
-      "name": "products[].title",
-      "type": "string",
-      "required": false,
-      "description": "Product title",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].brand",
-      "type": "string",
-      "required": false,
-      "description": "Brand",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].asinUrl",
-      "type": "string",
-      "required": false,
-      "description": "Product link, Amazon Listing detail page URL",
-      "example": "B072MQ5BRX",
-      "constraints": {}
-    },
-    {
-      "name": "products[].imageUrl",
-      "type": "string",
-      "required": false,
-      "description": "Main image URL",
-      "example": "https://example.com/image.jpg",
-      "constraints": {}
-    },
-    {
-      "name": "products[].productImageUrls",
-      "type": "array",
-      "required": false,
-      "description": "Main image list (all product image URLs)",
-      "example": [],
-      "constraints": {}
-    },
-    {
-      "name": "products[].ebcPhoto",
-      "type": "array",
-      "required": false,
-      "description": "A+ image list",
-      "example": [],
-      "constraints": {}
-    },
-    {
-      "name": "products[].storeName",
-      "type": "string",
-      "required": false,
-      "description": "Store name",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].description",
-      "type": "string",
-      "required": false,
-      "description": "Five bullet points",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].productBadge",
-      "type": "array",
-      "required": false,
-      "description": "Product badges, e.g. Amazon Choice, Best Seller, New Release, etc.",
-      "example": [],
-      "constraints": {}
-    },
-    {
-      "name": "products[].lastUpdate",
-      "type": "string",
-      "required": false,
-      "description": "Update time, most recent ASIN data collection time (format yyyy-MM-dd)",
-      "example": "2026-01-01",
-      "constraints": {}
-    },
-    {
-      "name": "products[].offSale",
-      "type": "boolean",
-      "required": false,
-      "description": "Whether delisted. true = unavailable, false = available",
-      "example": false,
-      "constraints": {}
-    },
-    {
-      "name": "products[].productType",
-      "type": "string",
-      "required": false,
-      "description": "Category, Amazon product category node name",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].weight",
-      "type": "string",
-      "required": false,
-      "description": "Weight, unit g",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].size",
-      "type": "array",
-      "required": false,
-      "description": "Dimensions, outer packaging [longest side, second longest side, shortest side], unit cm",
-      "example": [],
-      "constraints": {}
-    },
-    {
-      "name": "products[].parentAsin",
-      "type": "string",
-      "required": false,
-      "description": "Parent ASIN, the parent ASIN if variants exist, null if no variants",
-      "example": "B072MQ5BRX",
-      "constraints": {}
-    },
-    {
-      "name": "products[].variationNum",
-      "type": "integer",
-      "required": false,
-      "description": "Number of variations",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].variationASIN",
-      "type": "array",
-      "required": false,
-      "description": "Child ASIN list, empty if no variants",
-      "example": [],
-      "constraints": {}
-    },
-    {
-      "name": "products[].attribute",
-      "type": "array",
-      "required": false,
-      "description": "Product attributes, variant attributes if variants exist. Each entry contains asin (child ASIN), name (attribute name), value (attribute value)",
-      "example": [],
-      "constraints": {}
-    },
-    {
-      "name": "products[].price",
-      "type": "number",
-      "required": false,
-      "description": "Selling price, actual price after coupon deduction, in local currency (e.g. USD)",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].coupon",
-      "type": "integer",
-      "required": false,
-      "description": "Coupon policy. Value >= 0 = deduction amount (e.g. 500 = $5), value < 0 = discount percentage (e.g. -10 = 10% discount)",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].platformFee",
-      "type": "number",
-      "required": false,
-      "description": "Platform commission, in local currency (e.g. USD)",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].fbaFees",
-      "type": "number",
-      "required": false,
-      "description": "FBA fees, in local currency (e.g. USD)",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].fbaDetail",
-      "type": "array",
-      "required": false,
-      "description": "FBA detail. First item is delivery fee, subsequent items are month:storage fee, e.g. [475,\"1-9:5\",\"10-12:15\"]",
-      "example": [],
-      "constraints": {}
-    },
-    {
-      "name": "products[].shipCost",
-      "type": "number",
-      "required": false,
-      "description": "FBM shipping cost, in local currency (e.g. USD)",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].shipsFrom",
-      "type": "string",
-      "required": false,
-      "description": "Ship-from location",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].profitAmount",
-      "type": "number",
-      "required": false,
-      "description": "Profit, final price - FBA fee - commission, in local currency (e.g. USD)",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].profitRate",
-      "type": "number",
-      "required": false,
-      "description": "Profit margin, e.g. 25.83 means 25.83%",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].monthlySalesUnits",
-      "type": "integer",
-      "required": false,
-      "description": "Official monthly sales volume, Amazon published ASIN monthly sales, latest value from the last 7 calendar days, 0 if unavailable",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].salesRank",
-      "type": "integer",
-      "required": false,
-      "description": "BSR rank, main category rank",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].category",
-      "type": "array",
-      "required": false,
-      "description": "Main category, [category name, NodeId]",
-      "example": [],
-      "constraints": {}
-    },
-    {
-      "name": "products[].bsrCategory",
-      "type": "array",
-      "required": false,
-      "description": "Subcategory rank list, each entry containing nodeId (node ID), name (category name), rank (rank), date (date, format yyyyMMdd)",
-      "example": [],
-      "constraints": {}
-    },
-    {
-      "name": "products[].availableDate",
-      "type": "string",
-      "required": false,
-      "description": "Listing time, format yyyy-MM-dd",
-      "example": "2026-01-01",
-      "constraints": {}
-    },
-    {
-      "name": "products[].onlineDays",
-      "type": "integer",
-      "required": false,
-      "description": "Days since listing",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].rating",
-      "type": "number",
-      "required": false,
-      "description": "Current rating (0.0-5.0, e.g. 4.70)",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].ratings",
-      "type": "integer",
-      "required": false,
-      "description": "Number of ratings",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].fiveStarRatings",
-      "type": "number",
-      "required": false,
-      "description": "5-star percentage, e.g. 57.7 means 57.7%",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].fourStarRatings",
-      "type": "number",
-      "required": false,
-      "description": "4-star percentage",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].threeStarRatings",
-      "type": "number",
-      "required": false,
-      "description": "3-star percentage",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].twoStarRatings",
-      "type": "number",
-      "required": false,
-      "description": "2-star percentage",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].oneStarRatings",
-      "type": "number",
-      "required": false,
-      "description": "1-star percentage",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].buyboxSeller",
-      "type": "string",
-      "required": false,
-      "description": "Buybox seller name",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].buyBoxSellerId",
-      "type": "string",
-      "required": false,
-      "description": "Buybox seller ID",
-      "example": "example-id",
-      "constraints": {}
-    },
-    {
-      "name": "products[].buyboxSellerAddress",
-      "type": "string",
-      "required": false,
-      "description": "Seller location, Buybox seller nationality (two-letter code e.g. CN, US), null if Amazon's own",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].isFBA",
-      "type": "boolean",
-      "required": false,
-      "description": "Whether FBA, whether Buybox seller uses FBA logistics",
-      "example": false,
-      "constraints": {}
-    },
-    {
-      "name": "products[].sellerNum",
-      "type": "integer",
-      "required": false,
-      "description": "Number of sellers",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].aPlus",
-      "type": "boolean",
-      "required": false,
-      "description": "Has A+",
-      "example": false,
-      "constraints": {}
-    },
-    {
-      "name": "products[].hasVideo",
-      "type": "boolean",
-      "required": false,
-      "description": "Has video",
-      "example": false,
-      "constraints": {}
-    },
-    {
-      "name": "products[].hasBrandStore",
-      "type": "boolean",
-      "required": false,
-      "description": "Has brand store",
-      "example": false,
-      "constraints": {}
-    },
-    {
-      "name": "products[].feature",
-      "type": "object",
-      "required": false,
-      "description": "Product feature ratings, features and star ratings collected by Amazon for this product, e.g. {\"Battery life\":4.0}",
-      "example": {},
-      "constraints": {}
-    },
-    {
-      "name": "products[].productInfo",
-      "type": "object",
-      "required": false,
-      "description": "Product information, structured data from the Product Information section in the Listing",
-      "example": {},
-      "constraints": {}
-    },
-    {
-      "name": "products[].property",
-      "type": "object",
-      "required": false,
-      "description": "Attribute list, including variant attributes and Bullet Points header descriptions",
-      "example": {},
-      "constraints": {}
-    },
-    {
-      "name": "products[].brandPromotion",
-      "type": "string",
-      "required": false,
-      "description": "Brand promotion",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].dealType",
-      "type": "string",
-      "required": false,
-      "description": "Deal label",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].extraSavings",
-      "type": "array",
-      "required": false,
-      "description": "Associated promotions, e.g. [{Asin:xxx, Text:\"Save 5%...\"}]",
-      "example": [],
-      "constraints": {}
-    },
-    {
-      "name": "products[].rankTrend",
-      "type": "array",
-      "required": false,
-      "description": "BSR trend, main category rank change history, interleaved format [date, rank, ...]",
-      "example": [],
-      "constraints": {}
-    },
-    {
-      "name": "products[].bsrRankTrend",
-      "type": "array",
-      "required": false,
-      "description": "Subcategory rank trend, JSON format [{NodeId:xxx, Rank:[date, rank, ...]}]",
-      "example": [],
-      "constraints": {}
-    },
-    {
-      "name": "products[].listingSalesVolumeOfDailyTrend",
-      "type": "array",
-      "required": false,
-      "description": "Daily sales volume trend, value -1 means unable to estimate",
-      "example": [],
-      "constraints": {}
-    },
-    {
-      "name": "products[].listingSalesOfDailyTrend",
-      "type": "array",
-      "required": false,
-      "description": "Daily sales revenue trend, in local currency smallest unit (e.g. cents), value -1 means unable to estimate",
-      "example": [],
-      "constraints": {}
-    },
-    {
-      "name": "products[].listingSalesVolumeOfMonthTrend",
-      "type": "array",
-      "required": false,
-      "description": "Monthly sales volume trend (last 30 days), value -1 means unable to estimate",
-      "example": [],
-      "constraints": {}
-    },
-    {
-      "name": "products[].listingSalesOfMonthTrend",
-      "type": "array",
-      "required": false,
-      "description": "Monthly sales revenue trend, in local currency smallest unit (e.g. cents)",
-      "example": [],
-      "constraints": {}
-    },
-    {
-      "name": "products[].priceTrend",
-      "type": "array",
-      "required": false,
-      "description": "Selling price trend, before coupon, in local currency smallest unit, -1 means no price available for that day",
-      "example": [],
-      "constraints": {}
-    },
-    {
-      "name": "products[].listPriceTrend",
-      "type": "array",
-      "required": false,
-      "description": "Original price trend (strikethrough price history), in local currency smallest unit, -1 means no price available for that day",
-      "example": [],
-      "constraints": {}
-    },
-    {
-      "name": "products[].dealTrend",
-      "type": "array",
-      "required": false,
-      "description": "Deal trend, value 1 = has deal, 0 = no deal",
-      "example": [],
-      "constraints": {}
-    },
-    {
-      "name": "errcode",
-      "type": "integer",
-      "required": false,
-      "description": "Upstream status code returned by the provider.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "errmsg",
-      "type": "string",
-      "required": false,
-      "description": "Upstream status message returned by the provider.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "message",
-      "type": "string",
-      "required": false,
-      "description": "Provider-specific message.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "title",
-      "type": "string",
-      "required": false,
-      "description": "Provider-specific response title.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "sourceTool",
-      "type": "string",
-      "required": false,
-      "description": "Provider-specific source tool name.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "page",
-      "type": "integer",
-      "required": false,
-      "description": "Current page returned by the upstream provider.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "pageSize",
-      "type": "integer",
-      "required": false,
-      "description": "Page size returned by the upstream provider.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "pageItemCount",
-      "type": "integer",
-      "required": false,
-      "description": "Item count on the current page returned by the upstream provider.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "totalPage",
-      "type": "integer",
-      "required": false,
-      "description": "Total page count returned by the upstream provider.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "dataSnapshotMonth",
-      "type": "string",
-      "required": false,
-      "description": "Data snapshot month returned by the upstream provider.",
-      "example": null,
-      "constraints": {}
-    }
+  "required": [
+    "code",
+    "msg",
+    "data",
+    "ts",
+    "time",
+    "cost",
+    "traceId"
   ],
-  "example": {
-    "code": 1,
-    "total": 1,
-    "costTime": 1,
-    "costToken": 1,
-    "requestConsumed": 1,
-    "columns": [],
-    "products": [
-      {
-        "asin": "B072MQ5BRX",
-        "asinUrl": "B072MQ5BRX",
-        "imageUrl": "https://example.com/image.jpg",
-        "productImageUrls": [],
-        "ebcPhoto": [],
-        "productBadge": [],
-        "lastUpdate": "2026-01-01",
-        "offSale": false,
-        "size": [],
-        "parentAsin": "B072MQ5BRX",
-        "variationNum": 1,
-        "variationASIN": [],
-        "attribute": [],
-        "price": 1,
-        "coupon": 1,
-        "platformFee": 1,
-        "fbaFees": 1,
-        "fbaDetail": [],
-        "shipCost": 1,
-        "profitAmount": 1,
-        "profitRate": 1,
-        "monthlySalesUnits": 1,
-        "salesRank": 1,
-        "category": [],
-        "bsrCategory": [],
-        "availableDate": "2026-01-01",
-        "onlineDays": 1,
-        "rating": 1,
-        "ratings": 1,
-        "fiveStarRatings": 1,
-        "fourStarRatings": 1,
-        "threeStarRatings": 1,
-        "twoStarRatings": 1,
-        "oneStarRatings": 1,
-        "buyBoxSellerId": "example-id",
-        "isFBA": false,
-        "sellerNum": 1,
-        "aPlus": false,
-        "hasVideo": false,
-        "hasBrandStore": false,
-        "feature": {},
-        "productInfo": {},
-        "property": {},
-        "extraSavings": [],
-        "rankTrend": [],
-        "bsrRankTrend": [],
-        "listingSalesVolumeOfDailyTrend": [],
-        "listingSalesOfDailyTrend": [],
-        "listingSalesVolumeOfMonthTrend": [],
-        "listingSalesOfMonthTrend": [],
-        "priceTrend": [],
-        "listPriceTrend": [],
-        "dealTrend": []
-      }
-    ]
+  "properties": {
+    "data": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "total": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Total result count",
+                  "example": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "costTime": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Latency (ms)",
+                  "example": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "costToken": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Tokens consumed",
+                  "example": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "requestConsumed": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Requests consumed",
+                  "example": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "sourceType": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Source type: Nexscope",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "type": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Render style",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "columns": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "description": "Render columns",
+                  "example": []
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "products": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "description": "Product detail list (see below)",
+                  "example": [],
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "asin": {
+                        "type": "string",
+                        "description": "ASIN",
+                        "example": "B072MQ5BRX"
+                      },
+                      "title": {
+                        "type": "string",
+                        "description": "Product title",
+                        "example": null
+                      },
+                      "brand": {
+                        "type": "string",
+                        "description": "Brand",
+                        "example": null
+                      },
+                      "asinUrl": {
+                        "type": "string",
+                        "description": "Product link, Amazon Listing detail page URL",
+                        "example": "B072MQ5BRX"
+                      },
+                      "imageUrl": {
+                        "type": "string",
+                        "description": "Main image URL",
+                        "example": "https://example.com/image.jpg"
+                      },
+                      "productImageUrls": {
+                        "type": "array",
+                        "description": "Main image list (all product image URLs)",
+                        "example": []
+                      },
+                      "ebcPhoto": {
+                        "type": "array",
+                        "description": "A+ image list",
+                        "example": []
+                      },
+                      "storeName": {
+                        "type": "string",
+                        "description": "Store name",
+                        "example": null
+                      },
+                      "description": {
+                        "type": "string",
+                        "description": "Five bullet points",
+                        "example": null
+                      },
+                      "productBadge": {
+                        "type": "array",
+                        "description": "Product badges, e.g. Amazon Choice, Best Seller, New Release, etc.",
+                        "example": []
+                      },
+                      "lastUpdate": {
+                        "type": "string",
+                        "description": "Update time, most recent ASIN data collection time (format yyyy-MM-dd)",
+                        "example": "2026-01-01"
+                      },
+                      "offSale": {
+                        "type": "boolean",
+                        "description": "Whether delisted. true = unavailable, false = available",
+                        "example": false
+                      },
+                      "productType": {
+                        "type": "string",
+                        "description": "Category, Amazon product category node name",
+                        "example": null
+                      },
+                      "weight": {
+                        "type": "string",
+                        "description": "Weight, unit g",
+                        "example": null
+                      },
+                      "size": {
+                        "type": "array",
+                        "description": "Dimensions, outer packaging [longest side, second longest side, shortest side], unit cm",
+                        "example": []
+                      },
+                      "parentAsin": {
+                        "type": "string",
+                        "description": "Parent ASIN, the parent ASIN if variants exist, null if no variants",
+                        "example": "B072MQ5BRX"
+                      },
+                      "variationNum": {
+                        "type": "integer",
+                        "description": "Number of variations",
+                        "example": 1
+                      },
+                      "variationASIN": {
+                        "type": "array",
+                        "description": "Child ASIN list, empty if no variants",
+                        "example": []
+                      },
+                      "attribute": {
+                        "type": "array",
+                        "description": "Product attributes, variant attributes if variants exist. Each entry contains asin (child ASIN), name (attribute name), value (attribute value)",
+                        "example": []
+                      },
+                      "price": {
+                        "type": "number",
+                        "description": "Selling price, actual price after coupon deduction, in local currency (e.g. USD)",
+                        "example": 1
+                      },
+                      "coupon": {
+                        "type": "integer",
+                        "description": "Coupon policy. Value >= 0 = deduction amount (e.g. 500 = $5), value < 0 = discount percentage (e.g. -10 = 10% discount)",
+                        "example": 1
+                      },
+                      "platformFee": {
+                        "type": "number",
+                        "description": "Platform commission, in local currency (e.g. USD)",
+                        "example": 1
+                      },
+                      "fbaFees": {
+                        "type": "number",
+                        "description": "FBA fees, in local currency (e.g. USD)",
+                        "example": 1
+                      },
+                      "fbaDetail": {
+                        "type": "array",
+                        "description": "FBA detail. First item is delivery fee, subsequent items are month:storage fee, e.g. [475,\"1-9:5\",\"10-12:15\"]",
+                        "example": []
+                      },
+                      "shipCost": {
+                        "type": "number",
+                        "description": "FBM shipping cost, in local currency (e.g. USD)",
+                        "example": 1
+                      },
+                      "shipsFrom": {
+                        "type": "string",
+                        "description": "Ship-from location",
+                        "example": null
+                      },
+                      "profitAmount": {
+                        "type": "number",
+                        "description": "Profit, final price - FBA fee - commission, in local currency (e.g. USD)",
+                        "example": 1
+                      },
+                      "profitRate": {
+                        "type": "number",
+                        "description": "Profit margin, e.g. 25.83 means 25.83%",
+                        "example": 1
+                      },
+                      "monthlySalesUnits": {
+                        "type": "integer",
+                        "description": "Official monthly sales volume, Amazon published ASIN monthly sales, latest value from the last 7 calendar days, 0 if unavailable",
+                        "example": 1
+                      },
+                      "salesRank": {
+                        "type": "integer",
+                        "description": "BSR rank, main category rank",
+                        "example": 1
+                      },
+                      "category": {
+                        "type": "array",
+                        "description": "Main category, [category name, NodeId]",
+                        "example": []
+                      },
+                      "bsrCategory": {
+                        "type": "array",
+                        "description": "Subcategory rank list, each entry containing nodeId (node ID), name (category name), rank (rank), date (date, format yyyyMMdd)",
+                        "example": []
+                      },
+                      "availableDate": {
+                        "type": "string",
+                        "description": "Listing time, format yyyy-MM-dd",
+                        "example": "2026-01-01"
+                      },
+                      "onlineDays": {
+                        "type": "integer",
+                        "description": "Days since listing",
+                        "example": 1
+                      },
+                      "rating": {
+                        "type": "number",
+                        "description": "Current rating (0.0-5.0, e.g. 4.70)",
+                        "example": 1
+                      },
+                      "ratings": {
+                        "type": "integer",
+                        "description": "Number of ratings",
+                        "example": 1
+                      },
+                      "fiveStarRatings": {
+                        "type": "number",
+                        "description": "5-star percentage, e.g. 57.7 means 57.7%",
+                        "example": 1
+                      },
+                      "fourStarRatings": {
+                        "type": "number",
+                        "description": "4-star percentage",
+                        "example": 1
+                      },
+                      "threeStarRatings": {
+                        "type": "number",
+                        "description": "3-star percentage",
+                        "example": 1
+                      },
+                      "twoStarRatings": {
+                        "type": "number",
+                        "description": "2-star percentage",
+                        "example": 1
+                      },
+                      "oneStarRatings": {
+                        "type": "number",
+                        "description": "1-star percentage",
+                        "example": 1
+                      },
+                      "buyboxSeller": {
+                        "type": "string",
+                        "description": "Buybox seller name",
+                        "example": null
+                      },
+                      "buyBoxSellerId": {
+                        "type": "string",
+                        "description": "Buybox seller ID",
+                        "example": "example-id"
+                      },
+                      "buyboxSellerAddress": {
+                        "type": "string",
+                        "description": "Seller location, Buybox seller nationality (two-letter code e.g. CN, US), null if Amazon's own",
+                        "example": null
+                      },
+                      "isFBA": {
+                        "type": "boolean",
+                        "description": "Whether FBA, whether Buybox seller uses FBA logistics",
+                        "example": false
+                      },
+                      "sellerNum": {
+                        "type": "integer",
+                        "description": "Number of sellers",
+                        "example": 1
+                      },
+                      "aPlus": {
+                        "type": "boolean",
+                        "description": "Has A+",
+                        "example": false
+                      },
+                      "hasVideo": {
+                        "type": "boolean",
+                        "description": "Has video",
+                        "example": false
+                      },
+                      "hasBrandStore": {
+                        "type": "boolean",
+                        "description": "Has brand store",
+                        "example": false
+                      },
+                      "feature": {
+                        "type": "object",
+                        "description": "Product feature ratings, features and star ratings collected by Amazon for this product, e.g. {\"Battery life\":4.0}",
+                        "example": {}
+                      },
+                      "productInfo": {
+                        "type": "object",
+                        "description": "Product information, structured data from the Product Information section in the Listing",
+                        "example": {}
+                      },
+                      "property": {
+                        "type": "object",
+                        "description": "Attribute list, including variant attributes and Bullet Points header descriptions",
+                        "example": {}
+                      },
+                      "brandPromotion": {
+                        "type": "string",
+                        "description": "Brand promotion",
+                        "example": null
+                      },
+                      "dealType": {
+                        "type": "string",
+                        "description": "Deal label",
+                        "example": null
+                      },
+                      "extraSavings": {
+                        "type": "array",
+                        "description": "Associated promotions, e.g. [{Asin:xxx, Text:\"Save 5%...\"}]",
+                        "example": []
+                      },
+                      "rankTrend": {
+                        "type": "array",
+                        "description": "BSR trend, main category rank change history, interleaved format [date, rank, ...]",
+                        "example": []
+                      },
+                      "bsrRankTrend": {
+                        "type": "array",
+                        "description": "Subcategory rank trend, JSON format [{NodeId:xxx, Rank:[date, rank, ...]}]",
+                        "example": []
+                      },
+                      "listingSalesVolumeOfDailyTrend": {
+                        "type": "array",
+                        "description": "Daily sales volume trend, value -1 means unable to estimate",
+                        "example": []
+                      },
+                      "listingSalesOfDailyTrend": {
+                        "type": "array",
+                        "description": "Daily sales revenue trend, in local currency smallest unit (e.g. cents), value -1 means unable to estimate",
+                        "example": []
+                      },
+                      "listingSalesVolumeOfMonthTrend": {
+                        "type": "array",
+                        "description": "Monthly sales volume trend (last 30 days), value -1 means unable to estimate",
+                        "example": []
+                      },
+                      "listingSalesOfMonthTrend": {
+                        "type": "array",
+                        "description": "Monthly sales revenue trend, in local currency smallest unit (e.g. cents)",
+                        "example": []
+                      },
+                      "priceTrend": {
+                        "type": "array",
+                        "description": "Selling price trend, before coupon, in local currency smallest unit, -1 means no price available for that day",
+                        "example": []
+                      },
+                      "listPriceTrend": {
+                        "type": "array",
+                        "description": "Original price trend (strikethrough price history), in local currency smallest unit, -1 means no price available for that day",
+                        "example": []
+                      },
+                      "dealTrend": {
+                        "type": "array",
+                        "description": "Deal trend, value 1 = has deal, 0 = no deal",
+                        "example": []
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "title": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Provider-specific response title.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "sourceTool": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Provider-specific source tool name.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "page": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Current page returned by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "pageSize": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Page size returned by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "pageItemCount": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Item count on the current page returned by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "totalPage": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Total page count returned by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "dataSnapshotMonth": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Data snapshot month returned by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [],
+          "additionalProperties": true
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "code": {
+      "type": "integer",
+      "description": "0 means accepted or successful; nonzero is a platform error."
+    },
+    "msg": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ts": {
+      "type": "string",
+      "description": "Epoch milliseconds."
+    },
+    "time": {
+      "type": "string",
+      "description": "Server local time: yyyy-MM-dd HH:mm:ss."
+    },
+    "cost": {
+      "type": "string",
+      "description": "Elapsed milliseconds, never credits; -1 outside web requests."
+    },
+    "traceId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
   },
-  "jsonSchema": null
+  "type": "object"
 }

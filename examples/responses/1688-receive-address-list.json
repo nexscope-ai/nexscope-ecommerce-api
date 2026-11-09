@@ -1,0 +1,19 @@
+{
+  "data": {
+    "items": [
+      {
+        "addressId": "987654321012345678",
+        "fullName": "Example recipient",
+        "mobile": "13800000000",
+        "address": "Example street 1",
+        "isDefault": true
+      }
+    ]
+  },
+  "code": 0,
+  "msg": null,
+  "ts": "0",
+  "time": "2026-01-01 00:00:00",
+  "cost": "-1",
+  "traceId": null
+}

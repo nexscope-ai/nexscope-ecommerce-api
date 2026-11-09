@@ -1,8 +1,8 @@
 {
-  "searchType": 1,
-  "pageIndex": 1,
-  "keyWord": "iPhone 15",
+  "keyWord": "\u624b\u673a\u58f3",
   "date": "2026-07-01",
-  "pageSize": 10,
-  "pageType": 3
+  "pageSize": 20,
+  "pageType": 3,
+  "searchType": 1,
+  "pageIndex": 1
 }

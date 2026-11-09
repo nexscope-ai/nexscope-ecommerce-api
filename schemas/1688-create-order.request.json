@@ -1,0 +1,169 @@
+{
+  "type": "object",
+  "properties": {
+    "addressId": {
+      "type": "string",
+      "description": "Select from receiveAddressList."
+    },
+    "addressParam": {
+      "type": "object",
+      "properties": {
+        "fullName": {
+          "type": "string",
+          "description": "Recipient name."
+        },
+        "mobile": {
+          "type": "string",
+          "description": "Recipient phone; avoid sharing outside the request."
+        },
+        "address": {
+          "type": "string",
+          "description": "Street address."
+        },
+        "provinceText": {
+          "type": "string",
+          "description": ""
+        },
+        "cityText": {
+          "type": "string",
+          "description": ""
+        },
+        "areaText": {
+          "type": "string",
+          "description": ""
+        },
+        "postCode": {
+          "type": "string",
+          "description": "Postal code."
+        },
+        "phone": {
+          "type": "string",
+          "description": "Landline phone number."
+        }
+      },
+      "required": [
+        "fullName",
+        "mobile",
+        "address"
+      ],
+      "additionalProperties": true
+    },
+    "cargoParamList": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "offerId": {
+            "type": "string",
+            "description": "Exact positive integer identifier. Send as a JSON string.",
+            "pattern": "^[1-9][0-9]*$"
+          },
+          "specId": {
+            "type": "string",
+            "description": "SKU specification identifier."
+          },
+          "quantity": {
+            "type": "integer",
+            "description": "Quantity in the selling unit.",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "offerId",
+          "quantity"
+        ],
+        "additionalProperties": true
+      },
+      "minItems": 1
+    },
+    "flow": {
+      "type": "string",
+      "description": "Order flow; defaults to general when omitted.",
+      "enum": [
+        "general",
+        "fenxiao",
+        "boutiquefenxiao"
+      ],
+      "default": "general"
+    },
+    "isvBizType": {
+      "type": "string",
+      "description": "Cross-border business type.",
+      "enum": [
+        "cross",
+        "cross_daigou",
+        "cross_distribution"
+      ],
+      "default": "cross"
+    },
+    "message": {
+      "type": "string",
+      "description": ""
+    },
+    "tradeType": {
+      "type": "string",
+      "description": "Trade type: assureTrade, alipay, period, assure, creditBuy, bank, 631staged or 37staged."
+    },
+    "shopPromotionId": {
+      "type": "string",
+      "description": ""
+    },
+    "outOrderId": {
+      "type": "string",
+      "description": ""
+    },
+    "useRedEnvelope": {
+      "type": "string",
+      "description": "",
+      "enum": [
+        "y",
+        "n"
+      ],
+      "default": "n"
+    },
+    "anonymousBuyer": {
+      "type": "boolean",
+      "description": ""
+    },
+    "confirmCreateOrder": {
+      "type": "boolean",
+      "description": "Must be JSON true after separate explicit user confirmation. Examples default to false and do not authorize this action.",
+      "default": false
+    },
+    "useBorderLogisticsSolution": {
+      "type": "boolean",
+      "description": "Whether to use a cross-border logistics solution."
+    },
+    "crossBorderLogisticsSolutionId": {
+      "type": "string",
+      "description": "Cross-border logistics solution sourceId."
+    },
+    "fenxiaoChannel": {
+      "type": "string",
+      "description": "Distribution platform.",
+      "enum": [
+        "douyin",
+        "kuajing",
+        "pinduoduo",
+        "taote"
+      ]
+    }
+  },
+  "required": [
+    "cargoParamList",
+    "confirmCreateOrder"
+  ],
+  "additionalProperties": true,
+  "anyOf": [
+    {
+      "required": [
+        "addressId"
+      ]
+    },
+    {
+      "required": [
+        "addressParam"
+      ]
+    }
+  ]
+}

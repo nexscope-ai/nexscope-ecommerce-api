@@ -1,20 +1,16 @@
 # Amazon Product Detail API
 
-Retrieve detailed Amazon product information by ASIN, including title, images, bullet points, specifications, A+ content, pricing, ratings & reviews, variants, and more.
+Retrieve detailed Amazon product information by ASIN, including title, Item Highlights when extractable from raw HTML, images, bullet points, specifications, A+ content, pricing, ratings & reviews, variants, and more. Trigger when users mention Amazon product details, ASIN lookup, Item Highlights, product page data, listing analysis, bullet point extraction, product image retrieval, variant inspection, competitor listing research, price lookup, review breakdown, product specification query, or similar terms. Even if the user does not explicitly say "product details," trigger this skill whenever the request involves retrieving structured data from Amazon product pages via ASIN.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/amazon-product-detail?view=api&co-from=github-ecommerce-api)
 
-Category: Amazon Marketplace Intelligence · Data API
-
-Retrieve detailed Amazon product information by ASIN, including title, images, bullet points, specifications, A+ content, pricing, ratings & reviews, variants, and more.
+Category: Amazon Marketplace Intelligence · Data API · Contract refreshed: 2026-11-09
 
 ## Endpoint
 
 `POST https://api.nexscope.ai/api/skill-api/v1/skills/amazon-product-detail/run`
 
-Headers: `Authorization: Bearer YOUR_API_KEY` and `Content-Type: application/json`.
-
-Execution: synchronous; check the platform response `code`, then read the business result from `data`.
+Headers: `Authorization: Bearer YOUR_API_KEY` and `Content-Type: application/json`. Invoking the API consumes credits. This is a Nexscope endpoint; do not supply a supplier API key or OAuth access token.
 
 ## Request parameters
 
@@ -29,61 +25,33 @@ Execution: synchronous; check the platform response `code`, then read the busine
 | `returnRelatedProducts` | boolean | No | Whether to return related product list (relatedProducts), default false | {} |
 | `returnAuthorsReviews` | boolean | No | Whether to return author review list (authorsReviews), default false | {} |
 
-The table summarizes the published fields. Consult the full request definition for nested objects, alternatives, and conditional requirements.
+The [complete request definition](../../schemas/amazon-product-detail.request.json) contains nested fields and conditional requirements. Required alternatives: `[]`. Preserve the documented names and types; examples are illustrative.
 
 ## Call this API
 
-Run these commands from the repository root after [setting your API key](../../README.md#1-get-and-configure-your-api-key). Copy the sample to a separate file and replace illustrative URLs, IDs, search terms, and required values before submitting. Sample responses are documentation fixtures, not live results.
+Copy the sample, replace illustrative values, and inspect it without sending a request:
 
 ```bash
 cp payloads/amazon-product-detail.json request.json
-# Edit request.json for your inputs.
-bash examples/curl/run.sh amazon-product-detail request.json
-# Or: node examples/javascript/run.mjs amazon-product-detail request.json
-# Or: python3 examples/python/run.py amazon-product-detail request.json
+python3 examples/python/run.py amazon-product-detail request.json --dry-run
+# Alternatively: node examples/javascript/run.mjs amazon-product-detail request.json --dry-run
+# After reviewing parameters and authorizing the call, remove --dry-run to submit once.
 ```
 
 ### Published request example
 
 ```json
 {
-  "returnRelatedProducts": false,
   "returnAuthorsReviews": false,
   "asins": "B072MQ5BRX",
-  "returnBoughtTogether": false
+  "returnBoughtTogether": false,
+  "returnRelatedProducts": false
 }
 ```
 
 ## Response
 
-The run endpoint returns a platform response envelope, as documented in the [official API reference](https://www.nexscope.ai/api-docs/amazon-product-detail?co-from=github-ecommerce-api). HTTP 200 alone does not indicate business success: check `code === 0` before reading `data`. A nonzero `code` is a platform error; inspect `msg` and `traceId` for diagnostics. `data` may be null, so check it before accessing `data.products` or `data.total`.
-
-| Field | Type | Meaning |
-|---|---|---|
-| `data` | object or null | Business result, including `products` and `total` when present. |
-| `code` | integer | `0` indicates success or acceptance; nonzero indicates a platform error. |
-| `msg` | string or null | Platform message. |
-| `ts` | string | Epoch milliseconds. |
-| `time` | string | Server local time in `yyyy-MM-dd HH:mm:ss` format. |
-| `cost` | string | Elapsed milliseconds, never credits; `-1` outside web requests. |
-| `traceId` | string or null | Trace identifier. |
-
-### Parse the response (JavaScript)
-
-```javascript
-const response = await fetch(endpoint, options);
-if (!response.ok) throw new Error(`HTTP ${response.status}`);
-const result = await response.json();
-if (result.code !== 0) {
-  throw new Error(`Nexscope error ${result.code}: ${result.msg ?? 'Unknown error'}`);
-}
-const products = result.data?.products ?? [];
-const total = result.data?.total ?? 0;
-```
-
-Here, `endpoint` is the URL above and `options` contains the POST method, authentication headers, and JSON request body. The repository CLI helpers print the full response envelope; application code should apply the checks above.
-
-### Published response example
+Check Nexscope outer `code == 0` before reading `data`; HTTP 200 alone is not business success. `cost` is elapsed milliseconds, not credits. Inspect nested business results and partial failures before taking dependent actions. The [complete response definition](../../schemas/amazon-product-detail.response.json) and example below are current production documentation snapshots, not a live buyer/order test result.
 
 ```json
 {
@@ -123,17 +91,4 @@ Here, `endpoint` is the URL above and `options` contains the POST method, authen
 }
 ```
 
-## Full definitions
-
-- [Request definition](../../schemas/amazon-product-detail.request.json) — field-descriptors
-- [Response definition](../../schemas/amazon-product-detail.response.json) — field-descriptors
-- [Editable request sample](../../payloads/amazon-product-detail.json)
-- [Response fixture](../../examples/responses/amazon-product-detail.json)
-
-Some source definitions use field descriptors rather than JSON Schema; these are preserved and labeled rather than presented as strict validation schemas.
-
-## MCP
-
-Tool name: `nexscope_amazon_product_detail`. See [MCP integration](../calling-apis.md#mcp).
-
-Source retrieved: 2026-09-10. Response envelope and example reconciled with the official API page: 2026-10-08. See [source and validation notes](../source-notes.md).
+Keep the request trace when reporting errors. Do not infer authorization, order creation or payment success from a redirect, process exit or missing identifier alone.

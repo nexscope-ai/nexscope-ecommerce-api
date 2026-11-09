@@ -7,7 +7,7 @@
       "type": "string",
       "required": false,
       "description": "Product search keyword (must be written in Simplified Chinese; translate it before calling this API). Maximum 50 characters",
-      "example": "iPhone 15",
+      "example": "\u624b\u673a\u58f3",
       "constraints": {}
     },
     {
@@ -39,7 +39,7 @@
       "type": "integer",
       "required": false,
       "description": "Number of results per page (10-100), default 20",
-      "example": 10,
+      "example": 20,
       "constraints": {}
     },
     {
@@ -71,7 +71,7 @@
       "type": "integer",
       "required": false,
       "description": "Product tag: 0 = no limit, 2 = new product, 3 = 1688 Select, 4 = cross-border, 5 = customization supported, 6 = store highlight. Default 0",
-      "example": 1,
+      "example": 0,
       "constraints": {}
     },
     {
@@ -79,7 +79,7 @@
       "type": "integer",
       "required": false,
       "description": "Company type: 0 = no limit, 1 = store, 2 = factory",
-      "example": 1,
+      "example": 0,
       "constraints": {}
     },
     {
@@ -276,12 +276,12 @@
     }
   ],
   "example": {
-    "searchType": 1,
-    "pageIndex": 1,
-    "keyWord": "iPhone 15",
+    "keyWord": "\u624b\u673a\u58f3",
     "date": "2026-07-01",
-    "pageSize": 10,
-    "pageType": 3
+    "pageSize": 20,
+    "pageType": 3,
+    "searchType": 1,
+    "pageIndex": 1
   },
   "jsonSchema": null
 }

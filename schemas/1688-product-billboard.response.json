@@ -1,364 +1,344 @@
 {
-  "type": "object",
-  "description": "Returns the documented upstream API response directly without an additional wrapper.",
-  "fields": [
-    {
-      "name": "total",
-      "type": "integer",
-      "required": false,
-      "description": "Total record count",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "type",
-      "type": "string",
-      "required": false,
-      "description": "Render style",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "columns",
-      "type": "array",
-      "required": false,
-      "description": "Render columns",
-      "example": [],
-      "constraints": {}
-    },
-    {
-      "name": "products",
-      "type": "array",
-      "required": false,
-      "description": "Product list (see Product Object below)",
-      "example": [],
-      "constraints": {}
-    },
-    {
-      "name": "products[].offerId",
-      "type": "string",
-      "required": false,
-      "description": "Product ID",
-      "example": "example-id",
-      "constraints": {}
-    },
-    {
-      "name": "products[].asin",
-      "type": "string",
-      "required": false,
-      "description": "Product number",
-      "example": "B072MQ5BRX",
-      "constraints": {}
-    },
-    {
-      "name": "products[].title",
-      "type": "string",
-      "required": false,
-      "description": "Product title",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].price",
-      "type": "number",
-      "required": false,
-      "description": "Wholesale price",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].consignPrice",
-      "type": "number",
-      "required": false,
-      "description": "Dropship price",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].currency",
-      "type": "string",
-      "required": false,
-      "description": "Currency",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].unit",
-      "type": "string",
-      "required": false,
-      "description": "Unit",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].quantityBegin",
-      "type": "integer",
-      "required": false,
-      "description": "Minimum order quantity",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].quantityPrices",
-      "type": "string",
-      "required": false,
-      "description": "Price range",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].salesOrderCount",
-      "type": "integer",
-      "required": false,
-      "description": "Order count (returns corresponding value based on statistical period)",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].salesQuantity",
-      "type": "integer",
-      "required": false,
-      "description": "Units sold (returns corresponding value based on statistical period)",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].estimatedSalesAmount",
-      "type": "integer",
-      "required": false,
-      "description": "Estimated sales amount (returns corresponding value based on statistical period)",
-      "example": 1,
-      "constraints": {}
-    },
-    {
-      "name": "products[].dataType",
-      "type": "string",
-      "required": false,
-      "description": "Data type: weeklyData = weekly data, monthlyData = monthly data",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].availableDate",
-      "type": "string",
-      "required": false,
-      "description": "Product listing time, format yyyy-MM-dd HH:mm:ss",
-      "example": "2026-01-01",
-      "constraints": {}
-    },
-    {
-      "name": "products[].deliveryTime",
-      "type": "string",
-      "required": false,
-      "description": "Delivery time",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].levelName",
-      "type": "string",
-      "required": false,
-      "description": "Category hierarchy name",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].company",
-      "type": "string",
-      "required": false,
-      "description": "Store name",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].shopId",
-      "type": "string",
-      "required": false,
-      "description": "Store ID",
-      "example": "example-id",
-      "constraints": {}
-    },
-    {
-      "name": "products[].shopUrl",
-      "type": "string",
-      "required": false,
-      "description": "Store link URL",
-      "example": "https://example.com/image.jpg",
-      "constraints": {}
-    },
-    {
-      "name": "products[].asinUrl",
-      "type": "string",
-      "required": false,
-      "description": "Product link URL",
-      "example": "B072MQ5BRX",
-      "constraints": {}
-    },
-    {
-      "name": "products[].imageUrl",
-      "type": "string",
-      "required": false,
-      "description": "Image URL",
-      "example": "https://example.com/image.jpg",
-      "constraints": {}
-    },
-    {
-      "name": "products[].sourceType",
-      "type": "string",
-      "required": false,
-      "description": "Source platform (1688)",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "products[].sourceTool",
-      "type": "string",
-      "required": false,
-      "description": "Source tool",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "errcode",
-      "type": "integer",
-      "required": false,
-      "description": "Upstream status code returned by the provider.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "errmsg",
-      "type": "string",
-      "required": false,
-      "description": "Upstream status message returned by the provider.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "code",
-      "type": "string",
-      "required": false,
-      "description": "Provider-specific status code.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "msg",
-      "type": "string",
-      "required": false,
-      "description": "Provider-specific status message.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "message",
-      "type": "string",
-      "required": false,
-      "description": "Provider-specific message.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "title",
-      "type": "string",
-      "required": false,
-      "description": "Provider-specific response title.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "sourceType",
-      "type": "string",
-      "required": false,
-      "description": "Provider-specific source platform type.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "sourceTool",
-      "type": "string",
-      "required": false,
-      "description": "Provider-specific source tool name.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "costToken",
-      "type": "integer",
-      "required": false,
-      "description": "Token cost reported by the upstream provider.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "costTime",
-      "type": "integer",
-      "required": false,
-      "description": "Execution time reported by the upstream provider.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "page",
-      "type": "integer",
-      "required": false,
-      "description": "Current page returned by the upstream provider.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "pageSize",
-      "type": "integer",
-      "required": false,
-      "description": "Page size returned by the upstream provider.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "pageItemCount",
-      "type": "integer",
-      "required": false,
-      "description": "Item count on the current page returned by the upstream provider.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "totalPage",
-      "type": "integer",
-      "required": false,
-      "description": "Total page count returned by the upstream provider.",
-      "example": null,
-      "constraints": {}
-    },
-    {
-      "name": "dataSnapshotMonth",
-      "type": "string",
-      "required": false,
-      "description": "Data snapshot month returned by the upstream provider.",
-      "example": null,
-      "constraints": {}
-    }
+  "required": [
+    "code",
+    "msg",
+    "data",
+    "ts",
+    "time",
+    "cost",
+    "traceId"
   ],
-  "example": {
-    "total": 1,
-    "columns": [],
-    "products": [
-      {
-        "offerId": "example-id",
-        "asin": "B072MQ5BRX",
-        "price": 1,
-        "consignPrice": 1,
-        "quantityBegin": 1,
-        "salesOrderCount": 1,
-        "salesQuantity": 1,
-        "estimatedSalesAmount": 1,
-        "availableDate": "2026-01-01",
-        "shopId": "example-id",
-        "shopUrl": "https://example.com/image.jpg",
-        "asinUrl": "B072MQ5BRX",
-        "imageUrl": "https://example.com/image.jpg"
-      }
-    ]
+  "properties": {
+    "data": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "total": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Total record count",
+                  "example": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "type": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Render style",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "columns": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "description": "Render columns",
+                  "example": []
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "products": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "description": "Product list (see Product Object below)",
+                  "example": [],
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "offerId": {
+                        "type": "string",
+                        "description": "Product ID",
+                        "example": "example-id"
+                      },
+                      "asin": {
+                        "type": "string",
+                        "description": "Product number",
+                        "example": "B072MQ5BRX"
+                      },
+                      "title": {
+                        "type": "string",
+                        "description": "Product title",
+                        "example": null
+                      },
+                      "price": {
+                        "type": "number",
+                        "description": "Wholesale price",
+                        "example": 1
+                      },
+                      "consignPrice": {
+                        "type": "number",
+                        "description": "Dropship price",
+                        "example": 1
+                      },
+                      "currency": {
+                        "type": "string",
+                        "description": "Currency",
+                        "example": null
+                      },
+                      "unit": {
+                        "type": "string",
+                        "description": "Unit",
+                        "example": null
+                      },
+                      "quantityBegin": {
+                        "type": "integer",
+                        "description": "Minimum order quantity",
+                        "example": 1
+                      },
+                      "quantityPrices": {
+                        "type": "string",
+                        "description": "Price range",
+                        "example": null
+                      },
+                      "salesOrderCount": {
+                        "type": "integer",
+                        "description": "Order count (returns corresponding value based on statistical period)",
+                        "example": 1
+                      },
+                      "salesQuantity": {
+                        "type": "integer",
+                        "description": "Units sold (returns corresponding value based on statistical period)",
+                        "example": 1
+                      },
+                      "estimatedSalesAmount": {
+                        "type": "integer",
+                        "description": "Estimated sales amount (returns corresponding value based on statistical period)",
+                        "example": 1
+                      },
+                      "dataType": {
+                        "type": "string",
+                        "description": "Data type: weeklyData = weekly data, monthlyData = monthly data",
+                        "example": null
+                      },
+                      "availableDate": {
+                        "type": "string",
+                        "description": "Product listing time, format yyyy-MM-dd HH:mm:ss",
+                        "example": "2026-01-01"
+                      },
+                      "deliveryTime": {
+                        "type": "string",
+                        "description": "Delivery time",
+                        "example": null
+                      },
+                      "levelName": {
+                        "type": "string",
+                        "description": "Category hierarchy name",
+                        "example": null
+                      },
+                      "company": {
+                        "type": "string",
+                        "description": "Store name",
+                        "example": null
+                      },
+                      "shopId": {
+                        "type": "string",
+                        "description": "Store ID",
+                        "example": "example-id"
+                      },
+                      "shopUrl": {
+                        "type": "string",
+                        "description": "Store link URL",
+                        "example": "https://example.com/image.jpg"
+                      },
+                      "asinUrl": {
+                        "type": "string",
+                        "description": "Product link URL",
+                        "example": "https://detail.1688.com/offer/1040473674152.html"
+                      },
+                      "imageUrl": {
+                        "type": "string",
+                        "description": "Image URL",
+                        "example": "https://example.com/image.jpg"
+                      },
+                      "sourceType": {
+                        "type": "string",
+                        "description": "Source platform (1688)",
+                        "example": null
+                      },
+                      "sourceTool": {
+                        "type": "string",
+                        "description": "Source tool",
+                        "example": null
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "title": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Provider-specific response title.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "sourceType": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Provider-specific source platform type.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "sourceTool": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Provider-specific source tool name.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "costToken": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Token cost reported by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "costTime": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Execution time reported by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "page": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Current page returned by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "pageSize": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Page size returned by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "pageItemCount": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Item count on the current page returned by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "totalPage": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "Total page count returned by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "dataSnapshotMonth": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Data snapshot month returned by the upstream provider.",
+                  "example": null
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [],
+          "additionalProperties": true
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "code": {
+      "type": "integer",
+      "description": "0 means accepted or successful; nonzero is a platform error."
+    },
+    "msg": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ts": {
+      "type": "string",
+      "description": "Epoch milliseconds."
+    },
+    "time": {
+      "type": "string",
+      "description": "Server local time: yyyy-MM-dd HH:mm:ss."
+    },
+    "cost": {
+      "type": "string",
+      "description": "Elapsed milliseconds, never credits; -1 outside web requests."
+    },
+    "traceId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
   },
-  "jsonSchema": null
+  "type": "object"
 }

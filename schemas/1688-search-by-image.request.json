@@ -6,7 +6,7 @@
       "name": "imageUrl",
       "type": "string",
       "required": false,
-      "description": "Valid, publicly accessible image URL (maximum 1,000 characters). Supported formats: PNG, JPG, and JPEG; WEBP and GIF are not supported. Provide exactly one of imageUrl, imageBase64, or imageId",
+      "description": "Public HTTP/80 or HTTPS/443 URL, maximum 1,000 characters, without redirects. A sole direct source is checked for PNG/JPEG headers, at most 14.3 MiB, each dimension at most 20,000 and at most 40,000,000 pixels. This is not full pixel-integrity validation. Provide exactly one of imageUrl, imageBase64, or imageId.",
       "example": "https://m.media-amazon.com/images/I/61v6nYvQ7+L._AC_SL1500_.jpg",
       "constraints": {}
     },
@@ -14,7 +14,7 @@
       "name": "imageBase64",
       "type": "string",
       "required": false,
-      "description": "Raw Base64-encoded image content without a data:image/jpeg;base64, prefix. Supported formats: PNG, JPG, and JPEG.",
+      "description": "Raw standard Base64 for PNG/JPEG; optional padding and outer whitespace allowed, embedded whitespace and data URI prefixes rejected for a sole direct source. Byte/header limits match imageUrl; at most 19,992,848 Base64 characters after outer whitespace trimming. Provide this as the only image source.",
       "example": null,
       "constraints": {}
     },
@@ -38,8 +38,8 @@
       "name": "pageSize",
       "type": "integer",
       "required": false,
-      "description": "Number of products per page, maximum 50",
-      "example": 10,
+      "description": "Number of products per page; default 20, maximum 50",
+      "example": 20,
       "constraints": {}
     },
     {
@@ -92,9 +92,9 @@
     }
   ],
   "example": {
+    "pageSize": 20,
     "page": 1,
-    "imageUrl": "https://m.media-amazon.com/images/I/61v6nYvQ7+L._AC_SL1500_.jpg",
-    "pageSize": 10
+    "imageUrl": "https://m.media-amazon.com/images/I/61v6nYvQ7+L._AC_SL1500_.jpg"
   },
   "jsonSchema": null
 }

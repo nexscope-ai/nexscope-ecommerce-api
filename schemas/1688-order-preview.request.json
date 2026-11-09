@@ -1,0 +1,163 @@
+{
+  "type": "object",
+  "properties": {
+    "addressId": {
+      "type": "string",
+      "description": "Select from receiveAddressList."
+    },
+    "addressParam": {
+      "type": "object",
+      "properties": {
+        "fullName": {
+          "type": "string",
+          "description": "Recipient name."
+        },
+        "mobile": {
+          "type": "string",
+          "description": "Recipient phone; avoid sharing outside the request."
+        },
+        "address": {
+          "type": "string",
+          "description": "Street address."
+        },
+        "provinceText": {
+          "type": "string",
+          "description": ""
+        },
+        "cityText": {
+          "type": "string",
+          "description": ""
+        },
+        "areaText": {
+          "type": "string",
+          "description": ""
+        },
+        "postCode": {
+          "type": "string",
+          "description": "Postal code."
+        },
+        "phone": {
+          "type": "string",
+          "description": "Landline phone number."
+        }
+      },
+      "required": [
+        "fullName",
+        "mobile",
+        "address"
+      ],
+      "additionalProperties": true
+    },
+    "cargoParamList": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "offerId": {
+            "type": "string",
+            "description": "Exact positive integer identifier. Send as a JSON string.",
+            "pattern": "^[1-9][0-9]*$"
+          },
+          "specId": {
+            "type": "string",
+            "description": "SKU specification identifier."
+          },
+          "quantity": {
+            "type": "integer",
+            "description": "Quantity in the selling unit.",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "offerId",
+          "quantity"
+        ],
+        "additionalProperties": true
+      },
+      "minItems": 1
+    },
+    "flow": {
+      "type": "string",
+      "description": "Order flow; defaults to general when omitted.",
+      "enum": [
+        "general",
+        "fenxiao",
+        "boutiquefenxiao"
+      ],
+      "default": "general"
+    },
+    "isvBizType": {
+      "type": "string",
+      "description": "Cross-border business type.",
+      "enum": [
+        "cross",
+        "cross_daigou",
+        "cross_distribution"
+      ],
+      "default": "cross"
+    },
+    "useBorderLogisticsSolution": {
+      "type": "boolean",
+      "description": "Whether to use a cross-border logistics solution."
+    },
+    "crossBorderLogisticsSolutionId": {
+      "type": "string",
+      "description": "Cross-border logistics solution sourceId."
+    },
+    "invoiceParam": {
+      "type": "object",
+      "description": "Optional invoice details for order preview.",
+      "properties": {
+        "invoiceType": {
+          "type": "integer",
+          "description": "0: ordinary invoice; 1: special VAT invoice."
+        },
+        "titleType": {
+          "type": "integer",
+          "description": "1: personal; 2: company."
+        },
+        "title": {
+          "type": "string",
+          "description": "Invoice title."
+        },
+        "taxpayerNumber": {
+          "type": "string",
+          "description": "Taxpayer number."
+        },
+        "bankName": {
+          "type": "string",
+          "description": "Bank name."
+        },
+        "bankAccount": {
+          "type": "string",
+          "description": "Bank account."
+        },
+        "address": {
+          "type": "string",
+          "description": "Registered address."
+        },
+        "phone": {
+          "type": "string",
+          "description": "Registered phone number."
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "cargoParamList"
+  ],
+  "additionalProperties": true,
+  "anyOf": [
+    {
+      "required": [
+        "addressId"
+      ]
+    },
+    {
+      "required": [
+        "addressParam"
+      ]
+    }
+  ]
+}

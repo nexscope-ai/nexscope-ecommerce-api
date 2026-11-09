@@ -1,26 +1,35 @@
 {
-  "total": 1,
-  "keyword": "phone case",
-  "columns": [],
-  "costToken": 1,
-  "products": [
-    {
-      "asin": "B072MQ5BRX",
-      "price": 1,
-      "extractedPrice": 1,
-      "oldPrice": 1,
-      "extractedOldPrice": 1,
-      "extractedPriceUnit": 1,
-      "rating": 1,
-      "ratings": 1,
-      "position": 1,
-      "sponsored": false,
-      "imageUrl": "https://example.com/image.jpg",
-      "asinUrl": "B072MQ5BRX",
-      "availableDate": "2026-01-01",
-      "monthlySalesUnits": 1,
-      "snapEbtEligible": false,
-      "keyword": "phone case"
-    }
-  ]
+  "data": {
+    "total": 1,
+    "keyword": "phone case",
+    "columns": [],
+    "costToken": 1,
+    "sellerSpriteEnriched": false,
+    "products": [
+      {
+        "asin": "B072MQ5BRX",
+        "price": 1,
+        "extractedPrice": 1,
+        "oldPrice": 1,
+        "extractedOldPrice": 1,
+        "extractedPriceUnit": 1,
+        "rating": 1,
+        "ratings": 1,
+        "position": 1,
+        "sponsored": false,
+        "imageUrl": "https://example.com/image.jpg",
+        "asinUrl": "https://www.amazon.com/dp/B072MQ5BRX",
+        "availableDate": "2026-01-01 00:00:00",
+        "monthlySalesUnits": 1,
+        "snapEbtEligible": false,
+        "keyword": "phone case"
+      }
+    ]
+  },
+  "code": 0,
+  "msg": null,
+  "ts": "0",
+  "time": "2026-01-01 00:00:00",
+  "cost": "-1",
+  "traceId": null
 }

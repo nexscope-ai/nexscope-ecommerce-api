@@ -1,0 +1,17 @@
+{
+  "data": {
+    "stores": [
+      {
+        "accountName": "My 1688 account",
+        "status": "ACTIVE",
+        "expired": false
+      }
+    ]
+  },
+  "code": 0,
+  "msg": null,
+  "ts": "0",
+  "time": "2026-01-01 00:00:00",
+  "cost": "-1",
+  "traceId": null
+}

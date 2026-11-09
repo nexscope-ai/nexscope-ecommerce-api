@@ -68,10 +68,10 @@
     }
   ],
   "example": {
-    "returnRelatedProducts": false,
     "returnAuthorsReviews": false,
     "asins": "B072MQ5BRX",
-    "returnBoughtTogether": false
+    "returnBoughtTogether": false,
+    "returnRelatedProducts": false
   },
   "jsonSchema": null
 }

@@ -1,17 +1,28 @@
 {
-  "imageId": "example-id",
-  "total": 1,
-  "totalPage": 1,
-  "columns": [],
-  "costToken": 1,
-  "products": [],
-  "offerId": "example-id",
-  "asin": "B072MQ5BRX",
-  "imageUrl": "https://example.com/image.jpg",
-  "price": 1,
-  "consignPrice": 1,
-  "salesQuantity": 1,
-  "estimatedSalesAmount": 1,
-  "asinUrl": "B072MQ5BRX",
-  "quantityBegin": 1
+  "data": {
+    "imageId": "example-id",
+    "total": 1,
+    "totalPage": 1,
+    "columns": [],
+    "costToken": 1,
+    "products": [
+      {
+        "offerId": "example-id",
+        "asin": "example-id",
+        "imageUrl": "https://example.com/image.jpg",
+        "price": 1,
+        "consignPrice": 1,
+        "salesQuantity": 1,
+        "estimatedSalesAmount": 1,
+        "asinUrl": "https://detail.1688.com/offer/1040473674152.html",
+        "quantityBegin": 1
+      }
+    ]
+  },
+  "code": 0,
+  "msg": null,
+  "ts": "0",
+  "time": "2026-01-01 00:00:00",
+  "cost": "-1",
+  "traceId": null
 }

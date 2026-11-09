@@ -1,0 +1,22 @@
+{
+  "data": {
+    "status": true,
+    "sumPayment": 840,
+    "sumCarriage": 0,
+    "discountFee": 0,
+    "cargoList": [
+      {
+        "offerId": "1234567890123456789",
+        "quantity": 2,
+        "finalUnitPrice": 4.2,
+        "amount": 8.4
+      }
+    ]
+  },
+  "code": 0,
+  "msg": null,
+  "ts": "0",
+  "time": "2026-01-01 00:00:00",
+  "cost": "-1",
+  "traceId": null
+}

@@ -11,20 +11,22 @@ WOO_ENDPOINTS = {'woocommerce-products': 'https://api.nexscope.ai/woocommerce/pr
 
 SIF_ENDPOINTS = {'design-similarity-search': 'https://api.nexscope.ai/ai/designSimilaritySearch', 'design-registration-details': 'https://api.nexscope.ai/ai/designRegistrationDetails'}
 
+PROCUREMENT_ENDPOINTS = {'1688-authorize-url': 'https://api.nexscope.ai/alibaba1688/authorizeUrl', '1688-authorized-stores': 'https://api.nexscope.ai/alibaba1688/authorizedStores', '1688-receive-address-list': 'https://api.nexscope.ai/alibaba1688/receiveAddressList', '1688-sku': 'https://api.nexscope.ai/alibaba1688/sku', '1688-order-preview': 'https://api.nexscope.ai/alibaba1688/orderPreview', '1688-create-order': 'https://api.nexscope.ai/alibaba1688/createOrder', '1688-payment-url': 'https://api.nexscope.ai/alibaba1688/paymentUrl', '1688-order-status': 'https://api.nexscope.ai/alibaba1688/orderStatus', '1688-logistics': 'https://api.nexscope.ai/alibaba1688/logistics', '1688-logistics-trace': 'https://api.nexscope.ai/alibaba1688/logisticsTrace', '1688-confirm-receive': 'https://api.nexscope.ai/alibaba1688/confirmReceive', '1688-cancel-order': 'https://api.nexscope.ai/alibaba1688/cancelOrder', '1688-invoice-amount': 'https://api.nexscope.ai/alibaba1688/invoiceAmount', '1688-invoice-apply': 'https://api.nexscope.ai/alibaba1688/invoiceApply'}
+
 def validate():
     catalog = json.loads((ROOT / 'catalog/apis.json').read_text(encoding='utf-8'))
     apis = catalog['apis']
-    assert len(apis) == catalog['count'] == 238
-    assert len({a['slug'] for a in apis}) == 238
-    assert Counter(a['family'] for a in apis) == catalog['counts'] == {'data': 185, 'creative': 53}
+    assert len(apis) == catalog['count'] == 252
+    assert len({a['slug'] for a in apis}) == 252
+    assert Counter(a['family'] for a in apis) == catalog['counts'] == {'data': 199, 'creative': 53}
     assert Counter(a['category'] for a in apis) == {c['name']: c['count'] for c in catalog['categories']}
-    assert len(catalog['categories']) == 21
+    assert len(catalog['categories']) == 22
     readme = (ROOT / 'README.md').read_text(encoding='utf-8')
     referenced = set()
     for api in apis:
         slug = api['slug']
         assert re.fullmatch(r'[a-z0-9-]+', slug)
-        expected = SIF_ENDPOINTS.get(slug, WOO_ENDPOINTS.get(slug, f'https://api.nexscope.ai/api/skill-api/v1/skills/{slug}/run'))
+        expected = PROCUREMENT_ENDPOINTS.get(slug, SIF_ENDPOINTS.get(slug, WOO_ENDPOINTS.get(slug, f'https://api.nexscope.ai/api/skill-api/v1/skills/{slug}/run')))
         assert api['endpoint'] == expected
         assert api['method'] == 'POST'
         assert f'[{api["name"]}]({api["localDoc"]})' in readme
@@ -54,7 +56,7 @@ def validate():
             for url in re.findall(r'https://www\.nexscope\.ai/[^\s)]+', text):
                 attribution = 'co-from=cline' if path == ROOT / 'llms-install.md' else 'co-from=github-ecommerce-api'
                 assert attribution in url, (path, url)
-    print('PASS: 238 APIs, 21 categories, 238 docs, 476 definitions, 238 payloads, 238 response fixtures; links and attribution checked.')
+    print('PASS: 252 APIs, 22 categories, 252 docs, 504 definitions, 252 payloads, 252 response fixtures; links and attribution checked.')
 
 if __name__ == '__main__':
     validate()

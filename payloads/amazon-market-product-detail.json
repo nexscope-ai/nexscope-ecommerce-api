@@ -1,7 +1,7 @@
 {
-  "marketplace": "us",
-  "queryTrendEndDate": "2026-01-15",
   "queryTrendStartDate": "2026-01-01",
   "includeTrend": 1,
-  "asin": "B072MQ5BRX"
+  "asin": "B072MQ5BRX",
+  "marketplace": "us",
+  "queryTrendEndDate": "2026-01-15"
 }

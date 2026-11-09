@@ -1,42 +1,140 @@
 {
-  "type": "object",
-  "additionalProperties": false,
   "required": [
-    "product"
+    "code",
+    "msg",
+    "data",
+    "ts",
+    "time",
+    "cost",
+    "traceId"
   ],
   "properties": {
-    "product": {
-      "type": "object",
-      "additionalProperties": true,
-      "required": [
-        "offerId"
-      ],
-      "properties": {
-        "offerId": {
-          "type": "string"
+    "data": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "product"
+          ],
+          "properties": {
+            "product": {
+              "type": "object",
+              "additionalProperties": true,
+              "required": [
+                "offerId"
+              ],
+              "properties": {
+                "offerId": {
+                  "type": "string"
+                },
+                "subject": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "description": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "productUrl": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "skuList": {
+                  "anyOf": [
+                    {
+                      "type": "array"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "saleInfo": {
+                  "anyOf": [
+                    {
+                      "type": "object"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "shippingInfo": {
+                  "anyOf": [
+                    {
+                      "type": "object"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "companyName": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          }
         },
-        "subject": {
-          "type": "string"
-        },
-        "description": {
-          "type": "string"
-        },
-        "productUrl": {
-          "type": "string"
-        },
-        "skuList": {
-          "type": "array"
-        },
-        "saleInfo": {
-          "type": "object"
-        },
-        "shippingInfo": {
-          "type": "object"
-        },
-        "companyName": {
-          "type": "string"
+        {
+          "type": "null"
         }
-      }
+      ]
+    },
+    "code": {
+      "type": "integer",
+      "description": "0 means accepted or successful; nonzero is a platform error."
+    },
+    "msg": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ts": {
+      "type": "string",
+      "description": "Epoch milliseconds."
+    },
+    "time": {
+      "type": "string",
+      "description": "Server local time: yyyy-MM-dd HH:mm:ss."
+    },
+    "cost": {
+      "type": "string",
+      "description": "Elapsed milliseconds, never credits; -1 outside web requests."
+    },
+    "traceId": {
+      "type": [
+        "string",
+        "null"
+      ]
     }
-  }
+  },
+  "type": "object"
 }

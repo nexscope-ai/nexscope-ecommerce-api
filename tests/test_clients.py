@@ -27,7 +27,7 @@ class Clients(unittest.TestCase):
         with patch.object(client, 'urlopen') as network:
             code, out, _ = self.invoke(['amazon-search', str(ROOT/'payloads/amazon-search.json'), '--dry-run'])
             self.assertEqual(code, 0)
-            self.assertEqual(json.loads(out)['body'], {'keyword': 'phone case', 'page': 1})
+            self.assertEqual(json.loads(out)['body'], {'keyword': 'phone case', 'includeSellerSpriteData': False, 'page': 1})
             network.assert_not_called()
 
     def test_missing_key_does_not_send(self):

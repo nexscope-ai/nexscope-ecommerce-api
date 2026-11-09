@@ -1,10 +1,18 @@
 {
-  "product": {
-    "companyName": "Example supplier",
-    "skuList": [],
-    "subject": "Example 1688 product",
-    "offerId": "1040473674152",
-    "shippingInfo": {},
-    "saleInfo": {}
-  }
+  "data": {
+    "product": {
+      "skuList": [],
+      "subject": "Example 1688 product",
+      "offerId": "1040473674152",
+      "shippingInfo": {},
+      "saleInfo": {},
+      "companyName": "Example supplier"
+    }
+  },
+  "code": 0,
+  "msg": null,
+  "ts": "0",
+  "time": "2026-01-01 00:00:00",
+  "cost": "-1",
+  "traceId": null
 }

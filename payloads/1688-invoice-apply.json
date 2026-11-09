@@ -1,0 +1,14 @@
+{
+  "invoiceApplyModelList": [
+    {
+      "orderId": "3309156590237728779",
+      "amount": 840,
+      "invoiceType": "VATAX_COMM",
+      "purchaserInvoiceTitleModel": {
+        "titleType": "PERSONAL",
+        "title": "Example recipient"
+      }
+    }
+  ],
+  "confirmApplyInvoice": false
+}
