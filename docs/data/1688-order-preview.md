@@ -1,6 +1,6 @@
 # 1688 Order Preview API
 
-Order Preview for the currently authenticated Nexscope user. Use your Nexscope API key. Requires an ACTIVE, unexpired 1688 authorization owned by the current user. Procurement responses are live; do not cache or automatically retry writes. Stop on status=false even if the envelope succeeds. Totals are cents; cargo prices are CNY yuan.
+Order Preview for the currently authenticated Nexscope user. Use your Nexscope API key. Requires an ACTIVE, unexpired 1688 authorization owned by the current user and an Alipay account bound to that same 1688 buyer account. If 1688 returns BUYER_NOT_BIND_ALIPAY, complete the binding on 1688 before retrying. Procurement responses are live; do not cache or automatically retry writes. Stop on status=false even if the envelope succeeds. Totals are cents; cargo prices are CNY yuan.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/1688-order-preview?view=api&co-from=github-ecommerce-api)
 
@@ -61,6 +61,8 @@ python3 examples/python/run.py 1688-order-preview request.json --dry-run
 ## Response
 
 Check Nexscope outer `code == 0` before reading `data`; HTTP 200 alone is not business success. `cost` is elapsed milliseconds, not credits. Inspect nested business results and partial failures before taking dependent actions. The [complete response definition](../../schemas/1688-order-preview.response.json) and example below are current production documentation snapshots, not a live buyer/order test result.
+
+If the authorized 1688 buyer account has no Alipay binding, the preview returns `data.status=false` with a message telling the buyer to bind Alipay on 1688. Do not create an order until a new preview succeeds. The provider diagnostic code for this condition is `BUYER_NOT_BIND_ALIPAY`; it is not a separate required request parameter.
 
 ```json
 {

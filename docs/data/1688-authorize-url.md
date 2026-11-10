@@ -1,6 +1,6 @@
 # 1688 Authorize URL API
 
-Authorize URL for the currently authenticated Nexscope user. Use your Nexscope API key. Complete authorization manually, then verify ACTIVE and expired=false. Procurement responses are live; do not cache or automatically retry writes.
+Authorize URL for the currently authenticated Nexscope user. Use your Nexscope API key. Complete authorization manually, then verify ACTIVE and expired=false. Before previewing or placing an order, bind Alipay to that same 1688 buyer account on 1688. OAuth authorization alone does not complete this step. Procurement responses are live; do not cache or automatically retry writes.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/1688-authorize-url?view=api&co-from=github-ecommerce-api)
 

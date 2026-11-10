@@ -8,6 +8,7 @@ The 14 procurement APIs use your Nexscope API key and your own authorized 1688 b
 2. Open the returned URL yourself and complete authorization within 10 minutes. Authorization is supported by **LinkFox Agent, Nexscope's strategic partner in China**; that is the application name shown by 1688. No separate LinkFox account or API key is required.
 3. The permission descriptions and agreement notice are in Chinese. Use your browser's translation feature and select English. Changing the browser language alone does not switch these sections to English.
 4. Call [Authorized Stores](data/1688-authorized-stores.md) and verify the intended account is `ACTIVE` with `expired=false`. A success redirect or the reference screenshot alone does not prove authorization. If the link expires or authorization fails, request a fresh URL and repeat the check.
+5. Before previewing or placing an order, bind an Alipay account to that same 1688 buyer account on 1688. An `ACTIVE` authorization does not confirm Alipay binding. If preview says the buyer has not bound Alipay (provider diagnostic `BUYER_NOT_BIND_ALIPAY`), complete the binding on 1688 and then submit a new preview. Nexscope does not collect your Alipay credentials.
 
 ![English reference translation of the 1688 authorization page](../assets/1688-authorization-reference-en.png)
 

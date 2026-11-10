@@ -1,6 +1,6 @@
 # 1688 Create Order API
 
-Create Order for the currently authenticated Nexscope user. Use your Nexscope API key. Requires an ACTIVE, unexpired 1688 authorization owned by the current user. Procurement responses are live; do not cache or automatically retry writes.
+Create Order for the currently authenticated Nexscope user. Use your Nexscope API key. Requires an ACTIVE, unexpired 1688 authorization owned by the current user and an Alipay account bound to that same 1688 buyer account. Procurement responses are live; do not cache or automatically retry writes.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/1688-create-order?view=api&co-from=github-ecommerce-api)
 

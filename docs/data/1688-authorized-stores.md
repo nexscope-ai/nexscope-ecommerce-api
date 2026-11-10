@@ -1,6 +1,6 @@
 # 1688 Authorized Stores API
 
-Authorized Stores for the currently authenticated Nexscope user. Use your Nexscope API key. Complete authorization manually, then verify ACTIVE and expired=false. Procurement responses are live; do not cache or automatically retry writes.
+Authorized Stores for the currently authenticated Nexscope user. Use your Nexscope API key. Complete authorization manually, then verify ACTIVE and expired=false. Before previewing or placing an order, bind Alipay to that same 1688 buyer account on 1688. An ACTIVE store does not confirm Alipay binding. Procurement responses are live; do not cache or automatically retry writes.
 
 [All APIs](../../README.md#complete-api-catalog) · [Official documentation](https://www.nexscope.ai/api-docs/1688-authorized-stores?view=api&co-from=github-ecommerce-api)
 
