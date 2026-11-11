@@ -2,11 +2,13 @@
 
 Connect ecommerce workflows to marketplace data, product research, and AI image and video creation through Nexscope APIs.
 
-**252 APIs · 199 Data APIs · 53 Creative APIs · 22 categories**
+**Repository snapshot: 252 APIs · 199 Data APIs · 53 Creative APIs · 22 categories**
 
 [Get an API key](https://www.nexscope.ai/seller/api-access?co-from=github-ecommerce-api) · [Official API docs](https://www.nexscope.ai/api-docs?co-from=github-ecommerce-api) · [Complete catalog](#complete-api-catalog) · [Integration guide](docs/calling-apis.md)
 
 This repository includes the documented API snapshots listed below, with request/response definitions, editable request samples, and cURL, JavaScript, and Python clients. Use it to connect marketplace research, sourcing, keyword analysis, product imagery, and video creation to your application.
+
+The counts above describe the files included in this repository, not the complete live Nexscope catalog. [Explore MCP tools →](https://www.nexscope.ai/mcp?co-from=github-ecommerce-api&utm_source=github&utm_medium=referral&utm_campaign=github_mcp_launch&utm_content=nexscope-ecommerce-api_readme_mcp) · [View API docs →](https://www.nexscope.ai/api-docs?co-from=github-ecommerce-api&utm_source=github&utm_medium=referral&utm_campaign=github_mcp_launch&utm_content=nexscope-ecommerce-api_readme_api)
 
 ## Quick start
 
