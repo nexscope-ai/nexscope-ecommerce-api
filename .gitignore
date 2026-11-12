@@ -4,7 +4,4 @@
 __pycache__/
 *.pyc
 node_modules/
-response.json
-creative-request.json
-creative-task.json
 .DS_Store
