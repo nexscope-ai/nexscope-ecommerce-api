@@ -1,0 +1,7 @@
+{
+  "method": "POST",
+  "body": "{}",
+  "contentType": "application/vnd.sbcampaignresource.v4+json",
+  "accept": "application/vnd.sbcampaignresource.v4+json",
+  "connectionId": 123
+}

@@ -1,0 +1,8 @@
+{
+  "method": "POST",
+  "body": "{}",
+  "contentType": "application/vnd.sbAdCreativeResource.v4+json",
+  "accept": "application/vnd.sbAdCreativeResource.v4+json",
+  "connectionId": 123,
+  "creative_type": "brandVideo"
+}

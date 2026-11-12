@@ -2,6 +2,7 @@
 """Validate the linkable demo index and its repository-owned sources offline."""
 import json
 from pathlib import Path
+import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
 DEMOS = ROOT / 'demos'
@@ -11,6 +12,7 @@ def main():
     canonical = {item['slug']: item for item in json.loads((ROOT / 'catalog/apis.json').read_text(encoding='utf-8'))['apis']}
     index = (DEMOS / 'README.md').read_text(encoding='utf-8')
     files = list(DEMOS.rglob('example.json'))
+    tracked = set(subprocess.check_output(['git', 'ls-files', '--cached', '-z'], cwd=ROOT).decode('utf-8').split('\0'))
     slugs = set()
     source_count = {'repository catalog': 0, 'live API Docs': 0}
     for path in files:
@@ -27,6 +29,7 @@ def main():
         assert f'/api-docs/{slug}?co-from=github-ecommerce-api' in text, slug
         payload = (ROOT / config['payload']).resolve()
         assert payload.is_relative_to(ROOT) and payload.is_file(), payload
+        assert payload.relative_to(ROOT).as_posix() in tracked, f'Payload is not tracked by Git: {payload}'
         json.loads(payload.read_text(encoding='utf-8'))
         source_count[config['source']] += 1
         if config['source'] == 'repository catalog':

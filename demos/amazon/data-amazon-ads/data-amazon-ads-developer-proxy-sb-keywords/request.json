@@ -1,0 +1,7 @@
+{
+  "method": "POST",
+  "body": "{}",
+  "contentType": "application/json",
+  "accept": "application/vnd.sbkeywordresponse.v3+json",
+  "connectionId": 123
+}

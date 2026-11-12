@@ -1,0 +1,6 @@
+{
+  "method": "POST",
+  "body": "{}",
+  "contentType": "application/vnd.spTargetingClause.v3+json",
+  "connectionId": 123
+}

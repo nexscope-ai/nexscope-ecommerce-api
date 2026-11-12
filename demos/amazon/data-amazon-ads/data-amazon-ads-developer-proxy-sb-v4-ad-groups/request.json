@@ -1,0 +1,7 @@
+{
+  "method": "POST",
+  "body": "{}",
+  "contentType": "application/vnd.sbadgroupresource.v4+json",
+  "accept": "application/vnd.sbadgroupresource.v4+json",
+  "connectionId": 123
+}

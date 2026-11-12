@@ -1,0 +1,7 @@
+{
+  "method": "GET",
+  "body": "{\"reportTypeId\":\"spCampaigns\"}",
+  "contentType": "application/vnd.createasyncreportrequest.v3+json",
+  "connectionId": 123,
+  "reportId": "REPLACE_WITH_REPORT_ID"
+}

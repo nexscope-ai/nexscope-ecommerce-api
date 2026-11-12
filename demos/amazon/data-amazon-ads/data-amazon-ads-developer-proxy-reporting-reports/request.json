@@ -1,0 +1,6 @@
+{
+  "method": "POST",
+  "body": "{\"name\":\"Campaign report\",\"startDate\":\"2026-07-01\",\"endDate\":\"2026-07-07\",\"configuration\":{\"reportTypeId\":\"spCampaigns\",\"adProduct\":\"SPONSORED_PRODUCTS\",\"groupBy\":[\"campaign\"],\"columns\":[\"campaignId\",\"impressions\",\"clicks\"],\"timeUnit\":\"DAILY\",\"format\":\"GZIP_JSON\"}}",
+  "contentType": "application/vnd.createasyncreportrequest.v3+json",
+  "connectionId": 123
+}

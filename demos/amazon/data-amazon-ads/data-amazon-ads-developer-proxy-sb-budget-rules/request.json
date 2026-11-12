@@ -1,0 +1,7 @@
+{
+  "method": "POST",
+  "body": "{}",
+  "contentType": "application/json",
+  "accept": "application/json",
+  "connectionId": 123
+}
