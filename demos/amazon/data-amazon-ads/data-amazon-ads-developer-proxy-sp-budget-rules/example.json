@@ -1,0 +1,12 @@
+{
+  "slug": "data-amazon-ads-developer-proxy-sp-budget-rules",
+  "name": "Sponsored Products Budget Rules API",
+  "platform": "amazon",
+  "category": "data-amazon-ads",
+  "mode": "mcp",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/mcp",
+  "payload": "demos/amazon/data-amazon-ads/data-amazon-ads-developer-proxy-sp-budget-rules/request.json",
+  "mcpToolName": "nexscope_data_amazon_ads_developer_proxy_sp_budget_rules",
+  "source": "live API Docs",
+  "documentation": "https://www.nexscope.ai/api-docs/data-amazon-ads-developer-proxy-sp-budget-rules?co-from=github-ecommerce-api"
+}

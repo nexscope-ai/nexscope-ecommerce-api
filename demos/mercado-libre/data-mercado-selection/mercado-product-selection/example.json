@@ -1,0 +1,12 @@
+{
+  "slug": "mercado-product-selection",
+  "name": "Mercado Product Selection API",
+  "platform": "mercado-libre",
+  "category": "data-mercado-selection",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/mercado-product-selection/run",
+  "payload": "payloads/mercado-product-selection.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/mercado-product-selection?co-from=github-ecommerce-api"
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "data-kd-shop-rank",
+  "name": "TikTok Shop Rankings API",
+  "platform": "tiktok",
+  "category": "data-kd-tiktok",
+  "mode": "mcp",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/mcp",
+  "payload": "demos/tiktok/data-kd-tiktok/data-kd-shop-rank/request.json",
+  "mcpToolName": "nexscope_data_kd_shop_rank",
+  "source": "live API Docs",
+  "documentation": "https://www.nexscope.ai/api-docs/data-kd-shop-rank?co-from=github-ecommerce-api"
+}

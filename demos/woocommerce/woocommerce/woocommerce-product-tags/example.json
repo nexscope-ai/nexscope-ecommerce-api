@@ -1,0 +1,12 @@
+{
+  "slug": "woocommerce-product-tags",
+  "name": "WooCommerce Product Tags API",
+  "platform": "woocommerce",
+  "category": "woocommerce",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/woocommerce/productTags",
+  "payload": "payloads/woocommerce-product-tags.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/woocommerce-product-tags?co-from=github-ecommerce-api"
+}

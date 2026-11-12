@@ -1,0 +1,12 @@
+{
+  "slug": "design-similarity-search",
+  "name": "Design Similarity Search API",
+  "platform": "cross-platform",
+  "category": "patent-ip-risk",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/ai/designSimilaritySearch",
+  "payload": "payloads/design-similarity-search.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/design-similarity-search?co-from=github-ecommerce-api"
+}

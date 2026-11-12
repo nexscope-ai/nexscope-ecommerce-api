@@ -1,0 +1,12 @@
+{
+  "slug": "utility-patent-detector",
+  "name": "Utility Patent Detector API",
+  "platform": "cross-platform",
+  "category": "data-rg-ip-detection",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/utility-patent-detector/run",
+  "payload": "payloads/utility-patent-detector.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/utility-patent-detector?co-from=github-ecommerce-api"
+}

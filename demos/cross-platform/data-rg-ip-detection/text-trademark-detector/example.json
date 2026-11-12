@@ -1,0 +1,12 @@
+{
+  "slug": "text-trademark-detector",
+  "name": "Text Trademark Detector API",
+  "platform": "cross-platform",
+  "category": "data-rg-ip-detection",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/text-trademark-detector/run",
+  "payload": "payloads/text-trademark-detector.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/text-trademark-detector?co-from=github-ecommerce-api"
+}

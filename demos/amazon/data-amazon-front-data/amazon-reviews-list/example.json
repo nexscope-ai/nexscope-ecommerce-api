@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-reviews-list",
+  "name": "Amazon Reviews List API",
+  "platform": "amazon",
+  "category": "data-amazon-front-data",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-reviews-list/run",
+  "payload": "payloads/amazon-reviews-list.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-reviews-list?co-from=github-ecommerce-api"
+}

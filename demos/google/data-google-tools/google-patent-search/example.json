@@ -1,0 +1,12 @@
+{
+  "slug": "google-patent-search",
+  "name": "Google Patent Search API",
+  "platform": "google",
+  "category": "data-google-tools",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/google-patent-search/run",
+  "payload": "payloads/google-patent-search.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/google-patent-search?co-from=github-ecommerce-api"
+}

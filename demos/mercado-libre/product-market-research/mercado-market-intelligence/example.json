@@ -1,0 +1,12 @@
+{
+  "slug": "mercado-market-intelligence",
+  "name": "Mercado Libre Market Research",
+  "platform": "mercado-libre",
+  "category": "product-market-research",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/mercado-market-intelligence/run",
+  "payload": "payloads/mercado-market-intelligence.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/mercado-market-intelligence?co-from=github-ecommerce-api"
+}

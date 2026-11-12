@@ -1,0 +1,12 @@
+{
+  "slug": "geekbi-temu-category-list",
+  "name": "GeekBI Temu Category List API",
+  "platform": "temu",
+  "category": "data-gb-temu",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/geekbi-temu-category-list/run",
+  "payload": "payloads/geekbi-temu-category-list.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/geekbi-temu-category-list?co-from=github-ecommerce-api"
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "tiktok-creator-analytics",
+  "name": "TikTok Creator Analytics API",
+  "platform": "tiktok",
+  "category": "data-kd-tiktok",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/tiktok-creator-analytics/run",
+  "payload": "payloads/tiktok-creator-analytics.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/tiktok-creator-analytics?co-from=github-ecommerce-api"
+}

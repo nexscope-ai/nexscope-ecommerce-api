@@ -1,0 +1,12 @@
+{
+  "slug": "maidalv-product-tro-detection",
+  "name": "Product TRO Detection API",
+  "platform": "cross-platform",
+  "category": "data-md-product-tro-detection",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/maidalv-product-tro-detection/run",
+  "payload": "payloads/maidalv-product-tro-detection.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/maidalv-product-tro-detection?co-from=github-ecommerce-api"
+}

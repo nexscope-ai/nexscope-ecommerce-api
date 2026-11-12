@@ -1,0 +1,12 @@
+{
+  "slug": "patent-description-data",
+  "name": "Patent Description Data API",
+  "platform": "cross-platform",
+  "category": "data-zy-patent",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/patent-description-data/run",
+  "payload": "payloads/patent-description-data.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/patent-description-data?co-from=github-ecommerce-api"
+}

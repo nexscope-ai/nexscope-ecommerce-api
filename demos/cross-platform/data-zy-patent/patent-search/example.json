@@ -1,0 +1,12 @@
+{
+  "slug": "patent-search",
+  "name": "Patent Search API",
+  "platform": "cross-platform",
+  "category": "data-zy-patent",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/patent-search/run",
+  "payload": "payloads/patent-search.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/patent-search?co-from=github-ecommerce-api"
+}

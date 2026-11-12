@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-traffic-keywords",
+  "name": "Amazon Traffic Keywords API",
+  "platform": "amazon",
+  "category": "data-ss",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-traffic-keywords/run",
+  "payload": "payloads/amazon-traffic-keywords.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-traffic-keywords?co-from=github-ecommerce-api"
+}

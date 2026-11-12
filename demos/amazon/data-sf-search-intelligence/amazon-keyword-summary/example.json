@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-keyword-summary",
+  "name": "Amazon Keyword Summary API",
+  "platform": "amazon",
+  "category": "data-sf-search-intelligence",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-keyword-summary/run",
+  "payload": "payloads/amazon-keyword-summary.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-keyword-summary?co-from=github-ecommerce-api"
+}

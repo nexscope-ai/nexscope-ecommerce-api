@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-niche-reviews-by-keyword",
+  "name": "Amazon Niche Reviews By Keyword API",
+  "platform": "amazon",
+  "category": "data-jm",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-niche-reviews-by-keyword/run",
+  "payload": "payloads/amazon-niche-reviews-by-keyword.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-niche-reviews-by-keyword?co-from=github-ecommerce-api"
+}

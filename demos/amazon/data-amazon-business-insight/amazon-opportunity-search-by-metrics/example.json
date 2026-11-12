@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-opportunity-search-by-metrics",
+  "name": "Amazon Opportunity Search By Metrics API",
+  "platform": "amazon",
+  "category": "data-amazon-business-insight",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-opportunity-search-by-metrics/run",
+  "payload": "payloads/amazon-opportunity-search-by-metrics.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-opportunity-search-by-metrics?co-from=github-ecommerce-api"
+}

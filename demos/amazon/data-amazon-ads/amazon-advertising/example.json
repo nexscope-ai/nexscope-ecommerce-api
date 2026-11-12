@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-advertising",
+  "name": "Amazon Advertising API",
+  "platform": "amazon",
+  "category": "data-amazon-ads",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-advertising/run",
+  "payload": "payloads/amazon-advertising.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-advertising?co-from=github-ecommerce-api"
+}

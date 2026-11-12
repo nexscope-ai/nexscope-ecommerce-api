@@ -1,0 +1,12 @@
+{
+  "slug": "ruiguan-trademark-graphic-detection",
+  "name": "Ruiguan Trademark Graphic Detection API",
+  "platform": "cross-platform",
+  "category": "data-rg-ip-detection",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/ruiguan-trademark-graphic-detection/run",
+  "payload": "payloads/ruiguan-trademark-graphic-detection.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/ruiguan-trademark-graphic-detection?co-from=github-ecommerce-api"
+}

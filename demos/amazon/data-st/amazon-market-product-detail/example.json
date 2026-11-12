@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-market-product-detail",
+  "name": "Amazon Market Product Detail API",
+  "platform": "amazon",
+  "category": "data-st",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-market-product-detail/run",
+  "payload": "payloads/amazon-market-product-detail.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-market-product-detail?co-from=github-ecommerce-api"
+}

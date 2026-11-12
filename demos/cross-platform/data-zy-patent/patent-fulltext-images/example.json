@@ -1,0 +1,12 @@
+{
+  "slug": "patent-fulltext-images",
+  "name": "Patent Fulltext Images API",
+  "platform": "cross-platform",
+  "category": "data-zy-patent",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/patent-fulltext-images/run",
+  "payload": "payloads/patent-fulltext-images.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/patent-fulltext-images?co-from=github-ecommerce-api"
+}

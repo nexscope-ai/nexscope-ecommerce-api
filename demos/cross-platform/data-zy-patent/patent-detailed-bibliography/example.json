@@ -1,0 +1,12 @@
+{
+  "slug": "patent-detailed-bibliography",
+  "name": "Patent Detailed Bibliography API",
+  "platform": "cross-platform",
+  "category": "data-zy-patent",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/patent-detailed-bibliography/run",
+  "payload": "payloads/patent-detailed-bibliography.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/patent-detailed-bibliography?co-from=github-ecommerce-api"
+}

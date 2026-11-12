@@ -1,0 +1,12 @@
+{
+  "slug": "chuhaijiang-tiktok-ad-related-products",
+  "name": "TikTok Ad Related Products API",
+  "platform": "tiktok",
+  "category": "data-cj-tiktok",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/chuhaijiang-tiktok-ad-related-products/run",
+  "payload": "payloads/chuhaijiang-tiktok-ad-related-products.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-ad-related-products?co-from=github-ecommerce-api"
+}

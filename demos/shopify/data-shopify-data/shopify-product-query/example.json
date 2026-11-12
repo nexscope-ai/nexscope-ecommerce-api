@@ -1,0 +1,12 @@
+{
+  "slug": "shopify-product-query",
+  "name": "Shopify Product Query API",
+  "platform": "shopify",
+  "category": "data-shopify-data",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/shopify-product-query/run",
+  "payload": "payloads/shopify-product-query.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/shopify-product-query?co-from=github-ecommerce-api"
+}

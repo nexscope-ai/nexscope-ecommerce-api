@@ -1,0 +1,12 @@
+{
+  "slug": "google-trends-by-time",
+  "name": "Google Trends By Time API",
+  "platform": "google",
+  "category": "data-google-tools",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/google-trends-by-time/run",
+  "payload": "payloads/google-trends-by-time.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/google-trends-by-time?co-from=github-ecommerce-api"
+}

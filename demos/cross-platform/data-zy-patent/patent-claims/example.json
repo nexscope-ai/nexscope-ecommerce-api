@@ -1,0 +1,12 @@
+{
+  "slug": "patent-claims",
+  "name": "Patent Claims API",
+  "platform": "cross-platform",
+  "category": "data-zy-patent",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/patent-claims/run",
+  "payload": "payloads/patent-claims.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/patent-claims?co-from=github-ecommerce-api"
+}

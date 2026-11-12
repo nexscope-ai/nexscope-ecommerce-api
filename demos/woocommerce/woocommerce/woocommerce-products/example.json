@@ -1,0 +1,12 @@
+{
+  "slug": "woocommerce-products",
+  "name": "WooCommerce Products API",
+  "platform": "woocommerce",
+  "category": "woocommerce",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/woocommerce/products",
+  "payload": "payloads/woocommerce-products.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/woocommerce-products?co-from=github-ecommerce-api"
+}

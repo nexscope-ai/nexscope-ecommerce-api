@@ -1,0 +1,12 @@
+{
+  "slug": "chuhaijiang-tiktok-shop-detail",
+  "name": "TikTok Shop Detail API",
+  "platform": "tiktok",
+  "category": "data-cj-tiktok",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/chuhaijiang-tiktok-shop-detail/run",
+  "payload": "payloads/chuhaijiang-tiktok-shop-detail.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-shop-detail?co-from=github-ecommerce-api"
+}

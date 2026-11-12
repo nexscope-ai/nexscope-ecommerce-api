@@ -1,0 +1,12 @@
+{
+  "slug": "tiktok-top-selling-products",
+  "name": "TikTok Top Selling Products API",
+  "platform": "tiktok",
+  "category": "data-fm-tiktok",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/tiktok-top-selling-products/run",
+  "payload": "payloads/tiktok-top-selling-products.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/tiktok-top-selling-products?co-from=github-ecommerce-api"
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "temu-store-source-query",
+  "name": "Temu Store Source Query API",
+  "platform": "temu",
+  "category": "data-temu-data",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/temu-store-source-query/run",
+  "payload": "payloads/temu-store-source-query.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/temu-store-source-query?co-from=github-ecommerce-api"
+}

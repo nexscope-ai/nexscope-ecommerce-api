@@ -1,0 +1,12 @@
+{
+  "slug": "tiktok-shop-analytics",
+  "name": "TikTok Shop Analytics API",
+  "platform": "tiktok",
+  "category": "data-kd-tiktok",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/tiktok-shop-analytics/run",
+  "payload": "payloads/tiktok-shop-analytics.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/tiktok-shop-analytics?co-from=github-ecommerce-api"
+}

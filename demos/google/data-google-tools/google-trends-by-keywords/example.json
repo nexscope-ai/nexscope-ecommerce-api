@@ -1,0 +1,12 @@
+{
+  "slug": "google-trends-by-keywords",
+  "name": "Google Trends By Keywords API",
+  "platform": "google",
+  "category": "data-google-tools",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/google-trends-by-keywords/run",
+  "payload": "payloads/google-trends-by-keywords.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/google-trends-by-keywords?co-from=github-ecommerce-api"
+}

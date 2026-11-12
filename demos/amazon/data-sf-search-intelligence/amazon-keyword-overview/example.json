@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-keyword-overview",
+  "name": "Amazon Keyword Overview API",
+  "platform": "amazon",
+  "category": "data-sf-search-intelligence",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-keyword-overview/run",
+  "payload": "payloads/amazon-keyword-overview.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-keyword-overview?co-from=github-ecommerce-api"
+}

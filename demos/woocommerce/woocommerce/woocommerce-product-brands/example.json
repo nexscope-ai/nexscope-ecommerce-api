@@ -1,0 +1,12 @@
+{
+  "slug": "woocommerce-product-brands",
+  "name": "WooCommerce Product Brands API",
+  "platform": "woocommerce",
+  "category": "woocommerce",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/woocommerce/productBrands",
+  "payload": "payloads/woocommerce-product-brands.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/woocommerce-product-brands?co-from=github-ecommerce-api"
+}

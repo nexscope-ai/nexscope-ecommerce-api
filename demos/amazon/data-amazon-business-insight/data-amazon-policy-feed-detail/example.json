@@ -1,0 +1,12 @@
+{
+  "slug": "data-amazon-policy-feed-detail",
+  "name": "Amazon Policy Update Details API",
+  "platform": "amazon",
+  "category": "data-amazon-business-insight",
+  "mode": "mcp",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/mcp",
+  "payload": "demos/amazon/data-amazon-business-insight/data-amazon-policy-feed-detail/request.json",
+  "mcpToolName": "nexscope_data_amazon_policy_feed_detail",
+  "source": "live API Docs",
+  "documentation": "https://www.nexscope.ai/api-docs/data-amazon-policy-feed-detail?co-from=github-ecommerce-api"
+}

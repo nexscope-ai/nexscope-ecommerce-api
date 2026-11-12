@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-opportunity-report-by-keyword",
+  "name": "Amazon Opportunity Report By Keyword API",
+  "platform": "amazon",
+  "category": "data-amazon-business-insight",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-opportunity-report-by-keyword/run",
+  "payload": "payloads/amazon-opportunity-report-by-keyword.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-opportunity-report-by-keyword?co-from=github-ecommerce-api"
+}

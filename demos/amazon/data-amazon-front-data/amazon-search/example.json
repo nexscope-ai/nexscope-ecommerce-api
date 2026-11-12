@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-search",
+  "name": "Amazon Search API",
+  "platform": "amazon",
+  "category": "data-amazon-front-data",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-search/run",
+  "payload": "payloads/amazon-search.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-search?co-from=github-ecommerce-api"
+}

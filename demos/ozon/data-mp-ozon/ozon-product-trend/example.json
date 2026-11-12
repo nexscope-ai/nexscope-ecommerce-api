@@ -1,0 +1,12 @@
+{
+  "slug": "ozon-product-trend",
+  "name": "Ozon Product Trend API",
+  "platform": "ozon",
+  "category": "data-mp-ozon",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/ozon-product-trend/run",
+  "payload": "payloads/ozon-product-trend.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/ozon-product-trend?co-from=github-ecommerce-api"
+}

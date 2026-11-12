@@ -1,0 +1,12 @@
+{
+  "slug": "patent-family-data",
+  "name": "Patent Family Data API",
+  "platform": "cross-platform",
+  "category": "data-zy-patent",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/patent-family-data/run",
+  "payload": "payloads/patent-family-data.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/patent-family-data?co-from=github-ecommerce-api"
+}

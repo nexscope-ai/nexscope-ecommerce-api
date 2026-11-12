@@ -1,0 +1,12 @@
+{
+  "slug": "data-et-batch-video-detail",
+  "name": "TikTok Video Details in Bulk API",
+  "platform": "tiktok",
+  "category": "data-et-tiktok",
+  "mode": "mcp",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/mcp",
+  "payload": "demos/tiktok/data-et-tiktok/data-et-batch-video-detail/request.json",
+  "mcpToolName": "nexscope_data_et_batch_video_detail",
+  "source": "live API Docs",
+  "documentation": "https://www.nexscope.ai/api-docs/data-et-batch-video-detail?co-from=github-ecommerce-api"
+}

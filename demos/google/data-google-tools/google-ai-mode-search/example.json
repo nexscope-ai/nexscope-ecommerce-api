@@ -1,0 +1,12 @@
+{
+  "slug": "google-ai-mode-search",
+  "name": "Google AI Mode Search API",
+  "platform": "google",
+  "category": "data-google-tools",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/google-ai-mode-search/run",
+  "payload": "payloads/google-ai-mode-search.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/google-ai-mode-search?co-from=github-ecommerce-api"
+}

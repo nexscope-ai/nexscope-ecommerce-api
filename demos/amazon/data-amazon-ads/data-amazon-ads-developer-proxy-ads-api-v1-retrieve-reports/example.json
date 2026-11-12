@@ -1,0 +1,12 @@
+{
+  "slug": "data-amazon-ads-developer-proxy-ads-api-v1-retrieve-reports",
+  "name": "Amazon Ads Account Report Retrieval API",
+  "platform": "amazon",
+  "category": "data-amazon-ads",
+  "mode": "mcp",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/mcp",
+  "payload": "demos/amazon/data-amazon-ads/data-amazon-ads-developer-proxy-ads-api-v1-retrieve-reports/request.json",
+  "mcpToolName": "nexscope_data_amazon_ads_developer_proxy_ads_api_v1_retrieve_reports",
+  "source": "live API Docs",
+  "documentation": "https://www.nexscope.ai/api-docs/data-amazon-ads-developer-proxy-ads-api-v1-retrieve-reports?co-from=github-ecommerce-api"
+}

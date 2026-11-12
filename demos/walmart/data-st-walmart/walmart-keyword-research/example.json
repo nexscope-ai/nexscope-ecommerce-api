@@ -1,0 +1,12 @@
+{
+  "slug": "walmart-keyword-research",
+  "name": "Walmart Keyword Research API",
+  "platform": "walmart",
+  "category": "data-st-walmart",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/walmart-keyword-research/run",
+  "payload": "payloads/walmart-keyword-research.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/walmart-keyword-research?co-from=github-ecommerce-api"
+}

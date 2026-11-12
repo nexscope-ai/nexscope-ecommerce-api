@@ -1,0 +1,12 @@
+{
+  "slug": "data-kd-livestream-detail",
+  "name": "TikTok Livestream Details API",
+  "platform": "tiktok",
+  "category": "data-kd-tiktok",
+  "mode": "mcp",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/mcp",
+  "payload": "demos/tiktok/data-kd-tiktok/data-kd-livestream-detail/request.json",
+  "mcpToolName": "nexscope_data_kd_livestream_detail",
+  "source": "live API Docs",
+  "documentation": "https://www.nexscope.ai/api-docs/data-kd-livestream-detail?co-from=github-ecommerce-api"
+}

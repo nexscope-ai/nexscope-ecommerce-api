@@ -1,0 +1,12 @@
+{
+  "slug": "patent-cited-by",
+  "name": "Patent Cited By API",
+  "platform": "cross-platform",
+  "category": "data-zy-patent",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/patent-cited-by/run",
+  "payload": "payloads/patent-cited-by.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/patent-cited-by?co-from=github-ecommerce-api"
+}

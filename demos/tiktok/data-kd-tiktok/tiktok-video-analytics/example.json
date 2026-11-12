@@ -1,0 +1,12 @@
+{
+  "slug": "tiktok-video-analytics",
+  "name": "TikTok Video Analytics API",
+  "platform": "tiktok",
+  "category": "data-kd-tiktok",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/tiktok-video-analytics/run",
+  "payload": "payloads/tiktok-video-analytics.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/tiktok-video-analytics?co-from=github-ecommerce-api"
+}

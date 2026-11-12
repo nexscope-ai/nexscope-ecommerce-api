@@ -1,0 +1,12 @@
+{
+  "slug": "tiktok-product-analytics",
+  "name": "TikTok Product Analytics API",
+  "platform": "tiktok",
+  "category": "data-kd-tiktok",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/tiktok-product-analytics/run",
+  "payload": "payloads/tiktok-product-analytics.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/tiktok-product-analytics?co-from=github-ecommerce-api"
+}

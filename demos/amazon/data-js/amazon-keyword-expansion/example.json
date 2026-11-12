@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-keyword-expansion",
+  "name": "Amazon Keyword Expansion API",
+  "platform": "amazon",
+  "category": "data-js",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-keyword-expansion/run",
+  "payload": "payloads/amazon-keyword-expansion.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-keyword-expansion?co-from=github-ecommerce-api"
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "patent-core-bibliography",
+  "name": "Patent Core Bibliography API",
+  "platform": "cross-platform",
+  "category": "data-zy-patent",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/patent-core-bibliography/run",
+  "payload": "payloads/patent-core-bibliography.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/patent-core-bibliography?co-from=github-ecommerce-api"
+}

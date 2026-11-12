@@ -1,0 +1,12 @@
+{
+  "slug": "tiktok-video-rank",
+  "name": "TikTok Video Rank API",
+  "platform": "tiktok",
+  "category": "data-et-tiktok",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/tiktok-video-rank/run",
+  "payload": "payloads/tiktok-video-rank.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/tiktok-video-rank?co-from=github-ecommerce-api"
+}

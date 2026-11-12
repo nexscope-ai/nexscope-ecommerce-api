@@ -1,0 +1,12 @@
+{
+  "slug": "chuhaijiang-tiktok-live-related-products",
+  "name": "TikTok Live Related Products API",
+  "platform": "tiktok",
+  "category": "data-cj-tiktok",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/chuhaijiang-tiktok-live-related-products/run",
+  "payload": "payloads/chuhaijiang-tiktok-live-related-products.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-live-related-products?co-from=github-ecommerce-api"
+}

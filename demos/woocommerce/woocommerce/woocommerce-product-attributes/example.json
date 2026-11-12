@@ -1,0 +1,12 @@
+{
+  "slug": "woocommerce-product-attributes",
+  "name": "WooCommerce Product Attributes API",
+  "platform": "woocommerce",
+  "category": "woocommerce",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/woocommerce/productAttributes",
+  "payload": "payloads/woocommerce-product-attributes.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/woocommerce-product-attributes?co-from=github-ecommerce-api"
+}

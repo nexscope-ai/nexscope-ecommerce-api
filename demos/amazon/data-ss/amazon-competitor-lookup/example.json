@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-competitor-lookup",
+  "name": "Amazon Competitor Lookup API",
+  "platform": "amazon",
+  "category": "data-ss",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-competitor-lookup/run",
+  "payload": "payloads/amazon-competitor-lookup.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-competitor-lookup?co-from=github-ecommerce-api"
+}

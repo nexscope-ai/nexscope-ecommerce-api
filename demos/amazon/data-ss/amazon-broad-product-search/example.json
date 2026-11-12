@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-broad-product-search",
+  "name": "Amazon Broad Product Search API",
+  "platform": "amazon",
+  "category": "data-ss",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-broad-product-search/run",
+  "payload": "payloads/amazon-broad-product-search.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-broad-product-search?co-from=github-ecommerce-api"
+}

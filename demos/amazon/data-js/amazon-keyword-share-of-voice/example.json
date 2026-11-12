@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-keyword-share-of-voice",
+  "name": "Amazon Keyword Share Of Voice API",
+  "platform": "amazon",
+  "category": "data-js",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-keyword-share-of-voice/run",
+  "payload": "payloads/amazon-keyword-share-of-voice.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-keyword-share-of-voice?co-from=github-ecommerce-api"
+}

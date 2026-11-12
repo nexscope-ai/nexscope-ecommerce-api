@@ -1,0 +1,12 @@
+{
+  "slug": "1688-confirm-receive",
+  "name": "1688 Confirm Receive API",
+  "platform": "1688",
+  "category": "data-1688-procurement",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/alibaba1688/confirmReceive",
+  "payload": "payloads/1688-confirm-receive.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/1688-confirm-receive?co-from=github-ecommerce-api"
+}

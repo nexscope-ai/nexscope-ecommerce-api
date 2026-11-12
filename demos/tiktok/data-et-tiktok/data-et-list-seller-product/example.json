@@ -1,0 +1,12 @@
+{
+  "slug": "data-et-list-seller-product",
+  "name": "TikTok Seller Products API",
+  "platform": "tiktok",
+  "category": "data-et-tiktok",
+  "mode": "mcp",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/mcp",
+  "payload": "demos/tiktok/data-et-tiktok/data-et-list-seller-product/request.json",
+  "mcpToolName": "nexscope_data_et_list_seller_product",
+  "source": "live API Docs",
+  "documentation": "https://www.nexscope.ai/api-docs/data-et-list-seller-product?co-from=github-ecommerce-api"
+}

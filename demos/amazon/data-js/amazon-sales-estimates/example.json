@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-sales-estimates",
+  "name": "Amazon Sales Estimates API",
+  "platform": "amazon",
+  "category": "data-js",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-sales-estimates/run",
+  "payload": "payloads/amazon-sales-estimates.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-sales-estimates?co-from=github-ecommerce-api"
+}

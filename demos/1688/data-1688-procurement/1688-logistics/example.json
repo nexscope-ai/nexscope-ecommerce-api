@@ -1,0 +1,12 @@
+{
+  "slug": "1688-logistics",
+  "name": "1688 Logistics API",
+  "platform": "1688",
+  "category": "data-1688-procurement",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/alibaba1688/logistics",
+  "payload": "payloads/1688-logistics.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/1688-logistics?co-from=github-ecommerce-api"
+}

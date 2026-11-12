@@ -1,0 +1,12 @@
+{
+  "slug": "tiktok-new-product-rank",
+  "name": "TikTok New Product Rank API",
+  "platform": "tiktok",
+  "category": "data-et-tiktok",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/tiktok-new-product-rank/run",
+  "payload": "payloads/tiktok-new-product-rank.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/tiktok-new-product-rank?co-from=github-ecommerce-api"
+}

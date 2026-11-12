@@ -1,0 +1,12 @@
+{
+  "slug": "tiktok-seller-detail",
+  "name": "TikTok Seller Detail API",
+  "platform": "tiktok",
+  "category": "data-et-tiktok",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/tiktok-seller-detail/run",
+  "payload": "payloads/tiktok-seller-detail.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/tiktok-seller-detail?co-from=github-ecommerce-api"
+}

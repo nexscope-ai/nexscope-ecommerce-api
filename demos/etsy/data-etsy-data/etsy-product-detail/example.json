@@ -1,0 +1,12 @@
+{
+  "slug": "etsy-product-detail",
+  "name": "Etsy Product Detail API",
+  "platform": "etsy",
+  "category": "data-etsy-data",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/etsy-product-detail/run",
+  "payload": "payloads/etsy-product-detail.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/etsy-product-detail?co-from=github-ecommerce-api"
+}

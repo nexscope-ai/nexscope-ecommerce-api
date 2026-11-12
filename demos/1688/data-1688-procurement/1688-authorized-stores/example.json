@@ -1,0 +1,12 @@
+{
+  "slug": "1688-authorized-stores",
+  "name": "1688 Authorized Stores API",
+  "platform": "1688",
+  "category": "data-1688-procurement",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/alibaba1688/authorizedStores",
+  "payload": "payloads/1688-authorized-stores.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/1688-authorized-stores?co-from=github-ecommerce-api"
+}

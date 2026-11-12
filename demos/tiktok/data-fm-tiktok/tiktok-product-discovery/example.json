@@ -1,0 +1,12 @@
+{
+  "slug": "tiktok-product-discovery",
+  "name": "TikTok Product Discovery API",
+  "platform": "tiktok",
+  "category": "data-fm-tiktok",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/tiktok-product-discovery/run",
+  "payload": "payloads/tiktok-product-discovery.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/tiktok-product-discovery?co-from=github-ecommerce-api"
+}

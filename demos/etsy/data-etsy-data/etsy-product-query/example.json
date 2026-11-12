@@ -1,0 +1,12 @@
+{
+  "slug": "etsy-product-query",
+  "name": "Etsy Product Query API",
+  "platform": "etsy",
+  "category": "data-etsy-data",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/etsy-product-query/run",
+  "payload": "payloads/etsy-product-query.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/etsy-product-query?co-from=github-ecommerce-api"
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "walmart-category-market",
+  "name": "Walmart Category Market API",
+  "platform": "walmart",
+  "category": "data-st-walmart",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/walmart-category-market/run",
+  "payload": "payloads/walmart-category-market.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/walmart-category-market?co-from=github-ecommerce-api"
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "temu-category-search",
+  "name": "Temu Category Search API",
+  "platform": "temu",
+  "category": "data-temu-data",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/temu-category-search/run",
+  "payload": "payloads/temu-category-search.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/temu-category-search?co-from=github-ecommerce-api"
+}

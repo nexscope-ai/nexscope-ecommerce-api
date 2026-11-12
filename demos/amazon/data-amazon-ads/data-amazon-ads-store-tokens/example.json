@@ -1,0 +1,12 @@
+{
+  "slug": "data-amazon-ads-store-tokens",
+  "name": "Amazon Ads Store Access API",
+  "platform": "amazon",
+  "category": "data-amazon-ads",
+  "mode": "mcp",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/mcp",
+  "payload": "demos/amazon/data-amazon-ads/data-amazon-ads-store-tokens/request.json",
+  "mcpToolName": "nexscope_data_amazon_ads_store_tokens",
+  "source": "live API Docs",
+  "documentation": "https://www.nexscope.ai/api-docs/data-amazon-ads-store-tokens?co-from=github-ecommerce-api"
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "1688-product-billboard",
+  "name": "1688 Product Billboard API",
+  "platform": "1688",
+  "category": "data-1688-sourcing",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/1688-product-billboard/run",
+  "payload": "payloads/1688-product-billboard.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/1688-product-billboard?co-from=github-ecommerce-api"
+}

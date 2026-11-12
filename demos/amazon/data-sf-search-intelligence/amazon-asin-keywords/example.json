@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-asin-keywords",
+  "name": "Amazon ASIN Keywords API",
+  "platform": "amazon",
+  "category": "data-sf-search-intelligence",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-asin-keywords/run",
+  "payload": "payloads/amazon-asin-keywords.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-asin-keywords?co-from=github-ecommerce-api"
+}

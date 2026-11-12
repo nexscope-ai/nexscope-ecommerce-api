@@ -1,0 +1,12 @@
+{
+  "slug": "ruiguan-gun-parts-search",
+  "name": "Ruiguan Gun Parts Search API",
+  "platform": "cross-platform",
+  "category": "data-rg-ip-detection",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/ruiguan-gun-parts-search/run",
+  "payload": "payloads/ruiguan-gun-parts-search.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/ruiguan-gun-parts-search?co-from=github-ecommerce-api"
+}

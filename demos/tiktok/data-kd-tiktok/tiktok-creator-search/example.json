@@ -1,0 +1,12 @@
+{
+  "slug": "tiktok-creator-search",
+  "name": "TikTok Creator Rankings API",
+  "platform": "tiktok",
+  "category": "data-kd-tiktok",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/tiktok-creator-search/run",
+  "payload": "payloads/tiktok-creator-search.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/tiktok-creator-search?co-from=github-ecommerce-api"
+}

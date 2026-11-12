@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-ads-sp-insights-report-download",
+  "name": "Amazon Ads SP Insights Report Download API",
+  "platform": "amazon",
+  "category": "amazon-advertising",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-ads-sp-insights-report-download/run",
+  "payload": "payloads/amazon-ads-sp-insights-report-download.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-ads-sp-insights-report-download?co-from=github-ecommerce-api"
+}

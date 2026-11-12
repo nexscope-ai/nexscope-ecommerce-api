@@ -1,0 +1,12 @@
+{
+  "slug": "data-amazon-ads-developer-proxy-sb-v4-ad-groups-list",
+  "name": "Sponsored Brands Ad Group List v4 API",
+  "platform": "amazon",
+  "category": "data-amazon-ads",
+  "mode": "mcp",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/mcp",
+  "payload": "demos/amazon/data-amazon-ads/data-amazon-ads-developer-proxy-sb-v4-ad-groups-list/request.json",
+  "mcpToolName": "nexscope_data_amazon_ads_developer_proxy_sb_v4_ad_groups_list",
+  "source": "live API Docs",
+  "documentation": "https://www.nexscope.ai/api-docs/data-amazon-ads-developer-proxy-sb-v4-ad-groups-list?co-from=github-ecommerce-api"
+}

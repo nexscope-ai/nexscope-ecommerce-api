@@ -1,0 +1,12 @@
+{
+  "slug": "ozon-category-search",
+  "name": "Ozon Category Search API",
+  "platform": "ozon",
+  "category": "data-sr-ozon",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/ozon-category-search/run",
+  "payload": "payloads/ozon-category-search.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/ozon-category-search?co-from=github-ecommerce-api"
+}

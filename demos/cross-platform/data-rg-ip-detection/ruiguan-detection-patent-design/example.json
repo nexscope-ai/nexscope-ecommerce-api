@@ -1,0 +1,12 @@
+{
+  "slug": "ruiguan-detection-patent-design",
+  "name": "Ruiguan Detection Patent Design API",
+  "platform": "cross-platform",
+  "category": "data-rg-ip-detection",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/ruiguan-detection-patent-design/run",
+  "payload": "payloads/ruiguan-detection-patent-design.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/ruiguan-detection-patent-design?co-from=github-ecommerce-api"
+}

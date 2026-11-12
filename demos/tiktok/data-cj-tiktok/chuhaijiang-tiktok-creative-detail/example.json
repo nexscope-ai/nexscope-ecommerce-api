@@ -1,0 +1,12 @@
+{
+  "slug": "chuhaijiang-tiktok-creative-detail",
+  "name": "TikTok Creative Detail API",
+  "platform": "tiktok",
+  "category": "data-cj-tiktok",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/chuhaijiang-tiktok-creative-detail/run",
+  "payload": "payloads/chuhaijiang-tiktok-creative-detail.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-creative-detail?co-from=github-ecommerce-api"
+}

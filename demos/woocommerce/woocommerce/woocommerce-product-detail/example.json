@@ -1,0 +1,12 @@
+{
+  "slug": "woocommerce-product-detail",
+  "name": "WooCommerce Product Detail API",
+  "platform": "woocommerce",
+  "category": "woocommerce",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/woocommerce/productDetail",
+  "payload": "payloads/woocommerce-product-detail.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/woocommerce-product-detail?co-from=github-ecommerce-api"
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "shopee-product-detail",
+  "name": "Shopee Product Detail API",
+  "platform": "shopee",
+  "category": "data-shopee-product-selection",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/shopee-product-detail/run",
+  "payload": "payloads/shopee-product-detail.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/shopee-product-detail?co-from=github-ecommerce-api"
+}

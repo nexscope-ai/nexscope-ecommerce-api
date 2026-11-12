@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-market-research",
+  "name": "Amazon Market Research API",
+  "platform": "amazon",
+  "category": "data-ss",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-market-research/run",
+  "payload": "payloads/amazon-market-research.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-market-research?co-from=github-ecommerce-api"
+}

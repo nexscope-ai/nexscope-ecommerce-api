@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-asin-traffic-summary",
+  "name": "Amazon ASIN Traffic Summary API",
+  "platform": "amazon",
+  "category": "data-sf-search-intelligence",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-asin-traffic-summary/run",
+  "payload": "payloads/amazon-asin-traffic-summary.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-asin-traffic-summary?co-from=github-ecommerce-api"
+}

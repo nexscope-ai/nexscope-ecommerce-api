@@ -1,0 +1,12 @@
+{
+  "slug": "design-registration-details",
+  "name": "Design Registration Details API",
+  "platform": "cross-platform",
+  "category": "patent-ip-risk",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/ai/designRegistrationDetails",
+  "payload": "payloads/design-registration-details.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/design-registration-details?co-from=github-ecommerce-api"
+}

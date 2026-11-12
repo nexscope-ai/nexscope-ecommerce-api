@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-product-price-series",
+  "name": "Amazon Product Price Series API",
+  "platform": "amazon",
+  "category": "data-kp",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-product-price-series/run",
+  "payload": "payloads/amazon-product-price-series.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-product-price-series?co-from=github-ecommerce-api"
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "chuhaijiang-tiktok-live-search",
+  "name": "TikTok Live Search API",
+  "platform": "tiktok",
+  "category": "data-cj-tiktok",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/chuhaijiang-tiktok-live-search/run",
+  "payload": "payloads/chuhaijiang-tiktok-live-search.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-live-search?co-from=github-ecommerce-api"
+}

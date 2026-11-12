@@ -1,0 +1,12 @@
+{
+  "slug": "patent-abstract-image-data",
+  "name": "Patent Abstract Image Data API",
+  "platform": "cross-platform",
+  "category": "data-zy-patent",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/patent-abstract-image-data/run",
+  "payload": "payloads/patent-abstract-image-data.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/patent-abstract-image-data?co-from=github-ecommerce-api"
+}

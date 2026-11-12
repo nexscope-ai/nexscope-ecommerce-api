@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-ads-reporting",
+  "name": "Amazon Ads Reporting API",
+  "platform": "amazon",
+  "category": "amazon-advertising",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-ads-reporting/run",
+  "payload": "payloads/amazon-ads-reporting.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-ads-reporting?co-from=github-ecommerce-api"
+}

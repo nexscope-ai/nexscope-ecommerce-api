@@ -1,0 +1,12 @@
+{
+  "slug": "data-et-list-product-video",
+  "name": "TikTok Product Videos API",
+  "platform": "tiktok",
+  "category": "data-et-tiktok",
+  "mode": "mcp",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/mcp",
+  "payload": "demos/tiktok/data-et-tiktok/data-et-list-product-video/request.json",
+  "mcpToolName": "nexscope_data_et_list_product_video",
+  "source": "live API Docs",
+  "documentation": "https://www.nexscope.ai/api-docs/data-et-list-product-video?co-from=github-ecommerce-api"
+}

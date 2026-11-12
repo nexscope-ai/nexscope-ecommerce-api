@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-product-discovery",
+  "name": "Amazon Product Discovery API",
+  "platform": "amazon",
+  "category": "data-jm",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-product-discovery/run",
+  "payload": "payloads/amazon-product-discovery.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-product-discovery?co-from=github-ecommerce-api"
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "patent-legal-status-data",
+  "name": "Patent Legal Status Data API",
+  "platform": "cross-platform",
+  "category": "data-zy-patent",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/patent-legal-status-data/run",
+  "payload": "payloads/patent-legal-status-data.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/patent-legal-status-data?co-from=github-ecommerce-api"
+}

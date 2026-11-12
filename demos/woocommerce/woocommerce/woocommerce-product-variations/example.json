@@ -1,0 +1,12 @@
+{
+  "slug": "woocommerce-product-variations",
+  "name": "WooCommerce Product Variations API",
+  "platform": "woocommerce",
+  "category": "woocommerce",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/woocommerce/productVariations",
+  "payload": "payloads/woocommerce-product-variations.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/woocommerce-product-variations?co-from=github-ecommerce-api"
+}

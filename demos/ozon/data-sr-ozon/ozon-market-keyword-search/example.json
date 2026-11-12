@@ -1,0 +1,12 @@
+{
+  "slug": "ozon-market-keyword-search",
+  "name": "Ozon Market Keyword Search API",
+  "platform": "ozon",
+  "category": "data-sr-ozon",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/ozon-market-keyword-search/run",
+  "payload": "payloads/ozon-market-keyword-search.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/ozon-market-keyword-search?co-from=github-ecommerce-api"
+}

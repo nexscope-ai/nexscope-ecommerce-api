@@ -1,0 +1,12 @@
+{
+  "slug": "1688-invoice-apply",
+  "name": "1688 Invoice Apply API",
+  "platform": "1688",
+  "category": "data-1688-procurement",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/alibaba1688/invoiceApply",
+  "payload": "payloads/1688-invoice-apply.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/1688-invoice-apply?co-from=github-ecommerce-api"
+}

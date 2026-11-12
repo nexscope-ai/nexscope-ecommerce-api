@@ -1,0 +1,12 @@
+{
+  "slug": "1688-order-status",
+  "name": "1688 Order Status API",
+  "platform": "1688",
+  "category": "data-1688-procurement",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/alibaba1688/orderStatus",
+  "payload": "payloads/1688-order-status.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/1688-order-status?co-from=github-ecommerce-api"
+}

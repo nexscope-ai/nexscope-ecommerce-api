@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-ads-api-access",
+  "name": "Amazon Ads API Access",
+  "platform": "amazon",
+  "category": "data-amazon-ads",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-ads-api-access/run",
+  "payload": "payloads/amazon-ads-api-access.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-ads-api-access?co-from=github-ecommerce-api"
+}

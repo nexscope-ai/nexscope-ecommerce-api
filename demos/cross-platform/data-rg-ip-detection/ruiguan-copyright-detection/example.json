@@ -1,0 +1,12 @@
+{
+  "slug": "ruiguan-copyright-detection",
+  "name": "Ruiguan Copyright Detection API",
+  "platform": "cross-platform",
+  "category": "data-rg-ip-detection",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/ruiguan-copyright-detection/run",
+  "payload": "payloads/ruiguan-copyright-detection.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/ruiguan-copyright-detection?co-from=github-ecommerce-api"
+}

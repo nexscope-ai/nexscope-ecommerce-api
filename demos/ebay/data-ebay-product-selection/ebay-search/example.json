@@ -1,0 +1,12 @@
+{
+  "slug": "ebay-search",
+  "name": "eBay Search API",
+  "platform": "ebay",
+  "category": "data-ebay-product-selection",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/ebay-search/run",
+  "payload": "payloads/ebay-search.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/ebay-search?co-from=github-ecommerce-api"
+}

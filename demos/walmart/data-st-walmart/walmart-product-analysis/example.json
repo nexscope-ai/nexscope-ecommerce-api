@@ -1,0 +1,12 @@
+{
+  "slug": "walmart-product-analysis",
+  "name": "Walmart Product Analysis API",
+  "platform": "walmart",
+  "category": "data-st-walmart",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/walmart-product-analysis/run",
+  "payload": "payloads/walmart-product-analysis.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/walmart-product-analysis?co-from=github-ecommerce-api"
+}

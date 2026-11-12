@@ -1,0 +1,12 @@
+{
+  "slug": "tiktok-video-download-url",
+  "name": "TikTok Video Download URL API",
+  "platform": "tiktok",
+  "category": "data-et-tiktok",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/tiktok-video-download-url/run",
+  "payload": "payloads/tiktok-video-download-url.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/tiktok-video-download-url?co-from=github-ecommerce-api"
+}

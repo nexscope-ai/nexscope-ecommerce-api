@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-policy-feed",
+  "name": "Amazon Policy Feed API",
+  "platform": "amazon",
+  "category": "data-amazon-business-insight",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-policy-feed/run",
+  "payload": "payloads/amazon-policy-feed.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-policy-feed?co-from=github-ecommerce-api"
+}

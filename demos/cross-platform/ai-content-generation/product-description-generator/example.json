@@ -1,0 +1,12 @@
+{
+  "slug": "product-description-generator",
+  "name": "Product Description Generator API",
+  "platform": "cross-platform",
+  "category": "ai-content-generation",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/product-description-generator/run",
+  "payload": "payloads/product-description-generator.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/product-description-generator?co-from=github-ecommerce-api"
+}

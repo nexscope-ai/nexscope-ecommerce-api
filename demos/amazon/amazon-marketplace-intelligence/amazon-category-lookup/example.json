@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-category-lookup",
+  "name": "Amazon Category Lookup API",
+  "platform": "amazon",
+  "category": "amazon-marketplace-intelligence",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-category-lookup/run",
+  "payload": "payloads/amazon-category-lookup.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-category-lookup?co-from=github-ecommerce-api"
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "data-amazon-ads-developer-proxy-sp-product-ads",
+  "name": "Sponsored Products Product Ad Management API",
+  "platform": "amazon",
+  "category": "data-amazon-ads",
+  "mode": "mcp",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/mcp",
+  "payload": "demos/amazon/data-amazon-ads/data-amazon-ads-developer-proxy-sp-product-ads/request.json",
+  "mcpToolName": "nexscope_data_amazon_ads_developer_proxy_sp_product_ads",
+  "source": "live API Docs",
+  "documentation": "https://www.nexscope.ai/api-docs/data-amazon-ads-developer-proxy-sp-product-ads?co-from=github-ecommerce-api"
+}

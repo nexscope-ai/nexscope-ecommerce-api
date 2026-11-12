@@ -1,0 +1,12 @@
+{
+  "slug": "geekbi-temu-goods-image-search",
+  "name": "GeekBI Temu Image Search API",
+  "platform": "temu",
+  "category": "data-gb-temu",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/geekbi-temu-goods-image-search/run",
+  "payload": "payloads/geekbi-temu-goods-image-search.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/geekbi-temu-goods-image-search?co-from=github-ecommerce-api"
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "ozon-seller-products",
+  "name": "Ozon Seller Products API",
+  "platform": "ozon",
+  "category": "data-mp-ozon",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/ozon-seller-products/run",
+  "payload": "payloads/ozon-seller-products.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/ozon-seller-products?co-from=github-ecommerce-api"
+}

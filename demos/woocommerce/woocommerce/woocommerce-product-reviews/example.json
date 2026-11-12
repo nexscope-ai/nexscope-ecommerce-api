@@ -1,0 +1,12 @@
+{
+  "slug": "woocommerce-product-reviews",
+  "name": "WooCommerce Product Reviews API",
+  "platform": "woocommerce",
+  "category": "woocommerce",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/woocommerce/productReviews",
+  "payload": "payloads/woocommerce-product-reviews.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/woocommerce-product-reviews?co-from=github-ecommerce-api"
+}

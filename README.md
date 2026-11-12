@@ -8,6 +8,10 @@ Connect ecommerce workflows to marketplace data, product research, and AI image 
 
 This repository includes the documented API snapshots listed below, with request/response definitions, editable request samples, and cURL, JavaScript, and Python clients. Use it to connect marketplace research, sourcing, keyword analysis, product imagery, and video creation to your application.
 
+For a linkable walkthrough for one API, open the [per-API integration demo directory](demos/README.md). It provides Python, Node.js, and Java preview commands. Demos reuse this repository's reviewed catalog and payloads where available; newly published APIs use the current API Docs contract. The demos and the catalog have different snapshot dates and coverage counts.
+
+For website API detail pages, link to the stable path `demos/{platform}/{category}/{slug}/README.md` on the `main` branch. For example: [Amazon Alexa Search demo](demos/amazon/data-amazon-front-data/amazon-alexa-search/README.md).
+
 The counts above describe the files included in this repository, not the complete live Nexscope catalog. [Explore MCP tools →](https://www.nexscope.ai/mcp?co-from=github-ecommerce-api&utm_source=github&utm_medium=referral&utm_campaign=github_mcp_launch&utm_content=nexscope-ecommerce-api_readme_mcp) · [View API docs →](https://www.nexscope.ai/api-docs?co-from=github-ecommerce-api&utm_source=github&utm_medium=referral&utm_campaign=github_mcp_launch&utm_content=nexscope-ecommerce-api_readme_api)
 
 ## Quick start

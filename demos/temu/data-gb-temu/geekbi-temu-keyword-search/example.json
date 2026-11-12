@@ -1,0 +1,12 @@
+{
+  "slug": "geekbi-temu-keyword-search",
+  "name": "GeekBI Temu Keyword Research API",
+  "platform": "temu",
+  "category": "data-gb-temu",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/geekbi-temu-keyword-search/run",
+  "payload": "payloads/geekbi-temu-keyword-search.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/geekbi-temu-keyword-search?co-from=github-ecommerce-api"
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-product-database-search",
+  "name": "Amazon Product Database Search API",
+  "platform": "amazon",
+  "category": "data-kp",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-product-database-search/run",
+  "payload": "payloads/amazon-product-database-search.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-product-database-search?co-from=github-ecommerce-api"
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "chuhaijiang-tiktok-product-search",
+  "name": "TikTok Product Market Search API",
+  "platform": "tiktok",
+  "category": "data-cj-tiktok",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/chuhaijiang-tiktok-product-search/run",
+  "payload": "payloads/chuhaijiang-tiktok-product-search.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/chuhaijiang-tiktok-product-search?co-from=github-ecommerce-api"
+}

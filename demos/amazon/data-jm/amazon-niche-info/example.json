@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-niche-info",
+  "name": "Amazon Niche Info API",
+  "platform": "amazon",
+  "category": "data-jm",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-niche-info/run",
+  "payload": "payloads/amazon-niche-info.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-niche-info?co-from=github-ecommerce-api"
+}

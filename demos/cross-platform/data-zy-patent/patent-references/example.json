@@ -1,0 +1,12 @@
+{
+  "slug": "patent-references",
+  "name": "Patent References API",
+  "platform": "cross-platform",
+  "category": "data-zy-patent",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/patent-references/run",
+  "payload": "payloads/patent-references.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/patent-references?co-from=github-ecommerce-api"
+}

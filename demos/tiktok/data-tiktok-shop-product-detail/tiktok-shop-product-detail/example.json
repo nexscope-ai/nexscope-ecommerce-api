@@ -1,0 +1,12 @@
+{
+  "slug": "tiktok-shop-product-detail",
+  "name": "TikTok Shop Product Detail API",
+  "platform": "tiktok",
+  "category": "data-tiktok-shop-product-detail",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/tiktok-shop-product-detail/run",
+  "payload": "payloads/tiktok-shop-product-detail.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/tiktok-shop-product-detail?co-from=github-ecommerce-api"
+}

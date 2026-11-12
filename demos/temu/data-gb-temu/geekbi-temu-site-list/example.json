@@ -1,0 +1,12 @@
+{
+  "slug": "geekbi-temu-site-list",
+  "name": "GeekBI Temu Site List API",
+  "platform": "temu",
+  "category": "data-gb-temu",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/geekbi-temu-site-list/run",
+  "payload": "payloads/geekbi-temu-site-list.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/geekbi-temu-site-list?co-from=github-ecommerce-api"
+}

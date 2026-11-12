@@ -1,0 +1,12 @@
+{
+  "slug": "walmart-product-detail",
+  "name": "Walmart Product Detail API",
+  "platform": "walmart",
+  "category": "data-walmart-product-selection",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/walmart-product-detail/run",
+  "payload": "payloads/walmart-product-detail.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/walmart-product-detail?co-from=github-ecommerce-api"
+}

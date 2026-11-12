@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-related-asins",
+  "name": "Amazon Related ASINs API",
+  "platform": "amazon",
+  "category": "data-jm",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-related-asins/run",
+  "payload": "payloads/amazon-related-asins.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-related-asins?co-from=github-ecommerce-api"
+}

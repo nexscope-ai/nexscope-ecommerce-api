@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-keyword-intelligence",
+  "name": "Amazon Keyword Intelligence API",
+  "platform": "amazon",
+  "category": "data-amazon-business-insight",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-keyword-intelligence/run",
+  "payload": "payloads/amazon-keyword-intelligence.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-keyword-intelligence?co-from=github-ecommerce-api"
+}

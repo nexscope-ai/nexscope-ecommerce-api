@@ -1,0 +1,12 @@
+{
+  "slug": "tiktok-product-search",
+  "name": "TikTok Product Search API",
+  "platform": "tiktok",
+  "category": "data-et-tiktok",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/tiktok-product-search/run",
+  "payload": "payloads/tiktok-product-search.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/tiktok-product-search?co-from=github-ecommerce-api"
+}

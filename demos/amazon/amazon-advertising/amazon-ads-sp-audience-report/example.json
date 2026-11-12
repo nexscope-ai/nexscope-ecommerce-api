@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-ads-sp-audience-report",
+  "name": "Amazon Ads SP Audience Report API",
+  "platform": "amazon",
+  "category": "amazon-advertising",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-ads-sp-audience-report/run",
+  "payload": "payloads/amazon-ads-sp-audience-report.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-ads-sp-audience-report?co-from=github-ecommerce-api"
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "1688-sku",
+  "name": "1688 SKU API",
+  "platform": "1688",
+  "category": "data-1688-procurement",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/alibaba1688/sku",
+  "payload": "payloads/1688-sku.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/1688-sku?co-from=github-ecommerce-api"
+}

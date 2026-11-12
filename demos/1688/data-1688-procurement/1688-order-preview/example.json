@@ -1,0 +1,12 @@
+{
+  "slug": "1688-order-preview",
+  "name": "1688 Order Preview API",
+  "platform": "1688",
+  "category": "data-1688-procurement",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/alibaba1688/orderPreview",
+  "payload": "payloads/1688-order-preview.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/1688-order-preview?co-from=github-ecommerce-api"
+}

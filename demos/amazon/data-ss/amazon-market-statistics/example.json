@@ -1,0 +1,12 @@
+{
+  "slug": "amazon-market-statistics",
+  "name": "Amazon Market Statistics API",
+  "platform": "amazon",
+  "category": "data-ss",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/amazon-market-statistics/run",
+  "payload": "payloads/amazon-market-statistics.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/amazon-market-statistics?co-from=github-ecommerce-api"
+}

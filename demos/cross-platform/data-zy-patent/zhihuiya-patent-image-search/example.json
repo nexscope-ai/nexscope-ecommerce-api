@@ -1,0 +1,12 @@
+{
+  "slug": "zhihuiya-patent-image-search",
+  "name": "Zhihuiya Patent Image Search API",
+  "platform": "cross-platform",
+  "category": "data-zy-patent",
+  "mode": "rest",
+  "endpoint": "https://api.nexscope.ai/api/skill-api/v1/skills/zhihuiya-patent-image-search/run",
+  "payload": "payloads/zhihuiya-patent-image-search.json",
+  "mcpToolName": null,
+  "source": "repository catalog",
+  "documentation": "https://www.nexscope.ai/api-docs/zhihuiya-patent-image-search?co-from=github-ecommerce-api"
+}
