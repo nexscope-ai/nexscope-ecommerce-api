@@ -4,8 +4,6 @@
 __pycache__/
 *.pyc
 node_modules/
-request.json
-!demos/**/request.json
 response.json
 creative-request.json
 creative-task.json
