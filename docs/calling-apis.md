@@ -6,6 +6,12 @@
 
 Get your user key from [API Access](https://www.nexscope.ai/seller/api-access?co-from=github-ecommerce-api). Set `NEXSCOPE_API_KEY` and send `Authorization: Bearer YOUR_API_KEY`. JSON requests use `Content-Type: application/json`. Keep authenticated calls on your backend.
 
+## API Key request rate
+
+All API Keys belonging to the same Nexscope user share the request-rate allowance for public API execution. The allowance is measured over any rolling 1-second window. Your allowed RPS depends on your account entitlements; do not assume every user has a fixed 1 RPS. One Skill operation can make multiple public API requests, and each request uses the allowance. For example, 1688 procurement business scripts call `authorizedStores` before the requested operation. That precheck is separately billed and also uses one request-rate slot.
+
+HTTP 429 with outer code `13012` means the request-rate allowance was exceeded. Honor the returned `Retry-After` before considering another request. Outer code `13013` means the concurrent-request limit was exceeded; honor `Retry-After` when supplied. Check the HTTP status and outer JSON code separately. Never automatically replay a write operation or a request whose outcome is unclear; reconcile its state first.
+
 ## Synchronous Data APIs
 
 All 172 Data entries in the retrieved catalog are marked synchronous. Send `POST` to the exact endpoint in the API's reference, with its own request body. Follow the response structure in the current API reference. For [Amazon Product Detail](data/amazon-product-detail.md#response), check the platform envelope `code === 0`, then read `data.products` and `data.total`; `data` may be null. A successful HTTP response does not imply that the result set is nonempty or that every optional field exists.

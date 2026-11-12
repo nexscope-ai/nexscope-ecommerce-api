@@ -27,6 +27,8 @@ printf '\n'
 export NEXSCOPE_API_KEY
 ```
 
+All API Keys of one user share an entitlement-dependent request-rate allowance in any rolling 1-second window. A Skill operation may send multiple public API requests. Follow `Retry-After` on HTTP 429 / outer code `13012`; outer code `13013` is a separate concurrent-request limit. See the [request-rate and retry guidance](docs/calling-apis.md#api-key-request-rate) before automating calls.
+
 All run requests use:
 
 ```http
