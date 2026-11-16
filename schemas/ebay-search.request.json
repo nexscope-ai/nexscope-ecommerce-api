@@ -78,7 +78,7 @@
       "name": "showOnly",
       "type": "string",
       "required": false,
-      "description": "Filter conditions, comma-separated for multiple values. Options: Complete (Ended), Sold (Sold), FR (Free returns), RPA (Returns accepted), AS (Authorized seller), Savings (Discounts), SaleItems (Sale items), Lots (Lots), Charity (Charity), AV, FS (Free shipping), LPickup (Local pickup)",
+      "description": "Filter conditions, comma-separated for multiple values. Options: Complete (Ended), FR (Free returns), RPA (Returns accepted), AS (Authorized seller), Savings (Discounts), SaleItems (Sale items), Lots (Lots), Charity (Charity), AV, FS (Free shipping), LPickup (Local pickup)",
       "example": null,
       "constraints": {}
     },

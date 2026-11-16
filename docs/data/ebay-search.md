@@ -29,14 +29,14 @@ Execution: synchronous; inspect the response envelope and business fields docume
 | `priceMax` | number | No | Maximum price filter | {} |
 | `itemCondition` | string | No | Item condition code, multiple separated by \ | {} |
 | `buyingFormat` | string | No | Buying format. Options: Auction, BIN (Buy It Now), BO (Best Offer) | {} |
-| `showOnly` | string | No | Filter conditions, comma-separated for multiple values. Options: Complete (Ended), Sold (Sold), FR (Free returns), RPA (Returns accepted), AS (Authorized seller), Savings (Discounts), SaleItems (Sale items), Lots (Lots), Charity (Charity), AV, FS (Free shipping), LPickup (Local pickup) | {} |
+| `showOnly` | string | No | Filter conditions, comma-separated for multiple values. Options: Complete (Ended), FR (Free returns), RPA (Returns accepted), AS (Authorized seller), Savings (Discounts), SaleItems (Sale items), Lots (Lots), Charity (Charity), AV, FS (Free shipping), LPickup (Local pickup) | {} |
 | `location` | integer | No | Country/region code of item location (e.g., 1=United States, 2=Canada, 3=United Kingdom, 45=China, 77=Germany) | {} |
 | `prefLoc` | string | No | Preferred location scope. Options: 1 (Domestic), 2 (Regional), 3 (Worldwide) | {} |
 | `zipCode` | string | No | ZIP or postal code for filtering shippable items by region | {} |
 | `categoryId` | integer | No | eBay category ID for category-specific search | {} |
 | `noCache` | boolean | No | Whether to bypass cache, default false | {} |
 
-The table summarizes the published fields. Consult the full request definition for nested objects, alternatives, and conditional requirements.
+The table summarizes the published fields. `showOnly: "Sold"` is no longer supported by the upstream provider; `Complete` selects ended listings and does not establish that they sold. Although `keyword` is marked optional, search behavior without a keyword has not been verified upstream. Consult the full request definition for nested objects, alternatives, and conditional requirements.
 
 ## Call this API
 
@@ -63,6 +63,10 @@ bash examples/curl/run.sh ebay-search request.json
 ## Response
 
 Follow the response envelope and field paths in the current official API reference linked above. HTTP 200 alone does not establish business success; when the response includes `code`, check that it is `0` before reading `data`. For asynchronous APIs, distinguish the submission receipt from the final task result and follow the documented task polling contract. The response example below is a historical definition-service fixture; it has not been reconciled with the current HTTP response envelope and must not be used to infer top-level field paths.
+
+The optional `salesQuantity` field is documented only as "Quantity sold". Its time period, source, and rounding behavior are not specified, so do not treat it as a verified lifetime or rolling-period metric.
+
+The documented sort options do not include sales quantity, and the request has no historical date-range fields.
 
 ### Published response example
 
