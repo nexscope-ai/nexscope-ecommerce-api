@@ -1,0 +1,11 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "orderId": "000-0000000-0000000",
+    "packageId": "EXAMPLE"
+  },
+  "body": {
+    "status": "EXAMPLE"
+  },
+  "action": "preview"
+}

@@ -1,0 +1,16 @@
+{
+  "connectionId": 123,
+  "queryString": "marketplaceId=ATVPDKIKX0DER",
+  "body": {
+    "contentDocument": {
+      "contentModuleList": [
+        {
+          "contentModuleType": "STANDARD_COMPANY_LOGO"
+        }
+      ],
+      "contentType": "EBC",
+      "locale": "en_US",
+      "name": "EXAMPLE"
+    }
+  }
+}

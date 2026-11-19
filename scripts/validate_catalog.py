@@ -16,18 +16,25 @@ PROCUREMENT_ENDPOINTS = {'1688-authorize-url': 'https://api.nexscope.ai/alibaba1
 def validate():
     catalog = json.loads((ROOT / 'catalog/apis.json').read_text(encoding='utf-8'))
     apis = catalog['apis']
-    assert len(apis) == catalog['count'] == 252
-    assert len({a['slug'] for a in apis}) == 252
-    assert Counter(a['family'] for a in apis) == catalog['counts'] == {'data': 199, 'creative': 53}
+    assert len(apis) == catalog['count'] == 411
+    assert len({a['slug'] for a in apis}) == 411
+    assert Counter(a['family'] for a in apis) == catalog['counts'] == {'data': 358, 'creative': 53}
     assert Counter(a['category'] for a in apis) == {c['name']: c['count'] for c in catalog['categories']}
-    assert len(catalog['categories']) == 22
+    assert len(catalog['categories']) == 23
+    spapi = [api for api in apis if api['slug'].startswith('amazon-sp-api-')]
+    assert len(spapi) == 159 and len({api['endpoint'] for api in spapi}) == 159
+    assert sum(api['slug'].startswith('amazon-sp-api-auth-') for api in spapi) == 5
+    assert all(re.fullmatch(r'https://api\.nexscope\.ai/spapi/[a-zA-Z0-9]+', api['endpoint']) for api in spapi)
+    assert len({api['mcpToolName'] for api in spapi}) == 159
+    assert all(len(api['mcpToolName']) <= 64 for api in spapi)
     readme = (ROOT / 'README.md').read_text(encoding='utf-8')
     referenced = set()
     for api in apis:
         slug = api['slug']
         assert re.fullmatch(r'[a-z0-9-]+', slug)
         expected = PROCUREMENT_ENDPOINTS.get(slug, SIF_ENDPOINTS.get(slug, WOO_ENDPOINTS.get(slug, f'https://api.nexscope.ai/api/skill-api/v1/skills/{slug}/run')))
-        assert api['endpoint'] == expected
+        if not slug.startswith('amazon-sp-api-'):
+            assert api['endpoint'] == expected
         assert api['method'] == 'POST'
         assert f'[{api["name"]}]({api["localDoc"]})' in readme
         assert api['asyncTask'] == (api['family'] == 'creative')
@@ -52,11 +59,11 @@ def validate():
             text = path.read_text(encoding='utf-8')
             for link in re.findall(r'\[[^\]]*\]\(([^)]+)\)', text):
                 if link.startswith(('https://', 'http://', '#')): continue
-                assert (path.parent / link.split('#')[0]).exists(), (path, link)
+                assert (path.parent / link.split('#')[0]).resolve().exists(), (path, link)
             for url in re.findall(r'https://www\.nexscope\.ai/[^\s)]+', text):
                 attribution = 'co-from=cline' if path == ROOT / 'llms-install.md' else 'co-from=github-ecommerce-api'
                 assert attribution in url, (path, url)
-    print('PASS: 252 APIs, 22 categories, 252 docs, 504 definitions, 252 payloads, 252 response fixtures; links and attribution checked.')
+    print('PASS: 411 APIs, 23 categories, 411 docs, 822 definitions, 411 payloads, 411 response fixtures; links and attribution checked.')
 
 if __name__ == '__main__':
     validate()

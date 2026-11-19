@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "description": "Fixed provider operation: GET /customerFeedback/2024-06-01/browseNodes/{browseNodeId}/reviews/trends. Seller credentials stay in Nexscope.",
+  "fields": [
+    {
+      "name": "connectionId",
+      "type": "integer",
+      "required": true,
+      "description": "Owned Amazon Seller connection ID.",
+      "example": 123,
+      "constraints": {}
+    },
+    {
+      "name": "pathParams",
+      "type": "object",
+      "required": true,
+      "description": "Required path values: browseNodeId.",
+      "example": {
+        "browseNodeId": "example"
+      },
+      "constraints": {}
+    },
+    {
+      "name": "queryString",
+      "type": "string",
+      "required": false,
+      "description": "Operation query string, percent encoded, without the leading ?.",
+      "example": null,
+      "constraints": {}
+    }
+  ],
+  "example": {
+    "connectionId": 123,
+    "pathParams": {
+      "browseNodeId": "example"
+    }
+  },
+  "jsonSchema": null
+}

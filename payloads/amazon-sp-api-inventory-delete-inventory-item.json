@@ -1,0 +1,8 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "sellerSku": "EXAMPLE"
+  },
+  "queryString": "marketplaceId=ATVPDKIKX0DER",
+  "action": "preview"
+}

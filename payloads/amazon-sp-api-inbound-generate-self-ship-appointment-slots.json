@@ -1,0 +1,12 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "inboundPlanId": "EXAMPLE0000000000000000000000000000000",
+    "shipmentId": "EXAMPLE0000000000000000000000000000000"
+  },
+  "body": {
+    "desiredEndDate": "2026-01-02T00:00:00Z",
+    "desiredStartDate": "2026-01-01T00:00:00Z"
+  },
+  "action": "preview"
+}

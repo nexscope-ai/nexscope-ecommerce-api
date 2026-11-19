@@ -1,0 +1,25 @@
+{
+  "connectionId": 123,
+  "body": {
+    "destinationMarketplaces": [
+      "ATVPDKIKX0DER"
+    ],
+    "items": [
+      {
+        "labelOwner": "AMAZON",
+        "msku": "EXAMPLE",
+        "prepOwner": "AMAZON",
+        "quantity": 1
+      }
+    ],
+    "sourceAddress": {
+      "addressLine1": "EXAMPLE",
+      "city": "EXAMPLE",
+      "countryCode": "US",
+      "name": "EXAMPLE",
+      "phoneNumber": "EXAMPLE",
+      "postalCode": "00000"
+    }
+  },
+  "action": "preview"
+}

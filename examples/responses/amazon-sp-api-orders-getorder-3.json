@@ -1,0 +1,28 @@
+{
+  "code": 0,
+  "data": {
+    "sellerId": "EXAMPLE_SELLER",
+    "requestId": "example-request-id",
+    "source": "BACKEND_AMAZON_SP_API",
+    "response": {
+      "httpStatus": 200,
+      "payload": {
+        "order": {
+          "orderId": "000-0000000-0000000",
+          "createdTime": "2026-01-01T00:00:00Z",
+          "lastUpdatedTime": "2026-01-01T00:00:00Z",
+          "salesChannel": {
+            "channelName": "EXAMPLE"
+          },
+          "orderItems": [
+            {
+              "orderItemId": "EXAMPLE",
+              "quantityOrdered": 1,
+              "product": {}
+            }
+          ]
+        }
+      }
+    }
+  }
+}

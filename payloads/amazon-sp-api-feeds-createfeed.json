@@ -1,0 +1,11 @@
+{
+  "connectionId": 123,
+  "body": {
+    "inputFeedDocumentId": "EXAMPLE",
+    "feedType": "JSON_LISTINGS_FEED",
+    "marketplaceIds": [
+      "ATVPDKIKX0DER"
+    ]
+  },
+  "action": "preview"
+}

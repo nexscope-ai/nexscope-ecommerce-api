@@ -1,0 +1,22 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "orderId": "000-0000000-0000000"
+  },
+  "body": {
+    "marketplaceId": "ATVPDKIKX0DER",
+    "packageDetail": {
+      "packageReferenceId": "EXAMPLE",
+      "carrierCode": "EXAMPLE",
+      "trackingNumber": "EXAMPLE",
+      "shipDate": "2026-01-01T00:00:00Z",
+      "orderItems": [
+        {
+          "orderItemId": "EXAMPLE",
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  "action": "preview"
+}

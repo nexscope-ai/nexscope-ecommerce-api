@@ -1,0 +1,18 @@
+{
+  "connectionId": 123,
+  "body": {
+    "address": {
+      "addressLine1": "EXAMPLE",
+      "countryCode": "US",
+      "name": "EXAMPLE",
+      "postalCode": "00000"
+    },
+    "items": [
+      {
+        "quantity": 1,
+        "sellerFulfillmentOrderItemId": "EXAMPLE",
+        "sellerSku": "EXAMPLE"
+      }
+    ]
+  }
+}

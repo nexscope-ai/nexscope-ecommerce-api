@@ -1,0 +1,13 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "shipmentId": "EXAMPLE"
+  },
+  "queryString": "operation=GENERATE",
+  "body": {
+    "packageIds": [
+      "EXAMPLE"
+    ]
+  },
+  "action": "preview"
+}

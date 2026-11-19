@@ -1,0 +1,13 @@
+{
+  "connectionId": 123,
+  "body": {
+    "requests": [
+      {
+        "uri": "/products/pricing/2022-05-01/offer/featuredOfferExpectedPrice",
+        "method": "GET",
+        "marketplaceId": "ATVPDKIKX0DER",
+        "sku": "EXAMPLE"
+      }
+    ]
+  }
+}

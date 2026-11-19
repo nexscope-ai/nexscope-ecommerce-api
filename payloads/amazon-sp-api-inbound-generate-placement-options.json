@@ -1,0 +1,22 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "inboundPlanId": "EXAMPLE0000000000000000000000000000000"
+  },
+  "body": {
+    "customPlacement": [
+      {
+        "items": [
+          {
+            "labelOwner": "AMAZON",
+            "msku": "EXAMPLE",
+            "prepOwner": "AMAZON",
+            "quantity": 1
+          }
+        ],
+        "warehouseId": "EXAMPLE"
+      }
+    ]
+  },
+  "action": "preview"
+}

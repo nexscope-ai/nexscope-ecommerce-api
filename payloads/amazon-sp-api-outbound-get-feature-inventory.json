@@ -1,0 +1,7 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "featureName": "EXAMPLE"
+  },
+  "queryString": "marketplaceId=ATVPDKIKX0DER"
+}

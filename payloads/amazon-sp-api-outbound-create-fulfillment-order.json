@@ -1,0 +1,24 @@
+{
+  "connectionId": 123,
+  "body": {
+    "destinationAddress": {
+      "addressLine1": "EXAMPLE",
+      "countryCode": "US",
+      "name": "EXAMPLE",
+      "postalCode": "00000"
+    },
+    "displayableOrderComment": "EXAMPLE",
+    "displayableOrderDate": "2026-01-01T00:00:00Z",
+    "displayableOrderId": "EXAMPLE",
+    "items": [
+      {
+        "quantity": 1,
+        "sellerFulfillmentOrderItemId": "EXAMPLE",
+        "sellerSku": "EXAMPLE"
+      }
+    ],
+    "sellerFulfillmentOrderId": "EXAMPLE",
+    "shippingSpeedCategory": "Standard"
+  },
+  "action": "preview"
+}

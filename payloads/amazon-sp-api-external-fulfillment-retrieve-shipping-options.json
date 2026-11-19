@@ -1,0 +1,7 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "shipmentId": "EXAMPLE"
+  },
+  "queryString": "packageId=EXAMPLE"
+}

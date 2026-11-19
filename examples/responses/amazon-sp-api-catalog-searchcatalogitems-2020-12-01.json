@@ -1,0 +1,38 @@
+{
+  "code": 0,
+  "data": {
+    "sellerId": "EXAMPLE_SELLER",
+    "requestId": "example-request-id",
+    "source": "BACKEND_AMAZON_SP_API",
+    "response": {
+      "httpStatus": 200,
+      "payload": {
+        "numberOfResults": 1,
+        "pagination": {
+          "nextToken": "EXAMPLE",
+          "previousToken": "EXAMPLE"
+        },
+        "refinements": {
+          "brands": [
+            {
+              "numberOfResults": 1,
+              "brandName": "EXAMPLE"
+            }
+          ],
+          "classifications": [
+            {
+              "numberOfResults": 1,
+              "displayName": "EXAMPLE",
+              "classificationId": "EXAMPLE"
+            }
+          ]
+        },
+        "items": [
+          {
+            "asin": "B000EXAMPL"
+          }
+        ]
+      }
+    }
+  }
+}

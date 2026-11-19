@@ -1,0 +1,11 @@
+{
+  "connectionId": 123,
+  "body": {
+    "items": [
+      {}
+    ],
+    "origin": {
+      "countryCode": "US"
+    }
+  }
+}

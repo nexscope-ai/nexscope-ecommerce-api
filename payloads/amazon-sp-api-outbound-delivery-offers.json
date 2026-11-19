@@ -1,0 +1,16 @@
+{
+  "connectionId": 123,
+  "body": {
+    "product": {
+      "productIdentifier": {
+        "merchantSku": "EXAMPLE"
+      }
+    },
+    "terms": {
+      "origin": {
+        "countryCode": "US"
+      },
+      "destination": {}
+    }
+  }
+}

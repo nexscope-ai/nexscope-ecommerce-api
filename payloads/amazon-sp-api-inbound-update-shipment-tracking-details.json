@@ -1,0 +1,25 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "inboundPlanId": "EXAMPLE0000000000000000000000000000000",
+    "shipmentId": "EXAMPLE0000000000000000000000000000000"
+  },
+  "body": {
+    "trackingDetails": {
+      "ltlTrackingDetail": {
+        "freightBillNumber": [
+          "EXAMPLE"
+        ]
+      },
+      "spdTrackingDetail": {
+        "spdTrackingItems": [
+          {
+            "boxId": "EXAMPLE",
+            "trackingId": "EXAMPLE"
+          }
+        ]
+      }
+    }
+  },
+  "action": "preview"
+}

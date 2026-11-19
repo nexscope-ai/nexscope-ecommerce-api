@@ -1,0 +1,14 @@
+{
+  "connectionId": 123,
+  "body": {
+    "labelType": "STANDARD_FORMAT",
+    "marketplaceId": "ATVPDKIKX0DER",
+    "mskuQuantities": [
+      {
+        "msku": "EXAMPLE",
+        "quantity": 1
+      }
+    ]
+  },
+  "action": "preview"
+}

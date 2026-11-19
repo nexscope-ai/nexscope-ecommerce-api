@@ -1,0 +1,28 @@
+{
+  "code": 0,
+  "data": {
+    "sellerId": "EXAMPLE_SELLER",
+    "requestId": "example-request-id",
+    "source": "BACKEND_AMAZON_SP_API",
+    "response": {
+      "httpStatus": 200,
+      "payload": {
+        "returns": [
+          {
+            "id": "EXAMPLE",
+            "returnMetadata": {
+              "returnReason": "EXAMPLE"
+            },
+            "status": "CREATED",
+            "fulfillmentLocationId": "EXAMPLE",
+            "returnType": "CUSTOMER",
+            "lastUpdatedDateTime": "EXAMPLE",
+            "returnShippingInfo": {},
+            "marketplaceChannelDetails": {}
+          }
+        ],
+        "nextToken": "EXAMPLE"
+      }
+    }
+  }
+}

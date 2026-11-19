@@ -1,0 +1,19 @@
+{
+  "code": 0,
+  "data": {
+    "sellerId": "EXAMPLE_SELLER",
+    "requestId": "example-request-id",
+    "source": "BACKEND_AMAZON_SP_API",
+    "response": {
+      "httpStatus": 200,
+      "payload": {
+        "numberOfResults": 1,
+        "items": [
+          {
+            "asin": "B000EXAMPL"
+          }
+        ]
+      }
+    }
+  }
+}

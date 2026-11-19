@@ -1,0 +1,18 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "inboundPlanId": "EXAMPLE0000000000000000000000000000000"
+  },
+  "body": {
+    "placementOptionId": "EXAMPLE0000000000000000000000000000000",
+    "shipmentTransportationConfigurations": [
+      {
+        "readyToShipWindow": {
+          "start": "2026-01-01T00:00:00Z"
+        },
+        "shipmentId": "EXAMPLE0000000000000000000000000000000"
+      }
+    ]
+  },
+  "action": "preview"
+}

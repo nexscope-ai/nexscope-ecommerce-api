@@ -1,0 +1,35 @@
+{
+  "code": 0,
+  "data": {
+    "sellerId": "EXAMPLE_SELLER",
+    "requestId": "example-request-id",
+    "source": "BACKEND_AMAZON_SP_API",
+    "response": {
+      "httpStatus": 200,
+      "payload": {
+        "payload": {
+          "nextToken": "EXAMPLE",
+          "fulfillmentOrders": [
+            {
+              "destinationAddress": {
+                "addressLine1": "EXAMPLE",
+                "countryCode": "US",
+                "name": "EXAMPLE",
+                "postalCode": "00000"
+              },
+              "displayableOrderComment": "EXAMPLE",
+              "displayableOrderDate": "2026-01-01T00:00:00Z",
+              "displayableOrderId": "EXAMPLE",
+              "fulfillmentOrderStatus": "New",
+              "marketplaceId": "ATVPDKIKX0DER",
+              "receivedDate": "2026-01-01T00:00:00Z",
+              "sellerFulfillmentOrderId": "EXAMPLE",
+              "shippingSpeedCategory": "Standard",
+              "statusUpdatedDate": "2026-01-01T00:00:00Z"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

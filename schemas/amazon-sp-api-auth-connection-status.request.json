@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "description": "Read the stored status of an owned Seller connection.",
+  "fields": [
+    {
+      "name": "connectionId",
+      "type": "integer",
+      "required": true,
+      "description": "Owned Seller connection ID.",
+      "example": 123,
+      "constraints": {}
+    }
+  ],
+  "example": {
+    "connectionId": 123
+  },
+  "jsonSchema": null
+}

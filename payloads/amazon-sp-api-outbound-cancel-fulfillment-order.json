@@ -1,0 +1,7 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "sellerFulfillmentOrderId": "EXAMPLE"
+  },
+  "action": "preview"
+}

@@ -1,0 +1,18 @@
+{
+  "connectionId": 123,
+  "queryString": "marketplaceId=ATVPDKIKX0DER",
+  "body": {
+    "msku": "EXAMPLE",
+    "taxDetails": {
+      "declaredValue": {
+        "amount": 1,
+        "code": "EXA"
+      },
+      "hsnCode": "EXAMPLE",
+      "taxRates": [
+        {}
+      ]
+    }
+  },
+  "action": "preview"
+}

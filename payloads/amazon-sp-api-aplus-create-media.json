@@ -1,0 +1,7 @@
+{
+  "connectionId": 123,
+  "body": {
+    "mediaType": "VIDEO"
+  },
+  "action": "preview"
+}

@@ -1,0 +1,10 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "sellerFulfillmentOrderId": "EXAMPLE"
+  },
+  "body": {
+    "fulfillmentOrderStatus": "New"
+  },
+  "action": "preview"
+}

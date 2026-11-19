@@ -1,0 +1,7 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "shipmentId": "EXAMPLE"
+  },
+  "queryString": "PageType=PackageLabel_Letter_2&LabelType=BARCODE_2D"
+}

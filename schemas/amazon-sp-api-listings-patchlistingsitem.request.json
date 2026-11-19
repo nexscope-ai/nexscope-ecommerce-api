@@ -1,0 +1,65 @@
+{
+  "type": "object",
+  "description": "Fixed provider operation: PATCH /listings/2021-08-01/items/{sellerId}/{sku}. Seller credentials stay in Nexscope.",
+  "fields": [
+    {
+      "name": "connectionId",
+      "type": "integer",
+      "required": true,
+      "description": "Owned Amazon Seller connection ID.",
+      "example": 123,
+      "constraints": {}
+    },
+    {
+      "name": "pathParams",
+      "type": "object",
+      "required": true,
+      "description": "Required path values: sellerId, sku.",
+      "example": {
+        "sellerId": "example",
+        "sku": "example"
+      },
+      "constraints": {}
+    },
+    {
+      "name": "body",
+      "type": "object",
+      "required": false,
+      "description": "Official operation request body.",
+      "example": null,
+      "constraints": {}
+    },
+    {
+      "name": "queryString",
+      "type": "string",
+      "required": false,
+      "description": "Operation query string, percent encoded, without the leading ?.",
+      "example": null,
+      "constraints": {}
+    },
+    {
+      "name": "action",
+      "type": "string",
+      "required": false,
+      "description": "preview (default) or confirm.",
+      "example": "preview",
+      "constraints": {}
+    },
+    {
+      "name": "confirmationToken",
+      "type": "string",
+      "required": false,
+      "description": "Single-use token returned by preview; required for confirm.",
+      "example": null,
+      "constraints": {}
+    }
+  ],
+  "example": {
+    "connectionId": 123,
+    "pathParams": {
+      "sellerId": "example",
+      "sku": "example"
+    }
+  },
+  "jsonSchema": null
+}

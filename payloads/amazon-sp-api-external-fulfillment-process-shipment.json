@@ -1,0 +1,17 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "shipmentId": "EXAMPLE"
+  },
+  "queryString": "operation=CONFIRM",
+  "body": {
+    "lineItems": [
+      {
+        "lineItem": {
+          "id": "EXAMPLE"
+        }
+      }
+    ]
+  },
+  "action": "preview"
+}

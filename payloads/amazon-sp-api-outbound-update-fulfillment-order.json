@@ -1,0 +1,17 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "sellerFulfillmentOrderId": "EXAMPLE"
+  },
+  "body": {
+    "items": [
+      {
+        "quantity": 1,
+        "sellerFulfillmentOrderItemId": "EXAMPLE"
+      }
+    ],
+    "marketplaceId": "ATVPDKIKX0DER",
+    "displayableOrderId": "EXAMPLE"
+  },
+  "action": "preview"
+}

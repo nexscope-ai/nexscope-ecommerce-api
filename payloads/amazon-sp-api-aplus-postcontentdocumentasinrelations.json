@@ -1,0 +1,13 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "contentReferenceKey": "EXAMPLE"
+  },
+  "queryString": "marketplaceId=ATVPDKIKX0DER",
+  "body": {
+    "asinSet": [
+      "EXAMPLE000"
+    ]
+  },
+  "action": "preview"
+}

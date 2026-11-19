@@ -1,0 +1,34 @@
+{
+  "type": "object",
+  "description": "Generate the Amazon Seller OAuth consent URL.",
+  "fields": [
+    {
+      "name": "marketplaceId",
+      "type": "string",
+      "required": true,
+      "description": "Amazon marketplace ID.",
+      "example": "ATVPDKIKX0DER",
+      "constraints": {}
+    },
+    {
+      "name": "region",
+      "type": "string",
+      "required": false,
+      "description": "Amazon region inferred from marketplace if omitted.",
+      "example": "NA",
+      "constraints": {}
+    },
+    {
+      "name": "accountName",
+      "type": "string",
+      "required": false,
+      "description": "Optional connection display name.",
+      "example": "US store",
+      "constraints": {}
+    }
+  ],
+  "example": {
+    "marketplaceId": "ATVPDKIKX0DER"
+  },
+  "jsonSchema": null
+}

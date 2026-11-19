@@ -1,0 +1,13 @@
+{
+  "connectionId": 123,
+  "body": {
+    "requests": [
+      {
+        "uri": "/products/pricing/v0/items/B000EXAMPL/offers",
+        "method": "GET",
+        "MarketplaceId": "ATVPDKIKX0DER",
+        "ItemCondition": "New"
+      }
+    ]
+  }
+}

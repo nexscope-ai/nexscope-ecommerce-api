@@ -1,0 +1,44 @@
+{
+  "code": 0,
+  "data": {
+    "sellerId": "EXAMPLE_SELLER",
+    "requestId": "example-request-id",
+    "source": "BACKEND_AMAZON_SP_API",
+    "response": {
+      "httpStatus": 200,
+      "payload": {
+        "placementOptions": [
+          {
+            "discounts": [
+              {
+                "description": "EXAMPLE",
+                "target": "EXAMPLE",
+                "type": "EXAMPLE",
+                "value": {
+                  "amount": 1,
+                  "code": "EXA"
+                }
+              }
+            ],
+            "fees": [
+              {
+                "description": "EXAMPLE",
+                "target": "EXAMPLE",
+                "type": "EXAMPLE",
+                "value": {
+                  "amount": 1,
+                  "code": "EXA"
+                }
+              }
+            ],
+            "placementOptionId": "EXAMPLE0000000000000000000000000000000",
+            "shipmentIds": [
+              "EXAMPLE0000000000000000000000000000000"
+            ],
+            "status": "EXAMPLE"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "shipmentId": "EXAMPLE",
+    "packageId": "EXAMPLE"
+  },
+  "body": {
+    "status": "SHIPPED",
+    "subStatus": "OUT_FOR_DELIVERY",
+    "reason": "EXAMPLE"
+  },
+  "action": "preview"
+}

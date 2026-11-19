@@ -1,0 +1,9 @@
+{
+  "connectionId": 123,
+  "body": {
+    "sellerSku": "EXAMPLE",
+    "marketplaceId": "ATVPDKIKX0DER",
+    "productName": "EXAMPLE"
+  },
+  "action": "preview"
+}

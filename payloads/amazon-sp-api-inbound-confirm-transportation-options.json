@@ -1,0 +1,15 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "inboundPlanId": "EXAMPLE0000000000000000000000000000000"
+  },
+  "body": {
+    "transportationSelections": [
+      {
+        "shipmentId": "EXAMPLE0000000000000000000000000000000",
+        "transportationOptionId": "EXAMPLE0000000000000000000000000000000"
+      }
+    ]
+  },
+  "action": "preview"
+}

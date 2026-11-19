@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "description": "Fixed provider operation: GET /catalog/2020-12-01/items. Seller credentials stay in Nexscope.",
+  "fields": [
+    {
+      "name": "connectionId",
+      "type": "integer",
+      "required": true,
+      "description": "Owned Amazon Seller connection ID.",
+      "example": 123,
+      "constraints": {}
+    },
+    {
+      "name": "queryString",
+      "type": "string",
+      "required": false,
+      "description": "Operation query string, percent encoded, without the leading ?.",
+      "example": null,
+      "constraints": {}
+    }
+  ],
+  "example": {
+    "connectionId": 123
+  },
+  "jsonSchema": null
+}

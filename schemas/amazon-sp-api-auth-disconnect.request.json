@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "description": "Disconnect the owned Seller connection and linked marketplaces sharing its credential.",
+  "fields": [
+    {
+      "name": "connectionId",
+      "type": "integer",
+      "required": true,
+      "description": "Owned Seller connection ID.",
+      "example": 123,
+      "constraints": {}
+    },
+    {
+      "name": "revision",
+      "type": "integer",
+      "required": true,
+      "description": "Current connection revision from status.",
+      "example": 1,
+      "constraints": {}
+    },
+    {
+      "name": "confirm",
+      "type": "boolean",
+      "required": true,
+      "description": "Explicit confirmation to disconnect.",
+      "example": true,
+      "constraints": {}
+    }
+  ],
+  "example": {
+    "revision": 1,
+    "connectionId": 123,
+    "confirm": true
+  },
+  "jsonSchema": null
+}

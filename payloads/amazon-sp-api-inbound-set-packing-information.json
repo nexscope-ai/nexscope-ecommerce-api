@@ -1,0 +1,29 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "inboundPlanId": "EXAMPLE0000000000000000000000000000000"
+  },
+  "body": {
+    "packageGroupings": [
+      {
+        "boxes": [
+          {
+            "contentInformationSource": "BOX_CONTENT_PROVIDED",
+            "dimensions": {
+              "height": 0,
+              "length": 0,
+              "unitOfMeasurement": "IN",
+              "width": 0
+            },
+            "quantity": 1,
+            "weight": {
+              "unit": "LB",
+              "value": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "action": "preview"
+}

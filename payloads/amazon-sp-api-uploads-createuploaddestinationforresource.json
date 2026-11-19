@@ -1,0 +1,10 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "resource": "aplus/2020-11-01/contentDocuments"
+  },
+  "contentBase64": "ZXhhbXBsZQo=",
+  "contentType": "text/plain",
+  "marketplaceId": "ATVPDKIKX0DER",
+  "action": "preview"
+}

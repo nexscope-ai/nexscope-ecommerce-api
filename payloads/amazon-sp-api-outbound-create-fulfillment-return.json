@@ -1,0 +1,17 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "sellerFulfillmentOrderId": "EXAMPLE"
+  },
+  "body": {
+    "items": [
+      {
+        "amazonShipmentId": "EXAMPLE",
+        "returnReasonCode": "EXAMPLE",
+        "sellerFulfillmentOrderItemId": "EXAMPLE",
+        "sellerReturnItemId": "EXAMPLE"
+      }
+    ]
+  },
+  "action": "preview"
+}

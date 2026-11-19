@@ -1,0 +1,10 @@
+{
+  "connectionId": 123,
+  "body": {
+    "marketplaceIds": [
+      "ATVPDKIKX0DER"
+    ],
+    "reportType": "GET_MERCHANT_LISTINGS_ALL_DATA"
+  },
+  "action": "preview"
+}

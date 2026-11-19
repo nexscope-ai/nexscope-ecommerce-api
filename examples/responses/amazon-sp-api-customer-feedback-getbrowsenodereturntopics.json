@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "data": {
+    "sellerId": "EXAMPLE_SELLER",
+    "requestId": "example-request-id",
+    "source": "BACKEND_AMAZON_SP_API",
+    "response": {
+      "httpStatus": 200,
+      "payload": {
+        "browseNodeId": "123456",
+        "displayName": "EXAMPLE",
+        "marketplaceId": "ATVPDKIKX0DER",
+        "countryCode": "US",
+        "dateRange": {
+          "startDate": "2026-01-01T00:00:00Z",
+          "endDate": "2026-01-02T00:00:00Z"
+        },
+        "topics": [
+          {
+            "topic": "EXAMPLE",
+            "browseNodeMetrics": {
+              "occurrencePercentage": {
+                "allProducts": 1
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

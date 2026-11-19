@@ -1,0 +1,7 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "browseNodeId": "123456"
+  },
+  "queryString": "marketplaceId=ATVPDKIKX0DER&sortBy=MENTIONS"
+}

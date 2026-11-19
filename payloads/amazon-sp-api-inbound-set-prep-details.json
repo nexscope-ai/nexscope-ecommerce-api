@@ -1,0 +1,16 @@
+{
+  "connectionId": 123,
+  "body": {
+    "marketplaceId": "ATVPDKIKX0DER",
+    "mskuPrepDetails": [
+      {
+        "msku": "EXAMPLE",
+        "prepCategory": "ADULT",
+        "prepTypes": [
+          "ITEM_BLACK_SHRINKWRAP"
+        ]
+      }
+    ]
+  },
+  "action": "preview"
+}

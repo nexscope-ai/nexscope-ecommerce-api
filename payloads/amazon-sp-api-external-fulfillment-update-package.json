@@ -1,0 +1,35 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "shipmentId": "EXAMPLE",
+    "packageId": "EXAMPLE"
+  },
+  "body": {
+    "dimensions": {
+      "length": {
+        "value": 1,
+        "dimensionUnit": "CM"
+      },
+      "width": {
+        "value": 1,
+        "dimensionUnit": "CM"
+      },
+      "height": {
+        "value": 1,
+        "dimensionUnit": "CM"
+      }
+    },
+    "id": "EXAMPLE",
+    "weight": {
+      "value": 1,
+      "weightUnit": "G"
+    },
+    "packageLineItems": [
+      {
+        "packageLineItemId": "EXAMPLE",
+        "quantity": 1
+      }
+    ]
+  },
+  "action": "preview"
+}

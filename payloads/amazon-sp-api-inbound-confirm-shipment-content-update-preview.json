@@ -1,0 +1,9 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "inboundPlanId": "EXAMPLE0000000000000000000000000000000",
+    "shipmentId": "EXAMPLE0000000000000000000000000000000",
+    "contentUpdatePreviewId": "EXAMPLE0000000000000000000000000000000"
+  },
+  "action": "preview"
+}

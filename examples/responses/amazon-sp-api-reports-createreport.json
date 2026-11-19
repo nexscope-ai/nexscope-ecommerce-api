@@ -1,0 +1,16 @@
+{
+  "code": 0,
+  "data": {
+    "confirmationToken": "EXAMPLE_NOT_VALID",
+    "expiresAt": 1893456000000,
+    "confirmationRequired": true,
+    "summary": {
+      "connectionId": 123,
+      "sellerId": "EXAMPLE_SELLER",
+      "marketplaceId": "ATVPDKIKX0DER",
+      "region": "NA",
+      "method": "POST",
+      "path": "/reports/2021-06-30/reports"
+    }
+  }
+}

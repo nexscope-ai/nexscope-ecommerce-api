@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "description": "Fixed provider operation: POST /feeds/2021-06-30/documents. Seller credentials stay in Nexscope.",
+  "fields": [
+    {
+      "name": "connectionId",
+      "type": "integer",
+      "required": true,
+      "description": "Owned Amazon Seller connection ID.",
+      "example": 123,
+      "constraints": {}
+    },
+    {
+      "name": "contentBase64",
+      "type": "string",
+      "required": true,
+      "description": "Base64 content to upload through the backend; maximum 20 MiB decoded.",
+      "example": null,
+      "constraints": {}
+    },
+    {
+      "name": "contentType",
+      "type": "string",
+      "required": false,
+      "description": "Uploaded content MIME type.",
+      "example": null,
+      "constraints": {}
+    },
+    {
+      "name": "action",
+      "type": "string",
+      "required": false,
+      "description": "preview (default) or confirm.",
+      "example": "preview",
+      "constraints": {}
+    },
+    {
+      "name": "confirmationToken",
+      "type": "string",
+      "required": false,
+      "description": "Single-use token returned by preview; required for confirm.",
+      "example": null,
+      "constraints": {}
+    }
+  ],
+  "example": {
+    "connectionId": 123
+  },
+  "jsonSchema": null
+}

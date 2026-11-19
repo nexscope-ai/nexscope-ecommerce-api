@@ -1,0 +1,12 @@
+{
+  "connectionId": 123,
+  "body": {
+    "requests": [
+      {
+        "uri": "EXAMPLE",
+        "method": "GET"
+      }
+    ]
+  },
+  "action": "preview"
+}

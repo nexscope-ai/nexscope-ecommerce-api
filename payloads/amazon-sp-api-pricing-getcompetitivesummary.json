@@ -1,0 +1,16 @@
+{
+  "connectionId": 123,
+  "body": {
+    "requests": [
+      {
+        "asin": "B000EXAMPL",
+        "marketplaceId": "ATVPDKIKX0DER",
+        "includedData": [
+          "featuredBuyingOptions"
+        ],
+        "method": "GET",
+        "uri": "/products/pricing/2022-05-01/items/competitiveSummary"
+      }
+    ]
+  }
+}

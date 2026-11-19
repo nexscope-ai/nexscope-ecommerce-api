@@ -1,0 +1,35 @@
+{
+  "code": 0,
+  "data": {
+    "sellerId": "EXAMPLE_SELLER",
+    "requestId": "example-request-id",
+    "source": "BACKEND_AMAZON_SP_API",
+    "response": {
+      "httpStatus": 200,
+      "payload": {
+        "pagination": {
+          "nextToken": "EXAMPLE"
+        },
+        "inboundPlans": [
+          {
+            "createdAt": "2026-01-01T00:00:00Z",
+            "inboundPlanId": "EXAMPLE0000000000000000000000000000000",
+            "lastUpdatedAt": "2026-01-01T00:00:00Z",
+            "marketplaceIds": [
+              "ATVPDKIKX0DER"
+            ],
+            "name": "EXAMPLE",
+            "sourceAddress": {
+              "addressLine1": "EXAMPLE",
+              "city": "EXAMPLE",
+              "countryCode": "US",
+              "name": "EXAMPLE",
+              "postalCode": "00000"
+            },
+            "status": "EXAMPLE"
+          }
+        ]
+      }
+    }
+  }
+}

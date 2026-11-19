@@ -1,0 +1,7 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "Asin": "B000EXAMPL"
+  },
+  "queryString": "MarketplaceId=ATVPDKIKX0DER&ItemCondition=New"
+}

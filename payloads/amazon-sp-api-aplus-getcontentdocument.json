@@ -1,0 +1,7 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "contentReferenceKey": "EXAMPLE"
+  },
+  "queryString": "marketplaceId=ATVPDKIKX0DER&includedDataSet=CONTENTS"
+}

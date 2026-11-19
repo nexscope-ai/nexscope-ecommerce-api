@@ -1,0 +1,33 @@
+{
+  "code": 0,
+  "data": {
+    "sellerId": "EXAMPLE_SELLER",
+    "requestId": "example-request-id",
+    "source": "BACKEND_AMAZON_SP_API",
+    "response": {
+      "httpStatus": 200,
+      "payload": {
+        "locale": "en_US",
+        "marketplaceIds": [
+          "ATVPDKIKX0DER"
+        ],
+        "productType": "EXAMPLE",
+        "displayName": "EXAMPLE",
+        "productTypeVersion": {
+          "latest": false,
+          "version": "EXAMPLE"
+        },
+        "propertyGroups": {},
+        "requirements": "LISTING",
+        "requirementsEnforced": "ENFORCED",
+        "schema": {
+          "checksum": "EXAMPLE",
+          "link": {
+            "resource": "EXAMPLE",
+            "verb": "GET"
+          }
+        }
+      }
+    }
+  }
+}

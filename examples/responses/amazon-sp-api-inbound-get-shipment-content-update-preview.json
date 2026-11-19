@@ -1,0 +1,51 @@
+{
+  "code": 0,
+  "data": {
+    "sellerId": "EXAMPLE_SELLER",
+    "requestId": "example-request-id",
+    "source": "BACKEND_AMAZON_SP_API",
+    "response": {
+      "httpStatus": 200,
+      "payload": {
+        "contentUpdatePreviewId": "EXAMPLE0000000000000000000000000000000",
+        "expiration": "2026-01-01T00:00:00Z",
+        "requestedUpdates": {
+          "items": [
+            {
+              "labelOwner": "AMAZON",
+              "msku": "EXAMPLE",
+              "prepOwner": "AMAZON",
+              "quantity": 1
+            }
+          ],
+          "boxes": [
+            {
+              "contentInformationSource": "BOX_CONTENT_PROVIDED",
+              "dimensions": {
+                "height": 0,
+                "length": 0,
+                "unitOfMeasurement": "IN",
+                "width": 0
+              },
+              "quantity": 1,
+              "weight": {
+                "unit": "LB",
+                "value": 0
+              }
+            }
+          ]
+        },
+        "transportationOption": {
+          "carrier": {},
+          "preconditions": [
+            "EXAMPLE"
+          ],
+          "shipmentId": "EXAMPLE0000000000000000000000000000000",
+          "shippingMode": "EXAMPLE",
+          "shippingSolution": "EXAMPLE",
+          "transportationOptionId": "EXAMPLE0000000000000000000000000000000"
+        }
+      }
+    }
+  }
+}

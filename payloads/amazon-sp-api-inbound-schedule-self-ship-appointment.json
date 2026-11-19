@@ -1,0 +1,12 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "inboundPlanId": "EXAMPLE0000000000000000000000000000000",
+    "shipmentId": "EXAMPLE0000000000000000000000000000000",
+    "slotId": "EXAMPLE0000000000000000000000000000000"
+  },
+  "body": {
+    "reasonComment": "APPOINTMENT_REQUESTED_BY_MISTAKE"
+  },
+  "action": "preview"
+}

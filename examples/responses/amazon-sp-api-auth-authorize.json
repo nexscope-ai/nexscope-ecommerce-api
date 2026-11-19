@@ -1,0 +1,7 @@
+{
+  "code": 0,
+  "data": {
+    "authorizationUrl": "https://sellercentral.amazon.com/apps/authorize/consent?application_id=EXAMPLE_APPLICATION&redirect_uri=https%3A%2F%2Fdocs.example.com%2Fseller%2Fintegrations&state=EXAMPLE_STATE",
+    "expiresAt": 1893456000000
+  }
+}

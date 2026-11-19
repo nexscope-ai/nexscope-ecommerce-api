@@ -1,0 +1,34 @@
+{
+  "code": 0,
+  "data": {
+    "sellerId": "EXAMPLE_SELLER",
+    "requestId": "example-request-id",
+    "source": "BACKEND_AMAZON_SP_API",
+    "response": {
+      "httpStatus": 200,
+      "payload": {
+        "payload": {
+          "Identifier": {
+            "ItemCondition": "New",
+            "MarketplaceId": "ATVPDKIKX0DER"
+          },
+          "ItemCondition": "New",
+          "Offers": [
+            {
+              "IsFulfilledByAmazon": false,
+              "ListingPrice": {},
+              "Shipping": {},
+              "ShippingTime": {},
+              "SubCondition": "EXAMPLE"
+            }
+          ],
+          "Summary": {
+            "TotalOfferCount": 1
+          },
+          "status": "EXAMPLE",
+          "marketplaceId": "ATVPDKIKX0DER"
+        }
+      }
+    }
+  }
+}

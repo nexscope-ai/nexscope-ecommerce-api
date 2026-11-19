@@ -1,0 +1,29 @@
+{
+  "code": 0,
+  "data": {
+    "sellerId": "EXAMPLE_SELLER",
+    "requestId": "example-request-id",
+    "source": "BACKEND_AMAZON_SP_API",
+    "response": {
+      "httpStatus": 200,
+      "payload": {
+        "payload": {
+          "ShipmentData": [
+            {
+              "AreCasesRequired": false,
+              "ShipFromAddress": {
+                "AddressLine1": "EXAMPLE",
+                "City": "EXAMPLE",
+                "CountryCode": "US",
+                "Name": "EXAMPLE",
+                "PostalCode": "00000",
+                "StateOrProvinceCode": "EXAMPLE"
+              }
+            }
+          ],
+          "NextToken": "EXAMPLE"
+        }
+      }
+    }
+  }
+}

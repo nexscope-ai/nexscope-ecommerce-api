@@ -1,0 +1,50 @@
+{
+  "code": 0,
+  "data": {
+    "sellerId": "EXAMPLE_SELLER",
+    "requestId": "example-request-id",
+    "source": "BACKEND_AMAZON_SP_API",
+    "response": {
+      "httpStatus": 200,
+      "payload": {
+        "packingOptions": [
+          {
+            "discounts": [
+              {
+                "description": "EXAMPLE",
+                "target": "EXAMPLE",
+                "type": "EXAMPLE",
+                "value": {
+                  "amount": 1,
+                  "code": "EXA"
+                }
+              }
+            ],
+            "fees": [
+              {
+                "description": "EXAMPLE",
+                "target": "EXAMPLE",
+                "type": "EXAMPLE",
+                "value": {
+                  "amount": 1,
+                  "code": "EXA"
+                }
+              }
+            ],
+            "packingGroups": [
+              "EXAMPLE0000000000000000000000000000000"
+            ],
+            "packingOptionId": "EXAMPLE0000000000000000000000000000000",
+            "status": "EXAMPLE",
+            "supportedConfigurations": [
+              {}
+            ],
+            "supportedShippingConfigurations": [
+              {}
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

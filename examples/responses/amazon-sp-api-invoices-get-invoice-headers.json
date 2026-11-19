@@ -1,0 +1,38 @@
+{
+  "code": 0,
+  "data": {
+    "sellerId": "EXAMPLE_SELLER",
+    "requestId": "example-request-id",
+    "source": "BACKEND_AMAZON_SP_API",
+    "response": {
+      "httpStatus": 200,
+      "payload": {
+        "invoices": [
+          {
+            "invoiceNumber": "EXAMPLE",
+            "invoiceIdentifier": "EXAMPLE",
+            "invoiceStatus": "IN_PROGRESS",
+            "invoiceType": "AP_INVENTORY",
+            "payer": {
+              "partnerId": "EXAMPLE",
+              "partnerType": "SELLER"
+            },
+            "payee": {
+              "partnerId": "EXAMPLE",
+              "partnerType": "SELLER"
+            },
+            "issueDate": "2026-01-01T00:00:00Z",
+            "invoiceAmount": {
+              "currencyCode": "USD",
+              "currencyAmount": 1
+            },
+            "creationDate": "2026-01-01T00:00:00Z",
+            "lastUpdatedDate": "2026-01-01T00:00:00Z"
+          }
+        ],
+        "numOfRecords": 1,
+        "nextToken": "EXAMPLE"
+      }
+    }
+  }
+}

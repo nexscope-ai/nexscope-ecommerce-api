@@ -1,0 +1,9 @@
+{
+  "code": 0,
+  "data": {
+    "connection": {
+      "id": 123,
+      "status": "EXPIRED"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "connectionId": 123,
+  "pathParams": {
+    "inboundPlanId": "EXAMPLE0000000000000000000000000000000",
+    "shipmentId": "EXAMPLE0000000000000000000000000000000"
+  },
+  "body": {
+    "address": {
+      "addressLine1": "EXAMPLE",
+      "city": "EXAMPLE",
+      "countryCode": "US",
+      "name": "EXAMPLE",
+      "phoneNumber": "EXAMPLE",
+      "postalCode": "00000"
+    }
+  },
+  "action": "preview"
+}

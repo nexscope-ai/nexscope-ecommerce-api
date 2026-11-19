@@ -1,0 +1,144 @@
+{
+  "code": 0,
+  "data": {
+    "sellerId": "EXAMPLE_SELLER",
+    "requestId": "example-request-id",
+    "source": "BACKEND_AMAZON_SP_API",
+    "response": {
+      "httpStatus": 200,
+      "payload": {
+        "id": "EXAMPLE",
+        "locationId": "EXAMPLE",
+        "marketplaceAttributes": {
+          "marketplaceId": "ATVPDKIKX0DER",
+          "channelName": "EXAMPLE"
+        },
+        "shipmentInfo": {
+          "shipmentType": "NEW",
+          "numberOfUnits": 1,
+          "priority": "HIGH",
+          "buyerOrderId": "EXAMPLE"
+        },
+        "shipmentRequirements": {
+          "pSlip": {},
+          "invoice": {}
+        },
+        "charges": [
+          {
+            "baseCharge": {
+              "baseAmount": {
+                "value": 1,
+                "currencyCode": "USD"
+              },
+              "discountAmount": {
+                "value": 1,
+                "currencyCode": "USD"
+              },
+              "netAmount": {
+                "value": 1,
+                "currencyCode": "USD"
+              }
+            },
+            "chargeType": "product",
+            "totalCharge": {
+              "baseAmount": {
+                "value": 1,
+                "currencyCode": "USD"
+              },
+              "discountAmount": {
+                "value": 1,
+                "currencyCode": "USD"
+              },
+              "netAmount": {
+                "value": 1,
+                "currencyCode": "USD"
+              }
+            },
+            "totalTax": {
+              "charge": {
+                "baseAmount": {
+                  "value": 1,
+                  "currencyCode": "USD"
+                },
+                "discountAmount": {
+                  "value": 1,
+                  "currencyCode": "USD"
+                },
+                "netAmount": {
+                  "value": 1,
+                  "currencyCode": "USD"
+                }
+              }
+            }
+          }
+        ],
+        "status": "CREATED",
+        "lineItems": [
+          {
+            "charges": [
+              {
+                "baseCharge": {
+                  "baseAmount": {
+                    "value": 1,
+                    "currencyCode": "USD"
+                  },
+                  "discountAmount": {
+                    "value": 1,
+                    "currencyCode": "USD"
+                  },
+                  "netAmount": {
+                    "value": 1,
+                    "currencyCode": "USD"
+                  }
+                },
+                "chargeType": "product",
+                "totalCharge": {
+                  "baseAmount": {
+                    "value": 1,
+                    "currencyCode": "USD"
+                  },
+                  "discountAmount": {
+                    "value": 1,
+                    "currencyCode": "USD"
+                  },
+                  "netAmount": {
+                    "value": 1,
+                    "currencyCode": "USD"
+                  }
+                },
+                "totalTax": {
+                  "charge": {
+                    "baseAmount": {
+                      "value": 1,
+                      "currencyCode": "USD"
+                    },
+                    "discountAmount": {
+                      "value": 1,
+                      "currencyCode": "USD"
+                    },
+                    "netAmount": {
+                      "value": 1,
+                      "currencyCode": "USD"
+                    }
+                  }
+                }
+              }
+            ],
+            "merchantSku": "EXAMPLE",
+            "numberOfUnits": 1,
+            "shipmentLineItemId": "EXAMPLE",
+            "complianceAttributes": {
+              "serialNumberRequirement": "REQUIRED",
+              "hazmatLabelsRequirement": "REQUIRED"
+            }
+          }
+        ],
+        "shippingInfo": {
+          "expectedShippingDateTimeInUTC": "2026-01-01T00:00:00Z"
+        },
+        "creationDateTime": "2026-01-01T00:00:00Z",
+        "lastUpdatedDateTime": "2026-01-01T00:00:00Z"
+      }
+    }
+  }
+}

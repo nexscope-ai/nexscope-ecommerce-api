@@ -2,7 +2,7 @@
 
 Connect ecommerce workflows to marketplace data, product research, and AI image and video creation through Nexscope APIs.
 
-**Repository snapshot: 252 APIs · 199 Data APIs · 53 Creative APIs · 22 categories**
+**Repository snapshot: 411 APIs · 358 Data APIs · 53 Creative APIs · 23 categories**
 
 [Get an API key](https://www.nexscope.ai/seller/api-access?co-from=github-ecommerce-api) · [Official API docs](https://www.nexscope.ai/api-docs?co-from=github-ecommerce-api) · [Complete catalog](#complete-api-catalog) · [Integration guide](docs/calling-apis.md)
 
@@ -535,6 +535,172 @@ This catalog retains the original 225 entries and adds 11 WooCommerce production
 | [Sales Talking Video API](docs/creative/sales-talking-video.md) | Generate a talking sales video. |
 | [Product Logo Detection & Removal API](docs/creative/product-logo-detection-removal.md) | Detect and remove product logos. |
 | [One-Click Image Recoloring API v2](docs/creative/one-click-image-recoloring-v2.md) | Change product colors in an image. |
+
+### Amazon Selling Partner API (159)
+
+These tools use an owned Seller Central connection where required. The JSON examples use fictional values, and each successful call costs 10 credits.
+
+| API | Endpoint |
+|---|---|
+| [Amazon SP-API POST /aplus/2020-11-01/media](docs/data/amazon-sp-api-aplus-create-media.md) | `POST /spapi/createMedia` |
+| [Amazon SP-API POST /aplus/2020-11-01/contentDocuments](docs/data/amazon-sp-api-aplus-createcontentdocument.md) | `POST /spapi/createContentDocument` |
+| [Amazon SP-API GET /aplus/2020-11-01/media/{mediaId}](docs/data/amazon-sp-api-aplus-get-media.md) | `POST /spapi/getMedia` |
+| [Amazon SP-API GET /aplus/2020-11-01/contentDocuments/{contentReferenceKey}](docs/data/amazon-sp-api-aplus-getcontentdocument.md) | `POST /spapi/getContentDocument` |
+| [Amazon SP-API GET /aplus/2020-11-01/contentDocuments/{contentReferenceKey}/asins](docs/data/amazon-sp-api-aplus-listcontentdocumentasinrelations.md) | `POST /spapi/listContentDocumentAsinRelations` |
+| [Amazon SP-API POST /aplus/2020-11-01/contentDocuments/{contentReferenceKey}/approvalSubmissions](docs/data/amazon-sp-api-aplus-postcontentdocumentapprovalsubmission.md) | `POST /spapi/postContentDocumentApprovalSubmission` |
+| [Amazon SP-API POST /aplus/2020-11-01/contentDocuments/{contentReferenceKey}/asins](docs/data/amazon-sp-api-aplus-postcontentdocumentasinrelations.md) | `POST /spapi/postContentDocumentAsinRelations` |
+| [Amazon SP-API POST /aplus/2020-11-01/contentDocuments/{contentReferenceKey}/suspendSubmissions](docs/data/amazon-sp-api-aplus-postcontentdocumentsuspendsubmission.md) | `POST /spapi/postContentDocumentSuspendSubmission` |
+| [Amazon SP-API GET /aplus/2020-11-01/contentDocuments](docs/data/amazon-sp-api-aplus-searchcontentdocuments.md) | `POST /spapi/searchContentDocuments` |
+| [Amazon SP-API GET /aplus/2020-11-01/contentPublishRecords](docs/data/amazon-sp-api-aplus-searchcontentpublishrecords.md) | `POST /spapi/searchContentPublishRecords` |
+| [Amazon SP-API POST /aplus/2020-11-01/contentDocuments/{contentReferenceKey}](docs/data/amazon-sp-api-aplus-updatecontentdocument.md) | `POST /spapi/updateContentDocument` |
+| [Amazon SP-API POST /aplus/2020-11-01/contentAsinValidations](docs/data/amazon-sp-api-aplus-validatecontentdocumentasinrelations.md) | `POST /spapi/validateContentDocumentAsinRelations` |
+| [Amazon Seller: authorize](docs/data/amazon-sp-api-auth-authorize.md) | `POST /spapi/authorize` |
+| [Amazon Seller: connection status](docs/data/amazon-sp-api-auth-connection-status.md) | `POST /spapi/connectionStatus` |
+| [Amazon Seller: disconnect](docs/data/amazon-sp-api-auth-disconnect.md) | `POST /spapi/disconnect` |
+| [Amazon Seller: list connections](docs/data/amazon-sp-api-auth-list-connections.md) | `POST /spapi/listConnections` |
+| [Amazon Seller: refresh connection](docs/data/amazon-sp-api-auth-refresh-connection.md) | `POST /spapi/refreshConnection` |
+| [Amazon SP-API GET /catalog/2020-12-01/items/{asin}](docs/data/amazon-sp-api-catalog-getcatalogitem-2020-12-01.md) | `POST /spapi/getCatalogItemV20201201` |
+| [Amazon SP-API GET /catalog/2022-04-01/items/{asin}](docs/data/amazon-sp-api-catalog-getcatalogitem-2022-04-01.md) | `POST /spapi/getCatalogItemV20220401` |
+| [Amazon SP-API GET /catalog/v0/categories](docs/data/amazon-sp-api-catalog-listcatalogcategories.md) | `POST /spapi/listCatalogCategories` |
+| [Amazon SP-API GET /catalog/2020-12-01/items](docs/data/amazon-sp-api-catalog-searchcatalogitems-2020-12-01.md) | `POST /spapi/searchCatalogItemsV20201201` |
+| [Amazon SP-API GET /catalog/2022-04-01/items](docs/data/amazon-sp-api-catalog-searchcatalogitems-2022-04-01.md) | `POST /spapi/searchCatalogItemsV20220401` |
+| [Amazon SP-API GET /customerFeedback/2024-06-01/browseNodes/{browseNodeId}/returns/topics](docs/data/amazon-sp-api-customer-feedback-getbrowsenodereturntopics.md) | `POST /spapi/getBrowseNodeReturnTopics` |
+| [Amazon SP-API GET /customerFeedback/2024-06-01/browseNodes/{browseNodeId}/returns/trends](docs/data/amazon-sp-api-customer-feedback-getbrowsenodereturntrends.md) | `POST /spapi/getBrowseNodeReturnTrends` |
+| [Amazon SP-API GET /customerFeedback/2024-06-01/browseNodes/{browseNodeId}/reviews/topics](docs/data/amazon-sp-api-customer-feedback-getbrowsenodereviewtopics.md) | `POST /spapi/getBrowseNodeReviewTopics` |
+| [Amazon SP-API GET /customerFeedback/2024-06-01/browseNodes/{browseNodeId}/reviews/trends](docs/data/amazon-sp-api-customer-feedback-getbrowsenodereviewtrends.md) | `POST /spapi/getBrowseNodeReviewTrends` |
+| [Amazon SP-API GET /customerFeedback/2024-06-01/items/{asin}/browseNode](docs/data/amazon-sp-api-customer-feedback-getitembrowsenode.md) | `POST /spapi/getItemBrowseNode` |
+| [Amazon SP-API GET /customerFeedback/2024-06-01/items/{asin}/reviews/topics](docs/data/amazon-sp-api-customer-feedback-getitemreviewtopics.md) | `POST /spapi/getItemReviewTopics` |
+| [Amazon SP-API GET /customerFeedback/2024-06-01/items/{asin}/reviews/trends](docs/data/amazon-sp-api-customer-feedback-getitemreviewtrends.md) | `POST /spapi/getItemReviewTrends` |
+| [Amazon SP-API GET /fba/inbound/v1/eligibility/itemPreview](docs/data/amazon-sp-api-eligibility-get-item-eligibility-preview.md) | `POST /spapi/getItemEligibilityPreview` |
+| [Amazon SP-API POST /externalFulfillment/inventory/2024-09-11/inventories](docs/data/amazon-sp-api-external-fulfillment-batch-inventory.md) | `POST /spapi/batchInventory` |
+| [Amazon SP-API POST /externalFulfillment/2024-09-11/shipments/{shipmentId}/packages](docs/data/amazon-sp-api-external-fulfillment-create-packages.md) | `POST /spapi/createPackages` |
+| [Amazon SP-API POST /externalFulfillment/2024-09-11/shipments/{shipmentId}/invoice](docs/data/amazon-sp-api-external-fulfillment-generate-invoice.md) | `POST /spapi/generateInvoice` |
+| [Amazon SP-API PUT /externalFulfillment/2024-09-11/shipments/{shipmentId}/shipLabels](docs/data/amazon-sp-api-external-fulfillment-generate-ship-labels.md) | `POST /spapi/generateShipLabels` |
+| [Amazon SP-API GET /externalFulfillment/2024-09-11/returns/{returnId}](docs/data/amazon-sp-api-external-fulfillment-get-return.md) | `POST /spapi/getReturn` |
+| [Amazon SP-API GET /externalFulfillment/2024-09-11/shipments/{shipmentId}](docs/data/amazon-sp-api-external-fulfillment-get-shipment.md) | `POST /spapi/externalFulfillmentGetShipment` |
+| [Amazon SP-API GET /externalFulfillment/2024-09-11/shipments](docs/data/amazon-sp-api-external-fulfillment-get-shipments.md) | `POST /spapi/getShipments` |
+| [Amazon SP-API GET /externalFulfillment/2024-09-11/returns](docs/data/amazon-sp-api-external-fulfillment-list-returns.md) | `POST /spapi/listReturns` |
+| [Amazon SP-API POST /externalFulfillment/2024-09-11/shipments/{shipmentId}](docs/data/amazon-sp-api-external-fulfillment-process-shipment.md) | `POST /spapi/processShipment` |
+| [Amazon SP-API GET /externalFulfillment/2024-09-11/shipments/{shipmentId}/invoice](docs/data/amazon-sp-api-external-fulfillment-retrieve-invoice.md) | `POST /spapi/retrieveInvoice` |
+| [Amazon SP-API GET /externalFulfillment/2024-09-11/shipments/{shipmentId}/shippingOptions](docs/data/amazon-sp-api-external-fulfillment-retrieve-shipping-options.md) | `POST /spapi/retrieveShippingOptions` |
+| [Amazon SP-API PUT /externalFulfillment/2024-09-11/shipments/{shipmentId}/packages/{packageId}](docs/data/amazon-sp-api-external-fulfillment-update-package.md) | `POST /spapi/externalFulfillmentUpdatePackage` |
+| [Amazon SP-API PATCH /externalFulfillment/2024-09-11/shipments/{shipmentId}/packages/{packageId}](docs/data/amazon-sp-api-external-fulfillment-update-package-status.md) | `POST /spapi/updatePackageStatus` |
+| [Amazon SP-API DELETE /feeds/2021-06-30/feeds/{feedId}](docs/data/amazon-sp-api-feeds-cancelfeed.md) | `POST /spapi/cancelFeed` |
+| [Amazon SP-API POST /feeds/2021-06-30/feeds](docs/data/amazon-sp-api-feeds-createfeed.md) | `POST /spapi/createFeed` |
+| [Amazon SP-API POST /feeds/2021-06-30/documents](docs/data/amazon-sp-api-feeds-createfeeddocument.md) | `POST /spapi/createFeedDocument` |
+| [Amazon SP-API GET /feeds/2021-06-30/feeds/{feedId}](docs/data/amazon-sp-api-feeds-getfeed.md) | `POST /spapi/getFeed` |
+| [Amazon SP-API GET /feeds/2021-06-30/documents/{feedDocumentId}](docs/data/amazon-sp-api-feeds-getfeeddocument.md) | `POST /spapi/getFeedDocument` |
+| [Amazon SP-API GET /feeds/2021-06-30/feeds](docs/data/amazon-sp-api-feeds-getfeeds.md) | `POST /spapi/getFeeds` |
+| [Amazon SP-API PUT /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/cancellation](docs/data/amazon-sp-api-inbound-cancel-inbound-plan.md) | `POST /spapi/cancelInboundPlan` |
+| [Amazon SP-API PUT /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/shipments/{shipmentId}/selfShipAppointmentCancellation](docs/data/amazon-sp-api-inbound-cancel-self-ship-appointment.md) | `POST /spapi/cancelSelfShipAppointment` |
+| [Amazon SP-API POST /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/shipments/{shipmentId}/deliveryWindowOptions/{deliveryWindowOptionId}/confirmation](docs/data/amazon-sp-api-inbound-confirm-delivery-window-options.md) | `POST /spapi/confirmDeliveryWindowOptions` |
+| [Amazon SP-API POST /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/packingOptions/{packingOptionId}/confirmation](docs/data/amazon-sp-api-inbound-confirm-packing-option.md) | `POST /spapi/confirmPackingOption` |
+| [Amazon SP-API POST /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/placementOptions/{placementOptionId}/confirmation](docs/data/amazon-sp-api-inbound-confirm-placement-option.md) | `POST /spapi/confirmPlacementOption` |
+| [Amazon SP-API POST /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/shipments/{shipmentId}/contentUpdatePreviews/{contentUpdatePreviewId}/confirmation](docs/data/amazon-sp-api-inbound-confirm-shipment-content-update-preview.md) | `POST /spapi/confirmShipmentContentUpdatePreview` |
+| [Amazon SP-API POST /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/transportationOptions/confirmation](docs/data/amazon-sp-api-inbound-confirm-transportation-options.md) | `POST /spapi/confirmTransportationOptions` |
+| [Amazon SP-API POST /inbound/fba/2024-03-20/inboundPlans](docs/data/amazon-sp-api-inbound-create-inbound-plan.md) | `POST /spapi/createInboundPlan` |
+| [Amazon SP-API POST /inbound/fba/2024-03-20/items/labels](docs/data/amazon-sp-api-inbound-create-marketplace-item-labels.md) | `POST /spapi/createMarketplaceItemLabels` |
+| [Amazon SP-API POST /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/shipments/{shipmentId}/deliveryWindowOptions](docs/data/amazon-sp-api-inbound-generate-delivery-window-options.md) | `POST /spapi/generateDeliveryWindowOptions` |
+| [Amazon SP-API POST /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/packingOptions](docs/data/amazon-sp-api-inbound-generate-packing-options.md) | `POST /spapi/generatePackingOptions` |
+| [Amazon SP-API POST /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/placementOptions](docs/data/amazon-sp-api-inbound-generate-placement-options.md) | `POST /spapi/generatePlacementOptions` |
+| [Amazon SP-API POST /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/shipments/{shipmentId}/selfShipAppointmentSlots](docs/data/amazon-sp-api-inbound-generate-self-ship-appointment-slots.md) | `POST /spapi/generateSelfShipAppointmentSlots` |
+| [Amazon SP-API POST /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/shipments/{shipmentId}/contentUpdatePreviews](docs/data/amazon-sp-api-inbound-generate-shipment-content-update-previews.md) | `POST /spapi/generateShipmentContentUpdatePreviews` |
+| [Amazon SP-API POST /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/transportationOptions](docs/data/amazon-sp-api-inbound-generate-transportation-options.md) | `POST /spapi/generateTransportationOptions` |
+| [Amazon SP-API GET /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/shipments/{shipmentId}/deliveryChallanDocument](docs/data/amazon-sp-api-inbound-get-delivery-challan-document.md) | `POST /spapi/getDeliveryChallanDocument` |
+| [Amazon SP-API GET /inbound/fba/2024-03-20/operations/{operationId}](docs/data/amazon-sp-api-inbound-get-inbound-operation-status.md) | `POST /spapi/getInboundOperationStatus` |
+| [Amazon SP-API GET /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}](docs/data/amazon-sp-api-inbound-get-inbound-plan.md) | `POST /spapi/getInboundPlan` |
+| [Amazon SP-API GET /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/shipments/{shipmentId}/selfShipAppointmentSlots](docs/data/amazon-sp-api-inbound-get-self-ship-appointment-slots.md) | `POST /spapi/getSelfShipAppointmentSlots` |
+| [Amazon SP-API GET /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/shipments/{shipmentId}](docs/data/amazon-sp-api-inbound-get-shipment.md) | `POST /spapi/inboundGetShipment` |
+| [Amazon SP-API GET /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/shipments/{shipmentId}/contentUpdatePreviews/{contentUpdatePreviewId}](docs/data/amazon-sp-api-inbound-get-shipment-content-update-preview.md) | `POST /spapi/getShipmentContentUpdatePreview` |
+| [Amazon SP-API GET /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/shipments/{shipmentId}/deliveryWindowOptions](docs/data/amazon-sp-api-inbound-list-delivery-window-options.md) | `POST /spapi/listDeliveryWindowOptions` |
+| [Amazon SP-API GET /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/boxes](docs/data/amazon-sp-api-inbound-list-inbound-plan-boxes.md) | `POST /spapi/listInboundPlanBoxes` |
+| [Amazon SP-API GET /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/items](docs/data/amazon-sp-api-inbound-list-inbound-plan-items.md) | `POST /spapi/listInboundPlanItems` |
+| [Amazon SP-API GET /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/pallets](docs/data/amazon-sp-api-inbound-list-inbound-plan-pallets.md) | `POST /spapi/listInboundPlanPallets` |
+| [Amazon SP-API GET /inbound/fba/2024-03-20/inboundPlans](docs/data/amazon-sp-api-inbound-list-inbound-plans.md) | `POST /spapi/listInboundPlans` |
+| [Amazon SP-API GET /inbound/fba/2024-03-20/items/compliance](docs/data/amazon-sp-api-inbound-list-item-compliance-details.md) | `POST /spapi/listItemComplianceDetails` |
+| [Amazon SP-API GET /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/packingGroups/{packingGroupId}/boxes](docs/data/amazon-sp-api-inbound-list-packing-group-boxes.md) | `POST /spapi/listPackingGroupBoxes` |
+| [Amazon SP-API GET /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/packingGroups/{packingGroupId}/items](docs/data/amazon-sp-api-inbound-list-packing-group-items.md) | `POST /spapi/listPackingGroupItems` |
+| [Amazon SP-API GET /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/packingOptions](docs/data/amazon-sp-api-inbound-list-packing-options.md) | `POST /spapi/listPackingOptions` |
+| [Amazon SP-API GET /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/placementOptions](docs/data/amazon-sp-api-inbound-list-placement-options.md) | `POST /spapi/listPlacementOptions` |
+| [Amazon SP-API GET /inbound/fba/2024-03-20/items/prepDetails](docs/data/amazon-sp-api-inbound-list-prep-details.md) | `POST /spapi/listPrepDetails` |
+| [Amazon SP-API GET /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/shipments/{shipmentId}/boxes](docs/data/amazon-sp-api-inbound-list-shipment-boxes.md) | `POST /spapi/listShipmentBoxes` |
+| [Amazon SP-API GET /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/shipments/{shipmentId}/contentUpdatePreviews](docs/data/amazon-sp-api-inbound-list-shipment-content-update-previews.md) | `POST /spapi/listShipmentContentUpdatePreviews` |
+| [Amazon SP-API GET /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/shipments/{shipmentId}/items](docs/data/amazon-sp-api-inbound-list-shipment-items.md) | `POST /spapi/listShipmentItems` |
+| [Amazon SP-API GET /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/shipments/{shipmentId}/pallets](docs/data/amazon-sp-api-inbound-list-shipment-pallets.md) | `POST /spapi/listShipmentPallets` |
+| [Amazon SP-API GET /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/transportationOptions](docs/data/amazon-sp-api-inbound-list-transportation-options.md) | `POST /spapi/listTransportationOptions` |
+| [Amazon SP-API POST /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/shipments/{shipmentId}/selfShipAppointmentSlots/{slotId}/schedule](docs/data/amazon-sp-api-inbound-schedule-self-ship-appointment.md) | `POST /spapi/scheduleSelfShipAppointment` |
+| [Amazon SP-API POST /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/packingInformation](docs/data/amazon-sp-api-inbound-set-packing-information.md) | `POST /spapi/setPackingInformation` |
+| [Amazon SP-API POST /inbound/fba/2024-03-20/items/prepDetails](docs/data/amazon-sp-api-inbound-set-prep-details.md) | `POST /spapi/setPrepDetails` |
+| [Amazon SP-API PUT /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/name](docs/data/amazon-sp-api-inbound-update-inbound-plan-name.md) | `POST /spapi/updateInboundPlanName` |
+| [Amazon SP-API PUT /inbound/fba/2024-03-20/items/compliance](docs/data/amazon-sp-api-inbound-update-item-compliance-details.md) | `POST /spapi/updateItemComplianceDetails` |
+| [Amazon SP-API PUT /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/shipments/{shipmentId}/name](docs/data/amazon-sp-api-inbound-update-shipment-name.md) | `POST /spapi/updateShipmentName` |
+| [Amazon SP-API PUT /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/shipments/{shipmentId}/sourceAddress](docs/data/amazon-sp-api-inbound-update-shipment-source-address.md) | `POST /spapi/updateShipmentSourceAddress` |
+| [Amazon SP-API PUT /inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/shipments/{shipmentId}/trackingDetails](docs/data/amazon-sp-api-inbound-update-shipment-tracking-details.md) | `POST /spapi/updateShipmentTrackingDetails` |
+| [Amazon SP-API GET /fba/inbound/v0/shipments/{shipmentId}/billOfLading](docs/data/amazon-sp-api-inbound-v0-get-bill-of-lading.md) | `POST /spapi/getBillOfLading` |
+| [Amazon SP-API GET /fba/inbound/v0/shipments/{shipmentId}/labels](docs/data/amazon-sp-api-inbound-v0-get-labels.md) | `POST /spapi/getLabels` |
+| [Amazon SP-API GET /fba/inbound/v0/prepInstructions](docs/data/amazon-sp-api-inbound-v0-get-prep-instructions.md) | `POST /spapi/getPrepInstructions` |
+| [Amazon SP-API GET /fba/inbound/v0/shipmentItems](docs/data/amazon-sp-api-inbound-v0-get-shipment-items.md) | `POST /spapi/getShipmentItems` |
+| [Amazon SP-API GET /fba/inbound/v0/shipments/{shipmentId}/items](docs/data/amazon-sp-api-inbound-v0-get-shipment-items-by-shipment-id.md) | `POST /spapi/getShipmentItemsByShipmentId` |
+| [Amazon SP-API GET /fba/inbound/v0/shipments](docs/data/amazon-sp-api-inbound-v0-get-shipments-v0.md) | `POST /spapi/getShipmentsV0` |
+| [Amazon SP-API POST /fba/inventory/v1/items/inventory](docs/data/amazon-sp-api-inventory-add-inventory.md) | `POST /spapi/addInventory` |
+| [Amazon SP-API POST /fba/inventory/v1/items](docs/data/amazon-sp-api-inventory-create-inventory-item.md) | `POST /spapi/createInventoryItem` |
+| [Amazon SP-API DELETE /fba/inventory/v1/items/{sellerSku}](docs/data/amazon-sp-api-inventory-delete-inventory-item.md) | `POST /spapi/deleteInventoryItem` |
+| [Amazon SP-API GET /fba/inventory/v1/summaries](docs/data/amazon-sp-api-inventory-get-inventory-summaries.md) | `POST /spapi/getInventorySummaries` |
+| [Amazon SP-API GET /finances/invoices/2026-06-25/invoices](docs/data/amazon-sp-api-invoices-get-invoice-headers.md) | `POST /spapi/getInvoiceHeaders` |
+| [Amazon SP-API DELETE /listings/2021-08-01/items/{sellerId}/{sku}](docs/data/amazon-sp-api-listings-deletelistingsitem.md) | `POST /spapi/deleteListingsItem` |
+| [Amazon SP-API GET /listings/2021-08-01/items/{sellerId}/{sku}](docs/data/amazon-sp-api-listings-getlistingsitem.md) | `POST /spapi/getListingsItem` |
+| [Amazon SP-API GET /listings/2021-08-01/restrictions](docs/data/amazon-sp-api-listings-getlistingsrestrictions.md) | `POST /spapi/getListingsRestrictions` |
+| [Amazon SP-API PATCH /listings/2021-08-01/items/{sellerId}/{sku}](docs/data/amazon-sp-api-listings-patchlistingsitem.md) | `POST /spapi/patchListingsItem` |
+| [Amazon SP-API PUT /listings/2021-08-01/items/{sellerId}/{sku}](docs/data/amazon-sp-api-listings-putlistingsitem.md) | `POST /spapi/putListingsItem` |
+| [Amazon SP-API GET /listings/2021-08-01/items/{sellerId}](docs/data/amazon-sp-api-listings-searchlistingsitems.md) | `POST /spapi/searchListingsItems` |
+| [Amazon SP-API POST /orders/v0/orders/{orderId}/shipmentConfirmation](docs/data/amazon-sp-api-orders-confirmshipment.md) | `POST /spapi/confirmShipment` |
+| [Amazon SP-API GET /orders/2026-01-01/orders/{orderId}](docs/data/amazon-sp-api-orders-getorder-3.md) | `POST /spapi/getorder3` |
+| [Amazon SP-API GET /orders/v0/orders/{orderId}/address](docs/data/amazon-sp-api-orders-getorderaddress.md) | `POST /spapi/getOrderAddress` |
+| [Amazon SP-API GET /orders/v0/orders/{orderId}/buyerInfo](docs/data/amazon-sp-api-orders-getorderbuyerinfo.md) | `POST /spapi/getOrderBuyerInfo` |
+| [Amazon SP-API GET /orders/v0/orders/{orderId}/orderItems](docs/data/amazon-sp-api-orders-getorderitems.md) | `POST /spapi/getOrderItems` |
+| [Amazon SP-API GET /orders/v0/orders/{orderId}/orderItems/buyerInfo](docs/data/amazon-sp-api-orders-getorderitemsbuyerinfo.md) | `POST /spapi/getOrderItemsBuyerInfo` |
+| [Amazon SP-API GET /orders/v0/orders/{orderId}/regulatedInfo](docs/data/amazon-sp-api-orders-getorderregulatedinfo.md) | `POST /spapi/getOrderRegulatedInfo` |
+| [Amazon SP-API GET /orders/2026-01-01/orders](docs/data/amazon-sp-api-orders-searchorders.md) | `POST /spapi/searchOrders` |
+| [Amazon SP-API POST /orders/v0/orders/{orderId}/shipment](docs/data/amazon-sp-api-orders-updateshipmentstatus.md) | `POST /spapi/updateShipmentStatus` |
+| [Amazon SP-API PATCH /orders/v0/orders/{orderId}/regulatedInfo](docs/data/amazon-sp-api-orders-updateverificationstatus.md) | `POST /spapi/updateVerificationStatus` |
+| [Amazon SP-API PUT /fulfillment/outbound/2026-07-04/orders/{orderId}/cancel](docs/data/amazon-sp-api-outbound-2026-cancel-order.md) | `POST /spapi/cancelOrder` |
+| [Amazon SP-API POST /fulfillment/outbound/2026-07-04/orders](docs/data/amazon-sp-api-outbound-2026-create-order.md) | `POST /spapi/createOrder` |
+| [Amazon SP-API POST /fulfillment/outbound/2026-07-04/offers](docs/data/amazon-sp-api-outbound-2026-get-offers.md) | `POST /spapi/getOffers` |
+| [Amazon SP-API GET /fulfillment/outbound/2026-07-04/orders/{orderId}](docs/data/amazon-sp-api-outbound-2026-get-order.md) | `POST /spapi/getOrder` |
+| [Amazon SP-API POST /fulfillment/outbound/2026-07-04/previews](docs/data/amazon-sp-api-outbound-2026-get-order-preview.md) | `POST /spapi/getOrderPreview` |
+| [Amazon SP-API GET /fulfillment/outbound/2026-07-04/orders](docs/data/amazon-sp-api-outbound-2026-list-orders.md) | `POST /spapi/listOrders` |
+| [Amazon SP-API PUT /fulfillment/outbound/2026-07-04/orders/{orderId}](docs/data/amazon-sp-api-outbound-2026-update-order.md) | `POST /spapi/updateOrder` |
+| [Amazon SP-API PUT /fulfillment/outbound/2026-07-04/orders/{orderId}/status](docs/data/amazon-sp-api-outbound-2026-update-order-status.md) | `POST /spapi/updateOrderStatus` |
+| [Amazon SP-API PUT /fulfillment/outbound/2026-07-04/orders/{orderId}/packages/{packageId}](docs/data/amazon-sp-api-outbound-2026-update-package.md) | `POST /spapi/outbound2026UpdatePackage` |
+| [Amazon SP-API PUT /fba/outbound/2020-07-01/fulfillmentOrders/{sellerFulfillmentOrderId}/cancel](docs/data/amazon-sp-api-outbound-cancel-fulfillment-order.md) | `POST /spapi/cancelFulfillmentOrder` |
+| [Amazon SP-API POST /fba/outbound/2020-07-01/fulfillmentOrders](docs/data/amazon-sp-api-outbound-create-fulfillment-order.md) | `POST /spapi/createFulfillmentOrder` |
+| [Amazon SP-API PUT /fba/outbound/2020-07-01/fulfillmentOrders/{sellerFulfillmentOrderId}/return](docs/data/amazon-sp-api-outbound-create-fulfillment-return.md) | `POST /spapi/createFulfillmentReturn` |
+| [Amazon SP-API POST /fba/outbound/2020-07-01/deliveryOffers](docs/data/amazon-sp-api-outbound-delivery-offers.md) | `POST /spapi/deliveryOffers` |
+| [Amazon SP-API GET /fba/outbound/2020-07-01/features/inventory/{featureName}](docs/data/amazon-sp-api-outbound-get-feature-inventory.md) | `POST /spapi/getFeatureInventory` |
+| [Amazon SP-API GET /fba/outbound/2020-07-01/features/inventory/{featureName}/{sellerSku}](docs/data/amazon-sp-api-outbound-get-feature-sku.md) | `POST /spapi/getFeatureSKU` |
+| [Amazon SP-API GET /fba/outbound/2020-07-01/features](docs/data/amazon-sp-api-outbound-get-features.md) | `POST /spapi/getFeatures` |
+| [Amazon SP-API GET /fba/outbound/2020-07-01/fulfillmentOrders/{sellerFulfillmentOrderId}](docs/data/amazon-sp-api-outbound-get-fulfillment-order.md) | `POST /spapi/getFulfillmentOrder` |
+| [Amazon SP-API POST /fba/outbound/2020-07-01/fulfillmentOrders/preview](docs/data/amazon-sp-api-outbound-get-fulfillment-preview.md) | `POST /spapi/getFulfillmentPreview` |
+| [Amazon SP-API GET /fba/outbound/2020-07-01/tracking](docs/data/amazon-sp-api-outbound-get-package-tracking-details.md) | `POST /spapi/getPackageTrackingDetails` |
+| [Amazon SP-API GET /fba/outbound/2020-07-01/fulfillmentOrders](docs/data/amazon-sp-api-outbound-list-all-fulfillment-orders.md) | `POST /spapi/listAllFulfillmentOrders` |
+| [Amazon SP-API GET /fba/outbound/2020-07-01/returnReasonCodes](docs/data/amazon-sp-api-outbound-list-return-reason-codes.md) | `POST /spapi/listReturnReasonCodes` |
+| [Amazon SP-API PUT /fba/outbound/2020-07-01/fulfillmentOrders/{sellerFulfillmentOrderId}/status](docs/data/amazon-sp-api-outbound-submit-fulfillment-order-status-update.md) | `POST /spapi/submitFulfillmentOrderStatusUpdate` |
+| [Amazon SP-API PUT /fba/outbound/2020-07-01/fulfillmentOrders/{sellerFulfillmentOrderId}](docs/data/amazon-sp-api-outbound-update-fulfillment-order.md) | `POST /spapi/updateFulfillmentOrder` |
+| [Amazon SP-API GET /products/pricing/v0/competitivePrice](docs/data/amazon-sp-api-pricing-getcompetitivepricing.md) | `POST /spapi/getCompetitivePricing` |
+| [Amazon SP-API POST /batches/products/pricing/2022-05-01/items/competitiveSummary](docs/data/amazon-sp-api-pricing-getcompetitivesummary.md) | `POST /spapi/getCompetitiveSummary` |
+| [Amazon SP-API POST /batches/products/pricing/2022-05-01/offer/featuredOfferExpectedPrice](docs/data/amazon-sp-api-pricing-getfeaturedofferexpectedpricebatch.md) | `POST /spapi/getFeaturedOfferExpectedPriceBatch` |
+| [Amazon SP-API GET /products/pricing/v0/items/{Asin}/offers](docs/data/amazon-sp-api-pricing-getitemoffers.md) | `POST /spapi/getItemOffers` |
+| [Amazon SP-API POST /batches/products/pricing/v0/itemOffers](docs/data/amazon-sp-api-pricing-getitemoffersbatch.md) | `POST /spapi/getItemOffersBatch` |
+| [Amazon SP-API GET /products/pricing/v0/listings/{SellerSKU}/offers](docs/data/amazon-sp-api-pricing-getlistingoffers.md) | `POST /spapi/getListingOffers` |
+| [Amazon SP-API POST /batches/products/pricing/v0/listingOffers](docs/data/amazon-sp-api-pricing-getlistingoffersbatch.md) | `POST /spapi/getListingOffersBatch` |
+| [Amazon SP-API GET /products/pricing/v0/price](docs/data/amazon-sp-api-pricing-getpricing.md) | `POST /spapi/getPricing` |
+| [Amazon SP-API GET /definitions/2020-09-01/productTypes/{productType}](docs/data/amazon-sp-api-product-types-getdefinitionsproducttype.md) | `POST /spapi/getDefinitionsProductType` |
+| [Amazon SP-API GET /definitions/2020-09-01/productTypes](docs/data/amazon-sp-api-product-types-searchdefinitionsproducttypes.md) | `POST /spapi/searchDefinitionsProductTypes` |
+| [Amazon SP-API POST /reports/2021-06-30/reports](docs/data/amazon-sp-api-reports-createreport.md) | `POST /spapi/createReport` |
+| [Amazon SP-API GET /reports/2021-06-30/reports/{reportId}](docs/data/amazon-sp-api-reports-getreport.md) | `POST /spapi/getReport` |
+| [Amazon SP-API GET /reports/2021-06-30/documents/{reportDocumentId}](docs/data/amazon-sp-api-reports-getreportdocument.md) | `POST /spapi/getReportDocument` |
+| [Amazon SP-API GET /reports/2021-06-30/reports](docs/data/amazon-sp-api-reports-getreports.md) | `POST /spapi/getReports` |
+| [Amazon SP-API POST /uploads/2020-11-01/uploadDestinations/{resource}](docs/data/amazon-sp-api-uploads-createuploaddestinationforresource.md) | `POST /spapi/createUploadDestinationForResource` |
 
 ## Source, coverage, and validation
 

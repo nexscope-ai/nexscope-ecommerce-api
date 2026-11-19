@@ -1,0 +1,28 @@
+{
+  "connectionId": 123,
+  "body": {
+    "orderId": "000-0000000-0000000",
+    "lineItems": [
+      {
+        "lineItemId": "EXAMPLE",
+        "product": {
+          "productIdentifier": {
+            "amazonSku": "EXAMPLE"
+          }
+        },
+        "amount": {
+          "value": "EXAMPLE"
+        }
+      }
+    ],
+    "destination": {
+      "deliveryAddress": {
+        "addressLine1": "EXAMPLE",
+        "countryCode": "US",
+        "name": "EXAMPLE",
+        "postalCode": "00000"
+      }
+    }
+  },
+  "action": "preview"
+}

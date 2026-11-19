@@ -1,0 +1,13 @@
+{
+  "connectionId": 123,
+  "body": {
+    "inventoryItems": [
+      {
+        "sellerSku": "EXAMPLE",
+        "marketplaceId": "ATVPDKIKX0DER",
+        "quantity": 1
+      }
+    ]
+  },
+  "action": "preview"
+}
